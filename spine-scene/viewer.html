@@ -495,11 +495,11 @@
     p.depth = depth;
     p.x = seed ? viewW * (0.18 + Math.random() * 0.64) : viewW * (0.22 + Math.random() * 0.56);
     p.y = viewH * (0.72 + depth * 0.22);
-    p.size = 28 + depth * 46;
+    p.size = 22 + depth * 34;
     p.vx = (Math.random() - 0.5) * (8 + depth * 10);
     p.vy = -16 - depth * 22 - Math.random() * 8;
-    p.rot = Math.random() * Math.PI * 2;
-    p.spin = (Math.random() - 0.5) * 0.5;
+    p.rot = (Math.random() - 0.5) * 0.35;
+    p.spin = (Math.random() - 0.5) * 0.12;
     p.alpha = 0.22 + depth * 0.28;
     p.hot = Math.random() > 0.45;
     p.life = seed ? Math.random() * 1.6 : 0;
@@ -553,9 +553,9 @@
   }
 
   function drawFx(sx, sy) {
-    ctx.save();
-    ctx.globalCompositeOperation = "lighter";
     if (FX.smokeOn && FX.smokeImg && FX.smokeImg.complete) {
+      ctx.save();
+      ctx.globalCompositeOperation = "lighter";
       for (let i = 0; i < FX.smoke.length; i++) {
         const p = FX.smoke[i];
         const s = p.size * sx;
@@ -566,22 +566,26 @@
         ctx.drawImage(FX.smokeImg, -s * 0.5, -s * 0.5, s, s);
         ctx.restore();
       }
+      ctx.restore();
     }
     if (FX.fireOn && FX.fireImg && FX.fireImg.complete) {
+      ctx.save();
+      ctx.globalCompositeOperation = "source-over";
       for (let i = 0; i < FX.fire.length; i++) {
         const p = FX.fire[i];
         const fade = p.life < 0.2 ? p.life / 0.2 : (p.life > p.max * 0.75 ? (p.max - p.life) / (p.max * 0.25) : 1);
-        const s = p.size * sx;
+        const w = p.size * sx;
+        const h = w * 1.25;
         ctx.save();
         ctx.translate(p.x * sx, p.y * sy);
         ctx.rotate(p.rot);
         ctx.globalAlpha = p.alpha * Math.max(0, fade);
         const img = p.hot && FX.fireHot ? FX.fireHot : FX.fireImg;
-        ctx.drawImage(img, -s * 0.5, -s * 0.5, s, s);
+        ctx.drawImage(img, -w * 0.5, -h * 0.72, w, h);
         ctx.restore();
       }
+      ctx.restore();
     }
-    ctx.restore();
   }
 
   function loadFxImage(src) {
@@ -794,8 +798,8 @@
       loadBar.style.width = Math.round((done / names.length) * 100) + "%";
     }
     FX.smokeImg = await loadFxImage("fx/smoke-element.png");
-    FX.fireImg = await loadFxImage("fx/fire-element.png");
-    FX.fireHot = await loadFxImage("fx/fire-hot.png");
+    FX.fireImg = await loadFxImage("fx/fire-lick.png?v=4");
+    FX.fireHot = await loadFxImage("fx/fire-lick-hot.png?v=4");
     initFx();
     fitCanvas();
     loadingEl.classList.add("hidden");
