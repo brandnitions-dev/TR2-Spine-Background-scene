@@ -11,8 +11,12 @@
   header h1 { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f0b36a; }
   header p { margin: 0; font-size: 12px; color: #8b93a7; }
   .clips, .tools, .sign, .lamps { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .sign, .lamps { padding-left: 8px; border-left: 1px solid rgba(240, 179, 106, 0.22); }
-  .sign span, .lamps span { font-size: 11px; color: #8b93a7; text-transform: uppercase; letter-spacing: 0.06em; }
+  .sign, .lamps, .fx { padding-left: 8px; border-left: 1px solid rgba(240, 179, 106, 0.22); }
+  .sign span, .lamps span, .fx span { font-size: 11px; color: #8b93a7; text-transform: uppercase; letter-spacing: 0.06em; }
+  .fx { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .fx-ctrl { display: flex; align-items: center; gap: 6px; color: #c8c2b4; font-size: 11px; }
+  .fx-ctrl input[type="range"] { width: 92px; accent-color: #f0b36a; }
+  .fx-ctrl b { min-width: 2.2em; font-weight: 600; color: #f6d7a8; }
   button { appearance: none; border: 1px solid rgba(240, 179, 106, 0.4); background: rgba(180, 110, 40, 0.16); color: #f6d7a8; border-radius: 8px; padding: 7px 12px; font-size: 12px; cursor: pointer; }
   button:hover { background: rgba(180, 110, 40, 0.3); }
   button.active { background: rgba(180, 110, 40, 0.5); color: #fff; }
@@ -40,6 +44,7 @@
   </div>
   <div class="sign" id="sign" hidden></div>
   <div class="lamps" id="lamps" hidden></div>
+  <div class="fx" id="fx" hidden></div>
 </header>
 <div class="stage-wrap">
   <canvas id="stage" width="1536" height="1024"></canvas>
@@ -58,6 +63,7 @@
   const btnBones = document.getElementById("btnBones");
   const signEl = document.getElementById("sign");
   const lampsEl = document.getElementById("lamps");
+  const fxEl = document.getElementById("fx");
 
   let skeleton = null;
   let presetCatalog = null;
@@ -70,6 +76,17 @@
   let lampState = null;
   let slotOverrides = {};
   let last = 0;
+  const FX = {
+    smokeOn: true,
+    fireOn: true,
+    density: 48,
+    speed: 1,
+    smokeImg: null,
+    fireImg: null,
+    fireHot: null,
+    smoke: [],
+    fire: []
+  };
   let viewW = 1536;
   let viewH = 1024;
   let originX = 0;
@@ -347,6 +364,100 @@
     applyOverrides();
   }
 
+  function loadFxPrefs() {
+    try {
+      const raw = localStorage.getItem("western-fx");
+      if (!raw) return;
+      const pref = JSON.parse(raw);
+      if (pref.smokeOn != null) FX.smokeOn = !!pref.smokeOn;
+      if (pref.fireOn != null) FX.fireOn = !!pref.fireOn;
+      if (pref.density != null) FX.density = Math.max(8, Math.min(96, Number(pref.density) || 48));
+      if (pref.speed != null) FX.speed = Math.max(0.25, Math.min(2.5, Number(pref.speed) || 1));
+    } catch (e) {}
+  }
+
+  function saveFxPrefs() {
+    try {
+      localStorage.setItem("western-fx", JSON.stringify({
+        smokeOn: FX.smokeOn,
+        fireOn: FX.fireOn,
+        density: FX.density,
+        speed: FX.speed
+      }));
+    } catch (e) {}
+    if (lampState) {
+      lampState.smoke = FX.smokeOn;
+      lampState.fire = FX.fireOn;
+      lampState.smokeDensity = FX.density;
+      lampState.smokeSpeed = FX.speed;
+    }
+  }
+
+  function addToggle(parent, label, on, onClick) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.textContent = label;
+    btn.classList.toggle("active", on);
+    btn.addEventListener("click", () => {
+      const next = onClick();
+      btn.classList.toggle("active", next);
+    });
+    parent.appendChild(btn);
+    return btn;
+  }
+
+  function addSlider(parent, label, min, max, step, value, format, onInput) {
+    const wrap = document.createElement("label");
+    wrap.className = "fx-ctrl";
+    const name = document.createElement("span");
+    name.textContent = label;
+    const input = document.createElement("input");
+    input.type = "range";
+    input.min = String(min);
+    input.max = String(max);
+    input.step = String(step);
+    input.value = String(value);
+    const read = document.createElement("b");
+    read.textContent = format(value);
+    input.addEventListener("input", () => {
+      const v = Number(input.value);
+      read.textContent = format(v);
+      onInput(v);
+    });
+    wrap.appendChild(name);
+    wrap.appendChild(input);
+    wrap.appendChild(read);
+    parent.appendChild(wrap);
+  }
+
+  function buildFxButtons() {
+    if (!fxEl) return;
+    fxEl.hidden = false;
+    fxEl.innerHTML = "";
+    const label = document.createElement("span");
+    label.textContent = "FX";
+    fxEl.appendChild(label);
+    addToggle(fxEl, "Smoke", FX.smokeOn, () => {
+      FX.smokeOn = !FX.smokeOn;
+      saveFxPrefs();
+      return FX.smokeOn;
+    });
+    addToggle(fxEl, "Fire", FX.fireOn, () => {
+      FX.fireOn = !FX.fireOn;
+      saveFxPrefs();
+      return FX.fireOn;
+    });
+    addSlider(fxEl, "Density", 8, 96, 4, FX.density, (v) => String(v), (v) => {
+      FX.density = v;
+      syncSmokeCount();
+      saveFxPrefs();
+    });
+    addSlider(fxEl, "Speed", 0.25, 2.5, 0.05, FX.speed, (v) => v.toFixed(2) + "x", (v) => {
+      FX.speed = v;
+      saveFxPrefs();
+    });
+  }
+
   function slotColor(slot, anim, t) {
     const base = parseHexColor(slot.color || "ffffffff");
     const keys = anim && anim.slots && anim.slots[slot.name] && anim.slots[slot.name].color;
@@ -366,6 +477,122 @@
     return {};
   }
 
+  function resetSmoke(p, seed) {
+    const depth = 0.22 + Math.random() * 0.78;
+    p.depth = depth;
+    p.x = seed ? viewW * (0.04 + Math.random() * 0.92) : viewW + 40 + Math.random() * 80;
+    p.y = viewH * (0.58 + depth * 0.34);
+    p.size = 170 + depth * 190;
+    p.vx = -11 - depth * 9;
+    p.vy = -2.2 - depth * 2.6;
+    p.rot = Math.random() * Math.PI * 2;
+    p.spin = (Math.random() - 0.5) * 0.18;
+    p.alpha = 0.11 + depth * 0.1;
+  }
+
+  function resetFire(p, seed) {
+    const depth = 0.28 + Math.random() * 0.72;
+    p.depth = depth;
+    p.x = seed ? viewW * (0.18 + Math.random() * 0.64) : viewW * (0.22 + Math.random() * 0.56);
+    p.y = viewH * (0.72 + depth * 0.22);
+    p.size = 28 + depth * 46;
+    p.vx = (Math.random() - 0.5) * (8 + depth * 10);
+    p.vy = -16 - depth * 22 - Math.random() * 8;
+    p.rot = Math.random() * Math.PI * 2;
+    p.spin = (Math.random() - 0.5) * 0.5;
+    p.alpha = 0.22 + depth * 0.28;
+    p.hot = Math.random() > 0.45;
+    p.life = seed ? Math.random() * 1.6 : 0;
+    p.max = 1.1 + Math.random() * 0.9;
+  }
+
+  function syncSmokeCount() {
+    const n = FX.density;
+    while (FX.smoke.length < n) {
+      const p = {};
+      resetSmoke(p, true);
+      FX.smoke.push(p);
+    }
+    if (FX.smoke.length > n) FX.smoke.length = n;
+    const fireN = Math.max(8, Math.round(n * 0.45));
+    while (FX.fire.length < fireN) {
+      const p = {};
+      resetFire(p, true);
+      FX.fire.push(p);
+    }
+    if (FX.fire.length > fireN) FX.fire.length = fireN;
+  }
+
+  function initFx() {
+    FX.smoke = [];
+    FX.fire = [];
+    syncSmokeCount();
+  }
+
+  function stepFx(dt) {
+    const step = Math.min(0.033, dt) * FX.speed;
+    if (FX.smokeOn && FX.smokeImg) {
+      for (let i = 0; i < FX.smoke.length; i++) {
+        const p = FX.smoke[i];
+        p.x += p.vx * step;
+        p.y += p.vy * step;
+        p.rot += p.spin * step;
+        if (p.x < -p.size * 0.45 || p.y < viewH * 0.50) resetSmoke(p, false);
+      }
+    }
+    if (FX.fireOn && FX.fireImg) {
+      for (let i = 0; i < FX.fire.length; i++) {
+        const p = FX.fire[i];
+        p.life += step;
+        p.x += p.vx * step;
+        p.y += p.vy * step;
+        p.rot += p.spin * step;
+        if (p.life >= p.max || p.y < viewH * 0.52) resetFire(p, false);
+      }
+    }
+  }
+
+  function drawFx(sx, sy) {
+    ctx.save();
+    ctx.globalCompositeOperation = "lighter";
+    if (FX.smokeOn && FX.smokeImg && FX.smokeImg.complete) {
+      for (let i = 0; i < FX.smoke.length; i++) {
+        const p = FX.smoke[i];
+        const s = p.size * sx;
+        ctx.save();
+        ctx.translate(p.x * sx, p.y * sy);
+        ctx.rotate(p.rot);
+        ctx.globalAlpha = p.alpha;
+        ctx.drawImage(FX.smokeImg, -s * 0.5, -s * 0.5, s, s);
+        ctx.restore();
+      }
+    }
+    if (FX.fireOn && FX.fireImg && FX.fireImg.complete) {
+      for (let i = 0; i < FX.fire.length; i++) {
+        const p = FX.fire[i];
+        const fade = p.life < 0.2 ? p.life / 0.2 : (p.life > p.max * 0.75 ? (p.max - p.life) / (p.max * 0.25) : 1);
+        const s = p.size * sx;
+        ctx.save();
+        ctx.translate(p.x * sx, p.y * sy);
+        ctx.rotate(p.rot);
+        ctx.globalAlpha = p.alpha * Math.max(0, fade);
+        const img = p.hot && FX.fireHot ? FX.fireHot : FX.fireImg;
+        ctx.drawImage(img, -s * 0.5, -s * 0.5, s, s);
+        ctx.restore();
+      }
+    }
+    ctx.restore();
+  }
+
+  function loadFxImage(src) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => resolve(null);
+      img.src = src;
+    });
+  }
+
   function fitCanvas() {
     const wrap = canvas.parentElement.getBoundingClientRect();
     const pad = 8;
@@ -381,7 +608,7 @@
     canvas.height = Math.floor(cssH * dpr);
   }
 
-  function draw(world, anim, t) {
+  function draw(world, anim, t, dt) {
     const w = canvas.width;
     const h = canvas.height;
     ctx.fillStyle = "#07090d";
@@ -389,6 +616,8 @@
     const sx = w / viewW;
     const sy = h / viewH;
     const skins = defaultSkin(skeleton);
+    if (!paused && dt) stepFx(dt);
+    let drewFx = false;
     for (const slot of skeleton.slots) {
       const attName = slotAttachment(slot, anim, t);
       const att = skins[slot.name] && skins[slot.name][attName];
@@ -421,7 +650,12 @@
         ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
       }
       ctx.restore();
+      if (!drewFx && slot.name === "background") {
+        drawFx(sx, sy);
+        drewFx = true;
+      }
     }
+    if (!drewFx) drawFx(sx, sy);
     if (showBones) {
       ctx.lineWidth = 2;
       for (const bone of skeleton.bones) {
@@ -455,7 +689,7 @@
         if (meta.loop === false) time = Math.min(dur, time + dt);
         else time += dt;
       }
-      draw(poseBones(skeleton, anim, time), anim, time);
+      draw(poseBones(skeleton, anim, time), anim, time, paused ? 0 : dt);
       const label = meta.title || clip;
       const once = meta.loop === false ? " once" : "";
       setStatus(label + once + "  " + time.toFixed(2) + "s / " + dur.toFixed(2) + "s");
@@ -536,6 +770,11 @@
       lampState = null;
     }
     if (!lampState) lampState = { lamps: [] };
+    loadFxPrefs();
+    if (lampState.smoke != null) FX.smokeOn = !!lampState.smoke;
+    if (lampState.fire != null) FX.fireOn = !!lampState.fire;
+    if (lampState.smokeDensity != null) FX.density = Math.max(8, Math.min(96, Number(lampState.smokeDensity) || FX.density));
+    if (lampState.smokeSpeed != null) FX.speed = Math.max(0.25, Math.min(2.5, Number(lampState.smokeSpeed) || FX.speed));
     const meta = skeleton.skeleton;
     viewW = meta.width || viewW;
     viewH = meta.height || viewH;
@@ -546,6 +785,7 @@
     buildClipButtons(skeleton);
     buildSignButtons();
     buildLampButtons();
+    buildFxButtons();
     const names = collectAttachmentNames(skeleton);
     let done = 0;
     for (const name of names) {
@@ -553,6 +793,10 @@
       done += 1;
       loadBar.style.width = Math.round((done / names.length) * 100) + "%";
     }
+    FX.smokeImg = await loadFxImage("fx/smoke-element.png");
+    FX.fireImg = await loadFxImage("fx/fire-element.png");
+    FX.fireHot = await loadFxImage("fx/fire-hot.png");
+    initFx();
     fitCanvas();
     loadingEl.classList.add("hidden");
     setStatus("Ready");
