@@ -1,0 +1,2044 @@
+{
+  "skeleton": {
+    "hash": "western-scene2",
+    "spine": "3.8.75",
+    "x": 0,
+    "y": 0,
+    "width": 1342,
+    "height": 892,
+    "images": "C:/Users/Emex33/Documents/fire frame vfx/backgroundSPINE/spine-scene/images/",
+    "audio": ""
+  },
+  "bones": [
+    {
+      "name": "root",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "name": "bg",
+      "parent": "root",
+      "x": 671.0,
+      "y": 446.0
+    },
+    {
+      "name": "beam_anchor",
+      "parent": "root",
+      "x": 673.5,
+      "y": 801.0
+    },
+    {
+      "name": "beam",
+      "parent": "beam_anchor",
+      "x": 0.0,
+      "y": 0.0,
+      "length": 80.0
+    },
+    {
+      "name": "right_hanging_lamp",
+      "parent": "beam_anchor",
+      "x": 545.5,
+      "y": 18.0,
+      "length": 149.73
+    },
+    {
+      "name": "right_hanging_lamp_light",
+      "parent": "right_hanging_lamp",
+      "x": 0.0,
+      "y": 0.0,
+      "length": 18.0
+    },
+    {
+      "name": "left_hanging_lamp",
+      "parent": "beam_anchor",
+      "x": -544.5,
+      "y": 18.0,
+      "length": 149.73
+    },
+    {
+      "name": "left_hanging_lamp_light",
+      "parent": "left_hanging_lamp",
+      "x": 0.0,
+      "y": 0.0,
+      "length": 18.0
+    },
+    {
+      "name": "lantern_dim",
+      "parent": "root",
+      "x": 1314.0,
+      "y": 283.0,
+      "length": 36.0
+    },
+    {
+      "name": "lantern_dim_light",
+      "parent": "lantern_dim",
+      "x": 0.0,
+      "y": 0.0,
+      "length": 18.0
+    },
+    {
+      "name": "post_R",
+      "parent": "root",
+      "x": 1284.5,
+      "y": 124.0,
+      "length": 24.0
+    },
+    {
+      "name": "post_L",
+      "parent": "root",
+      "x": 54.5,
+      "y": 123.0,
+      "length": 24.0
+    },
+    {
+      "name": "rock_02",
+      "parent": "root",
+      "x": 1003.0,
+      "y": 54.0,
+      "length": 24.0
+    },
+    {
+      "name": "rock",
+      "parent": "root",
+      "x": 1023.0,
+      "y": 26.0,
+      "length": 24.0
+    },
+    {
+      "name": "rock_03",
+      "parent": "root",
+      "x": 1005.5,
+      "y": 40.0,
+      "length": 24.0
+    },
+    {
+      "name": "rocks",
+      "parent": "root",
+      "x": 436.0,
+      "y": 118.0,
+      "length": 24.0
+    },
+    {
+      "name": "shrub",
+      "parent": "root",
+      "x": 1061.0,
+      "y": 60.0,
+      "length": 24.0
+    },
+    {
+      "name": "grass_03",
+      "parent": "root",
+      "x": 964.667,
+      "y": 96.0,
+      "length": 24.0
+    },
+    {
+      "name": "grass_02",
+      "parent": "root",
+      "x": 1337.5,
+      "y": 285.0,
+      "length": 24.0
+    },
+    {
+      "name": "rocks_02",
+      "parent": "root",
+      "x": 89.0,
+      "y": 68.0,
+      "length": 24.0
+    },
+    {
+      "name": "grass",
+      "parent": "root",
+      "x": 1147.0,
+      "y": 53.0,
+      "length": 24.0
+    },
+    {
+      "name": "cowboy_hat",
+      "parent": "root",
+      "x": 1004.5,
+      "y": 42.0,
+      "length": 24.0
+    },
+    {
+      "name": "barrel",
+      "parent": "root",
+      "x": 1312.0,
+      "y": 95.0,
+      "length": 24.0
+    },
+    {
+      "name": "wagon_wheel",
+      "parent": "root",
+      "x": 185.5,
+      "y": 98.0,
+      "length": 24.0
+    },
+    {
+      "name": "tombstone",
+      "parent": "root",
+      "x": 1194.5,
+      "y": 5.0,
+      "length": 24.0
+    },
+    {
+      "name": "skull",
+      "parent": "root",
+      "x": 145.5,
+      "y": 18.0,
+      "length": 24.0
+    },
+    {
+      "name": "signpost",
+      "parent": "root",
+      "x": 113.0,
+      "y": 214.0,
+      "length": 24.0
+    },
+    {
+      "name": "MAIN_FRAME",
+      "parent": "root",
+      "x": 491.5,
+      "y": 148.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_4",
+      "parent": "root",
+      "x": 947.4,
+      "y": 659.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_5",
+      "parent": "root",
+      "x": 955.0,
+      "y": 720.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_4_copy",
+      "parent": "root",
+      "x": 802.4,
+      "y": 659.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_6",
+      "parent": "root",
+      "x": 808.903,
+      "y": 720.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_4_copy_2",
+      "parent": "root",
+      "x": 757.5,
+      "y": 163.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_7",
+      "parent": "root",
+      "x": 820.694,
+      "y": 232.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_7",
+      "parent": "root",
+      "x": 759.5,
+      "y": 242.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_8",
+      "parent": "root",
+      "x": 865.0,
+      "y": 243.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8",
+      "parent": "root",
+      "x": 356.5,
+      "y": 650.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy",
+      "parent": "root",
+      "x": 456.0,
+      "y": 732.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_2",
+      "parent": "root",
+      "x": 697.5,
+      "y": 731.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_3",
+      "parent": "root",
+      "x": 763.0,
+      "y": 734.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_4",
+      "parent": "root",
+      "x": 862.0,
+      "y": 735.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_5",
+      "parent": "root",
+      "x": 895.5,
+      "y": 733.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_5_02",
+      "parent": "root",
+      "x": 900.5,
+      "y": 594.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_9",
+      "parent": "root",
+      "x": 1002.5,
+      "y": 533.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_11",
+      "parent": "root",
+      "x": 357.0,
+      "y": 684.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_10",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 632.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_6",
+      "parent": "root",
+      "x": 998.5,
+      "y": 733.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt",
+      "parent": "root",
+      "x": 356.5,
+      "y": 787.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_26",
+      "parent": "root",
+      "x": 128.5,
+      "y": 814.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_27",
+      "parent": "root",
+      "x": 1218.5,
+      "y": 814.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_11",
+      "parent": "root",
+      "x": 356.5,
+      "y": 647.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_12",
+      "parent": "root",
+      "x": 460.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_13",
+      "parent": "root",
+      "x": 693.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_14",
+      "parent": "root",
+      "x": 757.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_15",
+      "parent": "root",
+      "x": 857.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_16",
+      "parent": "root",
+      "x": 900.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_17",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 730.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_18",
+      "parent": "root",
+      "x": 900.5,
+      "y": 594.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_19",
+      "parent": "root",
+      "x": 1002.5,
+      "y": 533.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy",
+      "parent": "root",
+      "x": 460.5,
+      "y": 789.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_2",
+      "parent": "root",
+      "x": 693.5,
+      "y": 787.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_3",
+      "parent": "root",
+      "x": 757.5,
+      "y": 789.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_4",
+      "parent": "root",
+      "x": 857.5,
+      "y": 787.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_5",
+      "parent": "root",
+      "x": 900.5,
+      "y": 787.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_10",
+      "parent": "root",
+      "x": 900.5,
+      "y": 666.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_6",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 787.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_9",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 672.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_7",
+      "parent": "root",
+      "x": 859.5,
+      "y": 303.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_22",
+      "parent": "root",
+      "x": 859.5,
+      "y": 241.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_23",
+      "parent": "root",
+      "x": 754.5,
+      "y": 241.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_8",
+      "parent": "root",
+      "x": 754.5,
+      "y": 303.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_4_copy_2_02",
+      "parent": "root",
+      "x": 909.5,
+      "y": 163.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_9",
+      "parent": "root",
+      "x": 955.5,
+      "y": 230.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_8_02",
+      "parent": "root",
+      "x": 1004.5,
+      "y": 261.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_7_02",
+      "parent": "root",
+      "x": 898.0,
+      "y": 246.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_24",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 364.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_25",
+      "parent": "root",
+      "x": 903.5,
+      "y": 303.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_20",
+      "parent": "root",
+      "x": 903.5,
+      "y": 243.0,
+      "length": 24.0
+    },
+    {
+      "name": "chain_bolt_copy_21",
+      "parent": "root",
+      "x": 1002.5,
+      "y": 241.0,
+      "length": 24.0
+    },
+    {
+      "name": "Layer_8_copy_12",
+      "parent": "root",
+      "x": 1003.5,
+      "y": 243.0,
+      "length": 24.0
+    }
+  ],
+  "slots": [
+    {
+      "name": "background",
+      "bone": "bg",
+      "attachment": "background"
+    },
+    {
+      "name": "post_R",
+      "bone": "post_R",
+      "attachment": "post_R"
+    },
+    {
+      "name": "post_L",
+      "bone": "post_L",
+      "attachment": "post_L"
+    },
+    {
+      "name": "beam",
+      "bone": "beam",
+      "attachment": "beam"
+    },
+    {
+      "name": "rock_02",
+      "bone": "rock_02",
+      "attachment": "rock_02"
+    },
+    {
+      "name": "rock",
+      "bone": "rock",
+      "attachment": "rock"
+    },
+    {
+      "name": "rock_03",
+      "bone": "rock_03",
+      "attachment": "rock_03"
+    },
+    {
+      "name": "rocks",
+      "bone": "rocks",
+      "attachment": "rocks"
+    },
+    {
+      "name": "shrub",
+      "bone": "shrub",
+      "attachment": "shrub"
+    },
+    {
+      "name": "grass_03",
+      "bone": "grass_03",
+      "attachment": "grass_03"
+    },
+    {
+      "name": "grass_02",
+      "bone": "grass_02",
+      "attachment": "grass_02"
+    },
+    {
+      "name": "rocks_02",
+      "bone": "rocks_02",
+      "attachment": "rocks_02"
+    },
+    {
+      "name": "grass",
+      "bone": "grass",
+      "attachment": "grass"
+    },
+    {
+      "name": "cowboy_hat",
+      "bone": "cowboy_hat",
+      "attachment": "cowboy_hat"
+    },
+    {
+      "name": "barrel",
+      "bone": "barrel",
+      "attachment": "barrel"
+    },
+    {
+      "name": "lantern_dim",
+      "bone": "lantern_dim",
+      "attachment": "lantern_dim"
+    },
+    {
+      "name": "lantern_dim_light",
+      "bone": "lantern_dim_light",
+      "attachment": "lantern_dim_light",
+      "blend": "additive",
+      "color": "ffffffee"
+    },
+    {
+      "name": "wagon_wheel",
+      "bone": "wagon_wheel",
+      "attachment": "wagon_wheel"
+    },
+    {
+      "name": "tombstone",
+      "bone": "tombstone",
+      "attachment": "tombstone"
+    },
+    {
+      "name": "skull",
+      "bone": "skull",
+      "attachment": "skull"
+    },
+    {
+      "name": "signpost",
+      "bone": "signpost",
+      "attachment": "signpost"
+    },
+    {
+      "name": "sign_highlight",
+      "bone": "signpost",
+      "attachment": "sign_highlight"
+    },
+    {
+      "name": "sign_tell_no_tales",
+      "bone": "signpost",
+      "attachment": "sign_tell_no_tales"
+    },
+    {
+      "name": "sign_dead_men",
+      "bone": "signpost",
+      "attachment": "sign_dead_men"
+    },
+    {
+      "name": "sign_beware_2",
+      "bone": "signpost",
+      "attachment": "sign_beware_2"
+    },
+    {
+      "name": "sign_beware_1",
+      "bone": "signpost",
+      "attachment": "sign_beware_1"
+    },
+    {
+      "name": "right_hanging_lamp",
+      "bone": "right_hanging_lamp",
+      "attachment": "right_hanging_lamp"
+    },
+    {
+      "name": "right_hanging_lamp_light",
+      "bone": "right_hanging_lamp_light",
+      "attachment": "right_hanging_lamp_light",
+      "blend": "additive",
+      "color": "ffffffee"
+    },
+    {
+      "name": "left_hanging_lamp",
+      "bone": "left_hanging_lamp",
+      "attachment": "left_hanging_lamp"
+    },
+    {
+      "name": "left_hanging_lamp_light",
+      "bone": "left_hanging_lamp_light",
+      "attachment": "left_hanging_lamp_light",
+      "blend": "additive",
+      "color": "ffffffee"
+    },
+    {
+      "name": "MAIN_FRAME",
+      "bone": "MAIN_FRAME",
+      "attachment": "MAIN_FRAME"
+    },
+    {
+      "name": "Layer_4",
+      "bone": "Layer_4",
+      "attachment": "Layer_4"
+    },
+    {
+      "name": "Layer_5",
+      "bone": "Layer_5",
+      "attachment": "Layer_5"
+    },
+    {
+      "name": "Layer_4_copy",
+      "bone": "Layer_4_copy",
+      "attachment": "Layer_4_copy"
+    },
+    {
+      "name": "Layer_6",
+      "bone": "Layer_6",
+      "attachment": "Layer_6"
+    },
+    {
+      "name": "Layer_4_copy_2",
+      "bone": "Layer_4_copy_2",
+      "attachment": "Layer_4_copy_2"
+    },
+    {
+      "name": "Layer_7",
+      "bone": "Layer_7",
+      "attachment": "Layer_7"
+    },
+    {
+      "name": "Layer_8_copy_7",
+      "bone": "Layer_8_copy_7",
+      "attachment": "Layer_8_copy_7"
+    },
+    {
+      "name": "Layer_8_copy_8",
+      "bone": "Layer_8_copy_8",
+      "attachment": "Layer_8_copy_8"
+    },
+    {
+      "name": "Layer_8",
+      "bone": "Layer_8",
+      "attachment": "Layer_8"
+    },
+    {
+      "name": "Layer_8_copy",
+      "bone": "Layer_8_copy",
+      "attachment": "Layer_8_copy"
+    },
+    {
+      "name": "Layer_8_copy_2",
+      "bone": "Layer_8_copy_2",
+      "attachment": "Layer_8_copy_2"
+    },
+    {
+      "name": "Layer_8_copy_3",
+      "bone": "Layer_8_copy_3",
+      "attachment": "Layer_8_copy_3"
+    },
+    {
+      "name": "Layer_8_copy_4",
+      "bone": "Layer_8_copy_4",
+      "attachment": "Layer_8_copy_4"
+    },
+    {
+      "name": "Layer_8_copy_5",
+      "bone": "Layer_8_copy_5",
+      "attachment": "Layer_8_copy_5"
+    },
+    {
+      "name": "Layer_8_copy_5_02",
+      "bone": "Layer_8_copy_5_02",
+      "attachment": "Layer_8_copy_5_02"
+    },
+    {
+      "name": "Layer_8_copy_9",
+      "bone": "Layer_8_copy_9",
+      "attachment": "Layer_8_copy_9"
+    },
+    {
+      "name": "Layer_8_copy_11",
+      "bone": "Layer_8_copy_11",
+      "attachment": "Layer_8_copy_11"
+    },
+    {
+      "name": "Layer_8_copy_10",
+      "bone": "Layer_8_copy_10",
+      "attachment": "Layer_8_copy_10"
+    },
+    {
+      "name": "Layer_8_copy_6",
+      "bone": "Layer_8_copy_6",
+      "attachment": "Layer_8_copy_6"
+    },
+    {
+      "name": "chain_bolt",
+      "bone": "chain_bolt",
+      "attachment": "chain_bolt"
+    },
+    {
+      "name": "chain_bolt_copy_26",
+      "bone": "chain_bolt_copy_26",
+      "attachment": "chain_bolt_copy_26"
+    },
+    {
+      "name": "chain_bolt_copy_27",
+      "bone": "chain_bolt_copy_27",
+      "attachment": "chain_bolt_copy_27"
+    },
+    {
+      "name": "chain_bolt_copy_11",
+      "bone": "chain_bolt_copy_11",
+      "attachment": "chain_bolt_copy_11"
+    },
+    {
+      "name": "chain_bolt_copy_12",
+      "bone": "chain_bolt_copy_12",
+      "attachment": "chain_bolt_copy_12"
+    },
+    {
+      "name": "chain_bolt_copy_13",
+      "bone": "chain_bolt_copy_13",
+      "attachment": "chain_bolt_copy_13"
+    },
+    {
+      "name": "chain_bolt_copy_14",
+      "bone": "chain_bolt_copy_14",
+      "attachment": "chain_bolt_copy_14"
+    },
+    {
+      "name": "chain_bolt_copy_15",
+      "bone": "chain_bolt_copy_15",
+      "attachment": "chain_bolt_copy_15"
+    },
+    {
+      "name": "chain_bolt_copy_16",
+      "bone": "chain_bolt_copy_16",
+      "attachment": "chain_bolt_copy_16"
+    },
+    {
+      "name": "chain_bolt_copy_17",
+      "bone": "chain_bolt_copy_17",
+      "attachment": "chain_bolt_copy_17"
+    },
+    {
+      "name": "chain_bolt_copy_18",
+      "bone": "chain_bolt_copy_18",
+      "attachment": "chain_bolt_copy_18"
+    },
+    {
+      "name": "chain_bolt_copy_19",
+      "bone": "chain_bolt_copy_19",
+      "attachment": "chain_bolt_copy_19"
+    },
+    {
+      "name": "chain_bolt_copy",
+      "bone": "chain_bolt_copy",
+      "attachment": "chain_bolt_copy"
+    },
+    {
+      "name": "chain_bolt_copy_2",
+      "bone": "chain_bolt_copy_2",
+      "attachment": "chain_bolt_copy_2"
+    },
+    {
+      "name": "chain_bolt_copy_3",
+      "bone": "chain_bolt_copy_3",
+      "attachment": "chain_bolt_copy_3"
+    },
+    {
+      "name": "chain_bolt_copy_4",
+      "bone": "chain_bolt_copy_4",
+      "attachment": "chain_bolt_copy_4"
+    },
+    {
+      "name": "chain_bolt_copy_5",
+      "bone": "chain_bolt_copy_5",
+      "attachment": "chain_bolt_copy_5"
+    },
+    {
+      "name": "chain_bolt_copy_10",
+      "bone": "chain_bolt_copy_10",
+      "attachment": "chain_bolt_copy_10"
+    },
+    {
+      "name": "chain_bolt_copy_6",
+      "bone": "chain_bolt_copy_6",
+      "attachment": "chain_bolt_copy_6"
+    },
+    {
+      "name": "chain_bolt_copy_9",
+      "bone": "chain_bolt_copy_9",
+      "attachment": "chain_bolt_copy_9"
+    },
+    {
+      "name": "chain_bolt_copy_7",
+      "bone": "chain_bolt_copy_7",
+      "attachment": "chain_bolt_copy_7"
+    },
+    {
+      "name": "chain_bolt_copy_22",
+      "bone": "chain_bolt_copy_22",
+      "attachment": "chain_bolt_copy_22"
+    },
+    {
+      "name": "chain_bolt_copy_23",
+      "bone": "chain_bolt_copy_23",
+      "attachment": "chain_bolt_copy_23"
+    },
+    {
+      "name": "chain_bolt_copy_8",
+      "bone": "chain_bolt_copy_8",
+      "attachment": "chain_bolt_copy_8"
+    },
+    {
+      "name": "Layer_4_copy_2_02",
+      "bone": "Layer_4_copy_2_02",
+      "attachment": "Layer_4_copy_2_02"
+    },
+    {
+      "name": "Layer_9",
+      "bone": "Layer_9",
+      "attachment": "Layer_9"
+    },
+    {
+      "name": "Layer_8_copy_8_02",
+      "bone": "Layer_8_copy_8_02",
+      "attachment": "Layer_8_copy_8_02"
+    },
+    {
+      "name": "Layer_8_copy_7_02",
+      "bone": "Layer_8_copy_7_02",
+      "attachment": "Layer_8_copy_7_02"
+    },
+    {
+      "name": "chain_bolt_copy_24",
+      "bone": "chain_bolt_copy_24",
+      "attachment": "chain_bolt_copy_24"
+    },
+    {
+      "name": "chain_bolt_copy_25",
+      "bone": "chain_bolt_copy_25",
+      "attachment": "chain_bolt_copy_25"
+    },
+    {
+      "name": "chain_bolt_copy_20",
+      "bone": "chain_bolt_copy_20",
+      "attachment": "chain_bolt_copy_20"
+    },
+    {
+      "name": "chain_bolt_copy_21",
+      "bone": "chain_bolt_copy_21",
+      "attachment": "chain_bolt_copy_21"
+    },
+    {
+      "name": "Layer_8_copy_12",
+      "bone": "Layer_8_copy_12",
+      "attachment": "Layer_8_copy_12"
+    }
+  ],
+  "skins": {
+    "default": {
+      "background": {
+        "background": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1342,
+          "height": 892
+        }
+      },
+      "post_R": {
+        "post_R": {
+          "x": -9.0,
+          "y": 364.0,
+          "width": 133,
+          "height": 730
+        }
+      },
+      "post_L": {
+        "post_L": {
+          "x": 11.0,
+          "y": 364.0,
+          "width": 131,
+          "height": 730
+        }
+      },
+      "beam": {
+        "beam": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1311,
+          "height": 76
+        }
+      },
+      "rock_02": {
+        "rock_02": {
+          "x": 5.0,
+          "y": 13.0,
+          "width": 42,
+          "height": 28
+        }
+      },
+      "rock": {
+        "rock": {
+          "x": 2.0,
+          "y": 6.5,
+          "width": 26,
+          "height": 15
+        }
+      },
+      "rock_03": {
+        "rock_03": {
+          "x": 19.5,
+          "y": 11.5,
+          "width": 64,
+          "height": 27
+        }
+      },
+      "rocks": {
+        "rocks": {
+          "x": 14.5,
+          "y": 22.0,
+          "width": 137,
+          "height": 46
+        }
+      },
+      "shrub": {
+        "shrub": {
+          "x": 4.0,
+          "y": 29.5,
+          "width": 68,
+          "height": 63
+        }
+      },
+      "grass_03": {
+        "grass_03": {
+          "x": -51.167,
+          "y": 60.0,
+          "width": 185,
+          "height": 122
+        }
+      },
+      "grass_02": {
+        "grass_02": {
+          "x": -8.5,
+          "y": 17.5,
+          "width": 26,
+          "height": 39
+        }
+      },
+      "rocks_02": {
+        "rocks_02": {
+          "x": 19.5,
+          "y": 31.0,
+          "width": 103,
+          "height": 64
+        }
+      },
+      "grass": {
+        "grass": {
+          "x": 0.0,
+          "y": 23.5,
+          "width": 42,
+          "height": 53
+        }
+      },
+      "cowboy_hat": {
+        "cowboy_hat": {
+          "x": 35.5,
+          "y": 51.0,
+          "width": 170,
+          "height": 104
+        }
+      },
+      "barrel": {
+        "barrel": {
+          "x": -25.0,
+          "y": 103.5,
+          "width": 110,
+          "height": 209
+        }
+      },
+      "lantern_dim": {
+        "lantern_dim": {
+          "x": -1.5,
+          "y": 74.5,
+          "width": 59,
+          "height": 151
+        }
+      },
+      "lantern_dim_light": {
+        "lantern_dim_light": {
+          "x": 1.22,
+          "y": 54.56,
+          "width": 420,
+          "height": 420
+        }
+      },
+      "wagon_wheel": {
+        "wagon_wheel": {
+          "x": -1.5,
+          "y": 104.0,
+          "width": 202,
+          "height": 210
+        }
+      },
+      "tombstone": {
+        "tombstone": {
+          "x": -25.5,
+          "y": 137.0,
+          "width": 256,
+          "height": 278
+        }
+      },
+      "skull": {
+        "skull": {
+          "x": -41.0,
+          "y": 99.5,
+          "width": 201,
+          "height": 201
+        }
+      },
+      "signpost": {
+        "signpost": {
+          "x": -1.5,
+          "y": 143.5,
+          "width": 187,
+          "height": 289
+        }
+      },
+      "sign_highlight": {
+        "sign_highlight": {
+          "x": 39.5,
+          "y": 86.0,
+          "width": 305,
+          "height": 600
+        }
+      },
+      "sign_tell_no_tales": {
+        "sign_tell_no_tales": {
+          "x": 3.5,
+          "y": 29.0,
+          "width": 139,
+          "height": 44
+        }
+      },
+      "sign_dead_men": {
+        "sign_dead_men": {
+          "x": 5.5,
+          "y": 94.0,
+          "width": 139,
+          "height": 54
+        }
+      },
+      "sign_beware_2": {
+        "sign_beware_2": {
+          "x": 1.0,
+          "y": 156.0,
+          "width": 118,
+          "height": 48
+        }
+      },
+      "sign_beware_1": {
+        "sign_beware_1": {
+          "x": -6.0,
+          "y": 227.0,
+          "width": 120,
+          "height": 54
+        }
+      },
+      "right_hanging_lamp": {
+        "right_hanging_lamp": {
+          "x": 0.0,
+          "y": -116.0,
+          "width": 62,
+          "height": 232
+        }
+      },
+      "right_hanging_lamp_light": {
+        "right_hanging_lamp_light": {
+          "x": 0.0,
+          "y": -116.0,
+          "width": 62,
+          "height": 232
+        }
+      },
+      "left_hanging_lamp": {
+        "left_hanging_lamp": {
+          "x": 0.0,
+          "y": -116.0,
+          "width": 62,
+          "height": 232
+        }
+      },
+      "left_hanging_lamp_light": {
+        "left_hanging_lamp_light": {
+          "x": 0.0,
+          "y": -116.0,
+          "width": 62,
+          "height": 232
+        }
+      },
+      "MAIN_FRAME": {
+        "MAIN_FRAME": {
+          "x": 181.0,
+          "y": 302.0,
+          "width": 725,
+          "height": 612
+        }
+      },
+      "Layer_4": {
+        "Layer_4": {
+          "x": 8.1,
+          "y": 40.0,
+          "width": 149,
+          "height": 84
+        }
+      },
+      "Layer_5": {
+        "Layer_5": {
+          "x": -1.5,
+          "y": 14.0,
+          "width": 143,
+          "height": 32
+        }
+      },
+      "Layer_4_copy": {
+        "Layer_4_copy": {
+          "x": 8.1,
+          "y": 40.0,
+          "width": 149,
+          "height": 84
+        }
+      },
+      "Layer_6": {
+        "Layer_6": {
+          "x": -1.403,
+          "y": 14.5,
+          "width": 145,
+          "height": 31
+        }
+      },
+      "Layer_4_copy_2": {
+        "Layer_4_copy_2": {
+          "x": 53.0,
+          "y": 40.5,
+          "width": 149,
+          "height": 83
+        }
+      },
+      "Layer_7": {
+        "Layer_7": {
+          "x": -14.194,
+          "y": 13.5,
+          "width": 145,
+          "height": 29
+        }
+      },
+      "Layer_8_copy_7": {
+        "Layer_8_copy_7": {
+          "x": -4.5,
+          "y": 36.0,
+          "width": 16,
+          "height": 74
+        }
+      },
+      "Layer_8_copy_8": {
+        "Layer_8_copy_8": {
+          "x": -5.0,
+          "y": 35.5,
+          "width": 16,
+          "height": 73
+        }
+      },
+      "Layer_8": {
+        "Layer_8": {
+          "x": 0.5,
+          "y": 23.5,
+          "width": 14,
+          "height": 51
+        }
+      },
+      "Layer_8_copy": {
+        "Layer_8_copy": {
+          "x": 5.0,
+          "y": 33.5,
+          "width": 16,
+          "height": 71
+        }
+      },
+      "Layer_8_copy_2": {
+        "Layer_8_copy_2": {
+          "x": -3.5,
+          "y": 33.5,
+          "width": 16,
+          "height": 69
+        }
+      },
+      "Layer_8_copy_3": {
+        "Layer_8_copy_3": {
+          "x": -5.0,
+          "y": 33.0,
+          "width": 16,
+          "height": 68
+        }
+      },
+      "Layer_8_copy_4": {
+        "Layer_8_copy_4": {
+          "x": -4.0,
+          "y": 31.5,
+          "width": 16,
+          "height": 65
+        }
+      },
+      "Layer_8_copy_5": {
+        "Layer_8_copy_5": {
+          "x": 5.5,
+          "y": 32.5,
+          "width": 16,
+          "height": 67
+        }
+      },
+      "Layer_8_copy_5_02": {
+        "Layer_8_copy_5_02": {
+          "x": 0.5,
+          "y": 41.5,
+          "width": 16,
+          "height": 85
+        }
+      },
+      "Layer_8_copy_9": {
+        "Layer_8_copy_9": {
+          "x": 0.5,
+          "y": 57.5,
+          "width": 16,
+          "height": 117
+        }
+      },
+      "Layer_8_copy_11": {
+        "Layer_8_copy_11": {
+          "x": 0.0,
+          "y": 56.5,
+          "width": 16,
+          "height": 117
+        }
+      },
+      "Layer_8_copy_10": {
+        "Layer_8_copy_10": {
+          "x": -0.5,
+          "y": 22.0,
+          "width": 14,
+          "height": 46
+        }
+      },
+      "Layer_8_copy_6": {
+        "Layer_8_copy_6": {
+          "x": 5.5,
+          "y": 32.5,
+          "width": 16,
+          "height": 67
+        }
+      },
+      "chain_bolt": {
+        "chain_bolt": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_26": {
+        "chain_bolt_copy_26": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_27": {
+        "chain_bolt_copy_27": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_11": {
+        "chain_bolt_copy_11": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_12": {
+        "chain_bolt_copy_12": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_13": {
+        "chain_bolt_copy_13": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_14": {
+        "chain_bolt_copy_14": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_15": {
+        "chain_bolt_copy_15": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_16": {
+        "chain_bolt_copy_16": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_17": {
+        "chain_bolt_copy_17": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_18": {
+        "chain_bolt_copy_18": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_19": {
+        "chain_bolt_copy_19": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy": {
+        "chain_bolt_copy": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_2": {
+        "chain_bolt_copy_2": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_3": {
+        "chain_bolt_copy_3": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_4": {
+        "chain_bolt_copy_4": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_5": {
+        "chain_bolt_copy_5": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_10": {
+        "chain_bolt_copy_10": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_6": {
+        "chain_bolt_copy_6": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_9": {
+        "chain_bolt_copy_9": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_7": {
+        "chain_bolt_copy_7": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_22": {
+        "chain_bolt_copy_22": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_23": {
+        "chain_bolt_copy_23": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_8": {
+        "chain_bolt_copy_8": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "Layer_4_copy_2_02": {
+        "Layer_4_copy_2_02": {
+          "x": 53.0,
+          "y": 40.5,
+          "width": 149,
+          "height": 83
+        }
+      },
+      "Layer_9": {
+        "Layer_9": {
+          "x": 1.0,
+          "y": 15.5,
+          "width": 137,
+          "height": 33
+        }
+      },
+      "Layer_8_copy_8_02": {
+        "Layer_8_copy_8_02": {
+          "x": -0.5,
+          "y": 57.5,
+          "width": 16,
+          "height": 117
+        }
+      },
+      "Layer_8_copy_7_02": {
+        "Layer_8_copy_7_02": {
+          "x": 6.0,
+          "y": 34.0,
+          "width": 16,
+          "height": 70
+        }
+      },
+      "chain_bolt_copy_24": {
+        "chain_bolt_copy_24": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_25": {
+        "chain_bolt_copy_25": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_20": {
+        "chain_bolt_copy_20": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "chain_bolt_copy_21": {
+        "chain_bolt_copy_21": {
+          "x": 0.5,
+          "y": 4.5,
+          "width": 10,
+          "height": 11
+        }
+      },
+      "Layer_8_copy_12": {
+        "Layer_8_copy_12": {
+          "x": 0.5,
+          "y": 17.5,
+          "width": 14,
+          "height": 37
+        }
+      }
+    }
+  },
+  "animations": {
+    "idle": {
+      "bones": {
+        "right_hanging_lamp": {
+          "rotate": [
+            {
+              "angle": 6.5,
+              "curve": 0.42,
+              "c2": 0.0,
+              "c3": 1.0,
+              "c4": 1.0
+            },
+            {
+              "time": 1.3017,
+              "angle": 0.0,
+              "curve": 0.0,
+              "c2": 0.0,
+              "c3": 0.58,
+              "c4": 1.0
+            },
+            {
+              "time": 2.6033,
+              "angle": -6.5,
+              "curve": 0.42,
+              "c2": 0.0,
+              "c3": 1.0,
+              "c4": 1.0
+            },
+            {
+              "time": 3.905,
+              "angle": 0.0,
+              "curve": 0.0,
+              "c2": 0.0,
+              "c3": 0.58,
+              "c4": 1.0
+            },
+            {
+              "time": 5.2067,
+              "angle": 6.5
+            }
+          ]
+        },
+        "left_hanging_lamp": {
+          "rotate": [
+            {
+              "angle": -8.0,
+              "curve": 0.42,
+              "c2": 0.0,
+              "c3": 1.0,
+              "c4": 1.0
+            },
+            {
+              "time": 1.3147,
+              "angle": 0.0,
+              "curve": 0.0,
+              "c2": 0.0,
+              "c3": 0.58,
+              "c4": 1.0
+            },
+            {
+              "time": 2.6294,
+              "angle": 8.0,
+              "curve": 0.42,
+              "c2": 0.0,
+              "c3": 1.0,
+              "c4": 1.0
+            },
+            {
+              "time": 3.9441,
+              "angle": 0.0,
+              "curve": 0.0,
+              "c2": 0.0,
+              "c3": 0.58,
+              "c4": 1.0
+            },
+            {
+              "time": 5.2588,
+              "angle": -8.0
+            }
+          ]
+        }
+      },
+      "slots": {
+        "right_hanging_lamp_light": {
+          "color": [
+            {
+              "color": "ffffffd9",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.4163,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.7888,
+              "color": "ffffff94",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.2051,
+              "color": "fffffff0",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.6215,
+              "color": "ffffffb2",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.1364,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.4979,
+              "color": "ffffff8c",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.9581,
+              "color": "ffffffeb",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 3.4511,
+              "color": "ffffffad",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 3.966,
+              "color": "fffffffa",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.4919,
+              "color": "ffffff9e",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.9082,
+              "color": "ffffffe6",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 5.2588,
+              "color": "ffffffd9"
+            }
+          ]
+        },
+        "left_hanging_lamp_light": {
+          "color": [
+            {
+              "color": "ffffffb8",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.3068,
+              "color": "fffffff2",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.6793,
+              "color": "ffffff99",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.1504,
+              "color": "ffffffe0",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.5338,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.9501,
+              "color": "ffffffa3",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.4651,
+              "color": "ffffffe6",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.9362,
+              "color": "ffffff8c",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 3.3963,
+              "color": "ffffffdb",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 3.8893,
+              "color": "fffffffa",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.3823,
+              "color": "ffffffb2",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.8425,
+              "color": "ffffffcc",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 5.2588,
+              "color": "ffffffb8"
+            }
+          ]
+        },
+        "lantern_dim_light": {
+          "color": [
+            {
+              "color": "ffffffe6",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.4163,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 0.8984,
+              "color": "ffffffdb",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.4023,
+              "color": "fffffffa",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 1.9063,
+              "color": "ffffffe0",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.4322,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 2.9581,
+              "color": "ffffffde",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 3.5059,
+              "color": "fffffff5",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.0756,
+              "color": "ffffffe6",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 4.6015,
+              "color": "ffffffff",
+              "curve": 0.33,
+              "c2": 0.0,
+              "c3": 0.67,
+              "c4": 1.0
+            },
+            {
+              "time": 5.2588,
+              "color": "ffffffe6"
+            }
+          ]
+        }
+      }
+    },
+    "still": {
+      "bones": {},
+      "slots": {}
+    }
+  }
+}

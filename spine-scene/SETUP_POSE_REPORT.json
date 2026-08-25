@@ -1,0 +1,3426 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "id": "spine_version",
+      "ok": true,
+      "got": "3.8.75"
+    },
+    {
+      "id": "canvas",
+      "ok": true,
+      "got": [
+        1342,
+        892
+      ]
+    },
+    {
+      "id": "images_abs",
+      "ok": true,
+      "got": "C:/Users/Emex33/Documents/fire frame vfx/backgroundSPINE/spine-scene/images/"
+    },
+    {
+      "id": "setup_rot:right_hanging_lamp",
+      "ok": true,
+      "rotation": 0.0
+    },
+    {
+      "id": "parent:right_hanging_lamp",
+      "ok": true,
+      "parent": "beam_anchor"
+    },
+    {
+      "id": "hang_down:right_hanging_lamp",
+      "ok": true,
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    },
+    {
+      "id": "chain_center:right_hanging_lamp",
+      "ok": true,
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    },
+    {
+      "id": "setup_rot:left_hanging_lamp",
+      "ok": true,
+      "rotation": 0.0
+    },
+    {
+      "id": "parent:left_hanging_lamp",
+      "ok": true,
+      "parent": "beam_anchor"
+    },
+    {
+      "id": "hang_down:left_hanging_lamp",
+      "ok": true,
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    },
+    {
+      "id": "chain_center:left_hanging_lamp",
+      "ok": true,
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    },
+    {
+      "id": "idle_loop:right_hanging_lamp",
+      "ok": true,
+      "first": 6.5,
+      "last": 6.5
+    },
+    {
+      "id": "idle_loop:left_hanging_lamp",
+      "ok": true,
+      "first": -8.0,
+      "last": -8.0
+    },
+    {
+      "id": "pendulum_async",
+      "ok": true,
+      "periods": [
+        5.2067,
+        5.2588
+      ]
+    },
+    {
+      "id": "no_trailing_hold",
+      "ok": true,
+      "max_key": 5.2588,
+      "duration": 5.2588
+    },
+    {
+      "id": "blend:right_hanging_lamp_light",
+      "ok": true
+    },
+    {
+      "id": "blend:left_hanging_lamp_light",
+      "ok": true
+    },
+    {
+      "id": "blend:lantern_dim_light",
+      "ok": true
+    },
+    {
+      "id": "background_behind",
+      "ok": true,
+      "first": "background"
+    },
+    {
+      "id": "no_ground_mist",
+      "ok": true
+    },
+    {
+      "id": "no_ground_fire",
+      "ok": true
+    },
+    {
+      "id": "signpost_left",
+      "ok": true,
+      "box": [
+        18.0,
+        390.0,
+        187.0,
+        289.0
+      ]
+    },
+    {
+      "id": "barrel_right",
+      "ok": true,
+      "box": [
+        1232.0,
+        589.0,
+        110.0,
+        209.0
+      ]
+    },
+    {
+      "id": "beam_spans_posts",
+      "ok": true,
+      "beam": [
+        18.0,
+        53.0,
+        1311.0,
+        76.0
+      ]
+    }
+  ],
+  "tol_px": 1.5,
+  "source_psd": "C:\\Users\\Emex33\\Documents\\fire frame vfx\\backgroundSPINE\\western_scene2.psd",
+  "source_open": "western_scene2.psd",
+  "method": "photoshop_bounds",
+  "canvas": {
+    "w": 1342,
+    "h": 892
+  },
+  "bones": [
+    "root",
+    "bg",
+    "beam_anchor",
+    "beam",
+    "right_hanging_lamp",
+    "right_hanging_lamp_light",
+    "left_hanging_lamp",
+    "left_hanging_lamp_light",
+    "lantern_dim",
+    "lantern_dim_light",
+    "post_R",
+    "post_L",
+    "rock_02",
+    "rock",
+    "rock_03",
+    "rocks",
+    "shrub",
+    "grass_03",
+    "grass_02",
+    "rocks_02",
+    "grass",
+    "cowboy_hat",
+    "barrel",
+    "wagon_wheel",
+    "tombstone",
+    "skull",
+    "signpost",
+    "MAIN_FRAME",
+    "Layer_4",
+    "Layer_5",
+    "Layer_4_copy",
+    "Layer_6",
+    "Layer_4_copy_2",
+    "Layer_7",
+    "Layer_8_copy_7",
+    "Layer_8_copy_8",
+    "Layer_8",
+    "Layer_8_copy",
+    "Layer_8_copy_2",
+    "Layer_8_copy_3",
+    "Layer_8_copy_4",
+    "Layer_8_copy_5",
+    "Layer_8_copy_5_02",
+    "Layer_8_copy_9",
+    "Layer_8_copy_11",
+    "Layer_8_copy_10",
+    "Layer_8_copy_6",
+    "chain_bolt",
+    "chain_bolt_copy_26",
+    "chain_bolt_copy_27",
+    "chain_bolt_copy_11",
+    "chain_bolt_copy_12",
+    "chain_bolt_copy_13",
+    "chain_bolt_copy_14",
+    "chain_bolt_copy_15",
+    "chain_bolt_copy_16",
+    "chain_bolt_copy_17",
+    "chain_bolt_copy_18",
+    "chain_bolt_copy_19",
+    "chain_bolt_copy",
+    "chain_bolt_copy_2",
+    "chain_bolt_copy_3",
+    "chain_bolt_copy_4",
+    "chain_bolt_copy_5",
+    "chain_bolt_copy_10",
+    "chain_bolt_copy_6",
+    "chain_bolt_copy_9",
+    "chain_bolt_copy_7",
+    "chain_bolt_copy_22",
+    "chain_bolt_copy_23",
+    "chain_bolt_copy_8",
+    "Layer_4_copy_2_02",
+    "Layer_9",
+    "Layer_8_copy_8_02",
+    "Layer_8_copy_7_02",
+    "chain_bolt_copy_24",
+    "chain_bolt_copy_25",
+    "chain_bolt_copy_20",
+    "chain_bolt_copy_21",
+    "Layer_8_copy_12"
+  ],
+  "slots": [
+    "background",
+    "post_R",
+    "post_L",
+    "beam",
+    "rock_02",
+    "rock",
+    "rock_03",
+    "rocks",
+    "shrub",
+    "grass_03",
+    "grass_02",
+    "rocks_02",
+    "grass",
+    "cowboy_hat",
+    "barrel",
+    "lantern_dim",
+    "lantern_dim_light",
+    "wagon_wheel",
+    "tombstone",
+    "skull",
+    "signpost",
+    "sign_highlight",
+    "sign_tell_no_tales",
+    "sign_dead_men",
+    "sign_beware_2",
+    "sign_beware_1",
+    "right_hanging_lamp",
+    "right_hanging_lamp_light",
+    "left_hanging_lamp",
+    "left_hanging_lamp_light",
+    "MAIN_FRAME",
+    "Layer_4",
+    "Layer_5",
+    "Layer_4_copy",
+    "Layer_6",
+    "Layer_4_copy_2",
+    "Layer_7",
+    "Layer_8_copy_7",
+    "Layer_8_copy_8",
+    "Layer_8",
+    "Layer_8_copy",
+    "Layer_8_copy_2",
+    "Layer_8_copy_3",
+    "Layer_8_copy_4",
+    "Layer_8_copy_5",
+    "Layer_8_copy_5_02",
+    "Layer_8_copy_9",
+    "Layer_8_copy_11",
+    "Layer_8_copy_10",
+    "Layer_8_copy_6",
+    "chain_bolt",
+    "chain_bolt_copy_26",
+    "chain_bolt_copy_27",
+    "chain_bolt_copy_11",
+    "chain_bolt_copy_12",
+    "chain_bolt_copy_13",
+    "chain_bolt_copy_14",
+    "chain_bolt_copy_15",
+    "chain_bolt_copy_16",
+    "chain_bolt_copy_17",
+    "chain_bolt_copy_18",
+    "chain_bolt_copy_19",
+    "chain_bolt_copy",
+    "chain_bolt_copy_2",
+    "chain_bolt_copy_3",
+    "chain_bolt_copy_4",
+    "chain_bolt_copy_5",
+    "chain_bolt_copy_10",
+    "chain_bolt_copy_6",
+    "chain_bolt_copy_9",
+    "chain_bolt_copy_7",
+    "chain_bolt_copy_22",
+    "chain_bolt_copy_23",
+    "chain_bolt_copy_8",
+    "Layer_4_copy_2_02",
+    "Layer_9",
+    "Layer_8_copy_8_02",
+    "Layer_8_copy_7_02",
+    "chain_bolt_copy_24",
+    "chain_bolt_copy_25",
+    "chain_bolt_copy_20",
+    "chain_bolt_copy_21",
+    "Layer_8_copy_12"
+  ],
+  "clips": {
+    "idle": {
+      "duration": 5.2588,
+      "loop": true,
+      "use": "pendulum + flicker"
+    },
+    "still": {
+      "duration": 0.0,
+      "loop": true,
+      "use": "A/B posed scene"
+    }
+  },
+  "moved_layers": [
+    {
+      "name": "post_R",
+      "from": [
+        -54.0,
+        40.0
+      ],
+      "to": [
+        1209.0,
+        39.0
+      ],
+      "delta": [
+        1263.0,
+        -1.0
+      ],
+      "pixels": 1263.0,
+      "size_delta": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "chains winFrame",
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        734.0,
+        577.0
+      ],
+      "delta": [
+        734.0,
+        577.0
+      ],
+      "pixels": 933.6,
+      "size_delta": [
+        152.0,
+        153.0
+      ]
+    },
+    {
+      "name": "win frame",
+      "from": [
+        0.0,
+        0.0
+      ],
+      "to": [
+        734.0,
+        577.0
+      ],
+      "delta": [
+        734.0,
+        577.0
+      ],
+      "pixels": 933.6,
+      "size_delta": [
+        152.0,
+        153.0
+      ]
+    },
+    {
+      "name": "chain bolts",
+      "from": [
+        352.0,
+        93.0
+      ],
+      "to": [
+        124.0,
+        68.0
+      ],
+      "delta": [
+        -228.0,
+        -25.0
+      ],
+      "pixels": 229.4,
+      "size_delta": [
+        443.0,
+        25.0
+      ]
+    },
+    {
+      "name": "chains upframe",
+      "from": [
+        349.0,
+        91.0
+      ],
+      "to": [
+        124.0,
+        68.0
+      ],
+      "delta": [
+        -225.0,
+        -23.0
+      ],
+      "pixels": 226.2,
+      "size_delta": [
+        437.0,
+        23.0
+      ]
+    },
+    {
+      "name": "Layer 8 copy 8",
+      "from": [
+        996.0,
+        515.0
+      ],
+      "to": [
+        852.0,
+        577.0
+      ],
+      "delta": [
+        -144.0,
+        62.0
+      ],
+      "pixels": 156.8,
+      "size_delta": [
+        0.0,
+        -43.0
+      ]
+    },
+    {
+      "name": "Layer 4 copy 2",
+      "from": [
+        887.0,
+        647.0
+      ],
+      "to": [
+        735.0,
+        647.0
+      ],
+      "delta": [
+        -152.0,
+        0.0
+      ],
+      "pixels": 152.0,
+      "size_delta": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Layer 8 copy 7",
+      "from": [
+        896.0,
+        577.0
+      ],
+      "to": [
+        747.0,
+        577.0
+      ],
+      "delta": [
+        -149.0,
+        0.0
+      ],
+      "pixels": 149.0,
+      "size_delta": [
+        0.0,
+        3.0
+      ]
+    },
+    {
+      "name": "Layer 8 copy 5",
+      "from": [
+        893.0,
+        213.0
+      ],
+      "to": [
+        893.0,
+        93.0
+      ],
+      "delta": [
+        0.0,
+        -120.0
+      ],
+      "pixels": 120.0,
+      "size_delta": [
+        0.0,
+        -18.0
+      ]
+    }
+  ],
+  "pendulum": [
+    {
+      "name": "right_hanging_lamp",
+      "length_px": 149.73,
+      "period": 5.2067,
+      "amplitude": 6.5,
+      "invert": false,
+      "parent": "beam_anchor",
+      "hang_origin_canvas": [
+        1219.0,
+        73.0
+      ],
+      "hang_origin_spine": [
+        1219.0,
+        819.0
+      ],
+      "hang_source": "chain_rest",
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    },
+    {
+      "name": "left_hanging_lamp",
+      "length_px": 149.73,
+      "period": 5.2588,
+      "amplitude": 8.0,
+      "invert": true,
+      "parent": "beam_anchor",
+      "hang_origin_canvas": [
+        129.0,
+        73.0
+      ],
+      "hang_origin_spine": [
+        129.0,
+        819.0
+      ],
+      "hang_source": "chain_rest",
+      "attach": [
+        0.0,
+        -116.0
+      ]
+    }
+  ],
+  "gravity_px": 980.0,
+  "hanging_lamps": [
+    "right_hanging_lamp",
+    "left_hanging_lamp"
+  ],
+  "sitting_lamps": [
+    "lantern_dim"
+  ],
+  "baked_lights": [],
+  "extracted_lights": [
+    "right_hanging_lamp_light",
+    "left_hanging_lamp_light",
+    "lantern_dim_light"
+  ],
+  "light_slots": [
+    "right_hanging_lamp_light",
+    "left_hanging_lamp_light",
+    "lantern_dim_light"
+  ],
+  "glow": {
+    "lantern_dim": {
+      "method": "forced_on_bright",
+      "core_px": 0,
+      "mid_px": 9,
+      "glow_opaque": 98341,
+      "size": [
+        59,
+        151
+      ],
+      "glow_size": [
+        420,
+        420
+      ],
+      "flame_img": [
+        32.22,
+        95.44
+      ],
+      "bright": true
+    },
+    "right_hanging_lamp": {
+      "method": "extracted+halo",
+      "core_px": 409,
+      "mid_px": 809,
+      "glow_opaque": 4532,
+      "size": [
+        62,
+        232
+      ],
+      "glow_size": [
+        62,
+        232
+      ],
+      "flame_img": [
+        30.65,
+        175.05
+      ],
+      "bright": false
+    },
+    "left_hanging_lamp": {
+      "method": "extracted+halo",
+      "core_px": 409,
+      "mid_px": 809,
+      "glow_opaque": 4532,
+      "size": [
+        62,
+        232
+      ],
+      "glow_size": [
+        62,
+        232
+      ],
+      "flame_img": [
+        30.65,
+        175.05
+      ],
+      "bright": false
+    }
+  },
+  "lamps": {
+    "lamps": [
+      {
+        "id": "lantern_dim",
+        "slot": "lantern_dim_light",
+        "label": "Barrel lamp",
+        "on": true
+      }
+    ]
+  },
+  "pivots": {
+    "background": {
+      "name": "background",
+      "filename": "background.png",
+      "psd_name": "background redroom",
+      "parent_group": "",
+      "scale": 1.0,
+      "pivot": "center",
+      "joint_img": [
+        671.0,
+        446.0
+      ],
+      "canvas_xy": [
+        671.0,
+        446.0
+      ],
+      "world": [
+        671.0,
+        446.0
+      ],
+      "attach": [
+        0.0,
+        0.0
+      ],
+      "native": [
+        1342,
+        892
+      ],
+      "placed": [
+        1342,
+        892,
+        0,
+        0
+      ]
+    },
+    "post_R": {
+      "name": "post_R",
+      "filename": "post_R.png",
+      "psd_name": "post_R",
+      "parent_group": "ENTRANCE",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        75.5,
+        729.0
+      ],
+      "canvas_xy": [
+        1284.5,
+        768.0
+      ],
+      "world": [
+        1284.5,
+        124.0
+      ],
+      "attach": [
+        -9.0,
+        364.0
+      ],
+      "native": [
+        133,
+        730
+      ],
+      "placed": [
+        133,
+        730,
+        1209,
+        39
+      ]
+    },
+    "post_L": {
+      "name": "post_L",
+      "filename": "post_L.png",
+      "psd_name": "post_R",
+      "parent_group": "ENTRANCE",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        54.5,
+        729.0
+      ],
+      "canvas_xy": [
+        54.5,
+        769.0
+      ],
+      "world": [
+        54.5,
+        123.0
+      ],
+      "attach": [
+        11.0,
+        364.0
+      ],
+      "native": [
+        131,
+        730
+      ],
+      "placed": [
+        131,
+        730,
+        0,
+        40
+      ]
+    },
+    "beam": {
+      "name": "beam",
+      "filename": "beam.png",
+      "psd_name": "beam",
+      "parent_group": "ENTRANCE",
+      "scale": 1.0,
+      "pivot": "center",
+      "joint_img": [
+        655.5,
+        38.0
+      ],
+      "canvas_xy": [
+        673.5,
+        91.0
+      ],
+      "world": [
+        673.5,
+        801.0
+      ],
+      "attach": [
+        0.0,
+        0.0
+      ],
+      "native": [
+        1311,
+        76
+      ],
+      "placed": [
+        1311,
+        76,
+        18,
+        53
+      ]
+    },
+    "rock_02": {
+      "name": "rock_02",
+      "filename": "rock_02.png",
+      "psd_name": "rock_02",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        16.0,
+        27.0
+      ],
+      "canvas_xy": [
+        1003.0,
+        838.0
+      ],
+      "world": [
+        1003.0,
+        54.0
+      ],
+      "attach": [
+        5.0,
+        13.0
+      ],
+      "native": [
+        42,
+        28
+      ],
+      "placed": [
+        42,
+        28,
+        987,
+        811
+      ]
+    },
+    "rock": {
+      "name": "rock",
+      "filename": "rock.png",
+      "psd_name": "rock",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        11.0,
+        14.0
+      ],
+      "canvas_xy": [
+        1023.0,
+        866.0
+      ],
+      "world": [
+        1023.0,
+        26.0
+      ],
+      "attach": [
+        2.0,
+        6.5
+      ],
+      "native": [
+        26,
+        15
+      ],
+      "placed": [
+        26,
+        15,
+        1012,
+        852
+      ]
+    },
+    "rock_03": {
+      "name": "rock_03",
+      "filename": "rock_03.png",
+      "psd_name": "rock_03",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        12.5,
+        25.0
+      ],
+      "canvas_xy": [
+        1005.5,
+        852.0
+      ],
+      "world": [
+        1005.5,
+        40.0
+      ],
+      "attach": [
+        19.5,
+        11.5
+      ],
+      "native": [
+        64,
+        27
+      ],
+      "placed": [
+        64,
+        27,
+        993,
+        827
+      ]
+    },
+    "rocks": {
+      "name": "rocks",
+      "filename": "rocks.png",
+      "psd_name": "rocks",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        54.0,
+        45.0
+      ],
+      "canvas_xy": [
+        436.0,
+        774.0
+      ],
+      "world": [
+        436.0,
+        118.0
+      ],
+      "attach": [
+        14.5,
+        22.0
+      ],
+      "native": [
+        137,
+        46
+      ],
+      "placed": [
+        137,
+        46,
+        382,
+        729
+      ]
+    },
+    "shrub": {
+      "name": "shrub",
+      "filename": "shrub.png",
+      "psd_name": "shrub",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        30.0,
+        61.0
+      ],
+      "canvas_xy": [
+        1061.0,
+        832.0
+      ],
+      "world": [
+        1061.0,
+        60.0
+      ],
+      "attach": [
+        4.0,
+        29.5
+      ],
+      "native": [
+        68,
+        63
+      ],
+      "placed": [
+        68,
+        63,
+        1031,
+        771
+      ]
+    },
+    "grass_03": {
+      "name": "grass_03",
+      "filename": "grass_03.png",
+      "psd_name": "grass_03",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        143.66666666666666,
+        121.0
+      ],
+      "canvas_xy": [
+        964.6666666666666,
+        796.0
+      ],
+      "world": [
+        964.6666666666666,
+        96.0
+      ],
+      "attach": [
+        -51.16666666666666,
+        60.0
+      ],
+      "native": [
+        185,
+        122
+      ],
+      "placed": [
+        185,
+        122,
+        821,
+        675
+      ]
+    },
+    "grass_02": {
+      "name": "grass_02",
+      "filename": "grass_02.png",
+      "psd_name": "grass_02",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        21.5,
+        37.0
+      ],
+      "canvas_xy": [
+        1337.5,
+        607.0
+      ],
+      "world": [
+        1337.5,
+        285.0
+      ],
+      "attach": [
+        -8.5,
+        17.5
+      ],
+      "native": [
+        26,
+        39
+      ],
+      "placed": [
+        26,
+        39,
+        1316,
+        570
+      ]
+    },
+    "rocks_02": {
+      "name": "rocks_02",
+      "filename": "rocks_02.png",
+      "psd_name": "rocks_02",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        32.0,
+        63.0
+      ],
+      "canvas_xy": [
+        89.0,
+        824.0
+      ],
+      "world": [
+        89.0,
+        68.0
+      ],
+      "attach": [
+        19.5,
+        31.0
+      ],
+      "native": [
+        103,
+        64
+      ],
+      "placed": [
+        103,
+        64,
+        57,
+        761
+      ]
+    },
+    "grass": {
+      "name": "grass",
+      "filename": "grass.png",
+      "psd_name": "grass",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        21.0,
+        50.0
+      ],
+      "canvas_xy": [
+        1147.0,
+        839.0
+      ],
+      "world": [
+        1147.0,
+        53.0
+      ],
+      "attach": [
+        0.0,
+        23.5
+      ],
+      "native": [
+        42,
+        53
+      ],
+      "placed": [
+        42,
+        53,
+        1126,
+        789
+      ]
+    },
+    "cowboy_hat": {
+      "name": "cowboy_hat",
+      "filename": "cowboy_hat.png",
+      "psd_name": "cowboy_hat",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        49.5,
+        103.0
+      ],
+      "canvas_xy": [
+        1004.5,
+        850.0
+      ],
+      "world": [
+        1004.5,
+        42.0
+      ],
+      "attach": [
+        35.5,
+        51.0
+      ],
+      "native": [
+        170,
+        104
+      ],
+      "placed": [
+        170,
+        104,
+        955,
+        747
+      ]
+    },
+    "barrel": {
+      "name": "barrel",
+      "filename": "barrel.png",
+      "psd_name": "barrel",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        80.0,
+        208.0
+      ],
+      "canvas_xy": [
+        1312.0,
+        797.0
+      ],
+      "world": [
+        1312.0,
+        95.0
+      ],
+      "attach": [
+        -25.0,
+        103.5
+      ],
+      "native": [
+        110,
+        209
+      ],
+      "placed": [
+        110,
+        209,
+        1232,
+        589
+      ]
+    },
+    "lantern_dim": {
+      "name": "lantern_dim",
+      "filename": "lantern_dim.png",
+      "psd_name": "lantern_dim",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        31.0,
+        150.0
+      ],
+      "canvas_xy": [
+        1314.0,
+        609.0
+      ],
+      "world": [
+        1314.0,
+        283.0
+      ],
+      "attach": [
+        -1.5,
+        74.5
+      ],
+      "native": [
+        59,
+        151
+      ],
+      "placed": [
+        59,
+        151,
+        1283,
+        459
+      ]
+    },
+    "wagon_wheel": {
+      "name": "wagon_wheel",
+      "filename": "wagon_wheel.png",
+      "psd_name": "wagon_wheel",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        102.5,
+        209.0
+      ],
+      "canvas_xy": [
+        185.5,
+        794.0
+      ],
+      "world": [
+        185.5,
+        98.0
+      ],
+      "attach": [
+        -1.5,
+        104.0
+      ],
+      "native": [
+        202,
+        210
+      ],
+      "placed": [
+        202,
+        210,
+        83,
+        585
+      ]
+    },
+    "tombstone": {
+      "name": "tombstone",
+      "filename": "tombstone.png",
+      "psd_name": "tombstone",
+      "parent_group": "props",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        153.5,
+        276.0
+      ],
+      "canvas_xy": [
+        1194.5,
+        887.0
+      ],
+      "world": [
+        1194.5,
+        5.0
+      ],
+      "attach": [
+        -25.5,
+        137.0
+      ],
+      "native": [
+        256,
+        278
+      ],
+      "placed": [
+        256,
+        278,
+        1041,
+        611
+      ]
+    },
+    "skull": {
+      "name": "skull",
+      "filename": "skull.png",
+      "psd_name": "skull",
+      "parent_group": "",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        141.5,
+        200.0
+      ],
+      "canvas_xy": [
+        145.5,
+        874.0
+      ],
+      "world": [
+        145.5,
+        18.0
+      ],
+      "attach": [
+        -41.0,
+        99.5
+      ],
+      "native": [
+        201,
+        201
+      ],
+      "placed": [
+        201,
+        201,
+        4,
+        674
+      ]
+    },
+    "signpost": {
+      "name": "signpost",
+      "filename": "signpost.png",
+      "psd_name": "signpost",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        95.0,
+        288.0
+      ],
+      "canvas_xy": [
+        113.0,
+        678.0
+      ],
+      "world": [
+        113.0,
+        214.0
+      ],
+      "attach": [
+        -1.5,
+        143.5
+      ],
+      "native": [
+        187,
+        289
+      ],
+      "placed": [
+        187,
+        289,
+        18,
+        390
+      ]
+    },
+    "sign_highlight": {
+      "name": "sign_highlight",
+      "filename": "postsign.png",
+      "psd_name": "postsign",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        152.5,
+        599.0
+      ],
+      "canvas_xy": [
+        152.5,
+        891.0
+      ],
+      "world": [
+        152.5,
+        1.0
+      ],
+      "attach": [
+        0.0,
+        299.0
+      ],
+      "native": [
+        305,
+        600
+      ],
+      "placed": [
+        305,
+        600,
+        0,
+        292
+      ]
+    },
+    "sign_tell_no_tales": {
+      "name": "sign_tell_no_tales",
+      "filename": "tellnotales.png",
+      "psd_name": "tellnotales",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        69.5,
+        43.0
+      ],
+      "canvas_xy": [
+        116.5,
+        670.0
+      ],
+      "world": [
+        116.5,
+        222.0
+      ],
+      "attach": [
+        0.0,
+        21.0
+      ],
+      "native": [
+        139,
+        44
+      ],
+      "placed": [
+        139,
+        44,
+        47,
+        627
+      ]
+    },
+    "sign_dead_men": {
+      "name": "sign_dead_men",
+      "filename": "deadman.png",
+      "psd_name": "deadman",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        69.5,
+        53.0
+      ],
+      "canvas_xy": [
+        118.5,
+        610.0
+      ],
+      "world": [
+        118.5,
+        282.0
+      ],
+      "attach": [
+        0.0,
+        26.0
+      ],
+      "native": [
+        139,
+        54
+      ],
+      "placed": [
+        139,
+        54,
+        49,
+        557
+      ]
+    },
+    "sign_beware_2": {
+      "name": "sign_beware_2",
+      "filename": "beware2.png",
+      "psd_name": "beware2",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        59.0,
+        47.0
+      ],
+      "canvas_xy": [
+        114.0,
+        545.0
+      ],
+      "world": [
+        114.0,
+        347.0
+      ],
+      "attach": [
+        0.0,
+        23.0
+      ],
+      "native": [
+        118,
+        48
+      ],
+      "placed": [
+        118,
+        48,
+        55,
+        498
+      ]
+    },
+    "sign_beware_1": {
+      "name": "sign_beware_1",
+      "filename": "beware1.png",
+      "psd_name": "beware1",
+      "parent_group": "Group 1",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        60.0,
+        53.0
+      ],
+      "canvas_xy": [
+        107.0,
+        477.0
+      ],
+      "world": [
+        107.0,
+        415.0
+      ],
+      "attach": [
+        0.0,
+        26.0
+      ],
+      "native": [
+        120,
+        54
+      ],
+      "placed": [
+        120,
+        54,
+        47,
+        424
+      ]
+    },
+    "right_hanging_lamp": {
+      "name": "right_hanging_lamp",
+      "filename": "right_hanging_lamp.png",
+      "psd_name": "right  hanging lamp",
+      "parent_group": "",
+      "scale": 1.0,
+      "pivot": "hang",
+      "joint_img": [
+        31.0,
+        0.0
+      ],
+      "canvas_xy": [
+        1219.0,
+        73.0
+      ],
+      "world": [
+        1219.0,
+        819.0
+      ],
+      "attach": [
+        0.0,
+        -116.0
+      ],
+      "native": [
+        62,
+        232
+      ],
+      "placed": [
+        62,
+        232,
+        1188,
+        73
+      ],
+      "hang_source": "chain_rest"
+    },
+    "left_hanging_lamp": {
+      "name": "left_hanging_lamp",
+      "filename": "left_hanging_lamp.png",
+      "psd_name": "left hanging lamp",
+      "parent_group": "",
+      "scale": 1.0,
+      "pivot": "hang",
+      "joint_img": [
+        31.0,
+        0.0
+      ],
+      "canvas_xy": [
+        129.0,
+        73.0
+      ],
+      "world": [
+        129.0,
+        819.0
+      ],
+      "attach": [
+        0.0,
+        -116.0
+      ],
+      "native": [
+        62,
+        232
+      ],
+      "placed": [
+        62,
+        232,
+        98,
+        73
+      ],
+      "hang_source": "chain_rest"
+    },
+    "MAIN_FRAME": {
+      "name": "MAIN_FRAME",
+      "filename": "MAIN_FRAME.png",
+      "psd_name": "MAIN FRAME",
+      "parent_group": "",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        181.5,
+        608.0
+      ],
+      "canvas_xy": [
+        491.5,
+        744.0
+      ],
+      "world": [
+        491.5,
+        148.0
+      ],
+      "attach": [
+        181.0,
+        302.0
+      ],
+      "native": [
+        725,
+        612
+      ],
+      "placed": [
+        725,
+        612,
+        310,
+        136
+      ]
+    },
+    "Layer_4": {
+      "name": "Layer_4",
+      "filename": "Layer_4.png",
+      "psd_name": "Layer 4",
+      "parent_group": "ways frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        66.4,
+        82.0
+      ],
+      "canvas_xy": [
+        947.4,
+        233.0
+      ],
+      "world": [
+        947.4,
+        659.0
+      ],
+      "attach": [
+        8.099999999999994,
+        40.0
+      ],
+      "native": [
+        149,
+        84
+      ],
+      "placed": [
+        149,
+        84,
+        881,
+        151
+      ]
+    },
+    "Layer_5": {
+      "name": "Layer_5",
+      "filename": "Layer_5.png",
+      "psd_name": "Layer 5",
+      "parent_group": "ways frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        73.0,
+        30.0
+      ],
+      "canvas_xy": [
+        955.0,
+        172.0
+      ],
+      "world": [
+        955.0,
+        720.0
+      ],
+      "attach": [
+        -1.5,
+        14.0
+      ],
+      "native": [
+        143,
+        32
+      ],
+      "placed": [
+        143,
+        32,
+        882,
+        142
+      ]
+    },
+    "Layer_4_copy": {
+      "name": "Layer_4_copy",
+      "filename": "Layer_4_copy.png",
+      "psd_name": "Layer 4 copy",
+      "parent_group": "multi frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        66.4,
+        82.0
+      ],
+      "canvas_xy": [
+        802.4,
+        233.0
+      ],
+      "world": [
+        802.4,
+        659.0
+      ],
+      "attach": [
+        8.099999999999994,
+        40.0
+      ],
+      "native": [
+        149,
+        84
+      ],
+      "placed": [
+        149,
+        84,
+        736,
+        151
+      ]
+    },
+    "Layer_6": {
+      "name": "Layer_6",
+      "filename": "Layer_6.png",
+      "psd_name": "Layer 6",
+      "parent_group": "multi frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        73.90322580645162,
+        30.0
+      ],
+      "canvas_xy": [
+        808.9032258064516,
+        172.0
+      ],
+      "world": [
+        808.9032258064516,
+        720.0
+      ],
+      "attach": [
+        -1.4032258064516157,
+        14.5
+      ],
+      "native": [
+        145,
+        31
+      ],
+      "placed": [
+        145,
+        31,
+        735,
+        142
+      ]
+    },
+    "Layer_4_copy_2": {
+      "name": "Layer_4_copy_2",
+      "filename": "Layer_4_copy_2.png",
+      "psd_name": "Layer 4 copy 2",
+      "parent_group": "win frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        21.5,
+        82.0
+      ],
+      "canvas_xy": [
+        757.5,
+        729.0
+      ],
+      "world": [
+        757.5,
+        163.0
+      ],
+      "attach": [
+        53.0,
+        40.5
+      ],
+      "native": [
+        149,
+        83
+      ],
+      "placed": [
+        149,
+        83,
+        736,
+        647
+      ]
+    },
+    "Layer_7": {
+      "name": "Layer_7",
+      "filename": "Layer_7.png",
+      "psd_name": "Layer 7",
+      "parent_group": "win frame",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        86.6938775510204,
+        28.0
+      ],
+      "canvas_xy": [
+        820.6938775510204,
+        660.0
+      ],
+      "world": [
+        820.6938775510204,
+        232.0
+      ],
+      "attach": [
+        -14.193877551020407,
+        13.5
+      ],
+      "native": [
+        145,
+        29
+      ],
+      "placed": [
+        145,
+        29,
+        734,
+        632
+      ]
+    },
+    "Layer_8_copy_7": {
+      "name": "Layer_8_copy_7",
+      "filename": "Layer_8_copy_7.png",
+      "psd_name": "Layer 8 copy 7",
+      "parent_group": "win frame chains",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        12.5,
+        73.0
+      ],
+      "canvas_xy": [
+        759.5,
+        650.0
+      ],
+      "world": [
+        759.5,
+        242.0
+      ],
+      "attach": [
+        -4.5,
+        36.0
+      ],
+      "native": [
+        16,
+        74
+      ],
+      "placed": [
+        16,
+        74,
+        747,
+        577
+      ]
+    },
+    "Layer_8_copy_8": {
+      "name": "Layer_8_copy_8",
+      "filename": "Layer_8_copy_8.png",
+      "psd_name": "Layer 8 copy 8",
+      "parent_group": "win frame chains",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        13.0,
+        72.0
+      ],
+      "canvas_xy": [
+        865.0,
+        649.0
+      ],
+      "world": [
+        865.0,
+        243.0
+      ],
+      "attach": [
+        -5.0,
+        35.5
+      ],
+      "native": [
+        16,
+        73
+      ],
+      "placed": [
+        16,
+        73,
+        852,
+        577
+      ]
+    },
+    "Layer_8": {
+      "name": "Layer_8",
+      "filename": "Layer_8.png",
+      "psd_name": "Layer 8",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        6.5,
+        49.0
+      ],
+      "canvas_xy": [
+        356.5,
+        242.0
+      ],
+      "world": [
+        356.5,
+        650.0
+      ],
+      "attach": [
+        0.5,
+        23.5
+      ],
+      "native": [
+        14,
+        51
+      ],
+      "placed": [
+        14,
+        51,
+        350,
+        193
+      ]
+    },
+    "Layer_8_copy": {
+      "name": "Layer_8_copy",
+      "filename": "Layer_8_copy.png",
+      "psd_name": "Layer 8 copy",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        3.0,
+        69.0
+      ],
+      "canvas_xy": [
+        456.0,
+        160.0
+      ],
+      "world": [
+        456.0,
+        732.0
+      ],
+      "attach": [
+        5.0,
+        33.5
+      ],
+      "native": [
+        16,
+        71
+      ],
+      "placed": [
+        16,
+        71,
+        453,
+        91
+      ]
+    },
+    "Layer_8_copy_2": {
+      "name": "Layer_8_copy_2",
+      "filename": "Layer_8_copy_2.png",
+      "psd_name": "Layer 8 copy 2",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        11.5,
+        68.0
+      ],
+      "canvas_xy": [
+        697.5,
+        161.0
+      ],
+      "world": [
+        697.5,
+        731.0
+      ],
+      "attach": [
+        -3.5,
+        33.5
+      ],
+      "native": [
+        16,
+        69
+      ],
+      "placed": [
+        16,
+        69,
+        686,
+        93
+      ]
+    },
+    "Layer_8_copy_3": {
+      "name": "Layer_8_copy_3",
+      "filename": "Layer_8_copy_3.png",
+      "psd_name": "Layer 8 copy 3",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        13.0,
+        67.0
+      ],
+      "canvas_xy": [
+        763.0,
+        158.0
+      ],
+      "world": [
+        763.0,
+        734.0
+      ],
+      "attach": [
+        -5.0,
+        33.0
+      ],
+      "native": [
+        16,
+        68
+      ],
+      "placed": [
+        16,
+        68,
+        750,
+        91
+      ]
+    },
+    "Layer_8_copy_4": {
+      "name": "Layer_8_copy_4",
+      "filename": "Layer_8_copy_4.png",
+      "psd_name": "Layer 8 copy 4",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        12.0,
+        64.0
+      ],
+      "canvas_xy": [
+        862.0,
+        157.0
+      ],
+      "world": [
+        862.0,
+        735.0
+      ],
+      "attach": [
+        -4.0,
+        31.5
+      ],
+      "native": [
+        16,
+        65
+      ],
+      "placed": [
+        16,
+        65,
+        850,
+        93
+      ]
+    },
+    "Layer_8_copy_5": {
+      "name": "Layer_8_copy_5",
+      "filename": "Layer_8_copy_5.png",
+      "psd_name": "Layer 8 copy 5",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        2.5,
+        66.0
+      ],
+      "canvas_xy": [
+        895.5,
+        159.0
+      ],
+      "world": [
+        895.5,
+        733.0
+      ],
+      "attach": [
+        5.5,
+        32.5
+      ],
+      "native": [
+        16,
+        67
+      ],
+      "placed": [
+        16,
+        67,
+        893,
+        93
+      ]
+    },
+    "Layer_8_copy_5_02": {
+      "name": "Layer_8_copy_5_02",
+      "filename": "Layer_8_copy_5_02.png",
+      "psd_name": "Layer 8 copy 5",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        7.5,
+        84.0
+      ],
+      "canvas_xy": [
+        900.5,
+        298.0
+      ],
+      "world": [
+        900.5,
+        594.0
+      ],
+      "attach": [
+        0.5,
+        41.5
+      ],
+      "native": [
+        16,
+        85
+      ],
+      "placed": [
+        16,
+        85,
+        893,
+        214
+      ]
+    },
+    "Layer_8_copy_9": {
+      "name": "Layer_8_copy_9",
+      "filename": "Layer_8_copy_9.png",
+      "psd_name": "Layer 8 copy 9",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        7.5,
+        116.0
+      ],
+      "canvas_xy": [
+        1002.5,
+        359.0
+      ],
+      "world": [
+        1002.5,
+        533.0
+      ],
+      "attach": [
+        0.5,
+        57.5
+      ],
+      "native": [
+        16,
+        117
+      ],
+      "placed": [
+        16,
+        117,
+        995,
+        243
+      ]
+    },
+    "Layer_8_copy_11": {
+      "name": "Layer_8_copy_11",
+      "filename": "Layer_8_copy_11.png",
+      "psd_name": "Layer 8 copy 11",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        8.0,
+        115.0
+      ],
+      "canvas_xy": [
+        357.0,
+        208.0
+      ],
+      "world": [
+        357.0,
+        684.0
+      ],
+      "attach": [
+        0.0,
+        56.5
+      ],
+      "native": [
+        16,
+        117
+      ],
+      "placed": [
+        16,
+        117,
+        349,
+        93
+      ]
+    },
+    "Layer_8_copy_10": {
+      "name": "Layer_8_copy_10",
+      "filename": "Layer_8_copy_10.png",
+      "psd_name": "Layer 8 copy 10",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        7.5,
+        45.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        260.0
+      ],
+      "world": [
+        1003.5,
+        632.0
+      ],
+      "attach": [
+        -0.5,
+        22.0
+      ],
+      "native": [
+        14,
+        46
+      ],
+      "placed": [
+        14,
+        46,
+        996,
+        215
+      ]
+    },
+    "Layer_8_copy_6": {
+      "name": "Layer_8_copy_6",
+      "filename": "Layer_8_copy_6.png",
+      "psd_name": "Layer 8 copy 6",
+      "parent_group": "chains upframe",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        2.5,
+        66.0
+      ],
+      "canvas_xy": [
+        998.5,
+        159.0
+      ],
+      "world": [
+        998.5,
+        733.0
+      ],
+      "attach": [
+        5.5,
+        32.5
+      ],
+      "native": [
+        16,
+        67
+      ],
+      "placed": [
+        16,
+        67,
+        996,
+        93
+      ]
+    },
+    "chain_bolt": {
+      "name": "chain_bolt",
+      "filename": "chain_bolt.png",
+      "psd_name": "chain bolt",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        356.5,
+        105.0
+      ],
+      "world": [
+        356.5,
+        787.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        352,
+        95
+      ]
+    },
+    "chain_bolt_copy_26": {
+      "name": "chain_bolt_copy_26",
+      "filename": "chain_bolt_copy_26.png",
+      "psd_name": "chain bolt copy 26",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        128.5,
+        78.0
+      ],
+      "world": [
+        128.5,
+        814.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        124,
+        68
+      ]
+    },
+    "chain_bolt_copy_27": {
+      "name": "chain_bolt_copy_27",
+      "filename": "chain_bolt_copy_27.png",
+      "psd_name": "chain bolt copy 27",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1218.5,
+        78.0
+      ],
+      "world": [
+        1218.5,
+        814.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        1214,
+        68
+      ]
+    },
+    "chain_bolt_copy_11": {
+      "name": "chain_bolt_copy_11",
+      "filename": "chain_bolt_copy_11.png",
+      "psd_name": "chain bolt copy 11",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        356.5,
+        245.0
+      ],
+      "world": [
+        356.5,
+        647.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        352,
+        235
+      ]
+    },
+    "chain_bolt_copy_12": {
+      "name": "chain_bolt_copy_12",
+      "filename": "chain_bolt_copy_12.png",
+      "psd_name": "chain bolt copy 12",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        460.5,
+        162.0
+      ],
+      "world": [
+        460.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        456,
+        152
+      ]
+    },
+    "chain_bolt_copy_13": {
+      "name": "chain_bolt_copy_13",
+      "filename": "chain_bolt_copy_13.png",
+      "psd_name": "chain bolt copy 13",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        693.5,
+        162.0
+      ],
+      "world": [
+        693.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        689,
+        152
+      ]
+    },
+    "chain_bolt_copy_14": {
+      "name": "chain_bolt_copy_14",
+      "filename": "chain_bolt_copy_14.png",
+      "psd_name": "chain bolt copy 14",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        757.5,
+        162.0
+      ],
+      "world": [
+        757.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        753,
+        152
+      ]
+    },
+    "chain_bolt_copy_15": {
+      "name": "chain_bolt_copy_15",
+      "filename": "chain_bolt_copy_15.png",
+      "psd_name": "chain bolt copy 15",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        857.5,
+        162.0
+      ],
+      "world": [
+        857.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        853,
+        152
+      ]
+    },
+    "chain_bolt_copy_16": {
+      "name": "chain_bolt_copy_16",
+      "filename": "chain_bolt_copy_16.png",
+      "psd_name": "chain bolt copy 16",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        900.5,
+        162.0
+      ],
+      "world": [
+        900.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        896,
+        152
+      ]
+    },
+    "chain_bolt_copy_17": {
+      "name": "chain_bolt_copy_17",
+      "filename": "chain_bolt_copy_17.png",
+      "psd_name": "chain bolt copy 17",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        162.0
+      ],
+      "world": [
+        1003.5,
+        730.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        999,
+        152
+      ]
+    },
+    "chain_bolt_copy_18": {
+      "name": "chain_bolt_copy_18",
+      "filename": "chain_bolt_copy_18.png",
+      "psd_name": "chain bolt copy 18",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        900.5,
+        298.0
+      ],
+      "world": [
+        900.5,
+        594.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        896,
+        288
+      ]
+    },
+    "chain_bolt_copy_19": {
+      "name": "chain_bolt_copy_19",
+      "filename": "chain_bolt_copy_19.png",
+      "psd_name": "chain bolt copy 19",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1002.5,
+        359.0
+      ],
+      "world": [
+        1002.5,
+        533.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        998,
+        349
+      ]
+    },
+    "chain_bolt_copy": {
+      "name": "chain_bolt_copy",
+      "filename": "chain_bolt_copy.png",
+      "psd_name": "chain bolt copy",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        460.5,
+        103.0
+      ],
+      "world": [
+        460.5,
+        789.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        456,
+        93
+      ]
+    },
+    "chain_bolt_copy_2": {
+      "name": "chain_bolt_copy_2",
+      "filename": "chain_bolt_copy_2.png",
+      "psd_name": "chain bolt copy 2",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        693.5,
+        105.0
+      ],
+      "world": [
+        693.5,
+        787.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        689,
+        95
+      ]
+    },
+    "chain_bolt_copy_3": {
+      "name": "chain_bolt_copy_3",
+      "filename": "chain_bolt_copy_3.png",
+      "psd_name": "chain bolt copy 3",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        757.5,
+        103.0
+      ],
+      "world": [
+        757.5,
+        789.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        753,
+        93
+      ]
+    },
+    "chain_bolt_copy_4": {
+      "name": "chain_bolt_copy_4",
+      "filename": "chain_bolt_copy_4.png",
+      "psd_name": "chain bolt copy 4",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        857.5,
+        105.0
+      ],
+      "world": [
+        857.5,
+        787.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        853,
+        95
+      ]
+    },
+    "chain_bolt_copy_5": {
+      "name": "chain_bolt_copy_5",
+      "filename": "chain_bolt_copy_5.png",
+      "psd_name": "chain bolt copy 5",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        900.5,
+        105.0
+      ],
+      "world": [
+        900.5,
+        787.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        896,
+        95
+      ]
+    },
+    "chain_bolt_copy_10": {
+      "name": "chain_bolt_copy_10",
+      "filename": "chain_bolt_copy_10.png",
+      "psd_name": "chain bolt copy 10",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        900.5,
+        226.0
+      ],
+      "world": [
+        900.5,
+        666.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        896,
+        216
+      ]
+    },
+    "chain_bolt_copy_6": {
+      "name": "chain_bolt_copy_6",
+      "filename": "chain_bolt_copy_6.png",
+      "psd_name": "chain bolt copy 6",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        105.0
+      ],
+      "world": [
+        1003.5,
+        787.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        999,
+        95
+      ]
+    },
+    "chain_bolt_copy_9": {
+      "name": "chain_bolt_copy_9",
+      "filename": "chain_bolt_copy_9.png",
+      "psd_name": "chain bolt copy 9",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        220.0
+      ],
+      "world": [
+        1003.5,
+        672.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        999,
+        210
+      ]
+    },
+    "chain_bolt_copy_7": {
+      "name": "chain_bolt_copy_7",
+      "filename": "chain_bolt_copy_7.png",
+      "psd_name": "chain bolt copy 7",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        859.5,
+        589.0
+      ],
+      "world": [
+        859.5,
+        303.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        855,
+        579
+      ]
+    },
+    "chain_bolt_copy_22": {
+      "name": "chain_bolt_copy_22",
+      "filename": "chain_bolt_copy_22.png",
+      "psd_name": "chain bolt copy 22",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        859.5,
+        651.0
+      ],
+      "world": [
+        859.5,
+        241.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        855,
+        641
+      ]
+    },
+    "chain_bolt_copy_23": {
+      "name": "chain_bolt_copy_23",
+      "filename": "chain_bolt_copy_23.png",
+      "psd_name": "chain bolt copy 23",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        754.5,
+        651.0
+      ],
+      "world": [
+        754.5,
+        241.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        750,
+        641
+      ]
+    },
+    "chain_bolt_copy_8": {
+      "name": "chain_bolt_copy_8",
+      "filename": "chain_bolt_copy_8.png",
+      "psd_name": "chain bolt copy 8",
+      "parent_group": "chain bolts",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        754.5,
+        589.0
+      ],
+      "world": [
+        754.5,
+        303.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        750,
+        579
+      ]
+    },
+    "Layer_4_copy_2_02": {
+      "name": "Layer_4_copy_2_02",
+      "filename": "Layer_4_copy_2_02.png",
+      "psd_name": "Layer 4 copy 2",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        21.5,
+        82.0
+      ],
+      "canvas_xy": [
+        909.5,
+        729.0
+      ],
+      "world": [
+        909.5,
+        163.0
+      ],
+      "attach": [
+        53.0,
+        40.5
+      ],
+      "native": [
+        149,
+        83
+      ],
+      "placed": [
+        149,
+        83,
+        888,
+        647
+      ]
+    },
+    "Layer_9": {
+      "name": "Layer_9",
+      "filename": "Layer_9.png",
+      "psd_name": "Layer 9",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        67.5,
+        32.0
+      ],
+      "canvas_xy": [
+        955.5,
+        662.0
+      ],
+      "world": [
+        955.5,
+        230.0
+      ],
+      "attach": [
+        1.0,
+        15.5
+      ],
+      "native": [
+        137,
+        33
+      ],
+      "placed": [
+        137,
+        33,
+        888,
+        630
+      ]
+    },
+    "Layer_8_copy_8_02": {
+      "name": "Layer_8_copy_8_02",
+      "filename": "Layer_8_copy_8_02.png",
+      "psd_name": "Layer 8 copy 8",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        8.5,
+        116.0
+      ],
+      "canvas_xy": [
+        1004.5,
+        631.0
+      ],
+      "world": [
+        1004.5,
+        261.0
+      ],
+      "attach": [
+        -0.5,
+        57.5
+      ],
+      "native": [
+        16,
+        117
+      ],
+      "placed": [
+        16,
+        117,
+        996,
+        515
+      ]
+    },
+    "Layer_8_copy_7_02": {
+      "name": "Layer_8_copy_7_02",
+      "filename": "Layer_8_copy_7_02.png",
+      "psd_name": "Layer 8 copy 7",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        2.0,
+        69.0
+      ],
+      "canvas_xy": [
+        898.0,
+        646.0
+      ],
+      "world": [
+        898.0,
+        246.0
+      ],
+      "attach": [
+        6.0,
+        34.0
+      ],
+      "native": [
+        16,
+        70
+      ],
+      "placed": [
+        16,
+        70,
+        896,
+        577
+      ]
+    },
+    "chain_bolt_copy_24": {
+      "name": "chain_bolt_copy_24",
+      "filename": "chain_bolt_copy_24.png",
+      "psd_name": "chain bolt copy 24",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        528.0
+      ],
+      "world": [
+        1003.5,
+        364.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        999,
+        518
+      ]
+    },
+    "chain_bolt_copy_25": {
+      "name": "chain_bolt_copy_25",
+      "filename": "chain_bolt_copy_25.png",
+      "psd_name": "chain bolt copy 25",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        903.5,
+        589.0
+      ],
+      "world": [
+        903.5,
+        303.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        899,
+        579
+      ]
+    },
+    "chain_bolt_copy_20": {
+      "name": "chain_bolt_copy_20",
+      "filename": "chain_bolt_copy_20.png",
+      "psd_name": "chain bolt copy 20",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        903.5,
+        649.0
+      ],
+      "world": [
+        903.5,
+        243.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        899,
+        639
+      ]
+    },
+    "chain_bolt_copy_21": {
+      "name": "chain_bolt_copy_21",
+      "filename": "chain_bolt_copy_21.png",
+      "psd_name": "chain bolt copy 21",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        4.5,
+        10.0
+      ],
+      "canvas_xy": [
+        1002.5,
+        651.0
+      ],
+      "world": [
+        1002.5,
+        241.0
+      ],
+      "attach": [
+        0.5,
+        4.5
+      ],
+      "native": [
+        10,
+        11
+      ],
+      "placed": [
+        10,
+        11,
+        998,
+        641
+      ]
+    },
+    "Layer_8_copy_12": {
+      "name": "Layer_8_copy_12",
+      "filename": "Layer_8_copy_12.png",
+      "psd_name": "Layer 8 copy 12",
+      "parent_group": "free spins frame ",
+      "scale": 1.0,
+      "pivot": "bottom",
+      "joint_img": [
+        6.5,
+        36.0
+      ],
+      "canvas_xy": [
+        1003.5,
+        649.0
+      ],
+      "world": [
+        1003.5,
+        243.0
+      ],
+      "attach": [
+        0.5,
+        17.5
+      ],
+      "native": [
+        14,
+        37
+      ],
+      "placed": [
+        14,
+        37,
+        997,
+        613
+      ]
+    }
+  },
+  "layer_count_psd": 103,
+  "prop_count": 80,
+  "serve": "python -m http.server 8780 --bind 127.0.0.1",
+  "serve_dir": "C:\\Users\\Emex33\\Documents\\fire frame vfx\\backgroundSPINE\\spine-scene",
+  "viewer_url": "http://127.0.0.1:8780/viewer.html",
+  "sign": {
+    "beware1": true,
+    "beware2": true,
+    "dead_men": true,
+    "tell_no_tales": true,
+    "highlight": true,
+    "highlight_rule": "OR: highlight on if any word is on",
+    "words": [
+      {
+        "id": "beware1",
+        "slot": "sign_beware_1",
+        "label": "Beware"
+      },
+      {
+        "id": "beware2",
+        "slot": "sign_beware_2",
+        "label": "Beware"
+      },
+      {
+        "id": "dead_men",
+        "slot": "sign_dead_men",
+        "label": "Dead Men"
+      },
+      {
+        "id": "tell_no_tales",
+        "slot": "sign_tell_no_tales",
+        "label": "Tell No Tales"
+      }
+    ],
+    "highlight_slot": "sign_highlight",
+    "slots": {
+      "sign_beware_1": true,
+      "sign_beware_2": true,
+      "sign_dead_men": true,
+      "sign_tell_no_tales": true,
+      "sign_highlight": true
+    }
+  }
+}

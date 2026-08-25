@@ -1,0 +1,7835 @@
+{
+  "source_open": "western_scene2.psd",
+  "source_full": "C:\\Users\\Emex33\\Desktop\\western_scene2.psd",
+  "saved_copy": "C:\\Users\\Emex33\\Documents\\fire frame vfx\\backgroundSPINE\\western_scene2.psd",
+  "canvas": {
+    "w": 1342,
+    "h": 892
+  },
+  "mode": "disk_psd_tools",
+  "layer_count": 101,
+  "layers": [
+    {
+      "index": 1,
+      "stack_index": 1,
+      "name": "background redroom",
+      "safe_name": "background_redroom",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        0.0,
+        0.0,
+        1342.0,
+        892.0
+      ],
+      "width": 1342.0,
+      "height": 892.0
+    },
+    {
+      "index": 2,
+      "stack_index": 2,
+      "name": "ENTRANCE",
+      "safe_name": "entrance",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        -54.0,
+        39.0,
+        1394.0,
+        889.0
+      ],
+      "width": 1448.0,
+      "height": 850.0
+    },
+    {
+      "index": 3,
+      "stack_index": 3,
+      "name": "post_R",
+      "safe_name": "post_r",
+      "parent": "ENTRANCE",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1209.0,
+        39.0,
+        1394.0,
+        769.0
+      ],
+      "width": 185.0,
+      "height": 730.0
+    },
+    {
+      "index": 4,
+      "stack_index": 4,
+      "name": "post_R",
+      "safe_name": "post_r",
+      "parent": "ENTRANCE",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        -54.0,
+        40.0,
+        131.0,
+        770.0
+      ],
+      "width": 185.0,
+      "height": 730.0
+    },
+    {
+      "index": 5,
+      "stack_index": 5,
+      "name": "beam",
+      "safe_name": "beam",
+      "parent": "ENTRANCE",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        18.0,
+        53.0,
+        1329.0,
+        129.0
+      ],
+      "width": 1311.0,
+      "height": 76.0
+    },
+    {
+      "index": 6,
+      "stack_index": 6,
+      "name": "props",
+      "safe_name": "props",
+      "parent": "ENTRANCE",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        57.0,
+        459.0,
+        1342.0,
+        889.0
+      ],
+      "width": 1285.0,
+      "height": 430.0
+    },
+    {
+      "index": 7,
+      "stack_index": 7,
+      "name": "rock_02",
+      "safe_name": "rock_02",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        986.0,
+        810.0,
+        1029.0,
+        840.0
+      ],
+      "width": 43.0,
+      "height": 30.0
+    },
+    {
+      "index": 8,
+      "stack_index": 8,
+      "name": "rock",
+      "safe_name": "rock",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1012.0,
+        852.0,
+        1038.0,
+        867.0
+      ],
+      "width": 26.0,
+      "height": 15.0
+    },
+    {
+      "index": 9,
+      "stack_index": 9,
+      "name": "rock_03",
+      "safe_name": "rock_03",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        993.0,
+        826.0,
+        1057.0,
+        854.0
+      ],
+      "width": 64.0,
+      "height": 28.0
+    },
+    {
+      "index": 10,
+      "stack_index": 10,
+      "name": "rocks",
+      "safe_name": "rocks",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        382.0,
+        729.0,
+        519.0,
+        775.0
+      ],
+      "width": 137.0,
+      "height": 46.0
+    },
+    {
+      "index": 11,
+      "stack_index": 11,
+      "name": "shrub",
+      "safe_name": "shrub",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1029.0,
+        770.0,
+        1099.0,
+        834.0
+      ],
+      "width": 70.0,
+      "height": 64.0
+    },
+    {
+      "index": 12,
+      "stack_index": 12,
+      "name": "grass_03",
+      "safe_name": "grass_03",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        820.0,
+        675.0,
+        1007.0,
+        798.0
+      ],
+      "width": 187.0,
+      "height": 123.0
+    },
+    {
+      "index": 13,
+      "stack_index": 13,
+      "name": "grass_02",
+      "safe_name": "grass_02",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1315.0,
+        569.0,
+        1342.0,
+        610.0
+      ],
+      "width": 27.0,
+      "height": 41.0
+    },
+    {
+      "index": 14,
+      "stack_index": 14,
+      "name": "rocks_02",
+      "safe_name": "rocks_02",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        57.0,
+        761.0,
+        160.0,
+        825.0
+      ],
+      "width": 103.0,
+      "height": 64.0
+    },
+    {
+      "index": 15,
+      "stack_index": 15,
+      "name": "grass",
+      "safe_name": "grass",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1125.0,
+        788.0,
+        1169.0,
+        842.0
+      ],
+      "width": 44.0,
+      "height": 54.0
+    },
+    {
+      "index": 16,
+      "stack_index": 16,
+      "name": "cowboy_hat",
+      "safe_name": "cowboy_hat",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        954.0,
+        746.0,
+        1125.0,
+        851.0
+      ],
+      "width": 171.0,
+      "height": 105.0
+    },
+    {
+      "index": 17,
+      "stack_index": 17,
+      "name": "barrel",
+      "safe_name": "barrel",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1232.0,
+        589.0,
+        1342.0,
+        798.0
+      ],
+      "width": 110.0,
+      "height": 209.0
+    },
+    {
+      "index": 18,
+      "stack_index": 18,
+      "name": "lantern_dim",
+      "safe_name": "lantern_dim",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1283.0,
+        459.0,
+        1342.0,
+        610.0
+      ],
+      "width": 59.0,
+      "height": 151.0
+    },
+    {
+      "index": 19,
+      "stack_index": 19,
+      "name": "wagon_wheel",
+      "safe_name": "wagon_wheel",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        83.0,
+        585.0,
+        285.0,
+        795.0
+      ],
+      "width": 202.0,
+      "height": 210.0
+    },
+    {
+      "index": 20,
+      "stack_index": 20,
+      "name": "tombstone",
+      "safe_name": "tombstone",
+      "parent": "props",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1041.0,
+        611.0,
+        1297.0,
+        889.0
+      ],
+      "width": 256.0,
+      "height": 278.0
+    },
+    {
+      "index": 21,
+      "stack_index": 21,
+      "name": "RED FILTER",
+      "safe_name": "red_filter",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "linear_burn",
+      "bounds": [
+        -322.0,
+        -114.0,
+        1363.0,
+        1016.0
+      ],
+      "width": 1685.0,
+      "height": 1130.0
+    },
+    {
+      "index": 22,
+      "stack_index": 22,
+      "name": "board",
+      "safe_name": "board",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 23,
+      "stack_index": 23,
+      "name": "Layer 2",
+      "safe_name": "layer_2",
+      "parent": "board",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        205.0,
+        201.0,
+        708.0,
+        679.0
+      ],
+      "width": 503.0,
+      "height": 478.0
+    },
+    {
+      "index": 24,
+      "stack_index": 24,
+      "name": "Layer 2 copy",
+      "safe_name": "layer_2_copy",
+      "parent": "board",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        683.0,
+        201.0,
+        1186.0,
+        679.0
+      ],
+      "width": 503.0,
+      "height": 478.0
+    },
+    {
+      "index": 25,
+      "stack_index": 25,
+      "name": "chain_02",
+      "safe_name": "chain_02",
+      "parent": "board",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        219.0,
+        125.0,
+        263.0,
+        319.0
+      ],
+      "width": 44.0,
+      "height": 194.0
+    },
+    {
+      "index": 26,
+      "stack_index": 26,
+      "name": "chain_02 copy",
+      "safe_name": "chain_02_copy",
+      "parent": "board",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1135.0,
+        106.0,
+        1169.0,
+        296.0
+      ],
+      "width": 34.0,
+      "height": 190.0
+    },
+    {
+      "index": 27,
+      "stack_index": 27,
+      "name": "skull",
+      "safe_name": "skull",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        4.0,
+        674.0,
+        205.0,
+        875.0
+      ],
+      "width": 201.0,
+      "height": 201.0
+    },
+    {
+      "index": 28,
+      "stack_index": 28,
+      "name": "Group 1",
+      "safe_name": "group_1",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        18.0,
+        390.0,
+        205.0,
+        679.0
+      ],
+      "width": 187.0,
+      "height": 289.0
+    },
+    {
+      "index": 29,
+      "stack_index": 29,
+      "name": "signpost",
+      "safe_name": "signpost",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        18.0,
+        390.0,
+        205.0,
+        679.0
+      ],
+      "width": 187.0,
+      "height": 289.0
+    },
+    {
+      "index": 30,
+      "stack_index": 30,
+      "name": "postsign",
+      "safe_name": "postsign",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "darken",
+      "bounds": [
+        0.0,
+        292.0,
+        305.0,
+        892.0
+      ],
+      "width": 305.0,
+      "height": 600.0
+    },
+    {
+      "index": 31,
+      "stack_index": 31,
+      "name": "tellnotales",
+      "safe_name": "tellnotales",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "darken",
+      "bounds": [
+        47.0,
+        627.0,
+        186.0,
+        671.0
+      ],
+      "width": 139.0,
+      "height": 44.0
+    },
+    {
+      "index": 32,
+      "stack_index": 32,
+      "name": "deadman",
+      "safe_name": "deadman",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "darken",
+      "bounds": [
+        49.0,
+        557.0,
+        188.0,
+        611.0
+      ],
+      "width": 139.0,
+      "height": 54.0
+    },
+    {
+      "index": 33,
+      "stack_index": 33,
+      "name": "beware2",
+      "safe_name": "beware2",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "darken",
+      "bounds": [
+        55.0,
+        498.0,
+        173.0,
+        546.0
+      ],
+      "width": 118.0,
+      "height": 48.0
+    },
+    {
+      "index": 34,
+      "stack_index": 34,
+      "name": "beware1",
+      "safe_name": "beware1",
+      "parent": "Group 1",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": false,
+      "opacity": 100.0,
+      "blend": "darken",
+      "bounds": [
+        47.0,
+        424.0,
+        167.0,
+        478.0
+      ],
+      "width": 120.0,
+      "height": 54.0
+    },
+    {
+      "index": 35,
+      "stack_index": 35,
+      "name": "Group 2",
+      "safe_name": "group_2",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 36,
+      "stack_index": 36,
+      "name": "right  hanging lamp",
+      "safe_name": "right_hanging_lamp",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1188.0,
+        73.0,
+        1250.0,
+        305.0
+      ],
+      "width": 62.0,
+      "height": 232.0
+    },
+    {
+      "index": 37,
+      "stack_index": 37,
+      "name": "left hanging lamp",
+      "safe_name": "left_hanging_lamp",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        98.0,
+        73.0,
+        160.0,
+        305.0
+      ],
+      "width": 62.0,
+      "height": 232.0
+    },
+    {
+      "index": 38,
+      "stack_index": 38,
+      "name": "Static Lamp",
+      "safe_name": "static_lamp",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 39,
+      "stack_index": 39,
+      "name": "hanging chains",
+      "safe_name": "hanging_chains",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 40,
+      "stack_index": 40,
+      "name": "MAIN FRAME",
+      "safe_name": "main_frame",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        307.0,
+        136.0,
+        1035.0,
+        750.0
+      ],
+      "width": 728.0,
+      "height": 614.0
+    },
+    {
+      "index": 41,
+      "stack_index": 41,
+      "name": "ways frame",
+      "safe_name": "ways_frame",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        880.0,
+        141.0,
+        1031.0,
+        235.0
+      ],
+      "width": 151.0,
+      "height": 94.0
+    },
+    {
+      "index": 42,
+      "stack_index": 42,
+      "name": "Layer 4",
+      "safe_name": "layer_4",
+      "parent": "ways frame",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        880.0,
+        151.0,
+        1031.0,
+        235.0
+      ],
+      "width": 151.0,
+      "height": 84.0
+    },
+    {
+      "index": 43,
+      "stack_index": 43,
+      "name": "Layer 5",
+      "safe_name": "layer_5",
+      "parent": "ways frame",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        882.0,
+        141.0,
+        1025.0,
+        174.0
+      ],
+      "width": 143.0,
+      "height": 33.0
+    },
+    {
+      "index": 44,
+      "stack_index": 44,
+      "name": "multi frame",
+      "safe_name": "multi_frame",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        734.0,
+        141.0,
+        886.0,
+        235.0
+      ],
+      "width": 152.0,
+      "height": 94.0
+    },
+    {
+      "index": 45,
+      "stack_index": 45,
+      "name": "Layer 4 copy",
+      "safe_name": "layer_4_copy",
+      "parent": "multi frame",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        735.0,
+        151.0,
+        886.0,
+        235.0
+      ],
+      "width": 151.0,
+      "height": 84.0
+    },
+    {
+      "index": 46,
+      "stack_index": 46,
+      "name": "Layer 6",
+      "safe_name": "layer_6",
+      "parent": "multi frame",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        734.0,
+        141.0,
+        880.0,
+        173.0
+      ],
+      "width": 146.0,
+      "height": 32.0
+    },
+    {
+      "index": 47,
+      "stack_index": 47,
+      "name": "chains winFrame",
+      "safe_name": "chains_winframe",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        734.0,
+        577.0,
+        886.0,
+        730.0
+      ],
+      "width": 152.0,
+      "height": 153.0
+    },
+    {
+      "index": 48,
+      "stack_index": 48,
+      "name": "win frame",
+      "safe_name": "win_frame",
+      "parent": "chains winFrame",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        734.0,
+        577.0,
+        886.0,
+        730.0
+      ],
+      "width": 152.0,
+      "height": 153.0
+    },
+    {
+      "index": 49,
+      "stack_index": 49,
+      "name": "Layer 4 copy 2",
+      "safe_name": "layer_4_copy_2",
+      "parent": "win frame",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        735.0,
+        647.0,
+        886.0,
+        730.0
+      ],
+      "width": 151.0,
+      "height": 83.0
+    },
+    {
+      "index": 50,
+      "stack_index": 50,
+      "name": "Layer 7",
+      "safe_name": "layer_7",
+      "parent": "win frame",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        734.0,
+        632.0,
+        879.0,
+        661.0
+      ],
+      "width": 145.0,
+      "height": 29.0
+    },
+    {
+      "index": 51,
+      "stack_index": 51,
+      "name": "win frame chains",
+      "safe_name": "win_frame_chains",
+      "parent": "win frame",
+      "depth": 2,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        747.0,
+        577.0,
+        868.0,
+        651.0
+      ],
+      "width": 121.0,
+      "height": 74.0
+    },
+    {
+      "index": 52,
+      "stack_index": 52,
+      "name": "Layer 8 copy 7",
+      "safe_name": "layer_8_copy_7",
+      "parent": "win frame chains",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        747.0,
+        577.0,
+        763.0,
+        651.0
+      ],
+      "width": 16.0,
+      "height": 74.0
+    },
+    {
+      "index": 53,
+      "stack_index": 53,
+      "name": "Layer 8 copy 8",
+      "safe_name": "layer_8_copy_8",
+      "parent": "win frame chains",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        852.0,
+        577.0,
+        868.0,
+        651.0
+      ],
+      "width": 16.0,
+      "height": 74.0
+    },
+    {
+      "index": 54,
+      "stack_index": 54,
+      "name": "chains winFrame",
+      "safe_name": "chains_winframe",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 55,
+      "stack_index": 55,
+      "name": "win frame",
+      "safe_name": "win_frame",
+      "parent": "chains winFrame",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 56,
+      "stack_index": 56,
+      "name": "freespins frame",
+      "safe_name": "freespins_frame",
+      "parent": "chains winFrame",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 57,
+      "stack_index": 57,
+      "name": "chains upframe",
+      "safe_name": "chains_upframe",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        349.0,
+        91.0,
+        1012.0,
+        652.0
+      ],
+      "width": 663.0,
+      "height": 561.0
+    },
+    {
+      "index": 58,
+      "stack_index": 58,
+      "name": "Layer 8",
+      "safe_name": "layer_8",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        350.0,
+        193.0,
+        364.0,
+        244.0
+      ],
+      "width": 14.0,
+      "height": 51.0
+    },
+    {
+      "index": 59,
+      "stack_index": 59,
+      "name": "Layer 8 copy",
+      "safe_name": "layer_8_copy",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        453.0,
+        91.0,
+        469.0,
+        163.0
+      ],
+      "width": 16.0,
+      "height": 72.0
+    },
+    {
+      "index": 60,
+      "stack_index": 60,
+      "name": "Layer 8 copy 2",
+      "safe_name": "layer_8_copy_2",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        686.0,
+        93.0,
+        702.0,
+        163.0
+      ],
+      "width": 16.0,
+      "height": 70.0
+    },
+    {
+      "index": 61,
+      "stack_index": 61,
+      "name": "Layer 8 copy 3",
+      "safe_name": "layer_8_copy_3",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        750.0,
+        91.0,
+        766.0,
+        160.0
+      ],
+      "width": 16.0,
+      "height": 69.0
+    },
+    {
+      "index": 62,
+      "stack_index": 62,
+      "name": "Layer 8 copy 4",
+      "safe_name": "layer_8_copy_4",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        850.0,
+        93.0,
+        866.0,
+        159.0
+      ],
+      "width": 16.0,
+      "height": 66.0
+    },
+    {
+      "index": 63,
+      "stack_index": 63,
+      "name": "Layer 8 copy 5",
+      "safe_name": "layer_8_copy_5",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        893.0,
+        93.0,
+        909.0,
+        161.0
+      ],
+      "width": 16.0,
+      "height": 68.0
+    },
+    {
+      "index": 64,
+      "stack_index": 64,
+      "name": "Layer 8 copy 5",
+      "safe_name": "layer_8_copy_5",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        893.0,
+        213.0,
+        909.0,
+        299.0
+      ],
+      "width": 16.0,
+      "height": 86.0
+    },
+    {
+      "index": 65,
+      "stack_index": 65,
+      "name": "Layer 8 copy 9",
+      "safe_name": "layer_8_copy_9",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        995.0,
+        243.0,
+        1011.0,
+        360.0
+      ],
+      "width": 16.0,
+      "height": 117.0
+    },
+    {
+      "index": 66,
+      "stack_index": 66,
+      "name": "Layer 8 copy 11",
+      "safe_name": "layer_8_copy_11",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        349.0,
+        93.0,
+        365.0,
+        210.0
+      ],
+      "width": 16.0,
+      "height": 117.0
+    },
+    {
+      "index": 67,
+      "stack_index": 67,
+      "name": "Layer 8 copy 10",
+      "safe_name": "layer_8_copy_10",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        996.0,
+        214.0,
+        1010.0,
+        261.0
+      ],
+      "width": 14.0,
+      "height": 47.0
+    },
+    {
+      "index": 68,
+      "stack_index": 68,
+      "name": "Layer 8 copy 6",
+      "safe_name": "layer_8_copy_6",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        996.0,
+        93.0,
+        1012.0,
+        161.0
+      ],
+      "width": 16.0,
+      "height": 68.0
+    },
+    {
+      "index": 69,
+      "stack_index": 69,
+      "name": "chain bolts",
+      "safe_name": "chain_bolts",
+      "parent": "chains upframe",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        352.0,
+        93.0,
+        1009.0,
+        652.0
+      ],
+      "width": 657.0,
+      "height": 559.0
+    },
+    {
+      "index": 70,
+      "stack_index": 70,
+      "name": "chain bolt",
+      "safe_name": "chain_bolt",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        352.0,
+        95.0,
+        362.0,
+        106.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 71,
+      "stack_index": 71,
+      "name": "chain bolt copy 11",
+      "safe_name": "chain_bolt_copy_11",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        352.0,
+        235.0,
+        362.0,
+        246.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 72,
+      "stack_index": 72,
+      "name": "chain bolt copy 12",
+      "safe_name": "chain_bolt_copy_12",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        456.0,
+        152.0,
+        466.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 73,
+      "stack_index": 73,
+      "name": "chain bolt copy 13",
+      "safe_name": "chain_bolt_copy_13",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        689.0,
+        152.0,
+        699.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 74,
+      "stack_index": 74,
+      "name": "chain bolt copy 14",
+      "safe_name": "chain_bolt_copy_14",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        753.0,
+        152.0,
+        763.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 75,
+      "stack_index": 75,
+      "name": "chain bolt copy 15",
+      "safe_name": "chain_bolt_copy_15",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        853.0,
+        152.0,
+        863.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 76,
+      "stack_index": 76,
+      "name": "chain bolt copy 16",
+      "safe_name": "chain_bolt_copy_16",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        896.0,
+        152.0,
+        906.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 77,
+      "stack_index": 77,
+      "name": "chain bolt copy 17",
+      "safe_name": "chain_bolt_copy_17",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        999.0,
+        152.0,
+        1009.0,
+        163.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 78,
+      "stack_index": 78,
+      "name": "chain bolt copy 18",
+      "safe_name": "chain_bolt_copy_18",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        896.0,
+        288.0,
+        906.0,
+        299.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 79,
+      "stack_index": 79,
+      "name": "chain bolt copy 19",
+      "safe_name": "chain_bolt_copy_19",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        998.0,
+        349.0,
+        1008.0,
+        360.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 80,
+      "stack_index": 80,
+      "name": "chain bolt copy",
+      "safe_name": "chain_bolt_copy",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        456.0,
+        93.0,
+        466.0,
+        104.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 81,
+      "stack_index": 81,
+      "name": "chain bolt copy 2",
+      "safe_name": "chain_bolt_copy_2",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        689.0,
+        95.0,
+        699.0,
+        106.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 82,
+      "stack_index": 82,
+      "name": "chain bolt copy 3",
+      "safe_name": "chain_bolt_copy_3",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        753.0,
+        93.0,
+        763.0,
+        104.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 83,
+      "stack_index": 83,
+      "name": "chain bolt copy 4",
+      "safe_name": "chain_bolt_copy_4",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        853.0,
+        95.0,
+        863.0,
+        106.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 84,
+      "stack_index": 84,
+      "name": "chain bolt copy 5",
+      "safe_name": "chain_bolt_copy_5",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        896.0,
+        95.0,
+        906.0,
+        106.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 85,
+      "stack_index": 85,
+      "name": "chain bolt copy 10",
+      "safe_name": "chain_bolt_copy_10",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        896.0,
+        216.0,
+        906.0,
+        227.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 86,
+      "stack_index": 86,
+      "name": "chain bolt copy 6",
+      "safe_name": "chain_bolt_copy_6",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        999.0,
+        95.0,
+        1009.0,
+        106.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 87,
+      "stack_index": 87,
+      "name": "chain bolt copy 9",
+      "safe_name": "chain_bolt_copy_9",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        999.0,
+        210.0,
+        1009.0,
+        221.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 88,
+      "stack_index": 88,
+      "name": "chain bolt copy 7",
+      "safe_name": "chain_bolt_copy_7",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        855.0,
+        579.0,
+        865.0,
+        590.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 89,
+      "stack_index": 89,
+      "name": "chain bolt copy 22",
+      "safe_name": "chain_bolt_copy_22",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        855.0,
+        641.0,
+        865.0,
+        652.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 90,
+      "stack_index": 90,
+      "name": "chain bolt copy 23",
+      "safe_name": "chain_bolt_copy_23",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        750.0,
+        641.0,
+        760.0,
+        652.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 91,
+      "stack_index": 91,
+      "name": "chain bolt copy 8",
+      "safe_name": "chain_bolt_copy_8",
+      "parent": "chain bolts",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        750.0,
+        579.0,
+        760.0,
+        590.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 92,
+      "stack_index": 92,
+      "name": "free spins frame ",
+      "safe_name": "free_spins_frame",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        887.0,
+        515.0,
+        1038.0,
+        730.0
+      ],
+      "width": 151.0,
+      "height": 215.0
+    },
+    {
+      "index": 93,
+      "stack_index": 93,
+      "name": "Layer 4 copy 2",
+      "safe_name": "layer_4_copy_2",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        887.0,
+        647.0,
+        1038.0,
+        730.0
+      ],
+      "width": 151.0,
+      "height": 83.0
+    },
+    {
+      "index": 94,
+      "stack_index": 94,
+      "name": "Layer 9",
+      "safe_name": "layer_9",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        888.0,
+        630.0,
+        1025.0,
+        663.0
+      ],
+      "width": 137.0,
+      "height": 33.0
+    },
+    {
+      "index": 95,
+      "stack_index": 95,
+      "name": "Layer 8 copy 8",
+      "safe_name": "layer_8_copy_8",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        996.0,
+        515.0,
+        1012.0,
+        632.0
+      ],
+      "width": 16.0,
+      "height": 117.0
+    },
+    {
+      "index": 96,
+      "stack_index": 96,
+      "name": "Layer 8 copy 7",
+      "safe_name": "layer_8_copy_7",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        896.0,
+        577.0,
+        912.0,
+        648.0
+      ],
+      "width": 16.0,
+      "height": 71.0
+    },
+    {
+      "index": 97,
+      "stack_index": 97,
+      "name": "chain bolt copy 24",
+      "safe_name": "chain_bolt_copy_24",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        999.0,
+        518.0,
+        1009.0,
+        529.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 98,
+      "stack_index": 98,
+      "name": "chain bolt copy 25",
+      "safe_name": "chain_bolt_copy_25",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        899.0,
+        579.0,
+        909.0,
+        590.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 99,
+      "stack_index": 99,
+      "name": "chain bolt copy 20",
+      "safe_name": "chain_bolt_copy_20",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        899.0,
+        639.0,
+        909.0,
+        650.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 100,
+      "stack_index": 100,
+      "name": "chain bolt copy 21",
+      "safe_name": "chain_bolt_copy_21",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        998.0,
+        641.0,
+        1008.0,
+        652.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 101,
+      "stack_index": 101,
+      "name": "Layer 8 copy 12",
+      "safe_name": "layer_8_copy_12",
+      "parent": "free spins frame ",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        997.0,
+        613.0,
+        1011.0,
+        651.0
+      ],
+      "width": 14.0,
+      "height": 38.0
+    }
+  ],
+  "exports": [
+    {
+      "psd_name": "background redroom",
+      "name": "background",
+      "filename": "background.png",
+      "parent_group": "",
+      "x": 0,
+      "y": 0,
+      "w": 1342,
+      "h": 892,
+      "scale": 1.0,
+      "native_w": 1342,
+      "native_h": 892,
+      "src_px": [
+        1342,
+        892
+      ],
+      "canvas_bounds": [
+        0.0,
+        0.0,
+        1342.0,
+        892.0
+      ],
+      "effects_bounds": [
+        0.0,
+        0.0,
+        1342.0,
+        892.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        0.0,
+        0.0,
+        1342.0,
+        892.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 1,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          1342,
+          892
+        ],
+        "hang": [
+          670.5,
+          0.0
+        ],
+        "bottom": [
+          670.5,
+          891.0
+        ],
+        "center": [
+          670.5,
+          445.5
+        ],
+        "opaque": 1197064,
+        "mean_rgb": [
+          44.22476577758789,
+          26.36054229736328,
+          15.495573997497559
+        ],
+        "mean_luma": 30.463340759277344,
+        "mean_warmth": 28.729190826416016
+      }
+    },
+    {
+      "psd_name": "post_R",
+      "name": "post_R",
+      "filename": "post_R.png",
+      "parent_group": "ENTRANCE",
+      "x": 1209,
+      "y": 39,
+      "w": 133,
+      "h": 730,
+      "scale": 1.0,
+      "native_w": 133,
+      "native_h": 730,
+      "src_px": [
+        133,
+        730
+      ],
+      "canvas_bounds": [
+        1209.0,
+        39.0,
+        1394.0,
+        769.0
+      ],
+      "effects_bounds": [
+        1209.0,
+        39.0,
+        1394.0,
+        769.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -52.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1209.0,
+        39.0,
+        1394.0,
+        769.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 3,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          133,
+          730
+        ],
+        "hang": [
+          78.5,
+          0.0
+        ],
+        "bottom": [
+          75.5,
+          729.0
+        ],
+        "center": [
+          65.54301802852832,
+          378.4697839376546
+        ],
+        "opaque": 64287,
+        "mean_rgb": [
+          47.252010345458984,
+          32.03638458251953,
+          20.466829299926758
+        ],
+        "mean_luma": 35.26692581176758,
+        "mean_warmth": 26.78518295288086
+      }
+    },
+    {
+      "psd_name": "post_R",
+      "name": "post_L",
+      "filename": "post_L.png",
+      "parent_group": "ENTRANCE",
+      "x": 0,
+      "y": 40,
+      "w": 131,
+      "h": 730,
+      "scale": 1.0,
+      "native_w": 131,
+      "native_h": 730,
+      "src_px": [
+        131,
+        730
+      ],
+      "canvas_bounds": [
+        -54.0,
+        40.0,
+        131.0,
+        770.0
+      ],
+      "effects_bounds": [
+        -54.0,
+        40.0,
+        131.0,
+        770.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -54.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        -54.0,
+        40.0,
+        131.0,
+        770.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 4,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          131,
+          730
+        ],
+        "hang": [
+          51.5,
+          0.0
+        ],
+        "bottom": [
+          54.5,
+          729.0
+        ],
+        "center": [
+          64.68613583138173,
+          377.5144262295082
+        ],
+        "opaque": 64050,
+        "mean_rgb": [
+          47.25356674194336,
+          32.05183410644531,
+          20.49617576599121
+        ],
+        "mean_luma": 35.27980422973633,
+        "mean_warmth": 26.75739288330078
+      }
+    },
+    {
+      "psd_name": "beam",
+      "name": "beam",
+      "filename": "beam.png",
+      "parent_group": "ENTRANCE",
+      "x": 18,
+      "y": 53,
+      "w": 1311,
+      "h": 76,
+      "scale": 1.0,
+      "native_w": 1311,
+      "native_h": 76,
+      "src_px": [
+        1311,
+        76
+      ],
+      "canvas_bounds": [
+        18.0,
+        53.0,
+        1329.0,
+        129.0
+      ],
+      "effects_bounds": [
+        18.0,
+        53.0,
+        1329.0,
+        129.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        18.0,
+        53.0,
+        1329.0,
+        129.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 5,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          1310,
+          76
+        ],
+        "hang": [
+          166.05769230769232,
+          0.0
+        ],
+        "bottom": [
+          177.0,
+          75.0
+        ],
+        "center": [
+          647.8742210989585,
+          36.25500021787442
+        ],
+        "opaque": 91796,
+        "mean_rgb": [
+          53.065513610839844,
+          36.582237243652344,
+          25.319425582885742
+        ],
+        "mean_luma": 40.226776123046875,
+        "mean_warmth": 27.746089935302734
+      }
+    },
+    {
+      "psd_name": "rock_02",
+      "name": "rock_02",
+      "filename": "rock_02.png",
+      "parent_group": "props",
+      "x": 987,
+      "y": 811,
+      "w": 42,
+      "h": 28,
+      "scale": 1.0,
+      "native_w": 42,
+      "native_h": 28,
+      "src_px": [
+        42,
+        28
+      ],
+      "canvas_bounds": [
+        986.0,
+        810.0,
+        1029.0,
+        840.0
+      ],
+      "effects_bounds": [
+        986.0,
+        810.0,
+        1029.0,
+        840.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -1.0,
+        -2.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        986.0,
+        810.0,
+        1029.0,
+        840.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 7,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          41,
+          28
+        ],
+        "hang": [
+          19.5,
+          0.0
+        ],
+        "bottom": [
+          16.0,
+          27.0
+        ],
+        "center": [
+          20.006053268765132,
+          14.830508474576272
+        ],
+        "opaque": 826,
+        "mean_rgb": [
+          58.73849868774414,
+          45.64891052246094,
+          35.447940826416016
+        ],
+        "mean_luma": 48.3997917175293,
+        "mean_warmth": 23.290555953979492
+      }
+    },
+    {
+      "psd_name": "rock",
+      "name": "rock",
+      "filename": "rock.png",
+      "parent_group": "props",
+      "x": 1012,
+      "y": 852,
+      "w": 26,
+      "h": 15,
+      "scale": 1.0,
+      "native_w": 26,
+      "native_h": 15,
+      "src_px": [
+        26,
+        15
+      ],
+      "canvas_bounds": [
+        1012.0,
+        852.0,
+        1038.0,
+        867.0
+      ],
+      "effects_bounds": [
+        1012.0,
+        852.0,
+        1038.0,
+        867.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1012.0,
+        852.0,
+        1038.0,
+        867.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 8,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          26,
+          15
+        ],
+        "hang": [
+          12.5,
+          0.0
+        ],
+        "bottom": [
+          11.0,
+          14.0
+        ],
+        "center": [
+          12.440860215053764,
+          7.49820788530466
+        ],
+        "opaque": 279,
+        "mean_rgb": [
+          55.1971321105957,
+          43.824371337890625,
+          35.2078857421875
+        ],
+        "mean_luma": 46.242549896240234,
+        "mean_warmth": 19.989246368408203
+      }
+    },
+    {
+      "psd_name": "rock_03",
+      "name": "rock_03",
+      "filename": "rock_03.png",
+      "parent_group": "props",
+      "x": 993,
+      "y": 827,
+      "w": 64,
+      "h": 27,
+      "scale": 1.0,
+      "native_w": 64,
+      "native_h": 27,
+      "src_px": [
+        64,
+        27
+      ],
+      "canvas_bounds": [
+        993.0,
+        826.0,
+        1057.0,
+        854.0
+      ],
+      "effects_bounds": [
+        993.0,
+        826.0,
+        1057.0,
+        854.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        993.0,
+        826.0,
+        1057.0,
+        854.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 9,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          64,
+          26
+        ],
+        "hang": [
+          47.5,
+          0.0
+        ],
+        "bottom": [
+          12.5,
+          25.0
+        ],
+        "center": [
+          36.336091003102375,
+          14.383660806618407
+        ],
+        "opaque": 967,
+        "mean_rgb": [
+          57.4539794921875,
+          44.24715805053711,
+          33.96380615234375
+        ],
+        "mean_luma": 47.02369689941406,
+        "mean_warmth": 23.490175247192383
+      }
+    },
+    {
+      "psd_name": "rocks",
+      "name": "rocks",
+      "filename": "rocks.png",
+      "parent_group": "props",
+      "x": 382,
+      "y": 729,
+      "w": 137,
+      "h": 46,
+      "scale": 1.0,
+      "native_w": 137,
+      "native_h": 46,
+      "src_px": [
+        137,
+        46
+      ],
+      "canvas_bounds": [
+        382.0,
+        729.0,
+        519.0,
+        775.0
+      ],
+      "effects_bounds": [
+        382.0,
+        729.0,
+        519.0,
+        775.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        382.0,
+        729.0,
+        519.0,
+        775.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 10,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          137,
+          46
+        ],
+        "hang": [
+          95.5,
+          0.0
+        ],
+        "bottom": [
+          54.0,
+          45.0
+        ],
+        "center": [
+          70.59272905919921,
+          23.344141488577744
+        ],
+        "opaque": 4071,
+        "mean_rgb": [
+          62.62564468383789,
+          48.70154571533203,
+          38.160404205322266
+        ],
+        "mean_luma": 51.66316223144531,
+        "mean_warmth": 24.465242385864258
+      }
+    },
+    {
+      "psd_name": "shrub",
+      "name": "shrub",
+      "filename": "shrub.png",
+      "parent_group": "props",
+      "x": 1031,
+      "y": 771,
+      "w": 68,
+      "h": 63,
+      "scale": 1.0,
+      "native_w": 68,
+      "native_h": 63,
+      "src_px": [
+        68,
+        63
+      ],
+      "canvas_bounds": [
+        1029.0,
+        770.0,
+        1099.0,
+        834.0
+      ],
+      "effects_bounds": [
+        1029.0,
+        770.0,
+        1099.0,
+        834.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1029.0,
+        770.0,
+        1099.0,
+        834.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 11,
+      "metrics": {
+        "bbox": [
+          2,
+          2,
+          62,
+          60
+        ],
+        "hang": [
+          2.5,
+          2.0
+        ],
+        "bottom": [
+          30.0,
+          61.0
+        ],
+        "center": [
+          29.822197680839317,
+          34.45223633351739
+        ],
+        "opaque": 1811,
+        "mean_rgb": [
+          53.623966217041016,
+          30.878520965576172,
+          9.614025115966797
+        ],
+        "mean_luma": 35.255252838134766,
+        "mean_warmth": 44.00994110107422
+      }
+    },
+    {
+      "psd_name": "grass_03",
+      "name": "grass_03",
+      "filename": "grass_03.png",
+      "parent_group": "props",
+      "x": 821,
+      "y": 675,
+      "w": 185,
+      "h": 122,
+      "scale": 1.0,
+      "native_w": 185,
+      "native_h": 122,
+      "src_px": [
+        185,
+        122
+      ],
+      "canvas_bounds": [
+        820.0,
+        675.0,
+        1007.0,
+        798.0
+      ],
+      "effects_bounds": [
+        820.0,
+        675.0,
+        1007.0,
+        798.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        820.0,
+        675.0,
+        1007.0,
+        798.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 12,
+      "metrics": {
+        "bbox": [
+          1,
+          1,
+          182,
+          121
+        ],
+        "hang": [
+          27.0,
+          1.0
+        ],
+        "bottom": [
+          143.66666666666666,
+          121.0
+        ],
+        "center": [
+          83.46567304307007,
+          69.87970895434808
+        ],
+        "opaque": 8521,
+        "mean_rgb": [
+          54.289283752441406,
+          31.15033531188965,
+          9.61999797821045
+        ],
+        "mean_luma": 35.614418029785156,
+        "mean_warmth": 44.669288635253906
+      }
+    },
+    {
+      "psd_name": "grass_02",
+      "name": "grass_02",
+      "filename": "grass_02.png",
+      "parent_group": "props",
+      "x": 1316,
+      "y": 570,
+      "w": 26,
+      "h": 39,
+      "scale": 1.0,
+      "native_w": 26,
+      "native_h": 39,
+      "src_px": [
+        26,
+        39
+      ],
+      "canvas_bounds": [
+        1315.0,
+        569.0,
+        1342.0,
+        610.0
+      ],
+      "effects_bounds": [
+        1315.0,
+        569.0,
+        1342.0,
+        610.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -1.0,
+        -2.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1315.0,
+        569.0,
+        1342.0,
+        610.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 13,
+      "metrics": {
+        "bbox": [
+          1,
+          3,
+          25,
+          35
+        ],
+        "hang": [
+          23.0,
+          3.0
+        ],
+        "bottom": [
+          21.5,
+          37.0
+        ],
+        "center": [
+          18.032258064516128,
+          23.548387096774192
+        ],
+        "opaque": 372,
+        "mean_rgb": [
+          54.271507263183594,
+          31.467741012573242,
+          9.967741966247559
+        ],
+        "mean_luma": 35.83506774902344,
+        "mean_warmth": 44.30376434326172
+      }
+    },
+    {
+      "psd_name": "rocks_02",
+      "name": "rocks_02",
+      "filename": "rocks_02.png",
+      "parent_group": "props",
+      "x": 57,
+      "y": 761,
+      "w": 103,
+      "h": 64,
+      "scale": 1.0,
+      "native_w": 103,
+      "native_h": 64,
+      "src_px": [
+        103,
+        64
+      ],
+      "canvas_bounds": [
+        57.0,
+        761.0,
+        160.0,
+        825.0
+      ],
+      "effects_bounds": [
+        57.0,
+        761.0,
+        160.0,
+        825.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        57.0,
+        761.0,
+        160.0,
+        825.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 14,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          103,
+          64
+        ],
+        "hang": [
+          34.0,
+          0.0
+        ],
+        "bottom": [
+          32.0,
+          63.0
+        ],
+        "center": [
+          48.80489447687472,
+          34.36753480017961
+        ],
+        "opaque": 4454,
+        "mean_rgb": [
+          59.25347900390625,
+          45.62371063232422,
+          35.28401565551758
+        ],
+        "mean_luma": 48.52028274536133,
+        "mean_warmth": 23.969465255737305
+      }
+    },
+    {
+      "psd_name": "grass",
+      "name": "grass",
+      "filename": "grass.png",
+      "parent_group": "props",
+      "x": 1126,
+      "y": 789,
+      "w": 42,
+      "h": 53,
+      "scale": 1.0,
+      "native_w": 42,
+      "native_h": 53,
+      "src_px": [
+        42,
+        53
+      ],
+      "canvas_bounds": [
+        1125.0,
+        788.0,
+        1169.0,
+        842.0
+      ],
+      "effects_bounds": [
+        1125.0,
+        788.0,
+        1169.0,
+        842.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1125.0,
+        788.0,
+        1169.0,
+        842.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 15,
+      "metrics": {
+        "bbox": [
+          2,
+          1,
+          39,
+          50
+        ],
+        "hang": [
+          4.5,
+          1.0
+        ],
+        "bottom": [
+          21.0,
+          50.0
+        ],
+        "center": [
+          20.645813282001924,
+          28.635226179018286
+        ],
+        "opaque": 1039,
+        "mean_rgb": [
+          53.81328201293945,
+          31.15880584716797,
+          9.818094253540039
+        ],
+        "mean_luma": 35.49965286254883,
+        "mean_warmth": 43.99518585205078
+      }
+    },
+    {
+      "psd_name": "cowboy_hat",
+      "name": "cowboy_hat",
+      "filename": "cowboy_hat.png",
+      "parent_group": "props",
+      "x": 955,
+      "y": 747,
+      "w": 170,
+      "h": 104,
+      "scale": 1.0,
+      "native_w": 170,
+      "native_h": 104,
+      "src_px": [
+        170,
+        104
+      ],
+      "canvas_bounds": [
+        954.0,
+        746.0,
+        1125.0,
+        851.0
+      ],
+      "effects_bounds": [
+        954.0,
+        746.0,
+        1125.0,
+        851.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -1.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        954.0,
+        746.0,
+        1125.0,
+        851.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 16,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          170,
+          104
+        ],
+        "hang": [
+          84.0,
+          0.0
+        ],
+        "bottom": [
+          49.5,
+          103.0
+        ],
+        "center": [
+          79.58262767350502,
+          54.43989524225229
+        ],
+        "opaque": 11455,
+        "mean_rgb": [
+          62.106590270996094,
+          43.69489288330078,
+          31.144392013549805
+        ],
+        "mean_luma": 47.76923370361328,
+        "mean_warmth": 30.962200164794922
+      }
+    },
+    {
+      "psd_name": "barrel",
+      "name": "barrel",
+      "filename": "barrel.png",
+      "parent_group": "props",
+      "x": 1232,
+      "y": 589,
+      "w": 110,
+      "h": 209,
+      "scale": 1.0,
+      "native_w": 110,
+      "native_h": 209,
+      "src_px": [
+        110,
+        209
+      ],
+      "canvas_bounds": [
+        1232.0,
+        589.0,
+        1342.0,
+        798.0
+      ],
+      "effects_bounds": [
+        1232.0,
+        589.0,
+        1342.0,
+        798.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1232.0,
+        589.0,
+        1342.0,
+        798.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 17,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          110,
+          209
+        ],
+        "hang": [
+          83.0,
+          0.0
+        ],
+        "bottom": [
+          80.0,
+          208.0
+        ],
+        "center": [
+          59.03944001930968,
+          103.16876659425537
+        ],
+        "opaque": 20715,
+        "mean_rgb": [
+          52.937870025634766,
+          34.75129318237305,
+          21.180498123168945
+        ],
+        "mean_luma": 38.64200973510742,
+        "mean_warmth": 31.757373809814453
+      }
+    },
+    {
+      "psd_name": "lantern_dim",
+      "name": "lantern_dim",
+      "filename": "lantern_dim.png",
+      "parent_group": "props",
+      "x": 1283,
+      "y": 459,
+      "w": 59,
+      "h": 151,
+      "scale": 1.0,
+      "native_w": 59,
+      "native_h": 151,
+      "src_px": [
+        59,
+        151
+      ],
+      "canvas_bounds": [
+        1283.0,
+        459.0,
+        1342.0,
+        610.0
+      ],
+      "effects_bounds": [
+        1283.0,
+        459.0,
+        1342.0,
+        610.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1283.0,
+        459.0,
+        1342.0,
+        610.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 18,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          59,
+          151
+        ],
+        "hang": [
+          31.0,
+          0.0
+        ],
+        "bottom": [
+          31.0,
+          150.0
+        ],
+        "center": [
+          30.63737247180956,
+          90.68426704850546
+        ],
+        "opaque": 5587,
+        "mean_rgb": [
+          42.90030288696289,
+          32.90298843383789,
+          25.599964141845703
+        ],
+        "mean_luma": 35.05964279174805,
+        "mean_warmth": 17.30034065246582
+      }
+    },
+    {
+      "psd_name": "wagon_wheel",
+      "name": "wagon_wheel",
+      "filename": "wagon_wheel.png",
+      "parent_group": "props",
+      "x": 83,
+      "y": 585,
+      "w": 202,
+      "h": 210,
+      "scale": 1.0,
+      "native_w": 202,
+      "native_h": 210,
+      "src_px": [
+        202,
+        210
+      ],
+      "canvas_bounds": [
+        83.0,
+        585.0,
+        285.0,
+        795.0
+      ],
+      "effects_bounds": [
+        83.0,
+        585.0,
+        285.0,
+        795.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        83.0,
+        585.0,
+        285.0,
+        795.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 19,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          201,
+          210
+        ],
+        "hang": [
+          100.5,
+          0.0
+        ],
+        "bottom": [
+          102.5,
+          209.0
+        ],
+        "center": [
+          100.72352594835563,
+          104.15287240306165
+        ],
+        "opaque": 23778,
+        "mean_rgb": [
+          58.43498229980469,
+          36.723777770996094,
+          21.78299331665039
+        ],
+        "mean_luma": 41.51218032836914,
+        "mean_warmth": 36.6519889831543
+      }
+    },
+    {
+      "psd_name": "tombstone",
+      "name": "tombstone",
+      "filename": "tombstone.png",
+      "parent_group": "props",
+      "x": 1041,
+      "y": 611,
+      "w": 256,
+      "h": 278,
+      "scale": 1.0,
+      "native_w": 256,
+      "native_h": 278,
+      "src_px": [
+        256,
+        278
+      ],
+      "canvas_bounds": [
+        1041.0,
+        611.0,
+        1297.0,
+        889.0
+      ],
+      "effects_bounds": [
+        1041.0,
+        611.0,
+        1297.0,
+        889.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1041.0,
+        611.0,
+        1297.0,
+        889.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 20,
+      "metrics": {
+        "bbox": [
+          0,
+          1,
+          255,
+          276
+        ],
+        "hang": [
+          149.0,
+          1.0
+        ],
+        "bottom": [
+          153.5,
+          276.0
+        ],
+        "center": [
+          140.0803291184647,
+          156.2612770155143
+        ],
+        "opaque": 44604,
+        "mean_rgb": [
+          70.14585876464844,
+          54.79616165161133,
+          41.98796081542969
+        ],
+        "mean_luma": 57.92559051513672,
+        "mean_warmth": 28.157899856567383
+      }
+    },
+    {
+      "psd_name": "skull",
+      "name": "skull",
+      "filename": "skull.png",
+      "parent_group": "",
+      "x": 4,
+      "y": 674,
+      "w": 201,
+      "h": 201,
+      "scale": 1.0,
+      "native_w": 201,
+      "native_h": 201,
+      "src_px": [
+        201,
+        201
+      ],
+      "canvas_bounds": [
+        4.0,
+        674.0,
+        205.0,
+        875.0
+      ],
+      "effects_bounds": [
+        4.0,
+        674.0,
+        205.0,
+        875.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        4.0,
+        674.0,
+        205.0,
+        875.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 27,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          200,
+          201
+        ],
+        "hang": [
+          110.5,
+          0.0
+        ],
+        "bottom": [
+          141.5,
+          200.0
+        ],
+        "center": [
+          111.49026122076738,
+          94.06624975571624
+        ],
+        "opaque": 15351,
+        "mean_rgb": [
+          92.55944061279297,
+          73.79558563232422,
+          58.29352951049805
+        ],
+        "mean_luma": 77.63874816894531,
+        "mean_warmth": 34.26591110229492
+      }
+    },
+    {
+      "psd_name": "signpost",
+      "name": "signpost",
+      "filename": "signpost.png",
+      "parent_group": "Group 1",
+      "x": 18,
+      "y": 390,
+      "w": 187,
+      "h": 289,
+      "scale": 1.0,
+      "native_w": 187,
+      "native_h": 289,
+      "src_px": [
+        187,
+        289
+      ],
+      "canvas_bounds": [
+        18.0,
+        390.0,
+        205.0,
+        679.0
+      ],
+      "effects_bounds": [
+        18.0,
+        390.0,
+        205.0,
+        679.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        18.0,
+        390.0,
+        205.0,
+        679.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 29,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          187,
+          289
+        ],
+        "hang": [
+          79.0,
+          0.0
+        ],
+        "bottom": [
+          95.0,
+          288.0
+        ],
+        "center": [
+          92.09610777599279,
+          151.7653110115273
+        ],
+        "opaque": 35481,
+        "mean_rgb": [
+          65.885009765625,
+          44.243003845214844,
+          27.73408317565918
+        ],
+        "mean_luma": 48.83194351196289,
+        "mean_warmth": 38.15092468261719
+      }
+    },
+    {
+      "psd_name": "postsign",
+      "name": "postsign",
+      "filename": "postsign.png",
+      "parent_group": "Group 1",
+      "x": 0,
+      "y": 292,
+      "w": 305,
+      "h": 600,
+      "scale": 1.0,
+      "native_w": 305,
+      "native_h": 600,
+      "src_px": [
+        305,
+        600
+      ],
+      "canvas_bounds": [
+        0.0,
+        292.0,
+        305.0,
+        892.0
+      ],
+      "effects_bounds": [
+        0.0,
+        292.0,
+        305.0,
+        892.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        0.0,
+        292.0,
+        305.0,
+        892.0
+      ],
+      "opacity": 100.0,
+      "blend": "darken",
+      "stack_index": 30,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          305,
+          600
+        ],
+        "hang": [
+          152.5,
+          0.0
+        ],
+        "bottom": [
+          152.5,
+          599.0
+        ],
+        "center": [
+          152.5,
+          300.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "tellnotales",
+      "name": "tellnotales",
+      "filename": "tellnotales.png",
+      "parent_group": "Group 1",
+      "x": 47,
+      "y": 627,
+      "w": 139,
+      "h": 44,
+      "scale": 1.0,
+      "native_w": 139,
+      "native_h": 44,
+      "src_px": [
+        139,
+        44
+      ],
+      "canvas_bounds": [
+        47.0,
+        627.0,
+        186.0,
+        671.0
+      ],
+      "effects_bounds": [
+        47.0,
+        627.0,
+        186.0,
+        671.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        47.0,
+        627.0,
+        186.0,
+        671.0
+      ],
+      "opacity": 100.0,
+      "blend": "darken",
+      "stack_index": 31,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          139,
+          44
+        ],
+        "hang": [
+          69.5,
+          0.0
+        ],
+        "bottom": [
+          69.5,
+          43.0
+        ],
+        "center": [
+          69.5,
+          22.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "deadman",
+      "name": "deadman",
+      "filename": "deadman.png",
+      "parent_group": "Group 1",
+      "x": 49,
+      "y": 557,
+      "w": 139,
+      "h": 54,
+      "scale": 1.0,
+      "native_w": 139,
+      "native_h": 54,
+      "src_px": [
+        139,
+        54
+      ],
+      "canvas_bounds": [
+        49.0,
+        557.0,
+        188.0,
+        611.0
+      ],
+      "effects_bounds": [
+        49.0,
+        557.0,
+        188.0,
+        611.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        49.0,
+        557.0,
+        188.0,
+        611.0
+      ],
+      "opacity": 100.0,
+      "blend": "darken",
+      "stack_index": 32,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          139,
+          54
+        ],
+        "hang": [
+          69.5,
+          0.0
+        ],
+        "bottom": [
+          69.5,
+          53.0
+        ],
+        "center": [
+          69.5,
+          27.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "beware2",
+      "name": "beware2",
+      "filename": "beware2.png",
+      "parent_group": "Group 1",
+      "x": 55,
+      "y": 498,
+      "w": 118,
+      "h": 48,
+      "scale": 1.0,
+      "native_w": 118,
+      "native_h": 48,
+      "src_px": [
+        118,
+        48
+      ],
+      "canvas_bounds": [
+        55.0,
+        498.0,
+        173.0,
+        546.0
+      ],
+      "effects_bounds": [
+        55.0,
+        498.0,
+        173.0,
+        546.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        55.0,
+        498.0,
+        173.0,
+        546.0
+      ],
+      "opacity": 100.0,
+      "blend": "darken",
+      "stack_index": 33,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          118,
+          48
+        ],
+        "hang": [
+          59.0,
+          0.0
+        ],
+        "bottom": [
+          59.0,
+          47.0
+        ],
+        "center": [
+          59.0,
+          24.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "beware1",
+      "name": "beware1",
+      "filename": "beware1.png",
+      "parent_group": "Group 1",
+      "x": 47,
+      "y": 424,
+      "w": 120,
+      "h": 54,
+      "scale": 1.0,
+      "native_w": 120,
+      "native_h": 54,
+      "src_px": [
+        120,
+        54
+      ],
+      "canvas_bounds": [
+        47.0,
+        424.0,
+        167.0,
+        478.0
+      ],
+      "effects_bounds": [
+        47.0,
+        424.0,
+        167.0,
+        478.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        47.0,
+        424.0,
+        167.0,
+        478.0
+      ],
+      "opacity": 100.0,
+      "blend": "darken",
+      "stack_index": 34,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          120,
+          54
+        ],
+        "hang": [
+          60.0,
+          0.0
+        ],
+        "bottom": [
+          60.0,
+          53.0
+        ],
+        "center": [
+          60.0,
+          27.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "right  hanging lamp",
+      "name": "right_hanging_lamp",
+      "filename": "right_hanging_lamp.png",
+      "parent_group": "",
+      "x": 1188,
+      "y": 73,
+      "w": 62,
+      "h": 232,
+      "scale": 1.0,
+      "native_w": 62,
+      "native_h": 232,
+      "src_px": [
+        62,
+        232
+      ],
+      "canvas_bounds": [
+        1188.0,
+        73.0,
+        1250.0,
+        305.0
+      ],
+      "effects_bounds": [
+        1188.0,
+        73.0,
+        1250.0,
+        305.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1188.0,
+        73.0,
+        1250.0,
+        305.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 36,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          62,
+          232
+        ],
+        "hang": [
+          31.0,
+          0.0
+        ],
+        "bottom": [
+          33.0,
+          231.0
+        ],
+        "center": [
+          30.84690778575373,
+          149.7344008834898
+        ],
+        "opaque": 7244,
+        "mean_rgb": [
+          69.94160461425781,
+          47.299835205078125,
+          29.64522361755371
+        ],
+        "mean_luma": 52.057098388671875,
+        "mean_warmth": 40.296382904052734
+      }
+    },
+    {
+      "psd_name": "left hanging lamp",
+      "name": "left_hanging_lamp",
+      "filename": "left_hanging_lamp.png",
+      "parent_group": "",
+      "x": 98,
+      "y": 73,
+      "w": 62,
+      "h": 232,
+      "scale": 1.0,
+      "native_w": 62,
+      "native_h": 232,
+      "src_px": [
+        62,
+        232
+      ],
+      "canvas_bounds": [
+        98.0,
+        73.0,
+        160.0,
+        305.0
+      ],
+      "effects_bounds": [
+        98.0,
+        73.0,
+        160.0,
+        305.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        98.0,
+        73.0,
+        160.0,
+        305.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 37,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          62,
+          232
+        ],
+        "hang": [
+          31.0,
+          0.0
+        ],
+        "bottom": [
+          33.0,
+          231.0
+        ],
+        "center": [
+          30.84690778575373,
+          149.7344008834898
+        ],
+        "opaque": 7244,
+        "mean_rgb": [
+          69.94160461425781,
+          47.299835205078125,
+          29.64522361755371
+        ],
+        "mean_luma": 52.057098388671875,
+        "mean_warmth": 40.296382904052734
+      }
+    },
+    {
+      "psd_name": "MAIN FRAME",
+      "name": "MAIN_FRAME",
+      "filename": "MAIN_FRAME.png",
+      "parent_group": "",
+      "x": 310,
+      "y": 136,
+      "w": 725,
+      "h": 612,
+      "scale": 1.0,
+      "native_w": 725,
+      "native_h": 612,
+      "src_px": [
+        725,
+        612
+      ],
+      "canvas_bounds": [
+        307.0,
+        136.0,
+        1035.0,
+        750.0
+      ],
+      "effects_bounds": [
+        307.0,
+        136.0,
+        1035.0,
+        750.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -3.0,
+        -2.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        307.0,
+        136.0,
+        1035.0,
+        750.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 40,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          725,
+          609
+        ],
+        "hang": [
+          153.0,
+          0.0
+        ],
+        "bottom": [
+          181.5,
+          608.0
+        ],
+        "center": [
+          335.5061328243121,
+          304.8947025249471
+        ],
+        "opaque": 105824,
+        "mean_rgb": [
+          61.011566162109375,
+          43.03489685058594,
+          28.11286735534668
+        ],
+        "mean_luma": 46.70880889892578,
+        "mean_warmth": 32.89870071411133
+      }
+    },
+    {
+      "psd_name": "Layer 4",
+      "name": "Layer_4",
+      "filename": "Layer_4.png",
+      "parent_group": "ways frame",
+      "x": 881,
+      "y": 151,
+      "w": 149,
+      "h": 84,
+      "scale": 1.0,
+      "native_w": 149,
+      "native_h": 84,
+      "src_px": [
+        149,
+        84
+      ],
+      "canvas_bounds": [
+        880.0,
+        151.0,
+        1031.0,
+        235.0
+      ],
+      "effects_bounds": [
+        880.0,
+        151.0,
+        1031.0,
+        235.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        880.0,
+        151.0,
+        1031.0,
+        235.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 42,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          148,
+          83
+        ],
+        "hang": [
+          119.5,
+          0.0
+        ],
+        "bottom": [
+          66.4,
+          82.0
+        ],
+        "center": [
+          70.97064276885044,
+          49.79928924598269
+        ],
+        "opaque": 6472,
+        "mean_rgb": [
+          47.999534606933594,
+          37.35939407348633,
+          28.759580612182617
+        ],
+        "mean_luma": 39.56041717529297,
+        "mean_warmth": 19.23995590209961
+      }
+    },
+    {
+      "psd_name": "Layer 5",
+      "name": "Layer_5",
+      "filename": "Layer_5.png",
+      "parent_group": "ways frame",
+      "x": 882,
+      "y": 142,
+      "w": 143,
+      "h": 32,
+      "scale": 1.0,
+      "native_w": 143,
+      "native_h": 32,
+      "src_px": [
+        143,
+        32
+      ],
+      "canvas_bounds": [
+        882.0,
+        141.0,
+        1025.0,
+        174.0
+      ],
+      "effects_bounds": [
+        882.0,
+        141.0,
+        1025.0,
+        174.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        882.0,
+        141.0,
+        1025.0,
+        174.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 43,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          142,
+          31
+        ],
+        "hang": [
+          73.0,
+          0.0
+        ],
+        "bottom": [
+          73.0,
+          30.0
+        ],
+        "center": [
+          71.52326139088728,
+          14.956834532374101
+        ],
+        "opaque": 4170,
+        "mean_rgb": [
+          73.24724578857422,
+          59.55683517456055,
+          47.6007194519043
+        ],
+        "mean_luma": 62.287269592285156,
+        "mean_warmth": 25.646522521972656
+      }
+    },
+    {
+      "psd_name": "Layer 4 copy",
+      "name": "Layer_4_copy",
+      "filename": "Layer_4_copy.png",
+      "parent_group": "multi frame",
+      "x": 736,
+      "y": 151,
+      "w": 149,
+      "h": 84,
+      "scale": 1.0,
+      "native_w": 149,
+      "native_h": 84,
+      "src_px": [
+        149,
+        84
+      ],
+      "canvas_bounds": [
+        735.0,
+        151.0,
+        886.0,
+        235.0
+      ],
+      "effects_bounds": [
+        735.0,
+        151.0,
+        886.0,
+        235.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        735.0,
+        151.0,
+        886.0,
+        235.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 45,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          148,
+          83
+        ],
+        "hang": [
+          119.5,
+          0.0
+        ],
+        "bottom": [
+          66.4,
+          82.0
+        ],
+        "center": [
+          70.97064276885044,
+          49.79928924598269
+        ],
+        "opaque": 6472,
+        "mean_rgb": [
+          47.999534606933594,
+          37.35939407348633,
+          28.759580612182617
+        ],
+        "mean_luma": 39.56041717529297,
+        "mean_warmth": 19.23995590209961
+      }
+    },
+    {
+      "psd_name": "Layer 6",
+      "name": "Layer_6",
+      "filename": "Layer_6.png",
+      "parent_group": "multi frame",
+      "x": 735,
+      "y": 142,
+      "w": 145,
+      "h": 31,
+      "scale": 1.0,
+      "native_w": 145,
+      "native_h": 31,
+      "src_px": [
+        145,
+        31
+      ],
+      "canvas_bounds": [
+        734.0,
+        141.0,
+        880.0,
+        173.0
+      ],
+      "effects_bounds": [
+        734.0,
+        141.0,
+        880.0,
+        173.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -1.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        734.0,
+        141.0,
+        880.0,
+        173.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 46,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          145,
+          31
+        ],
+        "hang": [
+          74.5,
+          0.0
+        ],
+        "bottom": [
+          73.90322580645162,
+          30.0
+        ],
+        "center": [
+          72.47133301481128,
+          15.02675585284281
+        ],
+        "opaque": 4186,
+        "mean_rgb": [
+          61.9171028137207,
+          49.83014678955078,
+          39.776397705078125
+        ],
+        "mean_luma": 52.29801940917969,
+        "mean_warmth": 22.14070701599121
+      }
+    },
+    {
+      "psd_name": "Layer 4 copy 2",
+      "name": "Layer_4_copy_2",
+      "filename": "Layer_4_copy_2.png",
+      "parent_group": "win frame",
+      "x": 736,
+      "y": 647,
+      "w": 149,
+      "h": 83,
+      "scale": 1.0,
+      "native_w": 149,
+      "native_h": 83,
+      "src_px": [
+        149,
+        83
+      ],
+      "canvas_bounds": [
+        735.0,
+        647.0,
+        886.0,
+        730.0
+      ],
+      "effects_bounds": [
+        735.0,
+        647.0,
+        886.0,
+        730.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        735.0,
+        647.0,
+        886.0,
+        730.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 49,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          148,
+          83
+        ],
+        "hang": [
+          66.57446808510639,
+          0.0
+        ],
+        "bottom": [
+          21.5,
+          82.0
+        ],
+        "center": [
+          70.73856108457865,
+          49.23309197350177
+        ],
+        "opaque": 6491,
+        "mean_rgb": [
+          47.62979507446289,
+          37.066246032714844,
+          28.5308895111084
+        ],
+        "mean_luma": 39.2517204284668,
+        "mean_warmth": 19.098905563354492
+      }
+    },
+    {
+      "psd_name": "Layer 7",
+      "name": "Layer_7",
+      "filename": "Layer_7.png",
+      "parent_group": "win frame",
+      "x": 734,
+      "y": 632,
+      "w": 145,
+      "h": 29,
+      "scale": 1.0,
+      "native_w": 145,
+      "native_h": 29,
+      "src_px": [
+        145,
+        29
+      ],
+      "canvas_bounds": [
+        734.0,
+        632.0,
+        879.0,
+        661.0
+      ],
+      "effects_bounds": [
+        734.0,
+        632.0,
+        879.0,
+        661.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        734.0,
+        632.0,
+        879.0,
+        661.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 50,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          144,
+          29
+        ],
+        "hang": [
+          13.5,
+          0.0
+        ],
+        "bottom": [
+          86.6938775510204,
+          28.0
+        ],
+        "center": [
+          71.93991299619358,
+          14.432028276237086
+        ],
+        "opaque": 3678,
+        "mean_rgb": [
+          70.29798889160156,
+          57.28792953491211,
+          44.940185546875
+        ],
+        "mean_luma": 59.770294189453125,
+        "mean_warmth": 25.357803344726562
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 7",
+      "name": "Layer_8_copy_7",
+      "filename": "Layer_8_copy_7.png",
+      "parent_group": "win frame chains",
+      "x": 747,
+      "y": 577,
+      "w": 16,
+      "h": 74,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 74,
+      "src_px": [
+        16,
+        74
+      ],
+      "canvas_bounds": [
+        747.0,
+        577.0,
+        763.0,
+        651.0
+      ],
+      "effects_bounds": [
+        747.0,
+        577.0,
+        763.0,
+        651.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        747.0,
+        577.0,
+        763.0,
+        651.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 52,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          74
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          12.5,
+          73.0
+        ],
+        "center": [
+          7.665505226480836,
+          35.102787456445995
+        ],
+        "opaque": 574,
+        "mean_rgb": [
+          49.395469665527344,
+          40.82926940917969,
+          37.57143020629883
+        ],
+        "mean_luma": 43.019168853759766,
+        "mean_warmth": 11.824041366577148
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 8",
+      "name": "Layer_8_copy_8",
+      "filename": "Layer_8_copy_8.png",
+      "parent_group": "win frame chains",
+      "x": 852,
+      "y": 577,
+      "w": 16,
+      "h": 73,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 73,
+      "src_px": [
+        16,
+        73
+      ],
+      "canvas_bounds": [
+        852.0,
+        577.0,
+        868.0,
+        651.0
+      ],
+      "effects_bounds": [
+        852.0,
+        577.0,
+        868.0,
+        651.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        852.0,
+        577.0,
+        868.0,
+        651.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 53,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          73
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          13.0,
+          72.0
+        ],
+        "center": [
+          7.747252747252747,
+          33.294871794871796
+        ],
+        "opaque": 546,
+        "mean_rgb": [
+          49.869964599609375,
+          41.24908447265625,
+          37.985347747802734
+        ],
+        "mean_luma": 43.45466232299805,
+        "mean_warmth": 11.884614944458008
+      }
+    },
+    {
+      "psd_name": "Layer 8",
+      "name": "Layer_8",
+      "filename": "Layer_8.png",
+      "parent_group": "chains upframe",
+      "x": 350,
+      "y": 193,
+      "w": 14,
+      "h": 51,
+      "scale": 1.0,
+      "native_w": 14,
+      "native_h": 51,
+      "src_px": [
+        14,
+        51
+      ],
+      "canvas_bounds": [
+        350.0,
+        193.0,
+        364.0,
+        244.0
+      ],
+      "effects_bounds": [
+        350.0,
+        193.0,
+        364.0,
+        244.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        350.0,
+        193.0,
+        364.0,
+        244.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 58,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          12,
+          50
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          6.5,
+          49.0
+        ],
+        "center": [
+          6.5331564986737405,
+          24.94164456233422
+        ],
+        "opaque": 377,
+        "mean_rgb": [
+          42.14058303833008,
+          34.3342170715332,
+          31.24933624267578
+        ],
+        "mean_luma": 36.31664276123047,
+        "mean_warmth": 10.891246795654297
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy",
+      "name": "Layer_8_copy",
+      "filename": "Layer_8_copy.png",
+      "parent_group": "chains upframe",
+      "x": 453,
+      "y": 91,
+      "w": 16,
+      "h": 71,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 71,
+      "src_px": [
+        16,
+        71
+      ],
+      "canvas_bounds": [
+        453.0,
+        91.0,
+        469.0,
+        163.0
+      ],
+      "effects_bounds": [
+        453.0,
+        91.0,
+        469.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        453.0,
+        91.0,
+        469.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 59,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          70
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          3.0,
+          69.0
+        ],
+        "center": [
+          7.493408662900189,
+          32.56120527306968
+        ],
+        "opaque": 531,
+        "mean_rgb": [
+          50.36346435546875,
+          41.62523651123047,
+          38.40113067626953
+        ],
+        "mean_luma": 43.870418548583984,
+        "mean_warmth": 11.962335586547852
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 2",
+      "name": "Layer_8_copy_2",
+      "filename": "Layer_8_copy_2.png",
+      "parent_group": "chains upframe",
+      "x": 686,
+      "y": 93,
+      "w": 16,
+      "h": 69,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 69,
+      "src_px": [
+        16,
+        69
+      ],
+      "canvas_bounds": [
+        686.0,
+        93.0,
+        702.0,
+        163.0
+      ],
+      "effects_bounds": [
+        686.0,
+        93.0,
+        702.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        686.0,
+        93.0,
+        702.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 60,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          69
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          11.5,
+          68.0
+        ],
+        "center": [
+          7.570342205323194,
+          32.22053231939164
+        ],
+        "opaque": 526,
+        "mean_rgb": [
+          50.365020751953125,
+          41.6254768371582,
+          38.416351318359375
+        ],
+        "mean_luma": 43.87275695800781,
+        "mean_warmth": 11.94866943359375
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 3",
+      "name": "Layer_8_copy_3",
+      "filename": "Layer_8_copy_3.png",
+      "parent_group": "chains upframe",
+      "x": 750,
+      "y": 91,
+      "w": 16,
+      "h": 68,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 68,
+      "src_px": [
+        16,
+        68
+      ],
+      "canvas_bounds": [
+        750.0,
+        91.0,
+        766.0,
+        160.0
+      ],
+      "effects_bounds": [
+        750.0,
+        91.0,
+        766.0,
+        160.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        750.0,
+        91.0,
+        766.0,
+        160.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 61,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          68
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          13.0,
+          67.0
+        ],
+        "center": [
+          7.555769230769231,
+          31.815384615384616
+        ],
+        "opaque": 520,
+        "mean_rgb": [
+          50.50961685180664,
+          41.7576904296875,
+          38.54807662963867
+        ],
+        "mean_luma": 44.00862121582031,
+        "mean_warmth": 11.961538314819336
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 4",
+      "name": "Layer_8_copy_4",
+      "filename": "Layer_8_copy_4.png",
+      "parent_group": "chains upframe",
+      "x": 850,
+      "y": 93,
+      "w": 16,
+      "h": 65,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 65,
+      "src_px": [
+        16,
+        65
+      ],
+      "canvas_bounds": [
+        850.0,
+        93.0,
+        866.0,
+        159.0
+      ],
+      "effects_bounds": [
+        850.0,
+        93.0,
+        866.0,
+        159.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        850.0,
+        93.0,
+        866.0,
+        159.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 62,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          65
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          12.0,
+          64.0
+        ],
+        "center": [
+          7.592213114754099,
+          29.672131147540984
+        ],
+        "opaque": 488,
+        "mean_rgb": [
+          51.15983581542969,
+          42.3278694152832,
+          39.11270523071289
+        ],
+        "mean_luma": 44.60210037231445,
+        "mean_warmth": 12.047131538391113
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 5",
+      "name": "Layer_8_copy_5",
+      "filename": "Layer_8_copy_5.png",
+      "parent_group": "chains upframe",
+      "x": 893,
+      "y": 93,
+      "w": 16,
+      "h": 67,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 67,
+      "src_px": [
+        16,
+        67
+      ],
+      "canvas_bounds": [
+        893.0,
+        93.0,
+        909.0,
+        161.0
+      ],
+      "effects_bounds": [
+        893.0,
+        93.0,
+        909.0,
+        161.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        893.0,
+        93.0,
+        909.0,
+        161.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 63,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          67
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          2.5,
+          66.0
+        ],
+        "center": [
+          7.511764705882353,
+          31.152941176470588
+        ],
+        "opaque": 510,
+        "mean_rgb": [
+          50.85097885131836,
+          42.062744140625,
+          38.8411750793457
+        ],
+        "mean_luma": 44.32316970825195,
+        "mean_warmth": 12.009803771972656
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 5",
+      "name": "Layer_8_copy_5_02",
+      "filename": "Layer_8_copy_5_02.png",
+      "parent_group": "chains upframe",
+      "x": 893,
+      "y": 214,
+      "w": 16,
+      "h": 85,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 85,
+      "src_px": [
+        16,
+        85
+      ],
+      "canvas_bounds": [
+        893.0,
+        213.0,
+        909.0,
+        299.0
+      ],
+      "effects_bounds": [
+        893.0,
+        213.0,
+        909.0,
+        299.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        893.0,
+        213.0,
+        909.0,
+        299.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 64,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          85
+        ],
+        "hang": [
+          7.333333333333333,
+          0.0
+        ],
+        "bottom": [
+          7.5,
+          84.0
+        ],
+        "center": [
+          7.615615615615615,
+          43.3978978978979
+        ],
+        "opaque": 666,
+        "mean_rgb": [
+          48.5,
+          40.09309387207031,
+          36.893394470214844
+        ],
+        "mean_luma": 42.24199295043945,
+        "mean_warmth": 11.606606483459473
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 9",
+      "name": "Layer_8_copy_9",
+      "filename": "Layer_8_copy_9.png",
+      "parent_group": "chains upframe",
+      "x": 995,
+      "y": 243,
+      "w": 16,
+      "h": 117,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 117,
+      "src_px": [
+        16,
+        117
+      ],
+      "canvas_bounds": [
+        995.0,
+        243.0,
+        1011.0,
+        360.0
+      ],
+      "effects_bounds": [
+        995.0,
+        243.0,
+        1011.0,
+        360.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        995.0,
+        243.0,
+        1011.0,
+        360.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 65,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          117
+        ],
+        "hang": [
+          8.0,
+          0.0
+        ],
+        "bottom": [
+          7.5,
+          116.0
+        ],
+        "center": [
+          7.603314917127072,
+          59.60662983425414
+        ],
+        "opaque": 905,
+        "mean_rgb": [
+          46.90276336669922,
+          38.57900619506836,
+          35.39005661010742
+        ],
+        "mean_luma": 40.70426559448242,
+        "mean_warmth": 11.512706756591797
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 11",
+      "name": "Layer_8_copy_11",
+      "filename": "Layer_8_copy_11.png",
+      "parent_group": "chains upframe",
+      "x": 349,
+      "y": 93,
+      "w": 16,
+      "h": 117,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 117,
+      "src_px": [
+        16,
+        117
+      ],
+      "canvas_bounds": [
+        349.0,
+        93.0,
+        365.0,
+        210.0
+      ],
+      "effects_bounds": [
+        349.0,
+        93.0,
+        365.0,
+        210.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        349.0,
+        93.0,
+        365.0,
+        210.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 66,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          116
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          8.0,
+          115.0
+        ],
+        "center": [
+          7.603563474387528,
+          56.148106904231625
+        ],
+        "opaque": 898,
+        "mean_rgb": [
+          47.21046829223633,
+          38.818485260009766,
+          35.626949310302734
+        ],
+        "mean_luma": 40.96385192871094,
+        "mean_warmth": 11.583518981933594
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 10",
+      "name": "Layer_8_copy_10",
+      "filename": "Layer_8_copy_10.png",
+      "parent_group": "chains upframe",
+      "x": 996,
+      "y": 215,
+      "w": 14,
+      "h": 46,
+      "scale": 1.0,
+      "native_w": 14,
+      "native_h": 46,
+      "src_px": [
+        14,
+        46
+      ],
+      "canvas_bounds": [
+        996.0,
+        214.0,
+        1010.0,
+        261.0
+      ],
+      "effects_bounds": [
+        996.0,
+        214.0,
+        1010.0,
+        261.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        996.0,
+        214.0,
+        1010.0,
+        261.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 67,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          12,
+          46
+        ],
+        "hang": [
+          10.0,
+          0.0
+        ],
+        "bottom": [
+          7.5,
+          45.0
+        ],
+        "center": [
+          6.778787878787878,
+          23.193939393939395
+        ],
+        "opaque": 330,
+        "mean_rgb": [
+          41.97575759887695,
+          34.29999923706055,
+          31.263635635375977
+        ],
+        "mean_luma": 36.24890899658203,
+        "mean_warmth": 10.71212100982666
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 6",
+      "name": "Layer_8_copy_6",
+      "filename": "Layer_8_copy_6.png",
+      "parent_group": "chains upframe",
+      "x": 996,
+      "y": 93,
+      "w": 16,
+      "h": 67,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 67,
+      "src_px": [
+        16,
+        67
+      ],
+      "canvas_bounds": [
+        996.0,
+        93.0,
+        1012.0,
+        161.0
+      ],
+      "effects_bounds": [
+        996.0,
+        93.0,
+        1012.0,
+        161.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        996.0,
+        93.0,
+        1012.0,
+        161.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 68,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          67
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          2.5,
+          66.0
+        ],
+        "center": [
+          7.52621359223301,
+          31.481553398058253
+        ],
+        "opaque": 515,
+        "mean_rgb": [
+          50.57863998413086,
+          41.8330078125,
+          38.6233024597168
+        ],
+        "mean_luma": 44.08204650878906,
+        "mean_warmth": 11.955339431762695
+      }
+    },
+    {
+      "psd_name": "chain bolt",
+      "name": "chain_bolt",
+      "filename": "chain_bolt.png",
+      "parent_group": "chain bolts",
+      "x": 352,
+      "y": 95,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        352.0,
+        95.0,
+        362.0,
+        106.0
+      ],
+      "effects_bounds": [
+        352.0,
+        95.0,
+        362.0,
+        106.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        352.0,
+        95.0,
+        362.0,
+        106.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 70,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 11",
+      "name": "chain_bolt_copy_11",
+      "filename": "chain_bolt_copy_11.png",
+      "parent_group": "chain bolts",
+      "x": 352,
+      "y": 235,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        352.0,
+        235.0,
+        362.0,
+        246.0
+      ],
+      "effects_bounds": [
+        352.0,
+        235.0,
+        362.0,
+        246.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        352.0,
+        235.0,
+        362.0,
+        246.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 71,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 12",
+      "name": "chain_bolt_copy_12",
+      "filename": "chain_bolt_copy_12.png",
+      "parent_group": "chain bolts",
+      "x": 456,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        456.0,
+        152.0,
+        466.0,
+        163.0
+      ],
+      "effects_bounds": [
+        456.0,
+        152.0,
+        466.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        456.0,
+        152.0,
+        466.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 72,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 13",
+      "name": "chain_bolt_copy_13",
+      "filename": "chain_bolt_copy_13.png",
+      "parent_group": "chain bolts",
+      "x": 689,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        689.0,
+        152.0,
+        699.0,
+        163.0
+      ],
+      "effects_bounds": [
+        689.0,
+        152.0,
+        699.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        689.0,
+        152.0,
+        699.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 73,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 14",
+      "name": "chain_bolt_copy_14",
+      "filename": "chain_bolt_copy_14.png",
+      "parent_group": "chain bolts",
+      "x": 753,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        753.0,
+        152.0,
+        763.0,
+        163.0
+      ],
+      "effects_bounds": [
+        753.0,
+        152.0,
+        763.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        753.0,
+        152.0,
+        763.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 74,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 15",
+      "name": "chain_bolt_copy_15",
+      "filename": "chain_bolt_copy_15.png",
+      "parent_group": "chain bolts",
+      "x": 853,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        853.0,
+        152.0,
+        863.0,
+        163.0
+      ],
+      "effects_bounds": [
+        853.0,
+        152.0,
+        863.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        853.0,
+        152.0,
+        863.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 75,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 16",
+      "name": "chain_bolt_copy_16",
+      "filename": "chain_bolt_copy_16.png",
+      "parent_group": "chain bolts",
+      "x": 896,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        896.0,
+        152.0,
+        906.0,
+        163.0
+      ],
+      "effects_bounds": [
+        896.0,
+        152.0,
+        906.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        896.0,
+        152.0,
+        906.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 76,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 17",
+      "name": "chain_bolt_copy_17",
+      "filename": "chain_bolt_copy_17.png",
+      "parent_group": "chain bolts",
+      "x": 999,
+      "y": 152,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        999.0,
+        152.0,
+        1009.0,
+        163.0
+      ],
+      "effects_bounds": [
+        999.0,
+        152.0,
+        1009.0,
+        163.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        999.0,
+        152.0,
+        1009.0,
+        163.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 77,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 18",
+      "name": "chain_bolt_copy_18",
+      "filename": "chain_bolt_copy_18.png",
+      "parent_group": "chain bolts",
+      "x": 896,
+      "y": 288,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        896.0,
+        288.0,
+        906.0,
+        299.0
+      ],
+      "effects_bounds": [
+        896.0,
+        288.0,
+        906.0,
+        299.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        896.0,
+        288.0,
+        906.0,
+        299.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 78,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 19",
+      "name": "chain_bolt_copy_19",
+      "filename": "chain_bolt_copy_19.png",
+      "parent_group": "chain bolts",
+      "x": 998,
+      "y": 349,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        998.0,
+        349.0,
+        1008.0,
+        360.0
+      ],
+      "effects_bounds": [
+        998.0,
+        349.0,
+        1008.0,
+        360.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        998.0,
+        349.0,
+        1008.0,
+        360.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 79,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy",
+      "name": "chain_bolt_copy",
+      "filename": "chain_bolt_copy.png",
+      "parent_group": "chain bolts",
+      "x": 456,
+      "y": 93,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        456.0,
+        93.0,
+        466.0,
+        104.0
+      ],
+      "effects_bounds": [
+        456.0,
+        93.0,
+        466.0,
+        104.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        456.0,
+        93.0,
+        466.0,
+        104.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 80,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 2",
+      "name": "chain_bolt_copy_2",
+      "filename": "chain_bolt_copy_2.png",
+      "parent_group": "chain bolts",
+      "x": 689,
+      "y": 95,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        689.0,
+        95.0,
+        699.0,
+        106.0
+      ],
+      "effects_bounds": [
+        689.0,
+        95.0,
+        699.0,
+        106.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        689.0,
+        95.0,
+        699.0,
+        106.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 81,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 3",
+      "name": "chain_bolt_copy_3",
+      "filename": "chain_bolt_copy_3.png",
+      "parent_group": "chain bolts",
+      "x": 753,
+      "y": 93,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        753.0,
+        93.0,
+        763.0,
+        104.0
+      ],
+      "effects_bounds": [
+        753.0,
+        93.0,
+        763.0,
+        104.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        753.0,
+        93.0,
+        763.0,
+        104.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 82,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 4",
+      "name": "chain_bolt_copy_4",
+      "filename": "chain_bolt_copy_4.png",
+      "parent_group": "chain bolts",
+      "x": 853,
+      "y": 95,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        853.0,
+        95.0,
+        863.0,
+        106.0
+      ],
+      "effects_bounds": [
+        853.0,
+        95.0,
+        863.0,
+        106.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        853.0,
+        95.0,
+        863.0,
+        106.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 83,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 5",
+      "name": "chain_bolt_copy_5",
+      "filename": "chain_bolt_copy_5.png",
+      "parent_group": "chain bolts",
+      "x": 896,
+      "y": 95,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        896.0,
+        95.0,
+        906.0,
+        106.0
+      ],
+      "effects_bounds": [
+        896.0,
+        95.0,
+        906.0,
+        106.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        896.0,
+        95.0,
+        906.0,
+        106.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 84,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 10",
+      "name": "chain_bolt_copy_10",
+      "filename": "chain_bolt_copy_10.png",
+      "parent_group": "chain bolts",
+      "x": 896,
+      "y": 216,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        896.0,
+        216.0,
+        906.0,
+        227.0
+      ],
+      "effects_bounds": [
+        896.0,
+        216.0,
+        906.0,
+        227.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        896.0,
+        216.0,
+        906.0,
+        227.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 85,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 6",
+      "name": "chain_bolt_copy_6",
+      "filename": "chain_bolt_copy_6.png",
+      "parent_group": "chain bolts",
+      "x": 999,
+      "y": 95,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        999.0,
+        95.0,
+        1009.0,
+        106.0
+      ],
+      "effects_bounds": [
+        999.0,
+        95.0,
+        1009.0,
+        106.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        999.0,
+        95.0,
+        1009.0,
+        106.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 86,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 9",
+      "name": "chain_bolt_copy_9",
+      "filename": "chain_bolt_copy_9.png",
+      "parent_group": "chain bolts",
+      "x": 999,
+      "y": 210,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        999.0,
+        210.0,
+        1009.0,
+        221.0
+      ],
+      "effects_bounds": [
+        999.0,
+        210.0,
+        1009.0,
+        221.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        999.0,
+        210.0,
+        1009.0,
+        221.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 87,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 7",
+      "name": "chain_bolt_copy_7",
+      "filename": "chain_bolt_copy_7.png",
+      "parent_group": "chain bolts",
+      "x": 855,
+      "y": 579,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        855.0,
+        579.0,
+        865.0,
+        590.0
+      ],
+      "effects_bounds": [
+        855.0,
+        579.0,
+        865.0,
+        590.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        855.0,
+        579.0,
+        865.0,
+        590.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 88,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 22",
+      "name": "chain_bolt_copy_22",
+      "filename": "chain_bolt_copy_22.png",
+      "parent_group": "chain bolts",
+      "x": 855,
+      "y": 641,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        855.0,
+        641.0,
+        865.0,
+        652.0
+      ],
+      "effects_bounds": [
+        855.0,
+        641.0,
+        865.0,
+        652.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        855.0,
+        641.0,
+        865.0,
+        652.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 89,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 23",
+      "name": "chain_bolt_copy_23",
+      "filename": "chain_bolt_copy_23.png",
+      "parent_group": "chain bolts",
+      "x": 750,
+      "y": 641,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        750.0,
+        641.0,
+        760.0,
+        652.0
+      ],
+      "effects_bounds": [
+        750.0,
+        641.0,
+        760.0,
+        652.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        750.0,
+        641.0,
+        760.0,
+        652.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 90,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 8",
+      "name": "chain_bolt_copy_8",
+      "filename": "chain_bolt_copy_8.png",
+      "parent_group": "chain bolts",
+      "x": 750,
+      "y": 579,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        750.0,
+        579.0,
+        760.0,
+        590.0
+      ],
+      "effects_bounds": [
+        750.0,
+        579.0,
+        760.0,
+        590.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        750.0,
+        579.0,
+        760.0,
+        590.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 91,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "Layer 4 copy 2",
+      "name": "Layer_4_copy_2_02",
+      "filename": "Layer_4_copy_2_02.png",
+      "parent_group": "free spins frame ",
+      "x": 888,
+      "y": 647,
+      "w": 149,
+      "h": 83,
+      "scale": 1.0,
+      "native_w": 149,
+      "native_h": 83,
+      "src_px": [
+        149,
+        83
+      ],
+      "canvas_bounds": [
+        887.0,
+        647.0,
+        1038.0,
+        730.0
+      ],
+      "effects_bounds": [
+        887.0,
+        647.0,
+        1038.0,
+        730.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -2.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        887.0,
+        647.0,
+        1038.0,
+        730.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 93,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          148,
+          83
+        ],
+        "hang": [
+          66.57446808510639,
+          0.0
+        ],
+        "bottom": [
+          21.5,
+          82.0
+        ],
+        "center": [
+          70.73856108457865,
+          49.23309197350177
+        ],
+        "opaque": 6491,
+        "mean_rgb": [
+          47.62979507446289,
+          37.066246032714844,
+          28.5308895111084
+        ],
+        "mean_luma": 39.2517204284668,
+        "mean_warmth": 19.098905563354492
+      }
+    },
+    {
+      "psd_name": "Layer 9",
+      "name": "Layer_9",
+      "filename": "Layer_9.png",
+      "parent_group": "free spins frame ",
+      "x": 888,
+      "y": 630,
+      "w": 137,
+      "h": 33,
+      "scale": 1.0,
+      "native_w": 137,
+      "native_h": 33,
+      "src_px": [
+        137,
+        33
+      ],
+      "canvas_bounds": [
+        888.0,
+        630.0,
+        1025.0,
+        663.0
+      ],
+      "effects_bounds": [
+        888.0,
+        630.0,
+        1025.0,
+        663.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        888.0,
+        630.0,
+        1025.0,
+        663.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 94,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          137,
+          33
+        ],
+        "hang": [
+          67.38636363636364,
+          0.0
+        ],
+        "bottom": [
+          67.5,
+          32.0
+        ],
+        "center": [
+          67.28243902439024,
+          16.167560975609756
+        ],
+        "opaque": 4100,
+        "mean_rgb": [
+          78.0982894897461,
+          74.50756072998047,
+          68.49609375
+        ],
+        "mean_luma": 74.89588165283203,
+        "mean_warmth": 9.602194786071777
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 8",
+      "name": "Layer_8_copy_8_02",
+      "filename": "Layer_8_copy_8_02.png",
+      "parent_group": "free spins frame ",
+      "x": 996,
+      "y": 515,
+      "w": 16,
+      "h": 117,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 117,
+      "src_px": [
+        16,
+        117
+      ],
+      "canvas_bounds": [
+        996.0,
+        515.0,
+        1012.0,
+        632.0
+      ],
+      "effects_bounds": [
+        996.0,
+        515.0,
+        1012.0,
+        632.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        996.0,
+        515.0,
+        1012.0,
+        632.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 95,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          117
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          8.5,
+          116.0
+        ],
+        "center": [
+          7.611725663716814,
+          56.69137168141593
+        ],
+        "opaque": 904,
+        "mean_rgb": [
+          46.977874755859375,
+          38.660396575927734,
+          35.45022201538086
+        ],
+        "mean_luma": 40.7813606262207,
+        "mean_warmth": 11.527654647827148
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 7",
+      "name": "Layer_8_copy_7_02",
+      "filename": "Layer_8_copy_7_02.png",
+      "parent_group": "free spins frame ",
+      "x": 896,
+      "y": 577,
+      "w": 16,
+      "h": 70,
+      "scale": 1.0,
+      "native_w": 16,
+      "native_h": 70,
+      "src_px": [
+        16,
+        70
+      ],
+      "canvas_bounds": [
+        896.0,
+        577.0,
+        912.0,
+        648.0
+      ],
+      "effects_bounds": [
+        896.0,
+        577.0,
+        912.0,
+        648.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        896.0,
+        577.0,
+        912.0,
+        648.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 96,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          16,
+          70
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          2.0,
+          69.0
+        ],
+        "center": [
+          7.614814814814815,
+          32.86666666666667
+        ],
+        "opaque": 540,
+        "mean_rgb": [
+          49.88518524169922,
+          41.27407455444336,
+          38.02407455444336
+        ],
+        "mean_luma": 43.47829818725586,
+        "mean_warmth": 11.86111068725586
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 24",
+      "name": "chain_bolt_copy_24",
+      "filename": "chain_bolt_copy_24.png",
+      "parent_group": "free spins frame ",
+      "x": 999,
+      "y": 518,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        999.0,
+        518.0,
+        1009.0,
+        529.0
+      ],
+      "effects_bounds": [
+        999.0,
+        518.0,
+        1009.0,
+        529.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        999.0,
+        518.0,
+        1009.0,
+        529.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 97,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 25",
+      "name": "chain_bolt_copy_25",
+      "filename": "chain_bolt_copy_25.png",
+      "parent_group": "free spins frame ",
+      "x": 899,
+      "y": 579,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        899.0,
+        579.0,
+        909.0,
+        590.0
+      ],
+      "effects_bounds": [
+        899.0,
+        579.0,
+        909.0,
+        590.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        899.0,
+        579.0,
+        909.0,
+        590.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 98,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 20",
+      "name": "chain_bolt_copy_20",
+      "filename": "chain_bolt_copy_20.png",
+      "parent_group": "free spins frame ",
+      "x": 899,
+      "y": 639,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        899.0,
+        639.0,
+        909.0,
+        650.0
+      ],
+      "effects_bounds": [
+        899.0,
+        639.0,
+        909.0,
+        650.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        899.0,
+        639.0,
+        909.0,
+        650.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 99,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 21",
+      "name": "chain_bolt_copy_21",
+      "filename": "chain_bolt_copy_21.png",
+      "parent_group": "free spins frame ",
+      "x": 998,
+      "y": 641,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        998.0,
+        641.0,
+        1008.0,
+        652.0
+      ],
+      "effects_bounds": [
+        998.0,
+        641.0,
+        1008.0,
+        652.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        998.0,
+        641.0,
+        1008.0,
+        652.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 100,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "Layer 8 copy 12",
+      "name": "Layer_8_copy_12",
+      "filename": "Layer_8_copy_12.png",
+      "parent_group": "free spins frame ",
+      "x": 997,
+      "y": 613,
+      "w": 14,
+      "h": 37,
+      "scale": 1.0,
+      "native_w": 14,
+      "native_h": 37,
+      "src_px": [
+        14,
+        37
+      ],
+      "canvas_bounds": [
+        997.0,
+        613.0,
+        1011.0,
+        651.0
+      ],
+      "effects_bounds": [
+        997.0,
+        613.0,
+        1011.0,
+        651.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        -1.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        997.0,
+        613.0,
+        1011.0,
+        651.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 101,
+      "metrics": {
+        "bbox": [
+          1,
+          0,
+          12,
+          37
+        ],
+        "hang": [
+          7.5,
+          0.0
+        ],
+        "bottom": [
+          6.5,
+          36.0
+        ],
+        "center": [
+          6.6063829787234045,
+          18.343971631205672
+        ],
+        "opaque": 282,
+        "mean_rgb": [
+          40.517730712890625,
+          32.9219856262207,
+          29.939716339111328
+        ],
+        "mean_luma": 34.85313415527344,
+        "mean_warmth": 10.578014373779297
+      }
+    }
+  ],
+  "export_method": {
+    "scale": 1.0,
+    "effects": "rasterize_layerstyle+entirelayer",
+    "smart_objects": "native PNG when larger than on-canvas crop"
+  }
+}

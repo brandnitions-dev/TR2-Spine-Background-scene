@@ -1,0 +1,478 @@
+{
+  "psd2-parts/background.png": {
+    "px": [
+      1536,
+      1024
+    ],
+    "bytes": 2503389
+  },
+  "psd2-parts/barrel.png": {
+    "px": [
+      165,
+      209
+    ],
+    "bytes": 68532
+  },
+  "psd2-parts/beam.png": {
+    "px": [
+      1002,
+      76
+    ],
+    "bytes": 149601
+  },
+  "psd2-parts/beware1.png": {
+    "px": [
+      120,
+      54
+    ],
+    "bytes": 4501
+  },
+  "psd2-parts/beware2.png": {
+    "px": [
+      118,
+      48
+    ],
+    "bytes": 4199
+  },
+  "psd2-parts/chain.png": {
+    "px": [
+      50,
+      145
+    ],
+    "bytes": 7904
+  },
+  "psd2-parts/chain_02.png": {
+    "px": [
+      44,
+      194
+    ],
+    "bytes": 4274
+  },
+  "psd2-parts/chain_02_copy.png": {
+    "px": [
+      34,
+      190
+    ],
+    "bytes": 3807
+  },
+  "psd2-parts/cowboy_hat.png": {
+    "px": [
+      171,
+      105
+    ],
+    "bytes": 34081
+  },
+  "psd2-parts/deadman.png": {
+    "px": [
+      139,
+      54
+    ],
+    "bytes": 4978
+  },
+  "psd2-parts/grass.png": {
+    "px": [
+      44,
+      54
+    ],
+    "bytes": 5183
+  },
+  "psd2-parts/grass_02.png": {
+    "px": [
+      65,
+      41
+    ],
+    "bytes": 5483
+  },
+  "psd2-parts/grass_03.png": {
+    "px": [
+      187,
+      123
+    ],
+    "bytes": 37558
+  },
+  "psd2-parts/hook.png": {
+    "px": [
+      21,
+      38
+    ],
+    "bytes": 1785
+  },
+  "psd2-parts/lantern_dim.png": {
+    "px": [
+      64,
+      151
+    ],
+    "bytes": 17854
+  },
+  "psd2-parts/Layer_2.png": {
+    "px": [
+      581,
+      436
+    ],
+    "bytes": 516837
+  },
+  "psd2-parts/left_hanging_lamp.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 23855
+  },
+  "psd2-parts/light.png": {
+    "px": [
+      531,
+      702
+    ],
+    "bytes": 35214
+  },
+  "psd2-parts/post_L.png": {
+    "px": [
+      154,
+      688
+    ],
+    "bytes": 161469
+  },
+  "psd2-parts/post_R.png": {
+    "px": [
+      185,
+      689
+    ],
+    "bytes": 171742
+  },
+  "psd2-parts/postsign.png": {
+    "px": [
+      365,
+      727
+    ],
+    "bytes": 50141
+  },
+  "psd2-parts/right_hanging_lamp.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 23855
+  },
+  "psd2-parts/rock.png": {
+    "px": [
+      26,
+      15
+    ],
+    "bytes": 1136
+  },
+  "psd2-parts/rock_02.png": {
+    "px": [
+      43,
+      30
+    ],
+    "bytes": 3347
+  },
+  "psd2-parts/rock_03.png": {
+    "px": [
+      64,
+      28
+    ],
+    "bytes": 3631
+  },
+  "psd2-parts/rocks.png": {
+    "px": [
+      137,
+      46
+    ],
+    "bytes": 13100
+  },
+  "psd2-parts/rocks_02.png": {
+    "px": [
+      103,
+      64
+    ],
+    "bytes": 13839
+  },
+  "psd2-parts/shrub.png": {
+    "px": [
+      70,
+      64
+    ],
+    "bytes": 8860
+  },
+  "psd2-parts/signpost.png": {
+    "px": [
+      187,
+      289
+    ],
+    "bytes": 100047
+  },
+  "psd2-parts/skull.png": {
+    "px": [
+      201,
+      201
+    ],
+    "bytes": 49065
+  },
+  "psd2-parts/tellnotales.png": {
+    "px": [
+      139,
+      44
+    ],
+    "bytes": 4517
+  },
+  "psd2-parts/tombstone.png": {
+    "px": [
+      256,
+      278
+    ],
+    "bytes": 125858
+  },
+  "psd2-parts/wagon_wheel.png": {
+    "px": [
+      202,
+      210
+    ],
+    "bytes": 74471
+  },
+  "spine-scene/images/background.png": {
+    "px": [
+      1536,
+      1024
+    ],
+    "bytes": 2503389
+  },
+  "spine-scene/images/barrel.png": {
+    "px": [
+      165,
+      209
+    ],
+    "bytes": 68532
+  },
+  "spine-scene/images/beam.png": {
+    "px": [
+      1002,
+      76
+    ],
+    "bytes": 149601
+  },
+  "spine-scene/images/chain.png": {
+    "px": [
+      50,
+      145
+    ],
+    "bytes": 7904
+  },
+  "spine-scene/images/chain_02.png": {
+    "px": [
+      44,
+      194
+    ],
+    "bytes": 4274
+  },
+  "spine-scene/images/chain_02_copy.png": {
+    "px": [
+      34,
+      190
+    ],
+    "bytes": 3807
+  },
+  "spine-scene/images/cowboy_hat.png": {
+    "px": [
+      171,
+      105
+    ],
+    "bytes": 34081
+  },
+  "spine-scene/images/grass.png": {
+    "px": [
+      44,
+      54
+    ],
+    "bytes": 5183
+  },
+  "spine-scene/images/grass_02.png": {
+    "px": [
+      65,
+      41
+    ],
+    "bytes": 5483
+  },
+  "spine-scene/images/grass_03.png": {
+    "px": [
+      187,
+      123
+    ],
+    "bytes": 37558
+  },
+  "spine-scene/images/hook.png": {
+    "px": [
+      21,
+      38
+    ],
+    "bytes": 1785
+  },
+  "spine-scene/images/lantern_dim.png": {
+    "px": [
+      64,
+      151
+    ],
+    "bytes": 17854
+  },
+  "spine-scene/images/Layer_2.png": {
+    "px": [
+      581,
+      436
+    ],
+    "bytes": 516837
+  },
+  "spine-scene/images/left_hanging_lamp.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 23611
+  },
+  "spine-scene/images/left_hanging_lamp_light.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 7045
+  },
+  "spine-scene/images/light.png": {
+    "px": [
+      531,
+      702
+    ],
+    "bytes": 35214
+  },
+  "spine-scene/images/post_L.png": {
+    "px": [
+      154,
+      688
+    ],
+    "bytes": 161469
+  },
+  "spine-scene/images/post_R.png": {
+    "px": [
+      185,
+      689
+    ],
+    "bytes": 171742
+  },
+  "spine-scene/images/right_hanging_lamp.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 23611
+  },
+  "spine-scene/images/right_hanging_lamp_light.png": {
+    "px": [
+      62,
+      232
+    ],
+    "bytes": 7045
+  },
+  "spine-scene/images/rock.png": {
+    "px": [
+      26,
+      15
+    ],
+    "bytes": 1136
+  },
+  "spine-scene/images/rock_02.png": {
+    "px": [
+      43,
+      30
+    ],
+    "bytes": 3347
+  },
+  "spine-scene/images/rock_03.png": {
+    "px": [
+      64,
+      28
+    ],
+    "bytes": 3631
+  },
+  "spine-scene/images/rocks.png": {
+    "px": [
+      137,
+      46
+    ],
+    "bytes": 13100
+  },
+  "spine-scene/images/rocks_02.png": {
+    "px": [
+      103,
+      64
+    ],
+    "bytes": 13839
+  },
+  "spine-scene/images/shrub.png": {
+    "px": [
+      70,
+      64
+    ],
+    "bytes": 8860
+  },
+  "spine-scene/images/sign_beware_1.png": {
+    "px": [
+      120,
+      54
+    ],
+    "bytes": 4501
+  },
+  "spine-scene/images/sign_beware_2.png": {
+    "px": [
+      118,
+      48
+    ],
+    "bytes": 4199
+  },
+  "spine-scene/images/sign_dead_men.png": {
+    "px": [
+      139,
+      54
+    ],
+    "bytes": 4978
+  },
+  "spine-scene/images/sign_highlight.png": {
+    "px": [
+      365,
+      727
+    ],
+    "bytes": 50141
+  },
+  "spine-scene/images/sign_tell_no_tales.png": {
+    "px": [
+      139,
+      44
+    ],
+    "bytes": 4517
+  },
+  "spine-scene/images/signpost.png": {
+    "px": [
+      187,
+      289
+    ],
+    "bytes": 100047
+  },
+  "spine-scene/images/skull.png": {
+    "px": [
+      201,
+      201
+    ],
+    "bytes": 49065
+  },
+  "spine-scene/images/tombstone.png": {
+    "px": [
+      256,
+      278
+    ],
+    "bytes": 125858
+  },
+  "spine-scene/images/wagon_wheel.png": {
+    "px": [
+      202,
+      210
+    ],
+    "bytes": 74471
+  }
+}

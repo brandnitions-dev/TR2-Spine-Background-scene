@@ -1,0 +1,39 @@
+doc=western_scene2.psd
+canvas=1536x1024
+LAYER|skull|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=43,674,244,875|so=0x0|so_ok=false|parent=
+LAYER|cowboy_hat|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1112,770,1283,875|so=0x0|so_ok=false|parent=
+LAYER|grass|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1164,788,1208,842|so=0x0|so_ok=false|parent=
+LAYER|rocks_02|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=96,761,199,825|so=0x0|so_ok=false|parent=
+LAYER|grass_02|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1354,569,1419,610|so=0x0|so_ok=false|parent=
+LAYER|grass_03|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=859,675,1046,798|so=0x0|so_ok=false|parent=
+LAYER|shrub|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1068,770,1138,834|so=0x0|so_ok=false|parent=
+LAYER|rocks|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=421,729,558,775|so=0x0|so_ok=false|parent=
+LAYER|rock_03|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1032,826,1096,854|so=0x0|so_ok=false|parent=
+LAYER|rock|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1051,852,1077,867|so=0x0|so_ok=false|parent=
+LAYER|rock_02|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1025,810,1068,840|so=0x0|so_ok=false|parent=
+GROUP|Static Lamp|parent=|vis=true
+LAYER|light|kind=smart_object|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1003,203,1536,905|so=1536x1024|so_ok=true|parent=Static Lamp
+LAYER|lantern_dim|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1322,459,1386,610|so=0x0|so_ok=false|parent=Static Lamp
+LAYER|left hanging lamp|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=332,154,394,386|so=0x0|so_ok=false|parent=
+LAYER|right  hanging lamp|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1081,153,1143,385|so=0x0|so_ok=false|parent=
+LAYER|hook|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=321,135,342,173|so=0x0|so_ok=false|parent=
+LAYER|Red paint stain marks|kind=smart_object|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1045,510,1223,708|so=0x0|so_ok=false|parent=
+LAYER|tombstone|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=989,523,1245,801|so=0x0|so_ok=false|parent=
+LAYER|barrel|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1271,589,1436,798|so=0x0|so_ok=false|parent=
+LAYER|wagon_wheel|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=219,580,421,790|so=0x0|so_ok=false|parent=
+LAYER|chain|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1046,541,1096,686|so=0x0|so_ok=false|parent=
+GROUP|Group 1|parent=|vis=true
+LAYER|beware1|kind=smart_object|vis=true|op=100|blend=BlendMode.DARKEN|bounds=86,424,206,478|so=120x54|so_ok=true|parent=Group 1
+LAYER|beware2|kind=smart_object|vis=true|op=100|blend=BlendMode.DARKEN|bounds=94,498,212,546|so=118x48|so_ok=true|parent=Group 1
+LAYER|deadman|kind=smart_object|vis=true|op=100|blend=BlendMode.DARKEN|bounds=88,557,227,611|so=139x54|so_ok=true|parent=Group 1
+LAYER|tellnotales|kind=smart_object|vis=true|op=100|blend=BlendMode.DARKEN|bounds=86,627,225,671|so=139x44|so_ok=true|parent=Group 1
+LAYER|postsign|kind=smart_object|vis=true|op=100|blend=BlendMode.DARKEN|bounds=-55,292,344,972|so=441x727|so_ok=true|parent=Group 1
+LAYER|signpost|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=57,390,244,679|so=0x0|so_ok=false|parent=Group 1
+LAYER|chain_02 copy|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=941,125,975,315|so=0x0|so_ok=false|parent=
+LAYER|chain_02|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=430,150,474,344|so=0x0|so_ok=false|parent=
+LAYER|beam|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=219,115,1221,191|so=0x0|so_ok=false|parent=
+LAYER|post_L|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=270,89,424,777|so=0x0|so_ok=false|parent=
+LAYER|post_R|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=1006,71,1191,760|so=0x0|so_ok=false|parent=
+LAYER|Layer 2|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=424,213,1005,649|so=0x0|so_ok=false|parent=
+LAYER|background|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=0,0,1536,1024|so=0x0|so_ok=false|parent=
+LAYER|Layer 1|kind=raster|vis=true|op=100|blend=BlendMode.NORMAL|bounds=0,0,0,0|so=0x0|so_ok=false|parent=

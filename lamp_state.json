@@ -1,0 +1,10 @@
+{
+  "lamps": [
+    {
+      "id": "lantern_dim",
+      "slot": "lantern_dim_light",
+      "label": "Barrel lamp",
+      "on": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "western scene 2",
+  "clips": [
+    {
+      "id": "idle",
+      "title": "idle",
+      "use": "pendulum + flicker",
+      "loop": true
+    },
+    {
+      "id": "still",
+      "title": "still",
+      "use": "no motion",
+      "loop": true
+    }
+  ]
+}

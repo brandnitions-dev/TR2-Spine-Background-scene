@@ -1,0 +1,171 @@
+doc=western_scene2.psd
+src_canvas=1342x892
+export_canvas=1342x892
+scale=1
+effects=psd_tools_composite
+smart_objects=composite
+full background_redroom 0,0,1342,892 name=background redroom
+meta background_redroom kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=0,0,1342,892 name=background redroom
+full post_r 1209,39,1394,769 name=post_R
+meta post_r kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1209,39,1394,769 name=post_R
+full post_r_02 -54,40,131,770 name=post_R
+meta post_r_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=-54,40,131,770 name=post_R
+full beam 18,53,1329,129 name=beam
+meta beam kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=18,53,1329,129 name=beam
+full rock_02 986,810,1029,840 name=rock_02
+meta rock_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=986,810,1029,840 name=rock_02
+full rock 1012,852,1038,867 name=rock
+meta rock kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1012,852,1038,867 name=rock
+full rock_03 993,826,1057,854 name=rock_03
+meta rock_03 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=993,826,1057,854 name=rock_03
+full rocks 382,729,519,775 name=rocks
+meta rocks kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=382,729,519,775 name=rocks
+full shrub 1029,770,1099,834 name=shrub
+meta shrub kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1029,770,1099,834 name=shrub
+full grass_03 820,675,1007,798 name=grass_03
+meta grass_03 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=820,675,1007,798 name=grass_03
+full grass_02 1315,569,1342,610 name=grass_02
+meta grass_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1315,569,1342,610 name=grass_02
+full rocks_02 57,761,160,825 name=rocks_02
+meta rocks_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=57,761,160,825 name=rocks_02
+full grass 1125,788,1169,842 name=grass
+meta grass kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1125,788,1169,842 name=grass
+full cowboy_hat 954,746,1125,851 name=cowboy_hat
+meta cowboy_hat kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=954,746,1125,851 name=cowboy_hat
+full barrel 1232,589,1342,798 name=barrel
+meta barrel kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1232,589,1342,798 name=barrel
+full lantern_dim 1283,459,1342,610 name=lantern_dim
+meta lantern_dim kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1283,459,1342,610 name=lantern_dim
+full wagon_wheel 83,585,285,795 name=wagon_wheel
+meta wagon_wheel kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=83,585,285,795 name=wagon_wheel
+full tombstone 1041,611,1297,889 name=tombstone
+meta tombstone kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1041,611,1297,889 name=tombstone
+skip 'RED FILTER' parent=''
+skip 'Layer 2' parent='board'
+skip 'Layer 2 copy' parent='board'
+skip 'chain_02' parent='board'
+skip 'chain_02 copy' parent='board'
+full skull 4,674,205,875 name=skull
+meta skull kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=4,674,205,875 name=skull
+full signpost 18,390,205,679 name=signpost
+meta signpost kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=18,390,205,679 name=signpost
+full postsign 0,292,305,892 name=postsign
+meta postsign kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=0,292,305,892 name=postsign
+full tellnotales 47,627,186,671 name=tellnotales
+meta tellnotales kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=47,627,186,671 name=tellnotales
+full deadman 49,557,188,611 name=deadman
+meta deadman kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=49,557,188,611 name=deadman
+full beware2 55,498,173,546 name=beware2
+meta beware2 kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=55,498,173,546 name=beware2
+full beware1 47,424,167,478 name=beware1
+meta beware1 kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=47,424,167,478 name=beware1
+full right_hanging_lamp 1188,73,1250,305 name=right  hanging lamp
+meta right_hanging_lamp kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1188,73,1250,305 name=right  hanging lamp
+full left_hanging_lamp 98,73,160,305 name=left hanging lamp
+meta left_hanging_lamp kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=98,73,160,305 name=left hanging lamp
+full main_frame 307,136,1035,750 name=MAIN FRAME
+meta main_frame kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=307,136,1035,750 name=MAIN FRAME
+full layer_4 880,151,1031,235 name=Layer 4
+meta layer_4 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=880,151,1031,235 name=Layer 4
+full layer_5 882,141,1025,174 name=Layer 5
+meta layer_5 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=882,141,1025,174 name=Layer 5
+full layer_4_copy 735,151,886,235 name=Layer 4 copy
+meta layer_4_copy kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=735,151,886,235 name=Layer 4 copy
+full layer_6 734,141,880,173 name=Layer 6
+meta layer_6 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=734,141,880,173 name=Layer 6
+full layer_4_copy_2 735,647,886,730 name=Layer 4 copy 2
+meta layer_4_copy_2 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=735,647,886,730 name=Layer 4 copy 2
+full layer_7 734,632,879,661 name=Layer 7
+meta layer_7 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=734,632,879,661 name=Layer 7
+full layer_8_copy_7 747,577,763,651 name=Layer 8 copy 7
+meta layer_8_copy_7 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=747,577,763,651 name=Layer 8 copy 7
+full layer_8_copy_8 852,577,868,651 name=Layer 8 copy 8
+meta layer_8_copy_8 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=852,577,868,651 name=Layer 8 copy 8
+full layer_8 350,193,364,244 name=Layer 8
+meta layer_8 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=350,193,364,244 name=Layer 8
+full layer_8_copy 453,91,469,163 name=Layer 8 copy
+meta layer_8_copy kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=453,91,469,163 name=Layer 8 copy
+full layer_8_copy_2 686,93,702,163 name=Layer 8 copy 2
+meta layer_8_copy_2 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=686,93,702,163 name=Layer 8 copy 2
+full layer_8_copy_3 750,91,766,160 name=Layer 8 copy 3
+meta layer_8_copy_3 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=750,91,766,160 name=Layer 8 copy 3
+full layer_8_copy_4 850,93,866,159 name=Layer 8 copy 4
+meta layer_8_copy_4 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=850,93,866,159 name=Layer 8 copy 4
+full layer_8_copy_5 893,93,909,161 name=Layer 8 copy 5
+meta layer_8_copy_5 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=893,93,909,161 name=Layer 8 copy 5
+full layer_8_copy_5_02 893,213,909,299 name=Layer 8 copy 5
+meta layer_8_copy_5_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=893,213,909,299 name=Layer 8 copy 5
+full layer_8_copy_9 995,243,1011,360 name=Layer 8 copy 9
+meta layer_8_copy_9 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=995,243,1011,360 name=Layer 8 copy 9
+full layer_8_copy_11 349,93,365,210 name=Layer 8 copy 11
+meta layer_8_copy_11 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=349,93,365,210 name=Layer 8 copy 11
+full layer_8_copy_10 996,214,1010,261 name=Layer 8 copy 10
+meta layer_8_copy_10 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=996,214,1010,261 name=Layer 8 copy 10
+full layer_8_copy_6 996,93,1012,161 name=Layer 8 copy 6
+meta layer_8_copy_6 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=996,93,1012,161 name=Layer 8 copy 6
+full chain_bolt 352,95,362,106 name=chain bolt
+meta chain_bolt kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=352,95,362,106 name=chain bolt
+full chain_bolt_copy_26 124,68,134,79 name=chain bolt copy 26
+meta chain_bolt_copy_26 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=124,68,134,79 name=chain bolt copy 26
+full chain_bolt_copy_27 1214,68,1224,79 name=chain bolt copy 27
+meta chain_bolt_copy_27 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1214,68,1224,79 name=chain bolt copy 27
+full chain_bolt_copy_11 352,235,362,246 name=chain bolt copy 11
+meta chain_bolt_copy_11 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=352,235,362,246 name=chain bolt copy 11
+full chain_bolt_copy_12 456,152,466,163 name=chain bolt copy 12
+meta chain_bolt_copy_12 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=456,152,466,163 name=chain bolt copy 12
+full chain_bolt_copy_13 689,152,699,163 name=chain bolt copy 13
+meta chain_bolt_copy_13 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=689,152,699,163 name=chain bolt copy 13
+full chain_bolt_copy_14 753,152,763,163 name=chain bolt copy 14
+meta chain_bolt_copy_14 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=753,152,763,163 name=chain bolt copy 14
+full chain_bolt_copy_15 853,152,863,163 name=chain bolt copy 15
+meta chain_bolt_copy_15 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=853,152,863,163 name=chain bolt copy 15
+full chain_bolt_copy_16 896,152,906,163 name=chain bolt copy 16
+meta chain_bolt_copy_16 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=896,152,906,163 name=chain bolt copy 16
+full chain_bolt_copy_17 999,152,1009,163 name=chain bolt copy 17
+meta chain_bolt_copy_17 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=999,152,1009,163 name=chain bolt copy 17
+full chain_bolt_copy_18 896,288,906,299 name=chain bolt copy 18
+meta chain_bolt_copy_18 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=896,288,906,299 name=chain bolt copy 18
+full chain_bolt_copy_19 998,349,1008,360 name=chain bolt copy 19
+meta chain_bolt_copy_19 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=998,349,1008,360 name=chain bolt copy 19
+full chain_bolt_copy 456,93,466,104 name=chain bolt copy
+meta chain_bolt_copy kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=456,93,466,104 name=chain bolt copy
+full chain_bolt_copy_2 689,95,699,106 name=chain bolt copy 2
+meta chain_bolt_copy_2 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=689,95,699,106 name=chain bolt copy 2
+full chain_bolt_copy_3 753,93,763,104 name=chain bolt copy 3
+meta chain_bolt_copy_3 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=753,93,763,104 name=chain bolt copy 3
+full chain_bolt_copy_4 853,95,863,106 name=chain bolt copy 4
+meta chain_bolt_copy_4 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=853,95,863,106 name=chain bolt copy 4
+full chain_bolt_copy_5 896,95,906,106 name=chain bolt copy 5
+meta chain_bolt_copy_5 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=896,95,906,106 name=chain bolt copy 5
+full chain_bolt_copy_10 896,216,906,227 name=chain bolt copy 10
+meta chain_bolt_copy_10 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=896,216,906,227 name=chain bolt copy 10
+full chain_bolt_copy_6 999,95,1009,106 name=chain bolt copy 6
+meta chain_bolt_copy_6 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=999,95,1009,106 name=chain bolt copy 6
+full chain_bolt_copy_9 999,210,1009,221 name=chain bolt copy 9
+meta chain_bolt_copy_9 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=999,210,1009,221 name=chain bolt copy 9
+full chain_bolt_copy_7 855,579,865,590 name=chain bolt copy 7
+meta chain_bolt_copy_7 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=855,579,865,590 name=chain bolt copy 7
+full chain_bolt_copy_22 855,641,865,652 name=chain bolt copy 22
+meta chain_bolt_copy_22 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=855,641,865,652 name=chain bolt copy 22
+full chain_bolt_copy_23 750,641,760,652 name=chain bolt copy 23
+meta chain_bolt_copy_23 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=750,641,760,652 name=chain bolt copy 23
+full chain_bolt_copy_8 750,579,760,590 name=chain bolt copy 8
+meta chain_bolt_copy_8 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=750,579,760,590 name=chain bolt copy 8
+full layer_4_copy_2_02 887,647,1038,730 name=Layer 4 copy 2
+meta layer_4_copy_2_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=887,647,1038,730 name=Layer 4 copy 2
+full layer_9 888,630,1025,663 name=Layer 9
+meta layer_9 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=888,630,1025,663 name=Layer 9
+full layer_8_copy_8_02 996,515,1012,632 name=Layer 8 copy 8
+meta layer_8_copy_8_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=996,515,1012,632 name=Layer 8 copy 8
+full layer_8_copy_7_02 896,577,912,648 name=Layer 8 copy 7
+meta layer_8_copy_7_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=896,577,912,648 name=Layer 8 copy 7
+full chain_bolt_copy_24 999,518,1009,529 name=chain bolt copy 24
+meta chain_bolt_copy_24 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=999,518,1009,529 name=chain bolt copy 24
+full chain_bolt_copy_25 899,579,909,590 name=chain bolt copy 25
+meta chain_bolt_copy_25 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=899,579,909,590 name=chain bolt copy 25
+full chain_bolt_copy_20 899,639,909,650 name=chain bolt copy 20
+meta chain_bolt_copy_20 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=899,639,909,650 name=chain bolt copy 20
+full chain_bolt_copy_21 998,641,1008,652 name=chain bolt copy 21
+meta chain_bolt_copy_21 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=998,641,1008,652 name=chain bolt copy 21
+full layer_8_copy_12 997,613,1011,651 name=Layer 8 copy 12
+meta layer_8_copy_12 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=997,613,1011,651 name=Layer 8 copy 12

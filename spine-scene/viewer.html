@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Western scene</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0d12; color: #e8edf5; font-family: ui-sans-serif, "Segoe UI", system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; min-height: 100%; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 16px; border-bottom: 1px solid rgba(120, 170, 255, 0.22); background: #10141c; }
+  header h1 { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f0b36a; }
+  header p { margin: 0; font-size: 12px; color: #8b93a7; }
+  .clips, .tools, .sign, .lamps { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .sign, .lamps { padding-left: 8px; border-left: 1px solid rgba(240, 179, 106, 0.22); }
+  .sign span, .lamps span { font-size: 11px; color: #8b93a7; text-transform: uppercase; letter-spacing: 0.06em; }
+  button { appearance: none; border: 1px solid rgba(240, 179, 106, 0.4); background: rgba(180, 110, 40, 0.16); color: #f6d7a8; border-radius: 8px; padding: 7px 12px; font-size: 12px; cursor: pointer; }
+  button:hover { background: rgba(180, 110, 40, 0.3); }
+  button.active { background: rgba(180, 110, 40, 0.5); color: #fff; }
+  button.secondary { border-color: rgba(255,255,255,0.14); background: rgba(255,255,255,0.06); color: #ddd; }
+  .stage-wrap { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 12px; position: relative; }
+  canvas { display: block; max-width: 100%; max-height: 100%; background: #07090d; border-radius: 8px; box-shadow: 0 0 0 1px rgba(240,179,106,0.16); }
+  #status { position: absolute; left: 24px; bottom: 24px; font-size: 12px; color: #7dcea0; pointer-events: none; }
+  #status.error { color: #ff8a7a; }
+  #loading { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(7,9,13,0.72); font-size: 13px; }
+  #loading.hidden { display: none; }
+  .bar { width: min(320px, 70vw); height: 6px; border-radius: 99px; background: #222; overflow: hidden; }
+  .bar > i { display: block; height: 100%; width: 0; background: #f0b36a; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Western scene</h1>
+    <p id="subtitle">Spine 3.8.75 · hanging lamps</p>
+  </div>
+  <div class="clips" id="clips"></div>
+  <div class="tools">
+    <button type="button" id="btnPause" class="secondary">Pause</button>
+    <button type="button" id="btnBones" class="secondary">Bones</button>
+  </div>
+  <div class="sign" id="sign" hidden></div>
+  <div class="lamps" id="lamps" hidden></div>
+</header>
+<div class="stage-wrap">
+  <canvas id="stage" width="1536" height="1024"></canvas>
+  <div id="loading"><div>Loading scene…</div><div class="bar"><i id="loadBar"></i></div></div>
+  <div id="status">Loading</div>
+</div>
+<script>
+(function () {
+  const canvas = document.getElementById("stage");
+  const ctx = canvas.getContext("2d", { alpha: false });
+  const statusEl = document.getElementById("status");
+  const loadingEl = document.getElementById("loading");
+  const loadBar = document.getElementById("loadBar");
+  const clipsEl = document.getElementById("clips");
+  const btnPause = document.getElementById("btnPause");
+  const btnBones = document.getElementById("btnBones");
+  const signEl = document.getElementById("sign");
+  const lampsEl = document.getElementById("lamps");
+
+  let skeleton = null;
+  let presetCatalog = null;
+  let images = {};
+  let clip = "idle";
+  let time = 0;
+  let paused = false;
+  let showBones = false;
+  let signState = null;
+  let lampState = null;
+  let slotOverrides = {};
+  let last = 0;
+  let viewW = 1536;
+  let viewH = 1024;
+  let originX = 0;
+  let originY = 1024;
+
+  function setStatus(text, isError) {
+    statusEl.textContent = text;
+    statusEl.classList.toggle("error", !!isError);
+  }
+
+  function bezierY(x, cx1, cy1, cx2, cy2) {
+    let t = x;
+    for (let i = 0; i < 8; i++) {
+      const u = 1 - t;
+      const xt = 3 * u * u * t * cx1 + 3 * u * t * t * cx2 + t * t * t;
+      const dx = xt - x;
+      if (Math.abs(dx) < 1e-5) break;
+      const d = 3 * u * u * cx1 + 6 * u * t * (cx2 - cx1) + 3 * t * t * (1 - cx2);
+      if (Math.abs(d) < 1e-6) break;
+      t = Math.max(0, Math.min(1, t - dx / d));
+    }
+    const u = 1 - t;
+    return 3 * u * u * t * cy1 + 3 * u * t * t * cy2 + t * t * t;
+  }
+
+  function keyTime(k) { return k.time || 0; }
+  function mixScalar(a, b, t) { return a + (b - a) * t; }
+
+  function parseHexColor(hex) {
+    if (!hex || typeof hex !== "string") return { r: 1, g: 1, b: 1, a: 1 };
+    const h = hex.replace("#", "");
+    if (h.length !== 6 && h.length !== 8) return { r: 1, g: 1, b: 1, a: 1 };
+    const n = parseInt(h, 16);
+    if (h.length === 6) {
+      return { r: ((n >> 16) & 255) / 255, g: ((n >> 8) & 255) / 255, b: (n & 255) / 255, a: 1 };
+    }
+    return {
+      r: ((n >>> 24) & 255) / 255,
+      g: ((n >>> 16) & 255) / 255,
+      b: ((n >>> 8) & 255) / 255,
+      a: (n & 255) / 255
+    };
+  }
+
+  function mixColor(a, b, t) {
+    return {
+      r: mixScalar(a.r, b.r, t),
+      g: mixScalar(a.g, b.g, t),
+      b: mixScalar(a.b, b.b, t),
+      a: mixScalar(a.a, b.a, t)
+    };
+  }
+
+  function wrapTrackTime(keys, t) {
+    const period = trackMaxTime(keys);
+    if (period <= 0) return t;
+    return ((t % period) + period) % period;
+  }
+
+  function sampleCurve(keys, t, getValue) {
+    if (!keys || !keys.length) return null;
+    t = wrapTrackTime(keys, t);
+    if (t <= keyTime(keys[0])) return getValue(keys[0]);
+    const lastK = keys[keys.length - 1];
+    if (t >= keyTime(lastK)) return getValue(lastK);
+    let i = 1;
+    while (i < keys.length && keyTime(keys[i]) < t) i++;
+    const a = keys[i - 1];
+    const b = keys[i];
+    const t0 = keyTime(a);
+    const t1 = keyTime(b);
+    const span = t1 - t0;
+    if (span <= 0) return getValue(b);
+    let p = (t - t0) / span;
+    if (a.curve === "stepped") p = 0;
+    else if (typeof a.curve === "number") p = bezierY(p, a.curve, a.c2 || 0, a.c3 || 1, a.c4 || 1);
+    const va = getValue(a);
+    const vb = getValue(b);
+    if (typeof va === "number") return mixScalar(va, vb, p);
+    if (va && va.a != null) return mixColor(va, vb, p);
+    return { x: mixScalar(va.x, vb.x, p), y: mixScalar(va.y, vb.y, p) };
+  }
+
+  function sampleAttachment(keys, t) {
+    if (!keys || !keys.length) return null;
+    t = wrapTrackTime(keys, t);
+    let name = keys[0].name;
+    for (let i = 0; i < keys.length; i++) {
+      if (keyTime(keys[i]) <= t) name = keys[i].name;
+    }
+    return name;
+  }
+
+  function trackMaxTime(keys) {
+    if (!keys || !keys.length) return 0;
+    let max = 0;
+    for (const k of keys) max = Math.max(max, keyTime(k));
+    return max;
+  }
+
+  function animDuration(anim) {
+    let boneMax = 0;
+    const bones = (anim && anim.bones) || {};
+    for (const name of Object.keys(bones)) {
+      for (const track of Object.keys(bones[name])) {
+        boneMax = Math.max(boneMax, trackMaxTime(bones[name][track]));
+      }
+    }
+    let slotMax = 0;
+    const slots = (anim && anim.slots) || {};
+    for (const name of Object.keys(slots)) {
+      for (const track of Object.keys(slots[name])) {
+        slotMax = Math.max(slotMax, trackMaxTime(slots[name][track]));
+      }
+    }
+    if (boneMax > 0) return boneMax;
+    return slotMax || 1;
+  }
+
+  function poseBones(data, anim, t) {
+    const posed = {};
+    for (const bone of data.bones) {
+      posed[bone.name] = {
+        name: bone.name,
+        parent: bone.parent || null,
+        x: bone.x || 0,
+        y: bone.y || 0,
+        rotation: bone.rotation || 0,
+        scaleX: bone.scaleX == null ? 1 : bone.scaleX,
+        scaleY: bone.scaleY == null ? 1 : bone.scaleY
+      };
+    }
+    const tracks = (anim && anim.bones) || {};
+    for (const name of Object.keys(tracks)) {
+      const b = posed[name];
+      if (!b) continue;
+      const rot = sampleCurve(tracks[name].rotate, t, (k) => k.angle || k.value || 0);
+      const tr = sampleCurve(tracks[name].translate, t, (k) => ({ x: k.x || 0, y: k.y || 0 }));
+      const sc = sampleCurve(tracks[name].scale, t, (k) => ({
+        x: k.x == null ? 1 : k.x,
+        y: k.y == null ? 1 : k.y
+      }));
+      if (rot != null) b.rotation += rot;
+      if (tr) { b.x += tr.x; b.y += tr.y; }
+      if (sc) { b.scaleX *= sc.x; b.scaleY *= sc.y; }
+    }
+    const world = {};
+    function resolve(name) {
+      if (world[name]) return world[name];
+      const b = posed[name];
+      if (!b.parent) {
+        world[name] = { x: b.x, y: b.y, rotation: b.rotation, sx: b.scaleX, sy: b.scaleY };
+        return world[name];
+      }
+      const p = resolve(b.parent);
+      const rad = p.rotation * Math.PI / 180;
+      const c = Math.cos(rad);
+      const s = Math.sin(rad);
+      const lx = b.x * p.sx;
+      const ly = b.y * p.sy;
+      world[name] = {
+        x: p.x + lx * c - ly * s,
+        y: p.y + lx * s + ly * c,
+        rotation: p.rotation + b.rotation,
+        sx: p.sx * b.scaleX,
+        sy: p.sy * b.scaleY
+      };
+      return world[name];
+    }
+    for (const bone of data.bones) resolve(bone.name);
+    return world;
+  }
+
+  function slotAttachment(slot, anim, t) {
+    if (Object.prototype.hasOwnProperty.call(slotOverrides, slot.name)) {
+      return slotOverrides[slot.name] || null;
+    }
+    const keys = anim && anim.slots && anim.slots[slot.name] && anim.slots[slot.name].attachment;
+    const swapped = sampleAttachment(keys, t);
+    return swapped || slot.attachment;
+  }
+
+  function applyOverrides() {
+    slotOverrides = {};
+    if (signState && signState.words) {
+      signState.words.forEach((word) => {
+        const on = !!signState[word.id];
+        slotOverrides[word.slot] = on ? word.slot : "";
+      });
+      const highlightOn = signState.words.some((word) => !!signState[word.id]);
+      signState.highlight = highlightOn;
+      slotOverrides[signState.highlight_slot] = highlightOn ? signState.highlight_slot : "";
+      if (signEl) {
+        signEl.querySelectorAll("[data-sign]").forEach((btn) => {
+          const id = btn.getAttribute("data-sign");
+          btn.classList.toggle("active", !!signState[id]);
+        });
+      }
+    }
+    if (lampState && lampState.lamps) {
+      lampState.lamps.forEach((lamp) => {
+        slotOverrides[lamp.slot] = lamp.on ? lamp.slot : "";
+      });
+      if (lampsEl) {
+        lampsEl.querySelectorAll("[data-lamp]").forEach((btn) => {
+          const id = btn.getAttribute("data-lamp");
+          const rec = lampState.lamps.find((lamp) => lamp.id === id);
+          btn.classList.toggle("active", !!(rec && rec.on));
+        });
+      }
+    }
+  }
+
+  function applySignState() {
+    applyOverrides();
+  }
+
+  function buildSignButtons() {
+    if (!signEl || !signState || !signState.words) return;
+    signEl.hidden = false;
+    signEl.innerHTML = "";
+    const label = document.createElement("span");
+    label.textContent = "Sign";
+    signEl.appendChild(label);
+    signState.words.forEach((word) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = word.label;
+      btn.setAttribute("data-sign", word.id);
+      btn.addEventListener("click", () => {
+        signState[word.id] = !signState[word.id];
+        applySignState();
+      });
+      signEl.appendChild(btn);
+    });
+    const allOn = document.createElement("button");
+    allOn.type = "button";
+    allOn.textContent = "All ON";
+    allOn.addEventListener("click", () => {
+      signState.words.forEach((word) => { signState[word.id] = true; });
+      applySignState();
+    });
+    const allOff = document.createElement("button");
+    allOff.type = "button";
+    allOff.className = "secondary";
+    allOff.textContent = "All OFF";
+    allOff.addEventListener("click", () => {
+      signState.words.forEach((word) => { signState[word.id] = false; });
+      applySignState();
+    });
+    signEl.appendChild(allOn);
+    signEl.appendChild(allOff);
+    applyOverrides();
+  }
+
+  function buildLampButtons() {
+    if (!lampsEl) return;
+    if (!lampState) lampState = { lamps: [] };
+    lampsEl.hidden = false;
+    lampsEl.innerHTML = "";
+    const label = document.createElement("span");
+    label.textContent = "Lamps";
+    lampsEl.appendChild(label);
+    (lampState.lamps || []).forEach((lamp) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = lamp.label || "Lamp";
+      btn.setAttribute("data-lamp", lamp.id);
+      btn.addEventListener("click", () => {
+        lamp.on = !lamp.on;
+        applyOverrides();
+      });
+      lampsEl.appendChild(btn);
+    });
+    applyOverrides();
+  }
+
+  function slotColor(slot, anim, t) {
+    const base = parseHexColor(slot.color || "ffffffff");
+    const keys = anim && anim.slots && anim.slots[slot.name] && anim.slots[slot.name].color;
+    if (!keys || !keys.length) return base;
+    const sampled = sampleCurve(keys, t, (k) => parseHexColor(k.color));
+    return sampled || base;
+  }
+
+  function defaultSkin(data) {
+    const skins = data.skins;
+    if (!skins) return {};
+    if (skins.default) return skins.default;
+    if (Array.isArray(skins)) {
+      const found = skins.find((s) => s.name === "default") || skins[0];
+      return (found && found.attachments) || {};
+    }
+    return {};
+  }
+
+  function fitCanvas() {
+    const wrap = canvas.parentElement.getBoundingClientRect();
+    const pad = 8;
+    const availW = Math.max(320, wrap.width - pad);
+    const availH = Math.max(200, wrap.height - pad);
+    const scale = Math.min(availW / viewW, availH / viewH);
+    const cssW = Math.floor(viewW * scale);
+    const cssH = Math.floor(viewH * scale);
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.style.width = cssW + "px";
+    canvas.style.height = cssH + "px";
+    canvas.width = Math.floor(cssW * dpr);
+    canvas.height = Math.floor(cssH * dpr);
+  }
+
+  function draw(world, anim, t) {
+    const w = canvas.width;
+    const h = canvas.height;
+    ctx.fillStyle = "#07090d";
+    ctx.fillRect(0, 0, w, h);
+    const sx = w / viewW;
+    const sy = h / viewH;
+    const skins = defaultSkin(skeleton);
+    for (const slot of skeleton.slots) {
+      const attName = slotAttachment(slot, anim, t);
+      const att = skins[slot.name] && skins[slot.name][attName];
+      const img = images[attName];
+      const bone = world[slot.bone];
+      if (!att || !img || !bone) continue;
+      const col = slotColor(slot, anim, t);
+      const rad = bone.rotation * Math.PI / 180;
+      const c = Math.cos(rad);
+      const s = Math.sin(rad);
+      const attSx = (att.scaleX == null ? 1 : att.scaleX) * bone.sx;
+      const attSy = (att.scaleY == null ? 1 : att.scaleY) * bone.sy;
+      const ax = bone.x + (att.x || 0) * attSx * c - (att.y || 0) * attSy * s;
+      const ay = bone.y + (att.x || 0) * attSx * s + (att.y || 0) * attSy * c;
+      const cx = (ax + originX) * sx;
+      const cy = (originY - ay) * sy;
+      const dw = (att.width || img.width) * attSx * sx;
+      const dh = (att.height || img.height) * attSy * sy;
+      ctx.save();
+      if (slot.blend === "additive") ctx.globalCompositeOperation = "lighter";
+      ctx.globalAlpha = col.a;
+      ctx.translate(cx, cy);
+      ctx.rotate(-bone.rotation * Math.PI / 180);
+      if (col.r !== 1 || col.g !== 1 || col.b !== 1) {
+        ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+        ctx.globalCompositeOperation = slot.blend === "additive" ? "lighter" : "multiply";
+        ctx.fillStyle = "rgb(" + Math.round(col.r * 255) + "," + Math.round(col.g * 255) + "," + Math.round(col.b * 255) + ")";
+        ctx.fillRect(-dw / 2, -dh / 2, dw, dh);
+      } else {
+        ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+      }
+      ctx.restore();
+    }
+    if (showBones) {
+      ctx.lineWidth = 2;
+      for (const bone of skeleton.bones) {
+        const wld = world[bone.name];
+        const x = (wld.x + originX) * sx;
+        const y = (originY - wld.y) * sy;
+        ctx.fillStyle = bone.name.indexOf("light") >= 0 ? "#f0b36a" : "#7dcea0";
+        ctx.beginPath();
+        ctx.arc(x, y, bone.name === "root" ? 5 : 4, 0, Math.PI * 2);
+        ctx.fill();
+        if (bone.parent && world[bone.parent]) {
+          const p = world[bone.parent];
+          ctx.strokeStyle = "rgba(142,197,255,0.85)";
+          ctx.beginPath();
+          ctx.moveTo((p.x + originX) * sx, (originY - p.y) * sy);
+          ctx.lineTo(x, y);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function tick(now) {
+    const dt = last ? Math.min(0.033, (now - last) / 1000) : 0;
+    last = now;
+    if (skeleton) {
+      const anim = skeleton.animations[clip] || {};
+      const dur = animDuration(anim);
+      const meta = clipMeta(clip);
+      if (!paused) {
+        if (meta.loop === false) time = Math.min(dur, time + dt);
+        else time += dt;
+      }
+      draw(poseBones(skeleton, anim, time), anim, time);
+      const label = meta.title || clip;
+      const once = meta.loop === false ? " once" : "";
+      setStatus(label + once + "  " + time.toFixed(2) + "s / " + dur.toFixed(2) + "s");
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function loadImage(name) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => reject(new Error("Missing image " + name + ".png"));
+      img.src = "images/" + name + ".png";
+    });
+  }
+
+  function collectAttachmentNames(data) {
+    const names = new Set();
+    const skin = defaultSkin(data);
+    Object.keys(skin).forEach((slot) => {
+      Object.keys(skin[slot] || {}).forEach((att) => names.add(att));
+    });
+    return Array.from(names);
+  }
+
+  function clipMeta(name) {
+    const clips = (presetCatalog && presetCatalog.clips) || [];
+    return clips.find((c) => c.id === name) || { id: name, title: name, use: "" };
+  }
+
+  function buildClipButtons(data) {
+    clipsEl.innerHTML = "";
+    const names = (presetCatalog && presetCatalog.clips)
+      ? presetCatalog.clips.map((c) => c.id)
+      : Object.keys(data.animations || {});
+    names.forEach((name, i) => {
+      if (!data.animations[name]) return;
+      const meta = clipMeta(name);
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = meta.title || name;
+      btn.title = meta.use || name;
+      btn.setAttribute("data-clip", name);
+      if (name === clip || (i === 0 && !data.animations[clip])) {
+        btn.classList.add("active");
+        clip = name;
+      }
+      btn.addEventListener("click", () => {
+        clipsEl.querySelectorAll("button").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        clip = name;
+        time = 0;
+      });
+      clipsEl.appendChild(btn);
+    });
+  }
+
+  async function boot() {
+    const res = await fetch("skeleton.json");
+    if (!res.ok) throw new Error("Could not load skeleton.json. Serve spine-scene (python -m http.server 8765).");
+    skeleton = await res.json();
+    try {
+      const pres = await fetch("presets.json");
+      if (pres.ok) presetCatalog = await pres.json();
+    } catch (e) {
+      presetCatalog = null;
+    }
+    try {
+      const signRes = await fetch("sign_state.json");
+      if (signRes.ok) signState = await signRes.json();
+    } catch (e) {
+      signState = null;
+    }
+    try {
+      const lampRes = await fetch("lamp_state.json");
+      if (lampRes.ok) lampState = await lampRes.json();
+    } catch (e) {
+      lampState = null;
+    }
+    if (!lampState) lampState = { lamps: [] };
+    const meta = skeleton.skeleton;
+    viewW = meta.width || viewW;
+    viewH = meta.height || viewH;
+    originX = -(meta.x || 0);
+    originY = (meta.y || 0) + viewH;
+    const packTitle = presetCatalog ? presetCatalog.title : "hanging lamps";
+    document.getElementById("subtitle").textContent = (meta.hash || "western-scene") + " · " + packTitle;
+    buildClipButtons(skeleton);
+    buildSignButtons();
+    buildLampButtons();
+    const names = collectAttachmentNames(skeleton);
+    let done = 0;
+    for (const name of names) {
+      images[name] = await loadImage(name);
+      done += 1;
+      loadBar.style.width = Math.round((done / names.length) * 100) + "%";
+    }
+    fitCanvas();
+    loadingEl.classList.add("hidden");
+    setStatus("Ready");
+  }
+
+  btnPause.addEventListener("click", () => {
+    paused = !paused;
+    btnPause.textContent = paused ? "Play" : "Pause";
+  });
+  btnBones.addEventListener("click", () => {
+    showBones = !showBones;
+    btnBones.classList.toggle("active", showBones);
+  });
+  window.addEventListener("resize", fitCanvas);
+  window.addEventListener("keydown", (e) => {
+    if (e.key === " ") { e.preventDefault(); btnPause.click(); }
+    if (e.key === "b") btnBones.click();
+  });
+
+  boot().catch((err) => {
+    loadingEl.classList.add("hidden");
+    setStatus(err.message, true);
+  });
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

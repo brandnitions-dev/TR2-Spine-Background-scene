@@ -1,0 +1,334 @@
+{
+  "source": "C:\\Users\\Emex33\\Documents\\fire frame vfx\\backgroundSPINE\\props.png",
+  "source_size": {
+    "w": 1536,
+    "h": 1024
+  },
+  "alpha_source": "existing_alpha",
+  "thresholds": {
+    "alpha_threshold": 12,
+    "min_area": 400,
+    "close_radius": 0,
+    "pad_px": 1,
+    "black_lo": 6,
+    "black_hi": 22,
+    "gutter_split": true
+  },
+  "island_count": 86,
+  "saved_count": 24,
+  "crumb_count": 62,
+  "parts": [
+    {
+      "index": 1,
+      "filename": "prop_01.png",
+      "bbox": {
+        "x": 221,
+        "y": 5,
+        "w": 246,
+        "h": 919
+      },
+      "area": 116927,
+      "width": 248,
+      "height": 921
+    },
+    {
+      "index": 2,
+      "filename": "prop_02.png",
+      "bbox": {
+        "x": 16,
+        "y": 16,
+        "w": 205,
+        "h": 918
+      },
+      "area": 113714,
+      "width": 207,
+      "height": 920
+    },
+    {
+      "index": 3,
+      "filename": "prop_03.png",
+      "bbox": {
+        "x": 393,
+        "y": 27,
+        "w": 1113,
+        "h": 85
+      },
+      "area": 87842,
+      "width": 1115,
+      "height": 87
+    },
+    {
+      "index": 4,
+      "filename": "prop_04.png",
+      "bbox": {
+        "x": 989,
+        "y": 112,
+        "w": 89,
+        "h": 332
+      },
+      "area": 15706,
+      "width": 91,
+      "height": 334
+    },
+    {
+      "index": 5,
+      "filename": "prop_05.png",
+      "bbox": {
+        "x": 800,
+        "y": 114,
+        "w": 131,
+        "h": 306
+      },
+      "area": 25882,
+      "width": 133,
+      "height": 308
+    },
+    {
+      "index": 6,
+      "filename": "prop_06.png",
+      "bbox": {
+        "x": 1279,
+        "y": 123,
+        "w": 76,
+        "h": 323
+      },
+      "area": 6725,
+      "width": 78,
+      "height": 325
+    },
+    {
+      "index": 7,
+      "filename": "prop_07.png",
+      "bbox": {
+        "x": 1355,
+        "y": 124,
+        "w": 111,
+        "h": 323
+      },
+      "area": 9468,
+      "width": 113,
+      "height": 325
+    },
+    {
+      "index": 8,
+      "filename": "prop_08.png",
+      "bbox": {
+        "x": 396,
+        "y": 130,
+        "w": 288,
+        "h": 444
+      },
+      "area": 85056,
+      "width": 290,
+      "height": 446
+    },
+    {
+      "index": 9,
+      "filename": "prop_09.png",
+      "bbox": {
+        "x": 1103,
+        "y": 131,
+        "w": 116,
+        "h": 275
+      },
+      "area": 19491,
+      "width": 118,
+      "height": 277
+    },
+    {
+      "index": 10,
+      "filename": "prop_10.png",
+      "bbox": {
+        "x": 1434,
+        "y": 354,
+        "w": 61,
+        "h": 108
+      },
+      "area": 2602,
+      "width": 63,
+      "height": 110
+    },
+    {
+      "index": 11,
+      "filename": "prop_11.png",
+      "bbox": {
+        "x": 930,
+        "y": 426,
+        "w": 365,
+        "h": 397
+      },
+      "area": 92473,
+      "width": 367,
+      "height": 399
+    },
+    {
+      "index": 12,
+      "filename": "prop_12.png",
+      "bbox": {
+        "x": 676,
+        "y": 429,
+        "w": 310,
+        "h": 323
+      },
+      "area": 57166,
+      "width": 312,
+      "height": 325
+    },
+    {
+      "index": 13,
+      "filename": "prop_13.png",
+      "bbox": {
+        "x": 1285,
+        "y": 479,
+        "w": 236,
+        "h": 299
+      },
+      "area": 61298,
+      "width": 238,
+      "height": 301
+    },
+    {
+      "index": 14,
+      "filename": "prop_14.png",
+      "bbox": {
+        "x": 385,
+        "y": 574,
+        "w": 287,
+        "h": 287
+      },
+      "area": 31799,
+      "width": 289,
+      "height": 289
+    },
+    {
+      "index": 15,
+      "filename": "prop_15.png",
+      "bbox": {
+        "x": 655,
+        "y": 750,
+        "w": 374,
+        "h": 246
+      },
+      "area": 42575,
+      "width": 376,
+      "height": 248
+    },
+    {
+      "index": 16,
+      "filename": "prop_16.png",
+      "bbox": {
+        "x": 1230,
+        "y": 795,
+        "w": 282,
+        "h": 176
+      },
+      "area": 31882,
+      "width": 284,
+      "height": 178
+    },
+    {
+      "index": 17,
+      "filename": "prop_17.png",
+      "bbox": {
+        "x": 1007,
+        "y": 831,
+        "w": 97,
+        "h": 119
+      },
+      "area": 6691,
+      "width": 99,
+      "height": 121
+    },
+    {
+      "index": 18,
+      "filename": "prop_18.png",
+      "bbox": {
+        "x": 1120,
+        "y": 839,
+        "w": 93,
+        "h": 86
+      },
+      "area": 4400,
+      "width": 95,
+      "height": 88
+    },
+    {
+      "index": 19,
+      "filename": "prop_19.png",
+      "bbox": {
+        "x": 469,
+        "y": 865,
+        "w": 228,
+        "h": 143
+      },
+      "area": 22150,
+      "width": 230,
+      "height": 145
+    },
+    {
+      "index": 20,
+      "filename": "prop_20.png",
+      "bbox": {
+        "x": 1085,
+        "y": 928,
+        "w": 118,
+        "h": 74
+      },
+      "area": 4477,
+      "width": 120,
+      "height": 76
+    },
+    {
+      "index": 21,
+      "filename": "prop_21.png",
+      "bbox": {
+        "x": 352,
+        "y": 933,
+        "w": 77,
+        "h": 50
+      },
+      "area": 2770,
+      "width": 79,
+      "height": 52
+    },
+    {
+      "index": 22,
+      "filename": "prop_22.png",
+      "bbox": {
+        "x": 262,
+        "y": 940,
+        "w": 73,
+        "h": 43
+      },
+      "area": 2257,
+      "width": 75,
+      "height": 45
+    },
+    {
+      "index": 23,
+      "filename": "prop_23.png",
+      "bbox": {
+        "x": 32,
+        "y": 941,
+        "w": 210,
+        "h": 71
+      },
+      "area": 9829,
+      "width": 212,
+      "height": 73
+    },
+    {
+      "index": 24,
+      "filename": "prop_24.png",
+      "bbox": {
+        "x": 291,
+        "y": 977,
+        "w": 64,
+        "h": 28
+      },
+      "area": 1058,
+      "width": 66,
+      "height": 30
+    }
+  ]
+}
