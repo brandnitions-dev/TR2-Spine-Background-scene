@@ -65,7 +65,7 @@
     {
       "name": "lantern_dim",
       "parent": "root",
-      "x": 1314.0,
+      "x": 1308.0,
       "y": 283.0,
       "length": 36.0
     },
@@ -91,34 +91,6 @@
       "length": 24.0
     },
     {
-      "name": "rock_02",
-      "parent": "root",
-      "x": 1003.0,
-      "y": 54.0,
-      "length": 24.0
-    },
-    {
-      "name": "rock",
-      "parent": "root",
-      "x": 1023.0,
-      "y": 26.0,
-      "length": 24.0
-    },
-    {
-      "name": "rock_03",
-      "parent": "root",
-      "x": 1005.5,
-      "y": 40.0,
-      "length": 24.0
-    },
-    {
-      "name": "shrub",
-      "parent": "root",
-      "x": 1061.0,
-      "y": 60.0,
-      "length": 24.0
-    },
-    {
       "name": "grass_02",
       "parent": "root",
       "x": 1337.5,
@@ -133,45 +105,17 @@
       "length": 24.0
     },
     {
-      "name": "grass",
-      "parent": "root",
-      "x": 1147.0,
-      "y": 53.0,
-      "length": 24.0
-    },
-    {
-      "name": "cowboy_hat",
-      "parent": "root",
-      "x": 1000.5,
-      "y": 8.0,
-      "length": 24.0
-    },
-    {
       "name": "barrel",
       "parent": "root",
-      "x": 1312.0,
-      "y": 95.0,
-      "length": 24.0
-    },
-    {
-      "name": "tombstone",
-      "parent": "root",
-      "x": 1194.5,
-      "y": 5.0,
+      "x": 1306.5,
+      "y": 58.0,
       "length": 24.0
     },
     {
       "name": "skull",
       "parent": "root",
-      "x": 145.5,
+      "x": 131.0,
       "y": 18.0,
-      "length": 24.0
-    },
-    {
-      "name": "signpost",
-      "parent": "root",
-      "x": 113.0,
-      "y": 214.0,
       "length": 24.0
     },
     {
@@ -563,6 +507,12 @@
       "attachment": "background_Layer_11"
     },
     {
+      "name": "red_filter",
+      "bone": "bg",
+      "attachment": "red_filter",
+      "blend": "multiply"
+    },
+    {
       "name": "post_R",
       "bone": "post_R",
       "attachment": "post_R"
@@ -578,26 +528,6 @@
       "attachment": "beam"
     },
     {
-      "name": "rock_02",
-      "bone": "rock_02",
-      "attachment": "rock_02"
-    },
-    {
-      "name": "rock",
-      "bone": "rock",
-      "attachment": "rock"
-    },
-    {
-      "name": "rock_03",
-      "bone": "rock_03",
-      "attachment": "rock_03"
-    },
-    {
-      "name": "shrub",
-      "bone": "shrub",
-      "attachment": "shrub"
-    },
-    {
       "name": "grass_02",
       "bone": "grass_02",
       "attachment": "grass_02"
@@ -606,16 +536,6 @@
       "name": "rocks_02",
       "bone": "rocks_02",
       "attachment": "rocks_02"
-    },
-    {
-      "name": "grass",
-      "bone": "grass",
-      "attachment": "grass"
-    },
-    {
-      "name": "cowboy_hat",
-      "bone": "cowboy_hat",
-      "attachment": "cowboy_hat"
     },
     {
       "name": "barrel",
@@ -635,44 +555,9 @@
       "color": "ffffffee"
     },
     {
-      "name": "tombstone",
-      "bone": "tombstone",
-      "attachment": "tombstone"
-    },
-    {
       "name": "skull",
       "bone": "skull",
       "attachment": "skull"
-    },
-    {
-      "name": "signpost",
-      "bone": "signpost",
-      "attachment": "signpost"
-    },
-    {
-      "name": "sign_highlight",
-      "bone": "signpost",
-      "attachment": "sign_highlight"
-    },
-    {
-      "name": "sign_tell_no_tales",
-      "bone": "signpost",
-      "attachment": "sign_tell_no_tales"
-    },
-    {
-      "name": "sign_dead_men",
-      "bone": "signpost",
-      "attachment": "sign_dead_men"
-    },
-    {
-      "name": "sign_beware_2",
-      "bone": "signpost",
-      "attachment": "sign_beware_2"
-    },
-    {
-      "name": "sign_beware_1",
-      "bone": "signpost",
-      "attachment": "sign_beware_1"
     },
     {
       "name": "right_hanging_lamp",
@@ -990,6 +875,14 @@
           "height": 892
         }
       },
+      "red_filter": {
+        "red_filter": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1342,
+          "height": 892
+        }
+      },
       "post_R": {
         "post_R": {
           "x": 16.5,
@@ -1014,38 +907,6 @@
           "height": 76
         }
       },
-      "rock_02": {
-        "rock_02": {
-          "x": 5.0,
-          "y": 13.0,
-          "width": 42,
-          "height": 28
-        }
-      },
-      "rock": {
-        "rock": {
-          "x": 2.0,
-          "y": 6.5,
-          "width": 26,
-          "height": 15
-        }
-      },
-      "rock_03": {
-        "rock_03": {
-          "x": 19.5,
-          "y": 11.5,
-          "width": 64,
-          "height": 27
-        }
-      },
-      "shrub": {
-        "shrub": {
-          "x": 4.0,
-          "y": 29.5,
-          "width": 68,
-          "height": 63
-        }
-      },
       "grass_02": {
         "grass_02": {
           "x": -8.5,
@@ -1062,28 +923,12 @@
           "height": 64
         }
       },
-      "grass": {
-        "grass": {
-          "x": 0.0,
-          "y": 23.5,
-          "width": 42,
-          "height": 53
-        }
-      },
-      "cowboy_hat": {
-        "cowboy_hat": {
-          "x": 35.5,
-          "y": 51.0,
-          "width": 170,
-          "height": 104
-        }
-      },
       "barrel": {
         "barrel": {
-          "x": -25.0,
-          "y": 103.5,
-          "width": 110,
-          "height": 209
+          "x": -29.5,
+          "y": 122.0,
+          "width": 130,
+          "height": 246
         }
       },
       "lantern_dim": {
@@ -1102,68 +947,12 @@
           "height": 420
         }
       },
-      "tombstone": {
-        "tombstone": {
-          "x": -25.5,
-          "y": 137.0,
-          "width": 256,
-          "height": 278
-        }
-      },
       "skull": {
         "skull": {
-          "x": -41.0,
-          "y": 99.5,
-          "width": 201,
-          "height": 201
-        }
-      },
-      "signpost": {
-        "signpost": {
-          "x": -1.5,
-          "y": 143.5,
-          "width": 187,
-          "height": 289
-        }
-      },
-      "sign_highlight": {
-        "sign_highlight": {
-          "x": 1.0,
-          "y": 46.0,
-          "width": 228,
-          "height": 500
-        }
-      },
-      "sign_tell_no_tales": {
-        "sign_tell_no_tales": {
-          "x": 4.0,
-          "y": 29.5,
-          "width": 134,
-          "height": 39
-        }
-      },
-      "sign_dead_men": {
-        "sign_dead_men": {
-          "x": 6.0,
-          "y": 93.5,
-          "width": 134,
-          "height": 49
-        }
-      },
-      "sign_beware_2": {
-        "sign_beware_2": {
-          "x": 1.0,
-          "y": 156.0,
-          "width": 112,
-          "height": 44
-        }
-      },
-      "sign_beware_1": {
-        "sign_beware_1": {
-          "x": -6.0,
-          "y": 227.0,
-          "width": 114,
-          "height": 50
+          "x": -33.0,
+          "y": 78.5,
+          "width": 164,
+          "height": 159
         }
       },
       "right_hanging_lamp": {

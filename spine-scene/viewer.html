@@ -10,9 +10,10 @@
   header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 12px 16px; border-bottom: 1px solid rgba(120, 170, 255, 0.22); background: #10141c; }
   header h1 { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #f0b36a; }
   header p { margin: 0; font-size: 12px; color: #8b93a7; }
-  .clips, .tools, .sign, .lamps { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .sign, .lamps, .fx { padding-left: 8px; border-left: 1px solid rgba(240, 179, 106, 0.22); }
-  .sign span, .lamps span, .fx span { font-size: 11px; color: #8b93a7; text-transform: uppercase; letter-spacing: 0.06em; }
+  .clips, .tools, .sign, .lamps, .mode { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .sign, .lamps, .fx, .mode { padding-left: 8px; border-left: 1px solid rgba(240, 179, 106, 0.22); }
+  .sign span, .lamps span, .fx span, .mode span { font-size: 11px; color: #8b93a7; text-transform: uppercase; letter-spacing: 0.06em; }
+  .mode button.active { background: rgba(180, 40, 40, 0.55); border-color: rgba(255, 120, 110, 0.7); }
   .fx { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .fx-ctrl { display: flex; align-items: center; gap: 6px; color: #c8c2b4; font-size: 11px; }
   .fx-ctrl input[type="range"] { width: 92px; accent-color: #f0b36a; }
@@ -43,6 +44,7 @@
     <button type="button" id="btnBones" class="secondary">Bones</button>
   </div>
   <div class="sign" id="sign" hidden></div>
+  <div class="mode" id="mode" hidden></div>
   <div class="lamps" id="lamps" hidden></div>
   <div class="fx" id="fx" hidden></div>
 </header>
@@ -63,6 +65,7 @@
   const btnBones = document.getElementById("btnBones");
   const signEl = document.getElementById("sign");
   const lampsEl = document.getElementById("lamps");
+  const modeEl = document.getElementById("mode");
   const fxEl = document.getElementById("fx");
 
   let skeleton = null;
@@ -86,6 +89,11 @@
     fireHot: null,
     smoke: [],
     fire: []
+  };
+  const MODE = {
+    id: "base",
+    baseOpacity: 0.45,
+    bonusOpacity: 0.80
   };
   let viewW = 1536;
   let viewH = 1024;
@@ -328,7 +336,12 @@
   }
 
   function buildSignButtons() {
-    if (!signEl || !signState || !signState.words) return;
+    if (!signEl) return;
+    if (!signState || !signState.words || !signState.words.length) {
+      signEl.hidden = true;
+      signEl.innerHTML = "";
+      return;
+    }
     signEl.hidden = false;
     signEl.innerHTML = "";
     const label = document.createElement("span");
@@ -406,6 +419,7 @@
         const rec = lampState.lamps.find((lamp) => lamp.id === "lantern_dim");
         if (rec) rec.lumen = clampLumen(pref.barrelLumen);
       }
+      if (pref.mode === "base" || pref.mode === "bonus") MODE.id = pref.mode;
     } catch (e) {}
   }
 
@@ -416,6 +430,7 @@
         fireOn: FX.fireOn,
         density: FX.density,
         speed: FX.speed,
+        mode: MODE.id,
         barrelLumen: ((lampState && lampState.lamps && lampState.lamps.find((lamp) => lamp.id === "lantern_dim")) || {}).lumen || 1
       }));
     } catch (e) {}
@@ -424,6 +439,7 @@
       lampState.fire = FX.fireOn;
       lampState.smokeDensity = FX.density;
       lampState.smokeSpeed = FX.speed;
+      lampState.mode = MODE.id;
     }
   }
 
@@ -462,6 +478,41 @@
     wrap.appendChild(input);
     wrap.appendChild(read);
     parent.appendChild(wrap);
+  }
+
+  function redFilterOpacity() {
+    return MODE.id === "bonus" ? MODE.bonusOpacity : MODE.baseOpacity;
+  }
+
+  function setMode(id) {
+    MODE.id = id === "bonus" ? "bonus" : "base";
+    if (modeEl) {
+      modeEl.querySelectorAll("[data-mode]").forEach((btn) => {
+        btn.classList.toggle("active", btn.getAttribute("data-mode") === MODE.id);
+      });
+    }
+    saveFxPrefs();
+  }
+
+  function buildModeButtons() {
+    if (!modeEl) return;
+    modeEl.hidden = false;
+    modeEl.innerHTML = "";
+    const label = document.createElement("span");
+    label.textContent = "Mode";
+    modeEl.appendChild(label);
+    [
+      { id: "base", text: "Base 45%" },
+      { id: "bonus", text: "Bonus 80%" }
+    ].forEach((item) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = item.text;
+      btn.setAttribute("data-mode", item.id);
+      btn.classList.toggle("active", MODE.id === item.id);
+      btn.addEventListener("click", () => setMode(item.id));
+      modeEl.appendChild(btn);
+    });
   }
 
   function buildFxButtons() {
@@ -661,6 +712,7 @@
     const dh = (att.height || img.height) * attSy * sy * mul;
     target.save();
     if (slot.blend === "additive") target.globalCompositeOperation = "lighter";
+    else if (slot.blend === "multiply") target.globalCompositeOperation = "multiply";
     target.globalAlpha = col.a;
     target.translate(cx, cy);
     target.rotate(-bone.rotation * Math.PI / 180);
@@ -673,6 +725,10 @@
       target.drawImage(img, -dw / 2, -dh / 2, dw, dh);
     }
     target.restore();
+  }
+
+  function isRedFilterSlot(name) {
+    return String(name || "").toLowerCase() === "red_filter";
   }
 
   function isBackgroundSlot(name) {
@@ -688,6 +744,7 @@
     const bone = world[slot.bone];
     if (!att || !img || !bone) return;
     const col = slotColor(slot, anim, t);
+    if (isRedFilterSlot(slot.name)) col.a = redFilterOpacity();
     const glow = lampGlow(slot, col);
     paintSlot(ctx, slot, att, img, bone, glow.col, sx, sy, glow.sizeMul);
     if (glow.extraA > 0.01) {
@@ -709,11 +766,11 @@
     const sy = h / viewH;
     if (!paused && dt) stepFx(dt);
     for (const slot of skeleton.slots) {
-      if (isBackgroundSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
+      if (isBackgroundSlot(slot.name) || isRedFilterSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
     }
     drawFx(sx, sy);
     for (const slot of skeleton.slots) {
-      if (!isBackgroundSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
+      if (!isBackgroundSlot(slot.name) && !isRedFilterSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
     }
     if (showBones) {
       ctx.lineWidth = 2;
@@ -761,7 +818,7 @@
       const img = new Image();
       img.onload = () => resolve(img);
       img.onerror = () => reject(new Error("Missing image " + name + ".png"));
-      img.src = "images/" + name + ".png?v=curves-darken";
+      img.src = "images/" + name + ".png?v=no-sign";
     });
   }
 
@@ -834,6 +891,19 @@
     if (lampState.fire != null) FX.fireOn = !!lampState.fire;
     if (lampState.smokeDensity != null) FX.density = Math.max(8, Math.min(96, Number(lampState.smokeDensity) || FX.density));
     if (lampState.smokeSpeed != null) FX.speed = Math.max(0.25, Math.min(2.5, Number(lampState.smokeSpeed) || FX.speed));
+    if (lampState.mode === "base" || lampState.mode === "bonus") MODE.id = lampState.mode;
+    try {
+      const filterRes = await fetch("red_filter.json");
+      if (filterRes.ok) {
+        const filterInfo = await filterRes.json();
+        if (filterInfo.base_opacity != null) MODE.baseOpacity = Number(filterInfo.base_opacity) || 0.45;
+        if (filterInfo.bonus_opacity != null) MODE.bonusOpacity = Number(filterInfo.bonus_opacity) || 0.80;
+      }
+    } catch (e) {}
+    if (lampState.redFilter) {
+      if (lampState.redFilter.base_opacity != null) MODE.baseOpacity = Number(lampState.redFilter.base_opacity) || 0.45;
+      if (lampState.redFilter.bonus_opacity != null) MODE.bonusOpacity = Number(lampState.redFilter.bonus_opacity) || 0.80;
+    }
     const meta = skeleton.skeleton;
     viewW = meta.width || viewW;
     viewH = meta.height || viewH;
@@ -843,6 +913,7 @@
     document.getElementById("subtitle").textContent = (meta.hash || "western-scene") + " · " + packTitle;
     buildClipButtons(skeleton);
     buildSignButtons();
+    buildModeButtons();
     buildLampButtons();
     buildFxButtons();
     const names = collectAttachmentNames(skeleton);

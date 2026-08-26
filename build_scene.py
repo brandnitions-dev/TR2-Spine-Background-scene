@@ -71,7 +71,11 @@ SIGN_HIGHLIGHT_SLOT = "sign_highlight"
 SIGN_STATE_PATH = HERE / "sign_state.json"
 LAMP_STATE_PATH = HERE / "lamp_state.json"
 CURVES_JSON = HERE / "curves_1.json"
+RED_FILTER_JSON = HERE / "red_filter.json"
 SITTING_GLOW_SIZE = 420
+RED_FILTER_NAMES = {"red_filter", "red filter"}
+RED_FILTER_BASE = 0.45
+RED_FILTER_BONUS = 0.80
 
 
 def canvas_to_spine(cx: float, cy: float) -> tuple[float, float]:
@@ -225,7 +229,15 @@ def own_name(part: dict) -> str:
     return f"{part.get('name') or ''} {part.get('psd_name') or ''}".lower()
 
 
+def is_red_filter(part: dict) -> bool:
+    name = (part.get("name") or "").strip().lower()
+    psd = (part.get("psd_name") or "").strip().lower()
+    return name in RED_FILTER_NAMES or psd in RED_FILTER_NAMES
+
+
 def is_background(part: dict) -> bool:
+    if is_red_filter(part):
+        return False
     text = " ".join(
         str(part.get(key) or "")
         for key in ("name", "psd_name", "parent_group", "parent")
@@ -316,7 +328,15 @@ def default_lamp_state(sitting: list[str]) -> dict:
                 "lumen": 1.0,
             }
         )
-    return {"lamps": lamps}
+    return {
+        "lamps": lamps,
+        "mode": "base",
+        "redFilter": {
+            "blend": "linear_burn",
+            "base_opacity": RED_FILTER_BASE,
+            "bonus_opacity": RED_FILTER_BONUS,
+        },
+    }
 
 
 def merge_lamp_state(sitting: list[str]) -> dict:
@@ -336,9 +356,16 @@ def merge_lamp_state(sitting: list[str]) -> dict:
             row["lumen"] = max(0.1, min(2.5, float(old.get("lumen", 1.0))))
         except (TypeError, ValueError):
             row["lumen"] = 1.0
-    for key in ("smoke", "fire", "smokeDensity", "smokeSpeed", "curves"):
+    for key in ("smoke", "fire", "smokeDensity", "smokeSpeed", "curves", "mode"):
         if key in prev:
             lamp_info[key] = prev[key]
+    if lamp_info.get("mode") not in {"base", "bonus"}:
+        lamp_info["mode"] = "base"
+    lamp_info["redFilter"] = {
+        "blend": "linear_burn",
+        "base_opacity": RED_FILTER_BASE,
+        "bonus_opacity": RED_FILTER_BONUS,
+    }
     return lamp_info
 
 
@@ -354,7 +381,7 @@ def classify_parts(parts: list[dict]) -> dict:
     sitting: list[str] = []
     baked_lights: list[str] = []
     for part in parts:
-        if is_background(part):
+        if is_background(part) or is_red_filter(part):
             continue
         if is_baked_light(part):
             baked_lights.append(part["name"])
@@ -379,7 +406,7 @@ def pivot_kind(part: dict, hanging: set[str]) -> str:
         return "hang"
     if name == "hook":
         return "bottom"
-    if name in {"beam", "background"} or is_background(part) or is_baked_light(part):
+    if name in {"beam", "background"} or is_background(part) or is_baked_light(part) or is_red_filter(part):
         return "center"
     return "bottom"
 
@@ -450,9 +477,11 @@ def slot_draw_order(parts: list[dict], lit: list[str]) -> list[str]:
     # PSD dump is back-to-front (background first), so keep that order.
     lit_set = set(lit)
     back = [p for p in parts if is_background(p)]
-    rest = [p for p in parts if not is_background(p)]
+    filters = [p for p in parts if is_red_filter(p)]
+    rest = [p for p in parts if not is_background(p) and not is_red_filter(p)]
     rest.sort(key=lambda p: int(p.get("stack_index") or 0))
     names: list[str] = [p["name"] for p in back]
+    names.extend(p["name"] for p in filters)
     for part in rest:
         names.append(part["name"])
         if part["name"] in lit_set:
@@ -843,6 +872,14 @@ def verify_scene(skeleton: dict, report_extra: dict) -> dict:
         if present:
             errors.append(f"{banned} must not be in the scene")
 
+    red = slots.get("red_filter")
+    red_ok = bool(red)
+    checks.append({"id": "red_filter", "ok": red_ok})
+    if not red_ok:
+        errors.append("red_filter slot missing; PSD RED FILTER must be in the scene")
+    elif red.get("blend") != "multiply":
+        errors.append(f"red_filter blend={red.get('blend')} expected multiply (Linear Burn on a red plate)")
+
     world = resolve_world_bones(skeleton["bones"])
     for name in hanging + ["root", "beam_anchor", "bg"]:
         if name not in world:
@@ -887,20 +924,28 @@ def verify_scene(skeleton: dict, report_extra: dict) -> dict:
         if idle.get("bones", {}).get(name, {}).get("rotate"):
             errors.append(f"baked light {name} has idle rotate")
 
-    for word in SIGN_WORDS:
-        slot = slots.get(word["slot"])
-        if not slot:
-            errors.append(f"missing sign word slot {word['slot']}")
-            continue
-        if slot.get("bone") != "signpost":
-            errors.append(f"{word['slot']} bone={slot.get('bone')} expected signpost")
-    hi = slots.get(SIGN_HIGHLIGHT_SLOT)
-    if not hi:
-        errors.append("missing sign_highlight slot")
-    elif hi.get("bone") != "signpost":
-        errors.append(f"sign_highlight bone={hi.get('bone')} expected signpost")
-    if idle.get("slots", {}).get(SIGN_HIGHLIGHT_SLOT):
-        errors.append("idle keys sign_highlight; highlight is derived, not animated")
+    has_sign = "signpost" in slots
+    checks.append({"id": "sign_in_psd", "ok": True, "present": has_sign})
+    if has_sign:
+        for word in SIGN_WORDS:
+            slot = slots.get(word["slot"])
+            if not slot:
+                errors.append(f"missing sign word slot {word['slot']}")
+                continue
+            if slot.get("bone") != "signpost":
+                errors.append(f"{word['slot']} bone={slot.get('bone')} expected signpost")
+        hi = slots.get(SIGN_HIGHLIGHT_SLOT)
+        if not hi:
+            errors.append("missing sign_highlight slot")
+        elif hi.get("bone") != "signpost":
+            errors.append(f"sign_highlight bone={hi.get('bone')} expected signpost")
+        if idle.get("slots", {}).get(SIGN_HIGHLIGHT_SLOT):
+            errors.append("idle keys sign_highlight; highlight is derived, not animated")
+    else:
+        leftovers = [w["slot"] for w in SIGN_WORDS] + [SIGN_HIGHLIGHT_SLOT, "signpost"]
+        for name in leftovers:
+            if name in slots:
+                errors.append(f"leftover {name} after PSD removed the post sign")
     left = next((p for p in (report_extra.get("pendulum") or []) if p["name"] == "left_hanging_lamp"), None)
     if left and left.get("hang_source") != "chain_rest":
         errors.append(f"left hang_source={left.get('hang_source')} expected chain_rest")
@@ -977,6 +1022,8 @@ def composite_check(parts: list[dict], dest: Path) -> None:
         if not src.is_file():
             continue
         im = Image.open(src).convert("RGBA")
+        if is_red_filter(part):
+            continue
         if is_background(part) and im.size == (CANVAS_W, CANVAS_H) and int(part["x"]) == 0 and int(part["y"]) == 0:
             canvas = Image.alpha_composite(canvas, im)
             continue
@@ -1031,7 +1078,7 @@ def build() -> dict:
             )
         else:
             copy_static_image(src, dest)
-        if curves_lut:
+        if curves_lut and not is_red_filter(part):
             apply_curves_png(dest, curves_lut)
 
     hang_parents = refine_hang_origins(parts, metrics, worlds, hanging)
@@ -1121,7 +1168,8 @@ def build() -> dict:
 
     overlay_names = {p["name"] for p in parts if is_sign_overlay(p)}
     bg_names = {p["name"] for p in parts if is_background(p)}
-    already = {"background", "beam"} | bg_names | hanging_set | set(classified["sitting"]) | set(classified["baked_lights"]) | overlay_names
+    filter_names = {p["name"] for p in parts if is_red_filter(p)}
+    already = {"background", "beam"} | bg_names | hanging_set | set(classified["sitting"]) | set(classified["baked_lights"]) | overlay_names | filter_names
     if "hook" in hang_parents.values():
         already.add("hook")
     draw_names = slot_draw_order(parts, classified["lit"])
@@ -1142,12 +1190,15 @@ def build() -> dict:
         size: tuple[int, int],
         *,
         additive: bool = False,
+        multiply: bool = False,
         scale_xy: tuple[float, float] | None = None,
     ) -> None:
         rec = {"name": slot_name, "bone": bone_name, "attachment": att_name}
         if additive:
             rec["blend"] = "additive"
             rec["color"] = "ffffffee"
+        elif multiply:
+            rec["blend"] = "multiply"
         slots.append(rec)
         att = {
             "x": round(attach[0], 3),
@@ -1179,6 +1230,9 @@ def build() -> dict:
                 add_slot(slot_name, "bg", slot_name, (0.0, 0.0), (CANVAS_W, CANVAS_H))
             else:
                 add_slot(slot_name, "bg", slot_name, bg_attach_on_bg_bone(part), tuple(worlds[slot_name]["native"]))
+            continue
+        if part and is_red_filter(part):
+            add_slot(slot_name, "bg", slot_name, (0.0, 0.0), (CANVAS_W, CANVAS_H), multiply=True)
             continue
         if slot_name.endswith("_light") and slot_name in classified["extracted_lights"]:
             lamp = slot_name[: -len("_light")]
@@ -1229,7 +1283,18 @@ def build() -> dict:
         IDLE_DURATION,
         sitting=classified["sitting"],
     )
-    sign_info = default_sign_state()
+    has_sign = any(
+        (p.get("name") or "").strip().lower() == "signpost"
+        or (p.get("psd_name") or "").strip().lower() == "signpost"
+        for p in parts
+    )
+    sign_info = default_sign_state() if has_sign else {
+        "present": False,
+        "words": [],
+        "highlight": False,
+        "slots": {},
+        "highlight_rule": "absent: post sign not in PSD",
+    }
     lamp_info = merge_lamp_state(classified["sitting"])
     SIGN_STATE_PATH.write_text(json.dumps(sign_info, indent=2), encoding="utf-8")
     LAMP_STATE_PATH.write_text(json.dumps(lamp_info, indent=2), encoding="utf-8")
@@ -1293,10 +1358,12 @@ def build() -> dict:
         "serve_dir": str(OUT_DIR),
         "viewer_url": "http://127.0.0.1:8780/viewer.html",
         "sign": sign_info,
+        "mode": lamp_info.get("mode") or "base",
+        "redFilter": lamp_info.get("redFilter"),
         "curves": {
             "source": "curves_1.json",
             "baked": bool(curves_lut),
-            "skip": [f"{name}_light" for name in classified["lit"]],
+            "skip": [f"{name}_light" for name in classified["lit"]] + ["red_filter"],
         },
     }
     report = verify_scene(skeleton, extra)
@@ -1316,6 +1383,8 @@ def build() -> dict:
         shutil.copy2(VIEWER_SRC, OUT_DIR / "viewer.html")
     if CURVES_JSON.is_file():
         shutil.copy2(CURVES_JSON, OUT_DIR / "curves_1.json")
+    if RED_FILTER_JSON.is_file():
+        shutil.copy2(RED_FILTER_JSON, OUT_DIR / "red_filter.json")
     composite_check(parts, OUT_DIR / "psd2_composite.png")
     if curves_lut:
         apply_curves_png(OUT_DIR / "psd2_composite.png", curves_lut)
@@ -1332,11 +1401,15 @@ def main() -> int:
     print(f"clips {list(report['clips'])}")
     print(f"hanging {report['hanging_lamps']}")
     sign = report.get("sign") or {}
-    print(f"sign words {[(w['slot'], sign.get(w['id'])) for w in SIGN_WORDS]} highlight={sign.get('highlight')}")
+    if sign.get("present") is False or not sign.get("words"):
+        print("sign none (removed from PSD)")
+    else:
+        print(f"sign words {[(w['slot'], sign.get(w['id'])) for w in SIGN_WORDS]} highlight={sign.get('highlight')}")
     print(f"sitting {report['sitting_lamps']}")
     print(f"baked_lights {report['baked_lights']}")
     print(f"lights {report['light_slots']}")
     print(f"lamps {report.get('lamps')}")
+    print(f"mode {report.get('mode')} redFilter={report.get('redFilter')}")
     print(f"moved {len(report.get('moved_layers') or [])}")
     for row in report.get("moved_layers") or []:
         print(f"  {row['name']:22s} {row['from']} -> {row['to']}  d=({row['delta'][0]:+.1f},{row['delta'][1]:+.1f})  {row['pixels']}px")

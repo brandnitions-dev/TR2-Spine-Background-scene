@@ -253,10 +253,17 @@ def main() -> int:
     exported: list[dict] = []
 
     SKIP_PARENTS = {"board"}
-    SKIP_NAMES = {"red filter", "red_filter", "curves 1"}
+    SKIP_NAMES = {"curves 1"}
+    RED_FILTER_NAMES = {"red filter", "red_filter"}
     BG_PARENTS = {"background layer"}
 
+    def is_red_filter_layer(layer: dict, slot: str = "") -> bool:
+        raw = (layer.get("name") or slot or "").strip().lower().replace(" ", "_")
+        return raw == "red_filter"
+
     def is_bg_source(layer: dict, slot: str) -> bool:
+        if is_red_filter_layer(layer, slot):
+            return False
         parent = (layer.get("parent") or "").strip().lower()
         raw = (layer.get("name") or "").strip().lower()
         return parent in BG_PARENTS or "background" in raw or "cloud" in raw or "cloud" in slot.lower()
@@ -271,6 +278,9 @@ def main() -> int:
         parent = (layer.get("parent") or "").strip().lower()
         if raw_name.strip().lower() in SKIP_NAMES or parent in SKIP_PARENTS:
             print(f"skip hidden-or-stale {raw_name!r} parent={layer.get('parent')!r}")
+            continue
+        if (not bool(layer.get("visible", True))) and raw_name.strip().lower() not in RED_FILTER_NAMES:
+            print(f"skip hidden {raw_name!r} parent={layer.get('parent')!r}")
             continue
         base = sanitize_jsx(layer["name"])
         k = jsx_used.get(base, 0) + 1
@@ -308,6 +318,8 @@ def main() -> int:
             print(f"skip {layer['name']} clamped empty")
             continue
         name = slot_name(layer["name"])
+        if is_red_filter_layer(layer, name):
+            name = "red_filter"
         if is_bg_source(layer, name):
             if "cloud" in name.lower():
                 name = "background_clouds"
@@ -320,7 +332,12 @@ def main() -> int:
         if n > 1:
             name = f"{name}_{n:02d}"
         dest = PARTS / f"{name}.png"
-        if is_bg_source(layer, name) and im.size == (canvas_w, canvas_h):
+        keep_full = (
+            (is_bg_source(layer, name) and im.size == (canvas_w, canvas_h))
+            or raw_name.strip().lower() in RED_FILTER_NAMES
+            or name.lower() in RED_FILTER_NAMES
+        )
+        if keep_full and im.size == (canvas_w, canvas_h):
             im.save(dest)
             native = [canvas_w, canvas_h]
             placed = [0, 0, canvas_w, canvas_h]
@@ -379,6 +396,7 @@ def main() -> int:
         left["filename"] = dest.name
         print(f"renamed leftmost post {left['psd_name']!r} -> post_L")
 
+    payload.pop("kept_exports", None)
     payload["exports"] = exported
     payload["export_method"] = {
         "scale": export_scale,

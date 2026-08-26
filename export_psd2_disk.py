@@ -17,7 +17,9 @@ PREV = HERE / "psd2_layers.prev.json"
 PARTS = HERE / "psd2-parts"
 CURVES_JSON = HERE / "curves_1.json"
 SKIP_PARENTS = {"board"}
-SKIP_NAMES = {"red filter", "red_filter"}
+SKIP_NAMES: set[str] = set()
+RED_FILTER_NAMES = {"red filter", "red_filter"}
+RED_FILTER_JSON = HERE / "red_filter.json"
 
 
 def sanitize(name: str, index: int) -> str:
@@ -154,6 +156,10 @@ def export_curves_standalone() -> int:
     return 0
 
 
+def is_red_filter_name(name: str) -> bool:
+    return name.strip().lower().replace(" ", "_") == "red_filter"
+
+
 def unique_safe(base: str, used: dict[str, int]) -> str:
     n = used.get(base, 0) + 1
     used[base] = n
@@ -172,6 +178,23 @@ def paste_safe(canvas: Image.Image, tile: Image.Image, x0: int, y0: int) -> None
         return
     piece = tile.crop((src_l, src_t, src_l + width, src_t + height))
     canvas.paste(piece, (dst_l, dst_t), piece)
+
+
+def write_red_filter_meta(layer) -> dict:
+    opacity_pct = round(float(getattr(layer, "opacity", 255)) * 100.0 / 255.0, 3)
+    payload = {
+        "name": str(layer.name),
+        "blend": "linear_burn",
+        "psd_opacity": opacity_pct,
+        "base_opacity": 0.45,
+        "bonus_opacity": 0.80,
+        "mode": "base",
+        "export": "full_strength_topil",
+        "note": "PSD layer opacity is Base 45%. Viewer Bonus uses 80%. Do not bake either value into the PNG.",
+    }
+    RED_FILTER_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"wrote {RED_FILTER_JSON} psd_opacity={opacity_pct}")
+    return payload
 
 
 def layer_tile(layer) -> Image.Image | None:
@@ -197,6 +220,27 @@ def layer_tile(layer) -> Image.Image | None:
     if int((composite_alpha > 8).sum()) == 0 and int((raw_alpha > 8).sum()) > 0:
         return raw
     return tile
+
+
+def layer_tile_for_export(layer, name: str) -> Image.Image | None:
+    if name.strip().lower() in RED_FILTER_NAMES:
+        raw = None
+        try:
+            raw = layer.topil()
+        except Exception:
+            raw = None
+        if raw is not None:
+            return raw.convert("RGBA")
+        tile = layer_tile(layer)
+        if tile is None:
+            return None
+        op = float(getattr(layer, "opacity", 255)) / 255.0
+        if op > 0.01 and op < 0.999:
+            arr = np.asarray(tile).copy()
+            arr[:, :, 3] = np.clip(arr[:, :, 3].astype(np.float32) / op, 0, 255).astype(np.uint8)
+            return Image.fromarray(arr, "RGBA")
+        return tile
+    return layer_tile(layer)
 
 
 def main() -> int:
@@ -246,6 +290,8 @@ def main() -> int:
         if is_curves:
             write_curves_lut(layer, psd)
             continue
+        if name.strip().lower() in RED_FILTER_NAMES:
+            write_red_filter_meta(layer)
         if is_group or not bbox:
             continue
         skip = name.strip().lower() in SKIP_NAMES or parent.lower() in SKIP_PARENTS
@@ -257,8 +303,11 @@ def main() -> int:
         if skip:
             log.append(f"skip {name!r} parent={parent!r}")
             continue
+        if (not bool(layer.visible)) and (name.strip().lower() not in RED_FILTER_NAMES):
+            log.append(f"skip hidden {name!r} parent={parent!r}")
+            continue
         jsx = unique_safe(sanitize(name, index), used)
-        tile = layer_tile(layer)
+        tile = layer_tile_for_export(layer, name)
         if tile is None:
             log.append(f"skip {jsx} no composite")
             continue

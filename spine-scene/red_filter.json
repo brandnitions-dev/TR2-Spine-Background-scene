@@ -1,0 +1,10 @@
+{
+  "name": "RED FILTER",
+  "blend": "linear_burn",
+  "psd_opacity": 45.098,
+  "base_opacity": 0.45,
+  "bonus_opacity": 0.8,
+  "mode": "base",
+  "export": "full_strength_topil",
+  "note": "PSD layer opacity is Base 45%. Viewer Bonus uses 80%. Do not bake either value into the PNG."
+}

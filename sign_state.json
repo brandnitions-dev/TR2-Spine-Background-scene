@@ -1,38 +1,7 @@
 {
-  "beware1": true,
-  "beware2": true,
-  "dead_men": true,
-  "tell_no_tales": true,
-  "highlight": true,
-  "highlight_rule": "OR: highlight on if any word is on",
-  "words": [
-    {
-      "id": "beware1",
-      "slot": "sign_beware_1",
-      "label": "Beware"
-    },
-    {
-      "id": "beware2",
-      "slot": "sign_beware_2",
-      "label": "Beware"
-    },
-    {
-      "id": "dead_men",
-      "slot": "sign_dead_men",
-      "label": "Dead Men"
-    },
-    {
-      "id": "tell_no_tales",
-      "slot": "sign_tell_no_tales",
-      "label": "Tell No Tales"
-    }
-  ],
-  "highlight_slot": "sign_highlight",
-  "slots": {
-    "sign_beware_1": true,
-    "sign_beware_2": true,
-    "sign_dead_men": true,
-    "sign_tell_no_tales": true,
-    "sign_highlight": true
-  }
+  "present": false,
+  "words": [],
+  "highlight": false,
+  "slots": {},
+  "highlight_rule": "absent: post sign not in PSD"
 }

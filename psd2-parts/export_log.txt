@@ -10,53 +10,32 @@ full clouds_marquee -831,-21,3358,420 name=clouds marquee
 meta clouds_marquee kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=-831,-21,3358,420 name=clouds marquee
 full layer_11 -277,-93,1585,901 name=Layer 11
 meta layer_11 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=-277,-93,1585,901 name=Layer 11
+full red_filter -322,-114,1363,1016 name=RED FILTER
+meta red_filter kind=raster vis=true op=115 blend=BlendMode.LINEAR_BURN canvas_bounds=-322,-114,1363,1016 name=RED FILTER
 full post_r 1147,40,1332,770 name=post_R
 meta post_r kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1147,40,1332,770 name=post_R
 full post_r_02 6,45,191,826 name=post_R
 meta post_r_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=6,45,191,826 name=post_R
 full beam 18,53,1329,129 name=beam
 meta beam kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=18,53,1329,129 name=beam
-full rock_02 986,810,1029,840 name=rock_02
-meta rock_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=986,810,1029,840 name=rock_02
-full rock 1012,852,1038,867 name=rock
-meta rock kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1012,852,1038,867 name=rock
-full rock_03 993,826,1057,854 name=rock_03
-meta rock_03 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=993,826,1057,854 name=rock_03
-full shrub 1029,770,1099,834 name=shrub
-meta shrub kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1029,770,1099,834 name=shrub
 full grass_02 1315,569,1342,610 name=grass_02
 meta grass_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1315,569,1342,610 name=grass_02
 full rocks_02 57,761,160,825 name=rocks_02
 meta rocks_02 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=57,761,160,825 name=rocks_02
-full grass 1125,788,1169,842 name=grass
-meta grass kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1125,788,1169,842 name=grass
-full cowboy_hat 950,780,1121,885 name=cowboy_hat
-meta cowboy_hat kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=950,780,1121,885 name=cowboy_hat
-full barrel 1232,589,1342,798 name=barrel
-meta barrel kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1232,589,1342,798 name=barrel
-full lantern_dim 1283,459,1342,610 name=lantern_dim
-meta lantern_dim kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1283,459,1342,610 name=lantern_dim
-full tombstone 1041,611,1297,889 name=tombstone
-meta tombstone kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1041,611,1297,889 name=tombstone
-skip 'RED FILTER' parent='Group 3'
+full barrel 1212,589,1342,835 name=barrel
+meta barrel kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1212,589,1342,835 name=barrel
+full lantern_dim 1277,459,1336,610 name=lantern_dim
+meta lantern_dim kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1277,459,1336,610 name=lantern_dim
 skip 'Layer 2' parent='board'
 skip 'Layer 2 copy' parent='board'
 skip 'chain_02' parent='board'
 skip 'chain_02 copy' parent='board'
-full skull 4,674,205,875 name=skull
-meta skull kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=4,674,205,875 name=skull
-full signpost 18,390,205,679 name=signpost
-meta signpost kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=18,390,205,679 name=signpost
-full postsign 0,292,305,892 name=postsign
-meta postsign kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=0,292,305,892 name=postsign
-full tellnotales 47,627,186,671 name=tellnotales
-meta tellnotales kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=47,627,186,671 name=tellnotales
-full deadman 49,557,188,611 name=deadman
-meta deadman kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=49,557,188,611 name=deadman
-full beware2 55,498,173,546 name=beware2
-meta beware2 kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=55,498,173,546 name=beware2
-full beware1 47,424,167,478 name=beware1
-meta beware1 kind=raster vis=false op=255 blend=BlendMode.DARKEN canvas_bounds=47,424,167,478 name=beware1
+full skull 16,711,180,875 name=skull
+meta skull kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=16,711,180,875 name=skull
+skip hidden 'scater 4' parent='post sign'
+skip hidden 'scater 3' parent='post sign'
+skip hidden 'scater 2' parent='post sign'
+skip hidden 'scater 1' parent='post sign'
 full right_hanging_lamp 1188,73,1250,305 name=right  hanging lamp
 meta right_hanging_lamp kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=1188,73,1250,305 name=right  hanging lamp
 full left_hanging_lamp 98,73,160,305 name=left hanging lamp
@@ -167,4 +146,3 @@ full chain_bolt_copy_21 998,641,1008,652 name=chain bolt copy 21
 meta chain_bolt_copy_21 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=998,641,1008,652 name=chain bolt copy 21
 full layer_8_copy_12 997,613,1011,651 name=Layer 8 copy 12
 meta layer_8_copy_12 kind=raster vis=true op=255 blend=BlendMode.NORMAL canvas_bounds=997,613,1011,651 name=Layer 8 copy 12
-skip curves_1 empty

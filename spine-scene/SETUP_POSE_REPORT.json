@@ -125,23 +125,17 @@
       "ok": true
     },
     {
-      "id": "signpost_left",
-      "ok": true,
-      "box": [
-        18.0,
-        390.0,
-        187.0,
-        289.0
-      ]
+      "id": "red_filter",
+      "ok": true
     },
     {
       "id": "barrel_right",
       "ok": true,
       "box": [
-        1232.0,
+        1212.0,
         589.0,
-        110.0,
-        209.0
+        130.0,
+        246.0
       ]
     },
     {
@@ -153,6 +147,11 @@
         1311.0,
         76.0
       ]
+    },
+    {
+      "id": "sign_in_psd",
+      "ok": true,
+      "present": false
     }
   ],
   "tol_px": 1.5,
@@ -176,18 +175,10 @@
     "lantern_dim_light",
     "post_R",
     "post_L",
-    "rock_02",
-    "rock",
-    "rock_03",
-    "shrub",
     "grass_02",
     "rocks_02",
-    "grass",
-    "cowboy_hat",
     "barrel",
-    "tombstone",
     "skull",
-    "signpost",
     "MAIN_FRAME",
     "Layer_4",
     "Layer_5",
@@ -246,28 +237,16 @@
     "background_Layer_12",
     "background_clouds",
     "background_Layer_11",
+    "red_filter",
     "post_R",
     "post_L",
     "beam",
-    "rock_02",
-    "rock",
-    "rock_03",
-    "shrub",
     "grass_02",
     "rocks_02",
-    "grass",
-    "cowboy_hat",
     "barrel",
     "lantern_dim",
     "lantern_dim_light",
-    "tombstone",
     "skull",
-    "signpost",
-    "sign_highlight",
-    "sign_tell_no_tales",
-    "sign_dead_men",
-    "sign_beware_2",
-    "sign_beware_1",
     "right_hanging_lamp",
     "right_hanging_lamp_light",
     "left_hanging_lamp",
@@ -612,6 +591,12 @@
         "lumen": 1.0
       }
     ],
+    "mode": "base",
+    "redFilter": {
+      "blend": "linear_burn",
+      "base_opacity": 0.45,
+      "bonus_opacity": 0.8
+    },
     "smoke": true,
     "fire": true,
     "smokeDensity": 48,
@@ -691,6 +676,40 @@
       "name": "background_Layer_11",
       "filename": "background_Layer_11.png",
       "psd_name": "Layer 11",
+      "parent_group": "background layer",
+      "scale": 1.0,
+      "pivot": "center",
+      "joint_img": [
+        671.0,
+        446.0
+      ],
+      "canvas_xy": [
+        671.0,
+        446.0
+      ],
+      "world": [
+        671.0,
+        446.0
+      ],
+      "attach": [
+        0.0,
+        0.0
+      ],
+      "native": [
+        1342,
+        892
+      ],
+      "placed": [
+        1342,
+        892,
+        0,
+        0
+      ]
+    },
+    "red_filter": {
+      "name": "red_filter",
+      "filename": "red_filter.png",
+      "psd_name": "RED FILTER",
       "parent_group": "background layer",
       "scale": 1.0,
       "pivot": "center",
@@ -823,142 +842,6 @@
         53
       ]
     },
-    "rock_02": {
-      "name": "rock_02",
-      "filename": "rock_02.png",
-      "psd_name": "rock_02",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        16.0,
-        27.0
-      ],
-      "canvas_xy": [
-        1003.0,
-        838.0
-      ],
-      "world": [
-        1003.0,
-        54.0
-      ],
-      "attach": [
-        5.0,
-        13.0
-      ],
-      "native": [
-        42,
-        28
-      ],
-      "placed": [
-        42,
-        28,
-        987,
-        811
-      ]
-    },
-    "rock": {
-      "name": "rock",
-      "filename": "rock.png",
-      "psd_name": "rock",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        11.0,
-        14.0
-      ],
-      "canvas_xy": [
-        1023.0,
-        866.0
-      ],
-      "world": [
-        1023.0,
-        26.0
-      ],
-      "attach": [
-        2.0,
-        6.5
-      ],
-      "native": [
-        26,
-        15
-      ],
-      "placed": [
-        26,
-        15,
-        1012,
-        852
-      ]
-    },
-    "rock_03": {
-      "name": "rock_03",
-      "filename": "rock_03.png",
-      "psd_name": "rock_03",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        12.5,
-        25.0
-      ],
-      "canvas_xy": [
-        1005.5,
-        852.0
-      ],
-      "world": [
-        1005.5,
-        40.0
-      ],
-      "attach": [
-        19.5,
-        11.5
-      ],
-      "native": [
-        64,
-        27
-      ],
-      "placed": [
-        64,
-        27,
-        993,
-        827
-      ]
-    },
-    "shrub": {
-      "name": "shrub",
-      "filename": "shrub.png",
-      "psd_name": "shrub",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        30.0,
-        61.0
-      ],
-      "canvas_xy": [
-        1061.0,
-        832.0
-      ],
-      "world": [
-        1061.0,
-        60.0
-      ],
-      "attach": [
-        4.0,
-        29.5
-      ],
-      "native": [
-        68,
-        63
-      ],
-      "placed": [
-        68,
-        63,
-        1031,
-        771
-      ]
-    },
     "grass_02": {
       "name": "grass_02",
       "filename": "grass_02.png",
@@ -1027,74 +910,6 @@
         761
       ]
     },
-    "grass": {
-      "name": "grass",
-      "filename": "grass.png",
-      "psd_name": "grass",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        21.0,
-        50.0
-      ],
-      "canvas_xy": [
-        1147.0,
-        839.0
-      ],
-      "world": [
-        1147.0,
-        53.0
-      ],
-      "attach": [
-        0.0,
-        23.5
-      ],
-      "native": [
-        42,
-        53
-      ],
-      "placed": [
-        42,
-        53,
-        1126,
-        789
-      ]
-    },
-    "cowboy_hat": {
-      "name": "cowboy_hat",
-      "filename": "cowboy_hat.png",
-      "psd_name": "cowboy_hat",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        49.5,
-        103.0
-      ],
-      "canvas_xy": [
-        1000.5,
-        884.0
-      ],
-      "world": [
-        1000.5,
-        8.0
-      ],
-      "attach": [
-        35.5,
-        51.0
-      ],
-      "native": [
-        170,
-        104
-      ],
-      "placed": [
-        170,
-        104,
-        951,
-        781
-      ]
-    },
     "barrel": {
       "name": "barrel",
       "filename": "barrel.png",
@@ -1103,29 +918,29 @@
       "scale": 1.0,
       "pivot": "bottom",
       "joint_img": [
-        80.0,
-        208.0
+        94.5,
+        245.0
       ],
       "canvas_xy": [
-        1312.0,
-        797.0
+        1306.5,
+        834.0
       ],
       "world": [
-        1312.0,
-        95.0
+        1306.5,
+        58.0
       ],
       "attach": [
-        -25.0,
-        103.5
+        -29.5,
+        122.0
       ],
       "native": [
-        110,
-        209
+        130,
+        246
       ],
       "placed": [
-        110,
-        209,
-        1232,
+        130,
+        246,
+        1212,
         589
       ]
     },
@@ -1141,11 +956,11 @@
         150.0
       ],
       "canvas_xy": [
-        1314.0,
+        1308.0,
         609.0
       ],
       "world": [
-        1314.0,
+        1308.0,
         283.0
       ],
       "attach": [
@@ -1159,42 +974,8 @@
       "placed": [
         59,
         151,
-        1283,
+        1277,
         459
-      ]
-    },
-    "tombstone": {
-      "name": "tombstone",
-      "filename": "tombstone.png",
-      "psd_name": "tombstone",
-      "parent_group": "props",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        153.5,
-        276.0
-      ],
-      "canvas_xy": [
-        1194.5,
-        887.0
-      ],
-      "world": [
-        1194.5,
-        5.0
-      ],
-      "attach": [
-        -25.5,
-        137.0
-      ],
-      "native": [
-        256,
-        278
-      ],
-      "placed": [
-        256,
-        278,
-        1041,
-        611
       ]
     },
     "skull": {
@@ -1205,234 +986,30 @@
       "scale": 1.0,
       "pivot": "bottom",
       "joint_img": [
-        141.5,
-        200.0
+        115.0,
+        158.0
       ],
       "canvas_xy": [
-        145.5,
+        131.0,
         874.0
       ],
       "world": [
-        145.5,
+        131.0,
         18.0
       ],
       "attach": [
-        -41.0,
-        99.5
+        -33.0,
+        78.5
       ],
       "native": [
-        201,
-        201
+        164,
+        159
       ],
       "placed": [
-        201,
-        201,
-        4,
-        674
-      ]
-    },
-    "signpost": {
-      "name": "signpost",
-      "filename": "signpost.png",
-      "psd_name": "signpost",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        95.0,
-        288.0
-      ],
-      "canvas_xy": [
-        113.0,
-        678.0
-      ],
-      "world": [
-        113.0,
-        214.0
-      ],
-      "attach": [
-        -1.5,
-        143.5
-      ],
-      "native": [
-        187,
-        289
-      ],
-      "placed": [
-        187,
-        289,
-        18,
-        390
-      ]
-    },
-    "sign_highlight": {
-      "name": "sign_highlight",
-      "filename": "postsign.png",
-      "psd_name": "postsign",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        150.0,
-        496.0
-      ],
-      "canvas_xy": [
-        150.0,
-        878.0
-      ],
-      "world": [
-        150.0,
-        14.0
-      ],
-      "attach": [
-        -36.0,
-        246.0
-      ],
-      "native": [
-        228,
-        500
-      ],
-      "placed": [
-        228,
-        500,
-        0,
-        382
-      ]
-    },
-    "sign_tell_no_tales": {
-      "name": "sign_tell_no_tales",
-      "filename": "tellnotales.png",
-      "psd_name": "tellnotales",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        124.0,
-        37.0
-      ],
-      "canvas_xy": [
-        174.0,
-        666.0
-      ],
-      "world": [
-        174.0,
-        226.0
-      ],
-      "attach": [
-        -57.0,
-        17.5
-      ],
-      "native": [
-        134,
-        39
-      ],
-      "placed": [
-        134,
-        39,
-        50,
-        629
-      ]
-    },
-    "sign_dead_men": {
-      "name": "sign_dead_men",
-      "filename": "deadman.png",
-      "psd_name": "deadman",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        14.0,
-        46.0
-      ],
-      "canvas_xy": [
-        66.0,
-        606.0
-      ],
-      "world": [
-        66.0,
-        286.0
-      ],
-      "attach": [
-        53.0,
-        21.5
-      ],
-      "native": [
-        134,
-        49
-      ],
-      "placed": [
-        134,
-        49,
-        52,
-        560
-      ]
-    },
-    "sign_beware_2": {
-      "name": "sign_beware_2",
-      "filename": "beware2.png",
-      "psd_name": "beware2",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        12.5,
-        42.0
-      ],
-      "canvas_xy": [
-        70.5,
-        542.0
-      ],
-      "world": [
-        70.5,
-        350.0
-      ],
-      "attach": [
-        43.5,
-        20.0
-      ],
-      "native": [
-        112,
-        44
-      ],
-      "placed": [
-        112,
-        44,
-        58,
-        500
-      ]
-    },
-    "sign_beware_1": {
-      "name": "sign_beware_1",
-      "filename": "beware1.png",
-      "psd_name": "beware1",
-      "parent_group": "Group 1",
-      "scale": 1.0,
-      "pivot": "bottom",
-      "joint_img": [
-        105.5,
-        48.0
-      ],
-      "canvas_xy": [
-        155.5,
-        474.0
-      ],
-      "world": [
-        155.5,
-        418.0
-      ],
-      "attach": [
-        -48.5,
-        23.0
-      ],
-      "native": [
-        114,
-        50
-      ],
-      "placed": [
-        114,
-        50,
-        50,
-        426
+        164,
+        159,
+        16,
+        716
       ]
     },
     "right_hanging_lamp": {
@@ -3308,8 +2885,8 @@
       ]
     }
   },
-  "layer_count_psd": 105,
-  "prop_count": 79,
+  "layer_count_psd": 96,
+  "prop_count": 67,
   "parts": [
     {
       "name": "background_Layer_12",
@@ -3324,6 +2901,11 @@
     {
       "name": "background_Layer_11",
       "psd_name": "Layer 11",
+      "parent_group": "background layer"
+    },
+    {
+      "name": "red_filter",
+      "psd_name": "RED FILTER",
       "parent_group": "background layer"
     },
     {
@@ -3342,26 +2924,6 @@
       "parent_group": "ENTRANCE"
     },
     {
-      "name": "rock_02",
-      "psd_name": "rock_02",
-      "parent_group": "props"
-    },
-    {
-      "name": "rock",
-      "psd_name": "rock",
-      "parent_group": "props"
-    },
-    {
-      "name": "rock_03",
-      "psd_name": "rock_03",
-      "parent_group": "props"
-    },
-    {
-      "name": "shrub",
-      "psd_name": "shrub",
-      "parent_group": "props"
-    },
-    {
       "name": "grass_02",
       "psd_name": "grass_02",
       "parent_group": "props"
@@ -3369,16 +2931,6 @@
     {
       "name": "rocks_02",
       "psd_name": "rocks_02",
-      "parent_group": "props"
-    },
-    {
-      "name": "grass",
-      "psd_name": "grass",
-      "parent_group": "props"
-    },
-    {
-      "name": "cowboy_hat",
-      "psd_name": "cowboy_hat",
       "parent_group": "props"
     },
     {
@@ -3392,44 +2944,9 @@
       "parent_group": "props"
     },
     {
-      "name": "tombstone",
-      "psd_name": "tombstone",
-      "parent_group": "props"
-    },
-    {
       "name": "skull",
       "psd_name": "skull",
       "parent_group": "Group 3"
-    },
-    {
-      "name": "signpost",
-      "psd_name": "signpost",
-      "parent_group": "Group 1"
-    },
-    {
-      "name": "sign_highlight",
-      "psd_name": "postsign",
-      "parent_group": "Group 1"
-    },
-    {
-      "name": "sign_tell_no_tales",
-      "psd_name": "tellnotales",
-      "parent_group": "Group 1"
-    },
-    {
-      "name": "sign_dead_men",
-      "psd_name": "deadman",
-      "parent_group": "Group 1"
-    },
-    {
-      "name": "sign_beware_2",
-      "psd_name": "beware2",
-      "parent_group": "Group 1"
-    },
-    {
-      "name": "sign_beware_1",
-      "psd_name": "beware1",
-      "parent_group": "Group 1"
     },
     {
       "name": "right_hanging_lamp",
@@ -3711,42 +3228,17 @@
   "serve_dir": "C:\\Users\\Emex33\\Documents\\fire frame vfx\\backgroundSPINE\\spine-scene",
   "viewer_url": "http://127.0.0.1:8780/viewer.html",
   "sign": {
-    "beware1": true,
-    "beware2": true,
-    "dead_men": true,
-    "tell_no_tales": true,
-    "highlight": true,
-    "highlight_rule": "OR: highlight on if any word is on",
-    "words": [
-      {
-        "id": "beware1",
-        "slot": "sign_beware_1",
-        "label": "Beware"
-      },
-      {
-        "id": "beware2",
-        "slot": "sign_beware_2",
-        "label": "Beware"
-      },
-      {
-        "id": "dead_men",
-        "slot": "sign_dead_men",
-        "label": "Dead Men"
-      },
-      {
-        "id": "tell_no_tales",
-        "slot": "sign_tell_no_tales",
-        "label": "Tell No Tales"
-      }
-    ],
-    "highlight_slot": "sign_highlight",
-    "slots": {
-      "sign_beware_1": true,
-      "sign_beware_2": true,
-      "sign_dead_men": true,
-      "sign_tell_no_tales": true,
-      "sign_highlight": true
-    }
+    "present": false,
+    "words": [],
+    "highlight": false,
+    "slots": {},
+    "highlight_rule": "absent: post sign not in PSD"
+  },
+  "mode": "base",
+  "redFilter": {
+    "blend": "linear_burn",
+    "base_opacity": 0.45,
+    "bonus_opacity": 0.8
   },
   "curves": {
     "source": "curves_1.json",
@@ -3754,7 +3246,8 @@
     "skip": [
       "right_hanging_lamp_light",
       "left_hanging_lamp_light",
-      "lantern_dim_light"
+      "lantern_dim_light",
+      "red_filter"
     ]
   }
 }
