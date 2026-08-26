@@ -269,6 +269,29 @@
     return swapped || slot.attachment;
   }
 
+  function clampLumen(value) {
+    const n = Number(value);
+    if (!Number.isFinite(n)) return 1;
+    return Math.max(0.1, Math.min(2.5, n));
+  }
+
+  function lampBySlot(slotName) {
+    if (!lampState || !lampState.lamps) return null;
+    return lampState.lamps.find((lamp) => lamp.slot === slotName) || null;
+  }
+
+  function lampGlow(slot, col) {
+    const rec = lampBySlot(slot.name);
+    if (!rec) return { col: col, sizeMul: 1, extraA: 0 };
+    const lumen = clampLumen(rec.lumen == null ? 1 : rec.lumen);
+    const extra = Math.max(0, lumen - 1);
+    return {
+      col: { r: col.r, g: col.g, b: col.b, a: col.a * Math.min(1, lumen) },
+      sizeMul: 1 + extra * 0.32,
+      extraA: col.a * extra * 0.55
+    };
+  }
+
   function applyOverrides() {
     slotOverrides = {};
     if (signState && signState.words) {
@@ -351,6 +374,8 @@
     label.textContent = "Lamps";
     lampsEl.appendChild(label);
     (lampState.lamps || []).forEach((lamp) => {
+      if (lamp.lumen == null) lamp.lumen = 1;
+      lamp.lumen = clampLumen(lamp.lumen);
       const btn = document.createElement("button");
       btn.type = "button";
       btn.textContent = lamp.label || "Lamp";
@@ -360,6 +385,10 @@
         applyOverrides();
       });
       lampsEl.appendChild(btn);
+      addSlider(lampsEl, "Glow", 0.1, 2.5, 0.05, lamp.lumen, (v) => v.toFixed(2) + "x", (v) => {
+        lamp.lumen = clampLumen(v);
+        saveFxPrefs();
+      });
     });
     applyOverrides();
   }
@@ -373,6 +402,10 @@
       if (pref.fireOn != null) FX.fireOn = !!pref.fireOn;
       if (pref.density != null) FX.density = Math.max(8, Math.min(96, Number(pref.density) || 48));
       if (pref.speed != null) FX.speed = Math.max(0.25, Math.min(2.5, Number(pref.speed) || 1));
+      if (pref.barrelLumen != null && lampState && lampState.lamps) {
+        const rec = lampState.lamps.find((lamp) => lamp.id === "lantern_dim");
+        if (rec) rec.lumen = clampLumen(pref.barrelLumen);
+      }
     } catch (e) {}
   }
 
@@ -382,7 +415,8 @@
         smokeOn: FX.smokeOn,
         fireOn: FX.fireOn,
         density: FX.density,
-        speed: FX.speed
+        speed: FX.speed,
+        barrelLumen: ((lampState && lampState.lamps && lampState.lamps.find((lamp) => lamp.id === "lantern_dim")) || {}).lumen || 1
       }));
     } catch (e) {}
     if (lampState) {
@@ -612,6 +646,60 @@
     canvas.height = Math.floor(cssH * dpr);
   }
 
+  function paintSlot(target, slot, att, img, bone, col, sx, sy, sizeMul) {
+    const mul = sizeMul == null ? 1 : sizeMul;
+    const rad = bone.rotation * Math.PI / 180;
+    const c = Math.cos(rad);
+    const s = Math.sin(rad);
+    const attSx = (att.scaleX == null ? 1 : att.scaleX) * bone.sx;
+    const attSy = (att.scaleY == null ? 1 : att.scaleY) * bone.sy;
+    const ax = bone.x + (att.x || 0) * attSx * c - (att.y || 0) * attSy * s;
+    const ay = bone.y + (att.x || 0) * attSx * s + (att.y || 0) * attSy * c;
+    const cx = (ax + originX) * sx;
+    const cy = (originY - ay) * sy;
+    const dw = (att.width || img.width) * attSx * sx * mul;
+    const dh = (att.height || img.height) * attSy * sy * mul;
+    target.save();
+    if (slot.blend === "additive") target.globalCompositeOperation = "lighter";
+    target.globalAlpha = col.a;
+    target.translate(cx, cy);
+    target.rotate(-bone.rotation * Math.PI / 180);
+    if (col.r !== 1 || col.g !== 1 || col.b !== 1) {
+      target.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+      target.globalCompositeOperation = slot.blend === "additive" ? "lighter" : "multiply";
+      target.fillStyle = "rgb(" + Math.round(col.r * 255) + "," + Math.round(col.g * 255) + "," + Math.round(col.b * 255) + ")";
+      target.fillRect(-dw / 2, -dh / 2, dw, dh);
+    } else {
+      target.drawImage(img, -dw / 2, -dh / 2, dw, dh);
+    }
+    target.restore();
+  }
+
+  function isBackgroundSlot(name) {
+    const n = String(name || "").toLowerCase();
+    return n.indexOf("background") >= 0 || n.indexOf("cloud") >= 0;
+  }
+
+  function paintNamedSlot(world, slot, anim, t, sx, sy) {
+    const skins = defaultSkin(skeleton);
+    const attName = slotAttachment(slot, anim, t);
+    const att = skins[slot.name] && skins[slot.name][attName];
+    const img = images[attName];
+    const bone = world[slot.bone];
+    if (!att || !img || !bone) return;
+    const col = slotColor(slot, anim, t);
+    const glow = lampGlow(slot, col);
+    paintSlot(ctx, slot, att, img, bone, glow.col, sx, sy, glow.sizeMul);
+    if (glow.extraA > 0.01) {
+      paintSlot(ctx, slot, att, img, bone, {
+        r: glow.col.r,
+        g: glow.col.g,
+        b: glow.col.b,
+        a: glow.extraA
+      }, sx, sy, glow.sizeMul * 1.08);
+    }
+  }
+
   function draw(world, anim, t, dt) {
     const w = canvas.width;
     const h = canvas.height;
@@ -619,47 +707,14 @@
     ctx.fillRect(0, 0, w, h);
     const sx = w / viewW;
     const sy = h / viewH;
-    const skins = defaultSkin(skeleton);
     if (!paused && dt) stepFx(dt);
-    let drewFx = false;
     for (const slot of skeleton.slots) {
-      const attName = slotAttachment(slot, anim, t);
-      const att = skins[slot.name] && skins[slot.name][attName];
-      const img = images[attName];
-      const bone = world[slot.bone];
-      if (!att || !img || !bone) continue;
-      const col = slotColor(slot, anim, t);
-      const rad = bone.rotation * Math.PI / 180;
-      const c = Math.cos(rad);
-      const s = Math.sin(rad);
-      const attSx = (att.scaleX == null ? 1 : att.scaleX) * bone.sx;
-      const attSy = (att.scaleY == null ? 1 : att.scaleY) * bone.sy;
-      const ax = bone.x + (att.x || 0) * attSx * c - (att.y || 0) * attSy * s;
-      const ay = bone.y + (att.x || 0) * attSx * s + (att.y || 0) * attSy * c;
-      const cx = (ax + originX) * sx;
-      const cy = (originY - ay) * sy;
-      const dw = (att.width || img.width) * attSx * sx;
-      const dh = (att.height || img.height) * attSy * sy;
-      ctx.save();
-      if (slot.blend === "additive") ctx.globalCompositeOperation = "lighter";
-      ctx.globalAlpha = col.a;
-      ctx.translate(cx, cy);
-      ctx.rotate(-bone.rotation * Math.PI / 180);
-      if (col.r !== 1 || col.g !== 1 || col.b !== 1) {
-        ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
-        ctx.globalCompositeOperation = slot.blend === "additive" ? "lighter" : "multiply";
-        ctx.fillStyle = "rgb(" + Math.round(col.r * 255) + "," + Math.round(col.g * 255) + "," + Math.round(col.b * 255) + ")";
-        ctx.fillRect(-dw / 2, -dh / 2, dw, dh);
-      } else {
-        ctx.drawImage(img, -dw / 2, -dh / 2, dw, dh);
-      }
-      ctx.restore();
-      if (!drewFx && slot.name === "background") {
-        drawFx(sx, sy);
-        drewFx = true;
-      }
+      if (isBackgroundSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
     }
-    if (!drewFx) drawFx(sx, sy);
+    drawFx(sx, sy);
+    for (const slot of skeleton.slots) {
+      if (!isBackgroundSlot(slot.name)) paintNamedSlot(world, slot, anim, t, sx, sy);
+    }
     if (showBones) {
       ctx.lineWidth = 2;
       for (const bone of skeleton.bones) {
@@ -706,7 +761,7 @@
       const img = new Image();
       img.onload = () => resolve(img);
       img.onerror = () => reject(new Error("Missing image " + name + ".png"));
-      img.src = "images/" + name + ".png";
+      img.src = "images/" + name + ".png?v=curves-darken";
     });
   }
 

@@ -7,34 +7,13 @@
     "h": 892
   },
   "mode": "disk_psd_tools",
-  "layer_count": 101,
+  "layer_count": 105,
   "layers": [
     {
       "index": 1,
       "stack_index": 1,
-      "name": "background redroom",
-      "safe_name": "background_redroom",
-      "parent": "",
-      "depth": 0,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        0.0,
-        0.0,
-        1342.0,
-        892.0
-      ],
-      "width": 1342.0,
-      "height": 892.0
-    },
-    {
-      "index": 2,
-      "stack_index": 2,
-      "name": "ENTRANCE",
-      "safe_name": "entrance",
+      "name": "background layer",
+      "safe_name": "background_layer",
       "parent": "",
       "depth": 0,
       "kind": "group",
@@ -43,20 +22,41 @@
       "opacity": 100.0,
       "blend": "pass_through",
       "bounds": [
-        -54.0,
-        39.0,
-        1394.0,
-        889.0
+        -831.0,
+        -202.0,
+        3358.0,
+        950.0
       ],
-      "width": 1448.0,
-      "height": 850.0
+      "width": 4189.0,
+      "height": 1152.0
+    },
+    {
+      "index": 2,
+      "stack_index": 2,
+      "name": "Layer 12",
+      "safe_name": "layer_12",
+      "parent": "background layer",
+      "depth": 1,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        -87.0,
+        -202.0,
+        1585.0,
+        950.0
+      ],
+      "width": 1672.0,
+      "height": 1152.0
     },
     {
       "index": 3,
       "stack_index": 3,
-      "name": "post_R",
-      "safe_name": "post_r",
-      "parent": "ENTRANCE",
+      "name": "clouds marquee",
+      "safe_name": "clouds_marquee",
+      "parent": "background layer",
       "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
@@ -64,20 +64,20 @@
       "opacity": 100.0,
       "blend": "normal",
       "bounds": [
-        1209.0,
-        39.0,
-        1394.0,
-        769.0
+        -831.0,
+        -21.0,
+        3358.0,
+        420.0
       ],
-      "width": 185.0,
-      "height": 730.0
+      "width": 4189.0,
+      "height": 441.0
     },
     {
       "index": 4,
       "stack_index": 4,
-      "name": "post_R",
-      "safe_name": "post_r",
-      "parent": "ENTRANCE",
+      "name": "Layer 11",
+      "safe_name": "layer_11",
+      "parent": "background layer",
       "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
@@ -85,21 +85,105 @@
       "opacity": 100.0,
       "blend": "normal",
       "bounds": [
-        -54.0,
+        -277.0,
+        -93.0,
+        1585.0,
+        901.0
+      ],
+      "width": 1862.0,
+      "height": 994.0
+    },
+    {
+      "index": 5,
+      "stack_index": 5,
+      "name": "Group 3",
+      "safe_name": "group_3",
+      "parent": "",
+      "depth": 0,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        4.0,
         40.0,
-        131.0,
+        1342.0,
+        889.0
+      ],
+      "width": 1338.0,
+      "height": 849.0
+    },
+    {
+      "index": 6,
+      "stack_index": 6,
+      "name": "ENTRANCE",
+      "safe_name": "entrance",
+      "parent": "Group 3",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        6.0,
+        40.0,
+        1342.0,
+        889.0
+      ],
+      "width": 1336.0,
+      "height": 849.0
+    },
+    {
+      "index": 7,
+      "stack_index": 7,
+      "name": "post_R",
+      "safe_name": "post_r",
+      "parent": "ENTRANCE",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1147.0,
+        40.0,
+        1332.0,
         770.0
       ],
       "width": 185.0,
       "height": 730.0
     },
     {
-      "index": 5,
-      "stack_index": 5,
+      "index": 8,
+      "stack_index": 8,
+      "name": "post_R",
+      "safe_name": "post_r",
+      "parent": "ENTRANCE",
+      "depth": 2,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        6.0,
+        45.0,
+        191.0,
+        826.0
+      ],
+      "width": 185.0,
+      "height": 781.0
+    },
+    {
+      "index": 9,
+      "stack_index": 9,
       "name": "beam",
       "safe_name": "beam",
       "parent": "ENTRANCE",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -115,12 +199,12 @@
       "height": 76.0
     },
     {
-      "index": 6,
-      "stack_index": 6,
+      "index": 10,
+      "stack_index": 10,
       "name": "props",
       "safe_name": "props",
       "parent": "ENTRANCE",
-      "depth": 1,
+      "depth": 2,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -136,12 +220,12 @@
       "height": 430.0
     },
     {
-      "index": 7,
-      "stack_index": 7,
+      "index": 11,
+      "stack_index": 11,
       "name": "rock_02",
       "safe_name": "rock_02",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -157,12 +241,12 @@
       "height": 30.0
     },
     {
-      "index": 8,
-      "stack_index": 8,
+      "index": 12,
+      "stack_index": 12,
       "name": "rock",
       "safe_name": "rock",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -178,12 +262,12 @@
       "height": 15.0
     },
     {
-      "index": 9,
-      "stack_index": 9,
+      "index": 13,
+      "stack_index": 13,
       "name": "rock_03",
       "safe_name": "rock_03",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -199,33 +283,12 @@
       "height": 28.0
     },
     {
-      "index": 10,
-      "stack_index": 10,
-      "name": "rocks",
-      "safe_name": "rocks",
-      "parent": "props",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        382.0,
-        729.0,
-        519.0,
-        775.0
-      ],
-      "width": 137.0,
-      "height": 46.0
-    },
-    {
-      "index": 11,
-      "stack_index": 11,
+      "index": 14,
+      "stack_index": 14,
       "name": "shrub",
       "safe_name": "shrub",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -241,33 +304,12 @@
       "height": 64.0
     },
     {
-      "index": 12,
-      "stack_index": 12,
-      "name": "grass_03",
-      "safe_name": "grass_03",
-      "parent": "props",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        820.0,
-        675.0,
-        1007.0,
-        798.0
-      ],
-      "width": 187.0,
-      "height": 123.0
-    },
-    {
-      "index": 13,
-      "stack_index": 13,
+      "index": 15,
+      "stack_index": 15,
       "name": "grass_02",
       "safe_name": "grass_02",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -283,12 +325,12 @@
       "height": 41.0
     },
     {
-      "index": 14,
-      "stack_index": 14,
+      "index": 16,
+      "stack_index": 16,
       "name": "rocks_02",
       "safe_name": "rocks_02",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -304,12 +346,12 @@
       "height": 64.0
     },
     {
-      "index": 15,
-      "stack_index": 15,
+      "index": 17,
+      "stack_index": 17,
       "name": "grass",
       "safe_name": "grass",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -325,33 +367,33 @@
       "height": 54.0
     },
     {
-      "index": 16,
-      "stack_index": 16,
+      "index": 18,
+      "stack_index": 18,
       "name": "cowboy_hat",
       "safe_name": "cowboy_hat",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
       "opacity": 100.0,
       "blend": "normal",
       "bounds": [
-        954.0,
-        746.0,
-        1125.0,
-        851.0
+        950.0,
+        780.0,
+        1121.0,
+        885.0
       ],
       "width": 171.0,
       "height": 105.0
     },
     {
-      "index": 17,
-      "stack_index": 17,
+      "index": 19,
+      "stack_index": 19,
       "name": "barrel",
       "safe_name": "barrel",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -367,12 +409,12 @@
       "height": 209.0
     },
     {
-      "index": 18,
-      "stack_index": 18,
+      "index": 20,
+      "stack_index": 20,
       "name": "lantern_dim",
       "safe_name": "lantern_dim",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -388,33 +430,12 @@
       "height": 151.0
     },
     {
-      "index": 19,
-      "stack_index": 19,
-      "name": "wagon_wheel",
-      "safe_name": "wagon_wheel",
-      "parent": "props",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        83.0,
-        585.0,
-        285.0,
-        795.0
-      ],
-      "width": 202.0,
-      "height": 210.0
-    },
-    {
-      "index": 20,
-      "stack_index": 20,
+      "index": 21,
+      "stack_index": 21,
       "name": "tombstone",
       "safe_name": "tombstone",
       "parent": "props",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -430,12 +451,12 @@
       "height": 278.0
     },
     {
-      "index": 21,
-      "stack_index": 21,
+      "index": 22,
+      "stack_index": 22,
       "name": "RED FILTER",
       "safe_name": "red_filter",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -451,12 +472,12 @@
       "height": 1130.0
     },
     {
-      "index": 22,
-      "stack_index": 22,
+      "index": 23,
+      "stack_index": 23,
       "name": "board",
       "safe_name": "board",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": false,
@@ -472,12 +493,12 @@
       "height": 0.0
     },
     {
-      "index": 23,
-      "stack_index": 23,
+      "index": 24,
+      "stack_index": 24,
       "name": "Layer 2",
       "safe_name": "layer_2",
       "parent": "board",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -493,12 +514,12 @@
       "height": 478.0
     },
     {
-      "index": 24,
-      "stack_index": 24,
+      "index": 25,
+      "stack_index": 25,
       "name": "Layer 2 copy",
       "safe_name": "layer_2_copy",
       "parent": "board",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -514,12 +535,12 @@
       "height": 478.0
     },
     {
-      "index": 25,
-      "stack_index": 25,
+      "index": 26,
+      "stack_index": 26,
       "name": "chain_02",
       "safe_name": "chain_02",
       "parent": "board",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -535,12 +556,12 @@
       "height": 194.0
     },
     {
-      "index": 26,
-      "stack_index": 26,
+      "index": 27,
+      "stack_index": 27,
       "name": "chain_02 copy",
       "safe_name": "chain_02_copy",
       "parent": "board",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -556,12 +577,12 @@
       "height": 190.0
     },
     {
-      "index": 27,
-      "stack_index": 27,
+      "index": 28,
+      "stack_index": 28,
       "name": "skull",
       "safe_name": "skull",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -577,12 +598,12 @@
       "height": 201.0
     },
     {
-      "index": 28,
-      "stack_index": 28,
+      "index": 29,
+      "stack_index": 29,
       "name": "Group 1",
       "safe_name": "group_1",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -598,12 +619,12 @@
       "height": 289.0
     },
     {
-      "index": 29,
-      "stack_index": 29,
+      "index": 30,
+      "stack_index": 30,
       "name": "signpost",
       "safe_name": "signpost",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -619,12 +640,12 @@
       "height": 289.0
     },
     {
-      "index": 30,
-      "stack_index": 30,
+      "index": 31,
+      "stack_index": 31,
       "name": "postsign",
       "safe_name": "postsign",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -640,12 +661,12 @@
       "height": 600.0
     },
     {
-      "index": 31,
-      "stack_index": 31,
+      "index": 32,
+      "stack_index": 32,
       "name": "tellnotales",
       "safe_name": "tellnotales",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -661,12 +682,12 @@
       "height": 44.0
     },
     {
-      "index": 32,
-      "stack_index": 32,
+      "index": 33,
+      "stack_index": 33,
       "name": "deadman",
       "safe_name": "deadman",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -682,12 +703,12 @@
       "height": 54.0
     },
     {
-      "index": 33,
-      "stack_index": 33,
+      "index": 34,
+      "stack_index": 34,
       "name": "beware2",
       "safe_name": "beware2",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -703,12 +724,12 @@
       "height": 48.0
     },
     {
-      "index": 34,
-      "stack_index": 34,
+      "index": 35,
+      "stack_index": 35,
       "name": "beware1",
       "safe_name": "beware1",
       "parent": "Group 1",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": false,
@@ -724,12 +745,12 @@
       "height": 54.0
     },
     {
-      "index": 35,
-      "stack_index": 35,
+      "index": 36,
+      "stack_index": 36,
       "name": "Group 2",
       "safe_name": "group_2",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -745,12 +766,12 @@
       "height": 0.0
     },
     {
-      "index": 36,
-      "stack_index": 36,
+      "index": 37,
+      "stack_index": 37,
       "name": "right  hanging lamp",
       "safe_name": "right_hanging_lamp",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -766,12 +787,12 @@
       "height": 232.0
     },
     {
-      "index": 37,
-      "stack_index": 37,
+      "index": 38,
+      "stack_index": 38,
       "name": "left hanging lamp",
       "safe_name": "left_hanging_lamp",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -787,33 +808,12 @@
       "height": 232.0
     },
     {
-      "index": 38,
-      "stack_index": 38,
-      "name": "Static Lamp",
-      "safe_name": "static_lamp",
-      "parent": "",
-      "depth": 0,
-      "kind": "group",
-      "ps_kind": "group",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "pass_through",
-      "bounds": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "width": 0.0,
-      "height": 0.0
-    },
-    {
       "index": 39,
       "stack_index": 39,
-      "name": "hanging chains",
-      "safe_name": "hanging_chains",
-      "parent": "",
-      "depth": 0,
+      "name": "Static Lamp",
+      "safe_name": "static_lamp",
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -831,10 +831,31 @@
     {
       "index": 40,
       "stack_index": 40,
+      "name": "hanging chains",
+      "safe_name": "hanging_chains",
+      "parent": "Group 3",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
+    },
+    {
+      "index": 41,
+      "stack_index": 41,
       "name": "MAIN FRAME",
       "safe_name": "main_frame",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -850,12 +871,12 @@
       "height": 614.0
     },
     {
-      "index": 41,
-      "stack_index": 41,
+      "index": 42,
+      "stack_index": 42,
       "name": "ways frame",
       "safe_name": "ways_frame",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -871,12 +892,12 @@
       "height": 94.0
     },
     {
-      "index": 42,
-      "stack_index": 42,
+      "index": 43,
+      "stack_index": 43,
       "name": "Layer 4",
       "safe_name": "layer_4",
       "parent": "ways frame",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -892,12 +913,12 @@
       "height": 84.0
     },
     {
-      "index": 43,
-      "stack_index": 43,
+      "index": 44,
+      "stack_index": 44,
       "name": "Layer 5",
       "safe_name": "layer_5",
       "parent": "ways frame",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -913,12 +934,12 @@
       "height": 33.0
     },
     {
-      "index": 44,
-      "stack_index": 44,
+      "index": 45,
+      "stack_index": 45,
       "name": "multi frame",
       "safe_name": "multi_frame",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -934,12 +955,12 @@
       "height": 94.0
     },
     {
-      "index": 45,
-      "stack_index": 45,
+      "index": 46,
+      "stack_index": 46,
       "name": "Layer 4 copy",
       "safe_name": "layer_4_copy",
       "parent": "multi frame",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -955,12 +976,12 @@
       "height": 84.0
     },
     {
-      "index": 46,
-      "stack_index": 46,
+      "index": 47,
+      "stack_index": 47,
       "name": "Layer 6",
       "safe_name": "layer_6",
       "parent": "multi frame",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -976,32 +997,11 @@
       "height": 32.0
     },
     {
-      "index": 47,
-      "stack_index": 47,
-      "name": "chains winFrame",
-      "safe_name": "chains_winframe",
-      "parent": "",
-      "depth": 0,
-      "kind": "group",
-      "ps_kind": "group",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "pass_through",
-      "bounds": [
-        734.0,
-        577.0,
-        886.0,
-        730.0
-      ],
-      "width": 152.0,
-      "height": 153.0
-    },
-    {
       "index": 48,
       "stack_index": 48,
-      "name": "win frame",
-      "safe_name": "win_frame",
-      "parent": "chains winFrame",
+      "name": "chains winFrame",
+      "safe_name": "chains_winframe",
+      "parent": "Group 3",
       "depth": 1,
       "kind": "group",
       "ps_kind": "group",
@@ -1020,10 +1020,31 @@
     {
       "index": 49,
       "stack_index": 49,
+      "name": "win frame",
+      "safe_name": "win_frame",
+      "parent": "chains winFrame",
+      "depth": 2,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        734.0,
+        577.0,
+        886.0,
+        730.0
+      ],
+      "width": 152.0,
+      "height": 153.0
+    },
+    {
+      "index": 50,
+      "stack_index": 50,
       "name": "Layer 4 copy 2",
       "safe_name": "layer_4_copy_2",
       "parent": "win frame",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1039,12 +1060,12 @@
       "height": 83.0
     },
     {
-      "index": 50,
-      "stack_index": 50,
+      "index": 51,
+      "stack_index": 51,
       "name": "Layer 7",
       "safe_name": "layer_7",
       "parent": "win frame",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1060,12 +1081,12 @@
       "height": 29.0
     },
     {
-      "index": 51,
-      "stack_index": 51,
+      "index": 52,
+      "stack_index": 52,
       "name": "win frame chains",
       "safe_name": "win_frame_chains",
       "parent": "win frame",
-      "depth": 2,
+      "depth": 3,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -1081,12 +1102,12 @@
       "height": 74.0
     },
     {
-      "index": 52,
-      "stack_index": 52,
+      "index": 53,
+      "stack_index": 53,
       "name": "Layer 8 copy 7",
       "safe_name": "layer_8_copy_7",
       "parent": "win frame chains",
-      "depth": 3,
+      "depth": 4,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1102,12 +1123,12 @@
       "height": 74.0
     },
     {
-      "index": 53,
-      "stack_index": 53,
+      "index": 54,
+      "stack_index": 54,
       "name": "Layer 8 copy 8",
       "safe_name": "layer_8_copy_8",
       "parent": "win frame chains",
-      "depth": 3,
+      "depth": 4,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1123,32 +1144,11 @@
       "height": 74.0
     },
     {
-      "index": 54,
-      "stack_index": 54,
-      "name": "chains winFrame",
-      "safe_name": "chains_winframe",
-      "parent": "",
-      "depth": 0,
-      "kind": "group",
-      "ps_kind": "group",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "pass_through",
-      "bounds": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ],
-      "width": 0.0,
-      "height": 0.0
-    },
-    {
       "index": 55,
       "stack_index": 55,
-      "name": "win frame",
-      "safe_name": "win_frame",
-      "parent": "chains winFrame",
+      "name": "chains winFrame",
+      "safe_name": "chains_winframe",
+      "parent": "Group 3",
       "depth": 1,
       "kind": "group",
       "ps_kind": "group",
@@ -1167,10 +1167,10 @@
     {
       "index": 56,
       "stack_index": 56,
-      "name": "freespins frame",
-      "safe_name": "freespins_frame",
+      "name": "win frame",
+      "safe_name": "win_frame",
       "parent": "chains winFrame",
-      "depth": 1,
+      "depth": 2,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -1188,31 +1188,52 @@
     {
       "index": 57,
       "stack_index": 57,
-      "name": "chains upframe",
-      "safe_name": "chains_upframe",
-      "parent": "",
-      "depth": 0,
+      "name": "freespins frame",
+      "safe_name": "freespins_frame",
+      "parent": "chains winFrame",
+      "depth": 2,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
       "opacity": 100.0,
       "blend": "pass_through",
       "bounds": [
-        349.0,
-        91.0,
-        1012.0,
-        652.0
+        0.0,
+        0.0,
+        0.0,
+        0.0
       ],
-      "width": 663.0,
-      "height": 561.0
+      "width": 0.0,
+      "height": 0.0
     },
     {
       "index": 58,
       "stack_index": 58,
+      "name": "chains upframe",
+      "safe_name": "chains_upframe",
+      "parent": "Group 3",
+      "depth": 1,
+      "kind": "group",
+      "ps_kind": "group",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "pass_through",
+      "bounds": [
+        124.0,
+        68.0,
+        1224.0,
+        652.0
+      ],
+      "width": 1100.0,
+      "height": 584.0
+    },
+    {
+      "index": 59,
+      "stack_index": 59,
       "name": "Layer 8",
       "safe_name": "layer_8",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1228,12 +1249,12 @@
       "height": 51.0
     },
     {
-      "index": 59,
-      "stack_index": 59,
+      "index": 60,
+      "stack_index": 60,
       "name": "Layer 8 copy",
       "safe_name": "layer_8_copy",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1249,12 +1270,12 @@
       "height": 72.0
     },
     {
-      "index": 60,
-      "stack_index": 60,
+      "index": 61,
+      "stack_index": 61,
       "name": "Layer 8 copy 2",
       "safe_name": "layer_8_copy_2",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1270,12 +1291,12 @@
       "height": 70.0
     },
     {
-      "index": 61,
-      "stack_index": 61,
+      "index": 62,
+      "stack_index": 62,
       "name": "Layer 8 copy 3",
       "safe_name": "layer_8_copy_3",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1291,12 +1312,12 @@
       "height": 69.0
     },
     {
-      "index": 62,
-      "stack_index": 62,
+      "index": 63,
+      "stack_index": 63,
       "name": "Layer 8 copy 4",
       "safe_name": "layer_8_copy_4",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1312,12 +1333,12 @@
       "height": 66.0
     },
     {
-      "index": 63,
-      "stack_index": 63,
+      "index": 64,
+      "stack_index": 64,
       "name": "Layer 8 copy 5",
       "safe_name": "layer_8_copy_5",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1333,12 +1354,12 @@
       "height": 68.0
     },
     {
-      "index": 64,
-      "stack_index": 64,
+      "index": 65,
+      "stack_index": 65,
       "name": "Layer 8 copy 5",
       "safe_name": "layer_8_copy_5",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1354,12 +1375,12 @@
       "height": 86.0
     },
     {
-      "index": 65,
-      "stack_index": 65,
+      "index": 66,
+      "stack_index": 66,
       "name": "Layer 8 copy 9",
       "safe_name": "layer_8_copy_9",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1375,12 +1396,12 @@
       "height": 117.0
     },
     {
-      "index": 66,
-      "stack_index": 66,
+      "index": 67,
+      "stack_index": 67,
       "name": "Layer 8 copy 11",
       "safe_name": "layer_8_copy_11",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1396,12 +1417,12 @@
       "height": 117.0
     },
     {
-      "index": 67,
-      "stack_index": 67,
+      "index": 68,
+      "stack_index": 68,
       "name": "Layer 8 copy 10",
       "safe_name": "layer_8_copy_10",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1417,12 +1438,12 @@
       "height": 47.0
     },
     {
-      "index": 68,
-      "stack_index": 68,
+      "index": 69,
+      "stack_index": 69,
       "name": "Layer 8 copy 6",
       "safe_name": "layer_8_copy_6",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1438,33 +1459,33 @@
       "height": 68.0
     },
     {
-      "index": 69,
-      "stack_index": 69,
+      "index": 70,
+      "stack_index": 70,
       "name": "chain bolts",
       "safe_name": "chain_bolts",
       "parent": "chains upframe",
-      "depth": 1,
+      "depth": 2,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
       "opacity": 100.0,
       "blend": "pass_through",
       "bounds": [
-        352.0,
-        93.0,
-        1009.0,
+        124.0,
+        68.0,
+        1224.0,
         652.0
       ],
-      "width": 657.0,
-      "height": 559.0
+      "width": 1100.0,
+      "height": 584.0
     },
     {
-      "index": 70,
-      "stack_index": 70,
+      "index": 71,
+      "stack_index": 71,
       "name": "chain bolt",
       "safe_name": "chain_bolt",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1480,12 +1501,54 @@
       "height": 11.0
     },
     {
-      "index": 71,
-      "stack_index": 71,
+      "index": 72,
+      "stack_index": 72,
+      "name": "chain bolt copy 26",
+      "safe_name": "chain_bolt_copy_26",
+      "parent": "chain bolts",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        124.0,
+        68.0,
+        134.0,
+        79.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 73,
+      "stack_index": 73,
+      "name": "chain bolt copy 27",
+      "safe_name": "chain_bolt_copy_27",
+      "parent": "chain bolts",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        1214.0,
+        68.0,
+        1224.0,
+        79.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 74,
+      "stack_index": 74,
       "name": "chain bolt copy 11",
       "safe_name": "chain_bolt_copy_11",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1501,12 +1564,12 @@
       "height": 11.0
     },
     {
-      "index": 72,
-      "stack_index": 72,
+      "index": 75,
+      "stack_index": 75,
       "name": "chain bolt copy 12",
       "safe_name": "chain_bolt_copy_12",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1522,12 +1585,12 @@
       "height": 11.0
     },
     {
-      "index": 73,
-      "stack_index": 73,
+      "index": 76,
+      "stack_index": 76,
       "name": "chain bolt copy 13",
       "safe_name": "chain_bolt_copy_13",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1543,12 +1606,12 @@
       "height": 11.0
     },
     {
-      "index": 74,
-      "stack_index": 74,
+      "index": 77,
+      "stack_index": 77,
       "name": "chain bolt copy 14",
       "safe_name": "chain_bolt_copy_14",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1564,12 +1627,12 @@
       "height": 11.0
     },
     {
-      "index": 75,
-      "stack_index": 75,
+      "index": 78,
+      "stack_index": 78,
       "name": "chain bolt copy 15",
       "safe_name": "chain_bolt_copy_15",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1585,12 +1648,12 @@
       "height": 11.0
     },
     {
-      "index": 76,
-      "stack_index": 76,
+      "index": 79,
+      "stack_index": 79,
       "name": "chain bolt copy 16",
       "safe_name": "chain_bolt_copy_16",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1606,12 +1669,12 @@
       "height": 11.0
     },
     {
-      "index": 77,
-      "stack_index": 77,
+      "index": 80,
+      "stack_index": 80,
       "name": "chain bolt copy 17",
       "safe_name": "chain_bolt_copy_17",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1627,12 +1690,12 @@
       "height": 11.0
     },
     {
-      "index": 78,
-      "stack_index": 78,
+      "index": 81,
+      "stack_index": 81,
       "name": "chain bolt copy 18",
       "safe_name": "chain_bolt_copy_18",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1648,12 +1711,12 @@
       "height": 11.0
     },
     {
-      "index": 79,
-      "stack_index": 79,
+      "index": 82,
+      "stack_index": 82,
       "name": "chain bolt copy 19",
       "safe_name": "chain_bolt_copy_19",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1669,12 +1732,12 @@
       "height": 11.0
     },
     {
-      "index": 80,
-      "stack_index": 80,
+      "index": 83,
+      "stack_index": 83,
       "name": "chain bolt copy",
       "safe_name": "chain_bolt_copy",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1690,12 +1753,12 @@
       "height": 11.0
     },
     {
-      "index": 81,
-      "stack_index": 81,
+      "index": 84,
+      "stack_index": 84,
       "name": "chain bolt copy 2",
       "safe_name": "chain_bolt_copy_2",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1711,12 +1774,12 @@
       "height": 11.0
     },
     {
-      "index": 82,
-      "stack_index": 82,
+      "index": 85,
+      "stack_index": 85,
       "name": "chain bolt copy 3",
       "safe_name": "chain_bolt_copy_3",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1732,12 +1795,12 @@
       "height": 11.0
     },
     {
-      "index": 83,
-      "stack_index": 83,
+      "index": 86,
+      "stack_index": 86,
       "name": "chain bolt copy 4",
       "safe_name": "chain_bolt_copy_4",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1753,12 +1816,12 @@
       "height": 11.0
     },
     {
-      "index": 84,
-      "stack_index": 84,
+      "index": 87,
+      "stack_index": 87,
       "name": "chain bolt copy 5",
       "safe_name": "chain_bolt_copy_5",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1774,12 +1837,12 @@
       "height": 11.0
     },
     {
-      "index": 85,
-      "stack_index": 85,
+      "index": 88,
+      "stack_index": 88,
       "name": "chain bolt copy 10",
       "safe_name": "chain_bolt_copy_10",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1795,12 +1858,12 @@
       "height": 11.0
     },
     {
-      "index": 86,
-      "stack_index": 86,
+      "index": 89,
+      "stack_index": 89,
       "name": "chain bolt copy 6",
       "safe_name": "chain_bolt_copy_6",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1816,12 +1879,12 @@
       "height": 11.0
     },
     {
-      "index": 87,
-      "stack_index": 87,
+      "index": 90,
+      "stack_index": 90,
       "name": "chain bolt copy 9",
       "safe_name": "chain_bolt_copy_9",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1837,12 +1900,12 @@
       "height": 11.0
     },
     {
-      "index": 88,
-      "stack_index": 88,
+      "index": 91,
+      "stack_index": 91,
       "name": "chain bolt copy 7",
       "safe_name": "chain_bolt_copy_7",
       "parent": "chain bolts",
-      "depth": 2,
+      "depth": 3,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1852,69 +1915,6 @@
         855.0,
         579.0,
         865.0,
-        590.0
-      ],
-      "width": 10.0,
-      "height": 11.0
-    },
-    {
-      "index": 89,
-      "stack_index": 89,
-      "name": "chain bolt copy 22",
-      "safe_name": "chain_bolt_copy_22",
-      "parent": "chain bolts",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        855.0,
-        641.0,
-        865.0,
-        652.0
-      ],
-      "width": 10.0,
-      "height": 11.0
-    },
-    {
-      "index": 90,
-      "stack_index": 90,
-      "name": "chain bolt copy 23",
-      "safe_name": "chain_bolt_copy_23",
-      "parent": "chain bolts",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        750.0,
-        641.0,
-        760.0,
-        652.0
-      ],
-      "width": 10.0,
-      "height": 11.0
-    },
-    {
-      "index": 91,
-      "stack_index": 91,
-      "name": "chain bolt copy 8",
-      "safe_name": "chain_bolt_copy_8",
-      "parent": "chain bolts",
-      "depth": 2,
-      "kind": "art",
-      "ps_kind": "raster",
-      "visible": true,
-      "opacity": 100.0,
-      "blend": "normal",
-      "bounds": [
-        750.0,
-        579.0,
-        760.0,
         590.0
       ],
       "width": 10.0,
@@ -1923,10 +1923,73 @@
     {
       "index": 92,
       "stack_index": 92,
+      "name": "chain bolt copy 22",
+      "safe_name": "chain_bolt_copy_22",
+      "parent": "chain bolts",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        855.0,
+        641.0,
+        865.0,
+        652.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 93,
+      "stack_index": 93,
+      "name": "chain bolt copy 23",
+      "safe_name": "chain_bolt_copy_23",
+      "parent": "chain bolts",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        750.0,
+        641.0,
+        760.0,
+        652.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 94,
+      "stack_index": 94,
+      "name": "chain bolt copy 8",
+      "safe_name": "chain_bolt_copy_8",
+      "parent": "chain bolts",
+      "depth": 3,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        750.0,
+        579.0,
+        760.0,
+        590.0
+      ],
+      "width": 10.0,
+      "height": 11.0
+    },
+    {
+      "index": 95,
+      "stack_index": 95,
       "name": "free spins frame ",
       "safe_name": "free_spins_frame",
-      "parent": "",
-      "depth": 0,
+      "parent": "Group 3",
+      "depth": 1,
       "kind": "group",
       "ps_kind": "group",
       "visible": true,
@@ -1942,12 +2005,12 @@
       "height": 215.0
     },
     {
-      "index": 93,
-      "stack_index": 93,
+      "index": 96,
+      "stack_index": 96,
       "name": "Layer 4 copy 2",
       "safe_name": "layer_4_copy_2",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1963,12 +2026,12 @@
       "height": 83.0
     },
     {
-      "index": 94,
-      "stack_index": 94,
+      "index": 97,
+      "stack_index": 97,
       "name": "Layer 9",
       "safe_name": "layer_9",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -1984,12 +2047,12 @@
       "height": 33.0
     },
     {
-      "index": 95,
-      "stack_index": 95,
+      "index": 98,
+      "stack_index": 98,
       "name": "Layer 8 copy 8",
       "safe_name": "layer_8_copy_8",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2005,12 +2068,12 @@
       "height": 117.0
     },
     {
-      "index": 96,
-      "stack_index": 96,
+      "index": 99,
+      "stack_index": 99,
       "name": "Layer 8 copy 7",
       "safe_name": "layer_8_copy_7",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2026,12 +2089,12 @@
       "height": 71.0
     },
     {
-      "index": 97,
-      "stack_index": 97,
+      "index": 100,
+      "stack_index": 100,
       "name": "chain bolt copy 24",
       "safe_name": "chain_bolt_copy_24",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2047,12 +2110,12 @@
       "height": 11.0
     },
     {
-      "index": 98,
-      "stack_index": 98,
+      "index": 101,
+      "stack_index": 101,
       "name": "chain bolt copy 25",
       "safe_name": "chain_bolt_copy_25",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2068,12 +2131,12 @@
       "height": 11.0
     },
     {
-      "index": 99,
-      "stack_index": 99,
+      "index": 102,
+      "stack_index": 102,
       "name": "chain bolt copy 20",
       "safe_name": "chain_bolt_copy_20",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2089,12 +2152,12 @@
       "height": 11.0
     },
     {
-      "index": 100,
-      "stack_index": 100,
+      "index": 103,
+      "stack_index": 103,
       "name": "chain bolt copy 21",
       "safe_name": "chain_bolt_copy_21",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2110,12 +2173,12 @@
       "height": 11.0
     },
     {
-      "index": 101,
-      "stack_index": 101,
+      "index": 104,
+      "stack_index": 104,
       "name": "Layer 8 copy 12",
       "safe_name": "layer_8_copy_12",
       "parent": "free spins frame ",
-      "depth": 1,
+      "depth": 2,
       "kind": "art",
       "ps_kind": "raster",
       "visible": true,
@@ -2129,14 +2192,35 @@
       ],
       "width": 14.0,
       "height": 38.0
+    },
+    {
+      "index": 105,
+      "stack_index": 105,
+      "name": "Curves 1",
+      "safe_name": "curves_1",
+      "parent": "",
+      "depth": 0,
+      "kind": "art",
+      "ps_kind": "raster",
+      "visible": true,
+      "opacity": 100.0,
+      "blend": "normal",
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 0.0,
+      "height": 0.0
     }
   ],
   "exports": [
     {
-      "psd_name": "background redroom",
-      "name": "background",
-      "filename": "background.png",
-      "parent_group": "",
+      "psd_name": "Layer 12",
+      "name": "background_Layer_12",
+      "filename": "background_Layer_12.png",
+      "parent_group": "background layer",
       "x": 0,
       "y": 0,
       "w": 1342,
@@ -2149,33 +2233,33 @@
         892
       ],
       "canvas_bounds": [
-        0.0,
-        0.0,
-        1342.0,
-        892.0
+        -87.0,
+        -202.0,
+        1585.0,
+        950.0
       ],
       "effects_bounds": [
-        0.0,
-        0.0,
-        1342.0,
-        892.0
+        -87.0,
+        -202.0,
+        1585.0,
+        950.0
       ],
       "glow_expanded": false,
       "glow_delta": [
-        0.0,
-        0.0
+        -330.0,
+        -260.0
       ],
       "layer_kind": "raster",
       "source": "raster_isolated",
       "psd_bounds": [
-        0.0,
-        0.0,
-        1342.0,
-        892.0
+        -87.0,
+        -202.0,
+        1585.0,
+        950.0
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 1,
+      "stack_index": 2,
       "metrics": {
         "bbox": [
           0,
@@ -2197,54 +2281,54 @@
         ],
         "opaque": 1197064,
         "mean_rgb": [
-          44.22476577758789,
-          26.36054229736328,
-          15.495573997497559
+          193.1638946533203,
+          150.55844116210938,
+          113.5606460571289
         ],
-        "mean_luma": 30.463340759277344,
-        "mean_warmth": 28.729190826416016
+        "mean_luma": 159.07972717285156,
+        "mean_warmth": 79.60325622558594
       }
     },
     {
-      "psd_name": "post_R",
-      "name": "post_R",
-      "filename": "post_R.png",
-      "parent_group": "ENTRANCE",
-      "x": 1209,
-      "y": 39,
-      "w": 133,
-      "h": 730,
+      "psd_name": "clouds marquee",
+      "name": "background_clouds",
+      "filename": "background_clouds.png",
+      "parent_group": "background layer",
+      "x": 0,
+      "y": 0,
+      "w": 1342,
+      "h": 892,
       "scale": 1.0,
-      "native_w": 133,
-      "native_h": 730,
+      "native_w": 1342,
+      "native_h": 892,
       "src_px": [
-        133,
-        730
+        1342,
+        221
       ],
       "canvas_bounds": [
-        1209.0,
-        39.0,
-        1394.0,
-        769.0
+        -831.0,
+        -21.0,
+        3358.0,
+        420.0
       ],
       "effects_bounds": [
-        1209.0,
-        39.0,
-        1394.0,
-        769.0
+        -831.0,
+        -21.0,
+        3358.0,
+        420.0
       ],
       "glow_expanded": false,
       "glow_delta": [
-        -52.0,
-        0.0
+        -2847.0,
+        -220.0
       ],
       "layer_kind": "raster",
       "source": "raster_isolated",
       "psd_bounds": [
-        1209.0,
-        39.0,
-        1394.0,
-        769.0
+        -831.0,
+        -21.0,
+        3358.0,
+        420.0
       ],
       "opacity": 100.0,
       "blend": "normal",
@@ -2253,7 +2337,153 @@
         "bbox": [
           0,
           0,
-          133,
+          1342,
+          892
+        ],
+        "hang": [
+          671.0,
+          0.0
+        ],
+        "bottom": [
+          671.0,
+          891.0
+        ],
+        "center": [
+          671.0,
+          446.0
+        ],
+        "opaque": 0,
+        "mean_rgb": [
+          0,
+          0,
+          0
+        ],
+        "mean_luma": 0.0,
+        "mean_warmth": 0.0
+      }
+    },
+    {
+      "psd_name": "Layer 11",
+      "name": "background_Layer_11",
+      "filename": "background_Layer_11.png",
+      "parent_group": "background layer",
+      "x": 0,
+      "y": 0,
+      "w": 1342,
+      "h": 892,
+      "scale": 1.0,
+      "native_w": 1342,
+      "native_h": 892,
+      "src_px": [
+        1342,
+        683
+      ],
+      "canvas_bounds": [
+        -277.0,
+        -93.0,
+        1585.0,
+        901.0
+      ],
+      "effects_bounds": [
+        -277.0,
+        -93.0,
+        1585.0,
+        901.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -520.0,
+        -311.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        -277.0,
+        -93.0,
+        1585.0,
+        901.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 4,
+      "metrics": {
+        "bbox": [
+          0,
+          210,
+          1342,
+          682
+        ],
+        "hang": [
+          19.5,
+          210.0
+        ],
+        "bottom": [
+          670.5,
+          891.0
+        ],
+        "center": [
+          643.721115013726,
+          641.0874030774303
+        ],
+        "opaque": 630916,
+        "mean_rgb": [
+          80.34410858154297,
+          66.68966674804688,
+          58.76063919067383
+        ],
+        "mean_luma": 69.86844635009766,
+        "mean_warmth": 21.58347511291504
+      }
+    },
+    {
+      "psd_name": "post_R",
+      "name": "post_R",
+      "filename": "post_R.png",
+      "parent_group": "ENTRANCE",
+      "x": 1147,
+      "y": 40,
+      "w": 184,
+      "h": 730,
+      "scale": 1.0,
+      "native_w": 184,
+      "native_h": 730,
+      "src_px": [
+        184,
+        730
+      ],
+      "canvas_bounds": [
+        1147.0,
+        40.0,
+        1332.0,
+        770.0
+      ],
+      "effects_bounds": [
+        1147.0,
+        40.0,
+        1332.0,
+        770.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        -1.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1147.0,
+        40.0,
+        1332.0,
+        770.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 7,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          182,
           730
         ],
         "hang": [
@@ -2265,17 +2495,17 @@
           729.0
         ],
         "center": [
-          65.54301802852832,
-          378.4697839376546
+          70.0226546274065,
+          394.06783131287835
         ],
-        "opaque": 64287,
+        "opaque": 67889,
         "mean_rgb": [
-          47.252010345458984,
-          32.03638458251953,
-          20.466829299926758
+          39.819618225097656,
+          33.81599426269531,
+          30.890954971313477
         ],
-        "mean_luma": 35.26692581176758,
-        "mean_warmth": 26.78518295288086
+        "mean_luma": 35.27762222290039,
+        "mean_warmth": 8.92866325378418
       }
     },
     {
@@ -2283,72 +2513,72 @@
       "name": "post_L",
       "filename": "post_L.png",
       "parent_group": "ENTRANCE",
-      "x": 0,
-      "y": 40,
-      "w": 131,
-      "h": 730,
+      "x": 8,
+      "y": 45,
+      "w": 183,
+      "h": 781,
       "scale": 1.0,
-      "native_w": 131,
-      "native_h": 730,
+      "native_w": 183,
+      "native_h": 781,
       "src_px": [
-        131,
-        730
+        183,
+        781
       ],
       "canvas_bounds": [
-        -54.0,
-        40.0,
-        131.0,
-        770.0
+        6.0,
+        45.0,
+        191.0,
+        826.0
       ],
       "effects_bounds": [
-        -54.0,
-        40.0,
-        131.0,
-        770.0
+        6.0,
+        45.0,
+        191.0,
+        826.0
       ],
       "glow_expanded": false,
       "glow_delta": [
-        -54.0,
+        -2.0,
         0.0
       ],
       "layer_kind": "raster",
       "source": "raster_isolated",
       "psd_bounds": [
-        -54.0,
-        40.0,
-        131.0,
-        770.0
+        6.0,
+        45.0,
+        191.0,
+        826.0
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 4,
+      "stack_index": 8,
       "metrics": {
         "bbox": [
+          1,
           0,
-          0,
-          131,
-          730
+          182,
+          781
         ],
         "hang": [
-          51.5,
+          103.5,
           0.0
         ],
         "bottom": [
-          54.5,
-          729.0
+          106.5,
+          780.0
         ],
         "center": [
-          64.68613583138173,
-          377.5144262295082
+          111.96976372748802,
+          421.7009417855373
         ],
-        "opaque": 64050,
+        "opaque": 72628,
         "mean_rgb": [
-          47.25356674194336,
-          32.05183410644531,
-          20.49617576599121
+          39.83810806274414,
+          33.8318977355957,
+          30.902929306030273
         ],
-        "mean_luma": 35.27980422973633,
-        "mean_warmth": 26.75739288330078
+        "mean_luma": 35.29384994506836,
+        "mean_warmth": 8.935176849365234
       }
     },
     {
@@ -2394,7 +2624,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 5,
+      "stack_index": 9,
       "metrics": {
         "bbox": [
           1,
@@ -2416,12 +2646,12 @@
         ],
         "opaque": 91796,
         "mean_rgb": [
-          53.065513610839844,
-          36.582237243652344,
-          25.319425582885742
+          45.23508834838867,
+          38.73729705810547,
+          35.52691650390625
         ],
-        "mean_luma": 40.226776123046875,
-        "mean_warmth": 27.746089935302734
+        "mean_luma": 40.314151763916016,
+        "mean_warmth": 9.708168029785156
       }
     },
     {
@@ -2467,7 +2697,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 7,
+      "stack_index": 11,
       "metrics": {
         "bbox": [
           0,
@@ -2540,7 +2770,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 8,
+      "stack_index": 12,
       "metrics": {
         "bbox": [
           0,
@@ -2613,7 +2843,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 9,
+      "stack_index": 13,
       "metrics": {
         "bbox": [
           0,
@@ -2641,79 +2871,6 @@
         ],
         "mean_luma": 47.02369689941406,
         "mean_warmth": 23.490175247192383
-      }
-    },
-    {
-      "psd_name": "rocks",
-      "name": "rocks",
-      "filename": "rocks.png",
-      "parent_group": "props",
-      "x": 382,
-      "y": 729,
-      "w": 137,
-      "h": 46,
-      "scale": 1.0,
-      "native_w": 137,
-      "native_h": 46,
-      "src_px": [
-        137,
-        46
-      ],
-      "canvas_bounds": [
-        382.0,
-        729.0,
-        519.0,
-        775.0
-      ],
-      "effects_bounds": [
-        382.0,
-        729.0,
-        519.0,
-        775.0
-      ],
-      "glow_expanded": false,
-      "glow_delta": [
-        0.0,
-        0.0
-      ],
-      "layer_kind": "raster",
-      "source": "raster_isolated",
-      "psd_bounds": [
-        382.0,
-        729.0,
-        519.0,
-        775.0
-      ],
-      "opacity": 100.0,
-      "blend": "normal",
-      "stack_index": 10,
-      "metrics": {
-        "bbox": [
-          0,
-          0,
-          137,
-          46
-        ],
-        "hang": [
-          95.5,
-          0.0
-        ],
-        "bottom": [
-          54.0,
-          45.0
-        ],
-        "center": [
-          70.59272905919921,
-          23.344141488577744
-        ],
-        "opaque": 4071,
-        "mean_rgb": [
-          62.62564468383789,
-          48.70154571533203,
-          38.160404205322266
-        ],
-        "mean_luma": 51.66316223144531,
-        "mean_warmth": 24.465242385864258
       }
     },
     {
@@ -2759,7 +2916,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 11,
+      "stack_index": 14,
       "metrics": {
         "bbox": [
           2,
@@ -2787,79 +2944,6 @@
         ],
         "mean_luma": 35.255252838134766,
         "mean_warmth": 44.00994110107422
-      }
-    },
-    {
-      "psd_name": "grass_03",
-      "name": "grass_03",
-      "filename": "grass_03.png",
-      "parent_group": "props",
-      "x": 821,
-      "y": 675,
-      "w": 185,
-      "h": 122,
-      "scale": 1.0,
-      "native_w": 185,
-      "native_h": 122,
-      "src_px": [
-        185,
-        122
-      ],
-      "canvas_bounds": [
-        820.0,
-        675.0,
-        1007.0,
-        798.0
-      ],
-      "effects_bounds": [
-        820.0,
-        675.0,
-        1007.0,
-        798.0
-      ],
-      "glow_expanded": false,
-      "glow_delta": [
-        -2.0,
-        -1.0
-      ],
-      "layer_kind": "raster",
-      "source": "raster_isolated",
-      "psd_bounds": [
-        820.0,
-        675.0,
-        1007.0,
-        798.0
-      ],
-      "opacity": 100.0,
-      "blend": "normal",
-      "stack_index": 12,
-      "metrics": {
-        "bbox": [
-          1,
-          1,
-          182,
-          121
-        ],
-        "hang": [
-          27.0,
-          1.0
-        ],
-        "bottom": [
-          143.66666666666666,
-          121.0
-        ],
-        "center": [
-          83.46567304307007,
-          69.87970895434808
-        ],
-        "opaque": 8521,
-        "mean_rgb": [
-          54.289283752441406,
-          31.15033531188965,
-          9.61999797821045
-        ],
-        "mean_luma": 35.614418029785156,
-        "mean_warmth": 44.669288635253906
       }
     },
     {
@@ -2905,7 +2989,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 13,
+      "stack_index": 15,
       "metrics": {
         "bbox": [
           1,
@@ -2978,7 +3062,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 14,
+      "stack_index": 16,
       "metrics": {
         "bbox": [
           0,
@@ -3051,7 +3135,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 15,
+      "stack_index": 17,
       "metrics": {
         "bbox": [
           2,
@@ -3086,8 +3170,8 @@
       "name": "cowboy_hat",
       "filename": "cowboy_hat.png",
       "parent_group": "props",
-      "x": 955,
-      "y": 747,
+      "x": 951,
+      "y": 781,
       "w": 170,
       "h": 104,
       "scale": 1.0,
@@ -3098,16 +3182,16 @@
         104
       ],
       "canvas_bounds": [
-        954.0,
-        746.0,
-        1125.0,
-        851.0
+        950.0,
+        780.0,
+        1121.0,
+        885.0
       ],
       "effects_bounds": [
-        954.0,
-        746.0,
-        1125.0,
-        851.0
+        950.0,
+        780.0,
+        1121.0,
+        885.0
       ],
       "glow_expanded": false,
       "glow_delta": [
@@ -3117,14 +3201,14 @@
       "layer_kind": "raster",
       "source": "raster_isolated",
       "psd_bounds": [
-        954.0,
-        746.0,
-        1125.0,
-        851.0
+        950.0,
+        780.0,
+        1121.0,
+        885.0
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 16,
+      "stack_index": 18,
       "metrics": {
         "bbox": [
           0,
@@ -3146,12 +3230,12 @@
         ],
         "opaque": 11455,
         "mean_rgb": [
-          62.106590270996094,
-          43.69489288330078,
-          31.144392013549805
+          54.011173248291016,
+          45.94718551635742,
+          41.561065673828125
         ],
-        "mean_luma": 47.76923370361328,
-        "mean_warmth": 30.962200164794922
+        "mean_luma": 47.85830307006836,
+        "mean_warmth": 12.450109481811523
       }
     },
     {
@@ -3197,7 +3281,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 17,
+      "stack_index": 19,
       "metrics": {
         "bbox": [
           0,
@@ -3219,12 +3303,12 @@
         ],
         "opaque": 20715,
         "mean_rgb": [
-          52.937870025634766,
-          34.75129318237305,
-          21.180498123168945
+          44.09080505371094,
+          37.01877975463867,
+          33.66507339477539
         ],
-        "mean_luma": 38.64200973510742,
-        "mean_warmth": 31.757373809814453
+        "mean_luma": 38.75099182128906,
+        "mean_warmth": 10.425729751586914
       }
     },
     {
@@ -3270,7 +3354,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 18,
+      "stack_index": 20,
       "metrics": {
         "bbox": [
           0,
@@ -3292,85 +3376,12 @@
         ],
         "opaque": 5587,
         "mean_rgb": [
-          42.90030288696289,
-          32.90298843383789,
-          25.599964141845703
+          38.50205993652344,
+          34.17737579345703,
+          31.552175521850586
         ],
-        "mean_luma": 35.05964279174805,
-        "mean_warmth": 17.30034065246582
-      }
-    },
-    {
-      "psd_name": "wagon_wheel",
-      "name": "wagon_wheel",
-      "filename": "wagon_wheel.png",
-      "parent_group": "props",
-      "x": 83,
-      "y": 585,
-      "w": 202,
-      "h": 210,
-      "scale": 1.0,
-      "native_w": 202,
-      "native_h": 210,
-      "src_px": [
-        202,
-        210
-      ],
-      "canvas_bounds": [
-        83.0,
-        585.0,
-        285.0,
-        795.0
-      ],
-      "effects_bounds": [
-        83.0,
-        585.0,
-        285.0,
-        795.0
-      ],
-      "glow_expanded": false,
-      "glow_delta": [
-        0.0,
-        0.0
-      ],
-      "layer_kind": "raster",
-      "source": "raster_isolated",
-      "psd_bounds": [
-        83.0,
-        585.0,
-        285.0,
-        795.0
-      ],
-      "opacity": 100.0,
-      "blend": "normal",
-      "stack_index": 19,
-      "metrics": {
-        "bbox": [
-          1,
-          0,
-          201,
-          210
-        ],
-        "hang": [
-          100.5,
-          0.0
-        ],
-        "bottom": [
-          102.5,
-          209.0
-        ],
-        "center": [
-          100.72352594835563,
-          104.15287240306165
-        ],
-        "opaque": 23778,
-        "mean_rgb": [
-          58.43498229980469,
-          36.723777770996094,
-          21.78299331665039
-        ],
-        "mean_luma": 41.51218032836914,
-        "mean_warmth": 36.6519889831543
+        "mean_luma": 35.171180725097656,
+        "mean_warmth": 6.949883460998535
       }
     },
     {
@@ -3416,7 +3427,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 20,
+      "stack_index": 21,
       "metrics": {
         "bbox": [
           0,
@@ -3438,19 +3449,19 @@
         ],
         "opaque": 44604,
         "mean_rgb": [
-          70.14585876464844,
-          54.79616165161133,
-          41.98796081542969
+          64.44744873046875,
+          56.160499572753906,
+          50.46809768676758
         ],
-        "mean_luma": 57.92559051513672,
-        "mean_warmth": 28.157899856567383
+        "mean_luma": 57.98936080932617,
+        "mean_warmth": 13.979351997375488
       }
     },
     {
       "psd_name": "skull",
       "name": "skull",
       "filename": "skull.png",
-      "parent_group": "",
+      "parent_group": "Group 3",
       "x": 4,
       "y": 674,
       "w": 201,
@@ -3489,7 +3500,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 27,
+      "stack_index": 28,
       "metrics": {
         "bbox": [
           0,
@@ -3511,12 +3522,12 @@
         ],
         "opaque": 15351,
         "mean_rgb": [
-          92.55944061279297,
-          73.79558563232422,
-          58.29352951049805
+          85.85910034179688,
+          75.50778198242188,
+          67.7370834350586
         ],
-        "mean_luma": 77.63874816894531,
-        "mean_warmth": 34.26591110229492
+        "mean_luma": 77.71696472167969,
+        "mean_warmth": 18.122011184692383
       }
     },
     {
@@ -3562,7 +3573,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 29,
+      "stack_index": 30,
       "metrics": {
         "bbox": [
           0,
@@ -3584,12 +3595,12 @@
         ],
         "opaque": 35481,
         "mean_rgb": [
-          65.885009765625,
-          44.243003845214844,
-          27.73408317565918
+          55.66136932373047,
+          46.85166549682617,
+          41.90183639526367
         ],
-        "mean_luma": 48.83194351196289,
-        "mean_warmth": 38.15092468261719
+        "mean_luma": 48.921485900878906,
+        "mean_warmth": 13.759532928466797
       }
     },
     {
@@ -3635,7 +3646,7 @@
       ],
       "opacity": 100.0,
       "blend": "darken",
-      "stack_index": 30,
+      "stack_index": 31,
       "metrics": {
         "bbox": [
           0,
@@ -3708,7 +3719,7 @@
       ],
       "opacity": 100.0,
       "blend": "darken",
-      "stack_index": 31,
+      "stack_index": 32,
       "metrics": {
         "bbox": [
           0,
@@ -3781,7 +3792,7 @@
       ],
       "opacity": 100.0,
       "blend": "darken",
-      "stack_index": 32,
+      "stack_index": 33,
       "metrics": {
         "bbox": [
           0,
@@ -3854,7 +3865,7 @@
       ],
       "opacity": 100.0,
       "blend": "darken",
-      "stack_index": 33,
+      "stack_index": 34,
       "metrics": {
         "bbox": [
           0,
@@ -3927,7 +3938,7 @@
       ],
       "opacity": 100.0,
       "blend": "darken",
-      "stack_index": 34,
+      "stack_index": 35,
       "metrics": {
         "bbox": [
           0,
@@ -3961,7 +3972,7 @@
       "psd_name": "right  hanging lamp",
       "name": "right_hanging_lamp",
       "filename": "right_hanging_lamp.png",
-      "parent_group": "",
+      "parent_group": "Group 3",
       "x": 1188,
       "y": 73,
       "w": 62,
@@ -4000,7 +4011,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 36,
+      "stack_index": 37,
       "metrics": {
         "bbox": [
           0,
@@ -4022,19 +4033,19 @@
         ],
         "opaque": 7244,
         "mean_rgb": [
-          69.94160461425781,
-          47.299835205078125,
-          29.64522361755371
+          59.07799530029297,
+          50.120513916015625,
+          44.72929382324219
         ],
-        "mean_luma": 52.057098388671875,
-        "mean_warmth": 40.296382904052734
+        "mean_luma": 52.1842041015625,
+        "mean_warmth": 14.348702430725098
       }
     },
     {
       "psd_name": "left hanging lamp",
       "name": "left_hanging_lamp",
       "filename": "left_hanging_lamp.png",
-      "parent_group": "",
+      "parent_group": "Group 3",
       "x": 98,
       "y": 73,
       "w": 62,
@@ -4073,7 +4084,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 37,
+      "stack_index": 38,
       "metrics": {
         "bbox": [
           0,
@@ -4095,19 +4106,19 @@
         ],
         "opaque": 7244,
         "mean_rgb": [
-          69.94160461425781,
-          47.299835205078125,
-          29.64522361755371
+          59.07799530029297,
+          50.120513916015625,
+          44.72929382324219
         ],
-        "mean_luma": 52.057098388671875,
-        "mean_warmth": 40.296382904052734
+        "mean_luma": 52.1842041015625,
+        "mean_warmth": 14.348702430725098
       }
     },
     {
       "psd_name": "MAIN FRAME",
       "name": "MAIN_FRAME",
       "filename": "MAIN_FRAME.png",
-      "parent_group": "",
+      "parent_group": "Group 3",
       "x": 310,
       "y": 136,
       "w": 725,
@@ -4146,7 +4157,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 40,
+      "stack_index": 41,
       "metrics": {
         "bbox": [
           0,
@@ -4168,12 +4179,12 @@
         ],
         "opaque": 105824,
         "mean_rgb": [
-          61.011566162109375,
-          43.03489685058594,
-          28.11286735534668
+          52.75193786621094,
+          44.937320709228516,
+          40.741146087646484
         ],
-        "mean_luma": 46.70880889892578,
-        "mean_warmth": 32.89870071411133
+        "mean_luma": 46.79552459716797,
+        "mean_warmth": 12.010791778564453
       }
     },
     {
@@ -4219,7 +4230,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 42,
+      "stack_index": 43,
       "metrics": {
         "bbox": [
           0,
@@ -4241,12 +4252,12 @@
         ],
         "opaque": 6472,
         "mean_rgb": [
-          47.999534606933594,
-          37.35939407348633,
-          28.759580612182617
+          43.52534103393555,
+          38.53352737426758,
+          35.468017578125
         ],
-        "mean_luma": 39.56041717529297,
-        "mean_warmth": 19.23995590209961
+        "mean_luma": 39.676612854003906,
+        "mean_warmth": 8.057323455810547
       }
     },
     {
@@ -4292,7 +4303,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 43,
+      "stack_index": 44,
       "metrics": {
         "bbox": [
           1,
@@ -4314,12 +4325,12 @@
         ],
         "opaque": 4170,
         "mean_rgb": [
-          73.24724578857422,
-          59.55683517456055,
-          47.6007194519043
+          68.46354675292969,
+          60.67961502075195,
+          55.237648010253906
         ],
-        "mean_luma": 62.287269592285156,
-        "mean_warmth": 25.646522521972656
+        "mean_luma": 62.386627197265625,
+        "mean_warmth": 13.225899696350098
       }
     },
     {
@@ -4365,7 +4376,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 45,
+      "stack_index": 46,
       "metrics": {
         "bbox": [
           0,
@@ -4387,12 +4398,12 @@
         ],
         "opaque": 6472,
         "mean_rgb": [
-          47.999534606933594,
-          37.35939407348633,
-          28.759580612182617
+          43.52534103393555,
+          38.53352737426758,
+          35.468017578125
         ],
-        "mean_luma": 39.56041717529297,
-        "mean_warmth": 19.23995590209961
+        "mean_luma": 39.676612854003906,
+        "mean_warmth": 8.057323455810547
       }
     },
     {
@@ -4438,7 +4449,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 46,
+      "stack_index": 47,
       "metrics": {
         "bbox": [
           0,
@@ -4460,12 +4471,12 @@
         ],
         "opaque": 4186,
         "mean_rgb": [
-          61.9171028137207,
-          49.83014678955078,
-          39.776397705078125
+          57.329193115234375,
+          50.99235534667969,
+          46.7049674987793
         ],
-        "mean_luma": 52.29801940917969,
-        "mean_warmth": 22.14070701599121
+        "mean_luma": 52.39830780029297,
+        "mean_warmth": 10.624223709106445
       }
     },
     {
@@ -4511,7 +4522,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 49,
+      "stack_index": 50,
       "metrics": {
         "bbox": [
           0,
@@ -4533,12 +4544,12 @@
         ],
         "opaque": 6491,
         "mean_rgb": [
-          47.62979507446289,
-          37.066246032714844,
-          28.5308895111084
+          43.189186096191406,
+          38.233707427978516,
+          35.191341400146484
         ],
-        "mean_luma": 39.2517204284668,
-        "mean_warmth": 19.098905563354492
+        "mean_luma": 39.36856460571289,
+        "mean_warmth": 7.997843265533447
       }
     },
     {
@@ -4584,7 +4595,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 50,
+      "stack_index": 51,
       "metrics": {
         "bbox": [
           1,
@@ -4606,12 +4617,12 @@
         ],
         "opaque": 3678,
         "mean_rgb": [
-          70.29798889160156,
-          57.28792953491211,
-          44.940185546875
+          65.42115020751953,
+          58.35807418823242,
+          53.120174407958984
         ],
-        "mean_luma": 59.770294189453125,
-        "mean_warmth": 25.357803344726562
+        "mean_luma": 59.87281799316406,
+        "mean_warmth": 12.300978660583496
       }
     },
     {
@@ -4657,7 +4668,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 52,
+      "stack_index": 53,
       "metrics": {
         "bbox": [
           0,
@@ -4730,7 +4741,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 53,
+      "stack_index": 54,
       "metrics": {
         "bbox": [
           0,
@@ -4803,7 +4814,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 58,
+      "stack_index": 59,
       "metrics": {
         "bbox": [
           1,
@@ -4876,7 +4887,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 59,
+      "stack_index": 60,
       "metrics": {
         "bbox": [
           0,
@@ -4949,7 +4960,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 60,
+      "stack_index": 61,
       "metrics": {
         "bbox": [
           0,
@@ -5022,7 +5033,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 61,
+      "stack_index": 62,
       "metrics": {
         "bbox": [
           0,
@@ -5095,7 +5106,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 62,
+      "stack_index": 63,
       "metrics": {
         "bbox": [
           0,
@@ -5168,7 +5179,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 63,
+      "stack_index": 64,
       "metrics": {
         "bbox": [
           0,
@@ -5241,7 +5252,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 64,
+      "stack_index": 65,
       "metrics": {
         "bbox": [
           0,
@@ -5314,7 +5325,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 65,
+      "stack_index": 66,
       "metrics": {
         "bbox": [
           0,
@@ -5387,7 +5398,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 66,
+      "stack_index": 67,
       "metrics": {
         "bbox": [
           0,
@@ -5460,7 +5471,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 67,
+      "stack_index": 68,
       "metrics": {
         "bbox": [
           1,
@@ -5533,7 +5544,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 68,
+      "stack_index": 69,
       "metrics": {
         "bbox": [
           0,
@@ -5606,7 +5617,153 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 70,
+      "stack_index": 71,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 26",
+      "name": "chain_bolt_copy_26",
+      "filename": "chain_bolt_copy_26.png",
+      "parent_group": "chain bolts",
+      "x": 124,
+      "y": 68,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        124.0,
+        68.0,
+        134.0,
+        79.0
+      ],
+      "effects_bounds": [
+        124.0,
+        68.0,
+        134.0,
+        79.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        124.0,
+        68.0,
+        134.0,
+        79.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 72,
+      "metrics": {
+        "bbox": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "hang": [
+          4.5,
+          0.0
+        ],
+        "bottom": [
+          4.5,
+          10.0
+        ],
+        "center": [
+          4.5,
+          5.0
+        ],
+        "opaque": 98,
+        "mean_rgb": [
+          79.58163452148438,
+          59.979591369628906,
+          46.8775520324707
+        ],
+        "mean_luma": 64.34696960449219,
+        "mean_warmth": 32.70408248901367
+      }
+    },
+    {
+      "psd_name": "chain bolt copy 27",
+      "name": "chain_bolt_copy_27",
+      "filename": "chain_bolt_copy_27.png",
+      "parent_group": "chain bolts",
+      "x": 1214,
+      "y": 68,
+      "w": 10,
+      "h": 11,
+      "scale": 1.0,
+      "native_w": 10,
+      "native_h": 11,
+      "src_px": [
+        10,
+        11
+      ],
+      "canvas_bounds": [
+        1214.0,
+        68.0,
+        1224.0,
+        79.0
+      ],
+      "effects_bounds": [
+        1214.0,
+        68.0,
+        1224.0,
+        79.0
+      ],
+      "glow_expanded": false,
+      "glow_delta": [
+        0.0,
+        0.0
+      ],
+      "layer_kind": "raster",
+      "source": "raster_isolated",
+      "psd_bounds": [
+        1214.0,
+        68.0,
+        1224.0,
+        79.0
+      ],
+      "opacity": 100.0,
+      "blend": "normal",
+      "stack_index": 73,
       "metrics": {
         "bbox": [
           0,
@@ -5679,7 +5836,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 71,
+      "stack_index": 74,
       "metrics": {
         "bbox": [
           0,
@@ -5752,7 +5909,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 72,
+      "stack_index": 75,
       "metrics": {
         "bbox": [
           0,
@@ -5825,7 +5982,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 73,
+      "stack_index": 76,
       "metrics": {
         "bbox": [
           0,
@@ -5898,7 +6055,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 74,
+      "stack_index": 77,
       "metrics": {
         "bbox": [
           0,
@@ -5971,7 +6128,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 75,
+      "stack_index": 78,
       "metrics": {
         "bbox": [
           0,
@@ -6044,7 +6201,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 76,
+      "stack_index": 79,
       "metrics": {
         "bbox": [
           0,
@@ -6117,7 +6274,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 77,
+      "stack_index": 80,
       "metrics": {
         "bbox": [
           0,
@@ -6190,7 +6347,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 78,
+      "stack_index": 81,
       "metrics": {
         "bbox": [
           0,
@@ -6263,7 +6420,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 79,
+      "stack_index": 82,
       "metrics": {
         "bbox": [
           0,
@@ -6336,7 +6493,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 80,
+      "stack_index": 83,
       "metrics": {
         "bbox": [
           0,
@@ -6409,7 +6566,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 81,
+      "stack_index": 84,
       "metrics": {
         "bbox": [
           0,
@@ -6482,7 +6639,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 82,
+      "stack_index": 85,
       "metrics": {
         "bbox": [
           0,
@@ -6555,7 +6712,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 83,
+      "stack_index": 86,
       "metrics": {
         "bbox": [
           0,
@@ -6628,7 +6785,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 84,
+      "stack_index": 87,
       "metrics": {
         "bbox": [
           0,
@@ -6701,7 +6858,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 85,
+      "stack_index": 88,
       "metrics": {
         "bbox": [
           0,
@@ -6774,7 +6931,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 86,
+      "stack_index": 89,
       "metrics": {
         "bbox": [
           0,
@@ -6847,7 +7004,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 87,
+      "stack_index": 90,
       "metrics": {
         "bbox": [
           0,
@@ -6920,7 +7077,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 88,
+      "stack_index": 91,
       "metrics": {
         "bbox": [
           0,
@@ -6993,7 +7150,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 89,
+      "stack_index": 92,
       "metrics": {
         "bbox": [
           0,
@@ -7066,7 +7223,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 90,
+      "stack_index": 93,
       "metrics": {
         "bbox": [
           0,
@@ -7139,7 +7296,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 91,
+      "stack_index": 94,
       "metrics": {
         "bbox": [
           0,
@@ -7212,7 +7369,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 93,
+      "stack_index": 96,
       "metrics": {
         "bbox": [
           0,
@@ -7234,12 +7391,12 @@
         ],
         "opaque": 6491,
         "mean_rgb": [
-          47.62979507446289,
-          37.066246032714844,
-          28.5308895111084
+          43.189186096191406,
+          38.233707427978516,
+          35.191341400146484
         ],
-        "mean_luma": 39.2517204284668,
-        "mean_warmth": 19.098905563354492
+        "mean_luma": 39.36856460571289,
+        "mean_warmth": 7.997843265533447
       }
     },
     {
@@ -7285,7 +7442,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 94,
+      "stack_index": 97,
       "metrics": {
         "bbox": [
           0,
@@ -7307,12 +7464,12 @@
         ],
         "opaque": 4100,
         "mean_rgb": [
-          78.0982894897461,
-          74.50756072998047,
-          68.49609375
+          79.73243713378906,
+          73.82756042480469,
+          68.30536651611328
         ],
-        "mean_luma": 74.89588165283203,
-        "mean_warmth": 9.602194786071777
+        "mean_luma": 74.96358489990234,
+        "mean_warmth": 11.42707347869873
       }
     },
     {
@@ -7358,7 +7515,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 95,
+      "stack_index": 98,
       "metrics": {
         "bbox": [
           0,
@@ -7431,7 +7588,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 96,
+      "stack_index": 99,
       "metrics": {
         "bbox": [
           0,
@@ -7504,7 +7661,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 97,
+      "stack_index": 100,
       "metrics": {
         "bbox": [
           0,
@@ -7577,7 +7734,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 98,
+      "stack_index": 101,
       "metrics": {
         "bbox": [
           0,
@@ -7650,7 +7807,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 99,
+      "stack_index": 102,
       "metrics": {
         "bbox": [
           0,
@@ -7723,7 +7880,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 100,
+      "stack_index": 103,
       "metrics": {
         "bbox": [
           0,
@@ -7796,7 +7953,7 @@
       ],
       "opacity": 100.0,
       "blend": "normal",
-      "stack_index": 101,
+      "stack_index": 104,
       "metrics": {
         "bbox": [
           1,

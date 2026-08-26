@@ -79,15 +79,15 @@
     {
       "name": "post_R",
       "parent": "root",
-      "x": 1284.5,
-      "y": 124.0,
+      "x": 1222.5,
+      "y": 123.0,
       "length": 24.0
     },
     {
       "name": "post_L",
       "parent": "root",
-      "x": 54.5,
-      "y": 123.0,
+      "x": 114.5,
+      "y": 67.0,
       "length": 24.0
     },
     {
@@ -112,24 +112,10 @@
       "length": 24.0
     },
     {
-      "name": "rocks",
-      "parent": "root",
-      "x": 436.0,
-      "y": 118.0,
-      "length": 24.0
-    },
-    {
       "name": "shrub",
       "parent": "root",
       "x": 1061.0,
       "y": 60.0,
-      "length": 24.0
-    },
-    {
-      "name": "grass_03",
-      "parent": "root",
-      "x": 964.667,
-      "y": 96.0,
       "length": 24.0
     },
     {
@@ -156,8 +142,8 @@
     {
       "name": "cowboy_hat",
       "parent": "root",
-      "x": 1004.5,
-      "y": 42.0,
+      "x": 1000.5,
+      "y": 8.0,
       "length": 24.0
     },
     {
@@ -165,13 +151,6 @@
       "parent": "root",
       "x": 1312.0,
       "y": 95.0,
-      "length": 24.0
-    },
-    {
-      "name": "wagon_wheel",
-      "parent": "root",
-      "x": 185.5,
-      "y": 98.0,
       "length": 24.0
     },
     {
@@ -569,9 +548,19 @@
   ],
   "slots": [
     {
-      "name": "background",
+      "name": "background_Layer_12",
       "bone": "bg",
-      "attachment": "background"
+      "attachment": "background_Layer_12"
+    },
+    {
+      "name": "background_clouds",
+      "bone": "bg",
+      "attachment": "background_clouds"
+    },
+    {
+      "name": "background_Layer_11",
+      "bone": "bg",
+      "attachment": "background_Layer_11"
     },
     {
       "name": "post_R",
@@ -604,19 +593,9 @@
       "attachment": "rock_03"
     },
     {
-      "name": "rocks",
-      "bone": "rocks",
-      "attachment": "rocks"
-    },
-    {
       "name": "shrub",
       "bone": "shrub",
       "attachment": "shrub"
-    },
-    {
-      "name": "grass_03",
-      "bone": "grass_03",
-      "attachment": "grass_03"
     },
     {
       "name": "grass_02",
@@ -654,11 +633,6 @@
       "attachment": "lantern_dim_light",
       "blend": "additive",
       "color": "ffffffee"
-    },
-    {
-      "name": "wagon_wheel",
-      "bone": "wagon_wheel",
-      "attachment": "wagon_wheel"
     },
     {
       "name": "tombstone",
@@ -992,8 +966,24 @@
   ],
   "skins": {
     "default": {
-      "background": {
-        "background": {
+      "background_Layer_12": {
+        "background_Layer_12": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1342,
+          "height": 892
+        }
+      },
+      "background_clouds": {
+        "background_clouds": {
+          "x": 592.5,
+          "y": 247.0,
+          "width": 4189,
+          "height": 440
+        }
+      },
+      "background_Layer_11": {
+        "background_Layer_11": {
           "x": 0.0,
           "y": 0.0,
           "width": 1342,
@@ -1002,18 +992,18 @@
       },
       "post_R": {
         "post_R": {
-          "x": -9.0,
+          "x": 16.5,
           "y": 364.0,
-          "width": 133,
+          "width": 184,
           "height": 730
         }
       },
       "post_L": {
         "post_L": {
-          "x": 11.0,
-          "y": 364.0,
-          "width": 131,
-          "height": 730
+          "x": -15.0,
+          "y": 389.5,
+          "width": 183,
+          "height": 781
         }
       },
       "beam": {
@@ -1048,28 +1038,12 @@
           "height": 27
         }
       },
-      "rocks": {
-        "rocks": {
-          "x": 14.5,
-          "y": 22.0,
-          "width": 137,
-          "height": 46
-        }
-      },
       "shrub": {
         "shrub": {
           "x": 4.0,
           "y": 29.5,
           "width": 68,
           "height": 63
-        }
-      },
-      "grass_03": {
-        "grass_03": {
-          "x": -51.167,
-          "y": 60.0,
-          "width": 185,
-          "height": 122
         }
       },
       "grass_02": {
@@ -1122,18 +1096,10 @@
       },
       "lantern_dim_light": {
         "lantern_dim_light": {
-          "x": 1.22,
-          "y": 54.56,
+          "x": -0.36,
+          "y": 66.95,
           "width": 420,
           "height": 420
-        }
-      },
-      "wagon_wheel": {
-        "wagon_wheel": {
-          "x": -1.5,
-          "y": 104.0,
-          "width": 202,
-          "height": 210
         }
       },
       "tombstone": {
@@ -1162,42 +1128,42 @@
       },
       "sign_highlight": {
         "sign_highlight": {
-          "x": 39.5,
-          "y": 86.0,
-          "width": 305,
-          "height": 600
+          "x": 1.0,
+          "y": 46.0,
+          "width": 228,
+          "height": 500
         }
       },
       "sign_tell_no_tales": {
         "sign_tell_no_tales": {
-          "x": 3.5,
-          "y": 29.0,
-          "width": 139,
-          "height": 44
+          "x": 4.0,
+          "y": 29.5,
+          "width": 134,
+          "height": 39
         }
       },
       "sign_dead_men": {
         "sign_dead_men": {
-          "x": 5.5,
-          "y": 94.0,
-          "width": 139,
-          "height": 54
+          "x": 6.0,
+          "y": 93.5,
+          "width": 134,
+          "height": 49
         }
       },
       "sign_beware_2": {
         "sign_beware_2": {
           "x": 1.0,
           "y": 156.0,
-          "width": 118,
-          "height": 48
+          "width": 112,
+          "height": 44
         }
       },
       "sign_beware_1": {
         "sign_beware_1": {
           "x": -6.0,
           "y": 227.0,
-          "width": 120,
-          "height": 54
+          "width": 114,
+          "height": 50
         }
       },
       "right_hanging_lamp": {

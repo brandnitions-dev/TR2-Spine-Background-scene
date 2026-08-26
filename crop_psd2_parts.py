@@ -253,7 +253,13 @@ def main() -> int:
     exported: list[dict] = []
 
     SKIP_PARENTS = {"board"}
-    SKIP_NAMES = {"red filter", "red_filter"}
+    SKIP_NAMES = {"red filter", "red_filter", "curves 1"}
+    BG_PARENTS = {"background layer"}
+
+    def is_bg_source(layer: dict, slot: str) -> bool:
+        parent = (layer.get("parent") or "").strip().lower()
+        raw = (layer.get("name") or "").strip().lower()
+        return parent in BG_PARENTS or "background" in raw or "cloud" in raw or "cloud" in slot.lower()
 
     for layer in payload["layers"]:
         if layer["kind"] != "art":
@@ -287,28 +293,39 @@ def main() -> int:
         cropped, placed, scale, source, extra = choose_source(
             jsx, layer["name"], im, effects, canvas_w, canvas_h, log
         )
+        if im.size != (canvas_w, canvas_h):
+            cropped, img_placed = alpha_crop(im, effects)
+            placed = [
+                int(np.floor(effects[0])) + img_placed[0],
+                int(np.floor(effects[1])) + img_placed[1],
+                img_placed[2],
+                img_placed[3],
+            ]
+            extra["src_px"] = list(cropped.size)
+            extra["native_overflow"] = True
         width, height = placed[2], placed[3]
         if width < 1 or height < 1:
             print(f"skip {layer['name']} clamped empty")
             continue
         name = slot_name(layer["name"])
+        if is_bg_source(layer, name):
+            if "cloud" in name.lower():
+                name = "background_clouds"
+            elif name.lower() in {"background", "background_redroom"}:
+                name = "background"
+            elif not name.lower().startswith("background"):
+                name = f"background_{name}"
         n = used.get(name, 0) + 1
         used[name] = n
         if n > 1:
             name = f"{name}_{n:02d}"
-        if "background" in name.lower():
-            name = "background"
-            dest = PARTS / "background.png"
-            if cropped.size != (canvas_w, canvas_h) and im.size == (canvas_w, canvas_h):
-                im.save(dest)
-                native = list(im.size)
-                placed = [0, 0, canvas_w, canvas_h]
-                scale = 1.0
-            else:
-                cropped.save(dest)
-                native = list(cropped.size)
+        dest = PARTS / f"{name}.png"
+        if is_bg_source(layer, name) and im.size == (canvas_w, canvas_h):
+            im.save(dest)
+            native = [canvas_w, canvas_h]
+            placed = [0, 0, canvas_w, canvas_h]
+            scale = 1.0
         else:
-            dest = PARTS / f"{name}.png"
             cropped.save(dest)
             native = list(cropped.size)
 

@@ -70,6 +70,7 @@ SIGN_WORDS = [
 SIGN_HIGHLIGHT_SLOT = "sign_highlight"
 SIGN_STATE_PATH = HERE / "sign_state.json"
 LAMP_STATE_PATH = HERE / "lamp_state.json"
+CURVES_JSON = HERE / "curves_1.json"
 SITTING_GLOW_SIZE = 420
 
 
@@ -225,8 +226,11 @@ def own_name(part: dict) -> str:
 
 
 def is_background(part: dict) -> bool:
-    text = f"{part.get('name') or ''} {part.get('psd_name') or ''}".lower()
-    return "background" in text
+    text = " ".join(
+        str(part.get(key) or "")
+        for key in ("name", "psd_name", "parent_group", "parent")
+    ).lower()
+    return "background" in text or "cloud" in text
 
 
 def is_baked_light(part: dict) -> bool:
@@ -309,9 +313,33 @@ def default_lamp_state(sitting: list[str]) -> dict:
                 "slot": f"{name}_light",
                 "label": labels.get(name, name.replace("_", " ").title()),
                 "on": True,
+                "lumen": 1.0,
             }
         )
     return {"lamps": lamps}
+
+
+def merge_lamp_state(sitting: list[str]) -> dict:
+    lamp_info = default_lamp_state(sitting)
+    if not LAMP_STATE_PATH.is_file():
+        return lamp_info
+    try:
+        prev = json.loads(LAMP_STATE_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return lamp_info
+    prev_lamps = {row.get("id"): row for row in prev.get("lamps") or []}
+    for row in lamp_info["lamps"]:
+        old = prev_lamps.get(row["id"]) or {}
+        if "on" in old:
+            row["on"] = bool(old["on"])
+        try:
+            row["lumen"] = max(0.1, min(2.5, float(old.get("lumen", 1.0))))
+        except (TypeError, ValueError):
+            row["lumen"] = 1.0
+    for key in ("smoke", "fire", "smokeDensity", "smokeSpeed", "curves"):
+        if key in prev:
+            lamp_info[key] = prev[key]
+    return lamp_info
 
 
 def overlay_attach_on_bone(part: dict, bone_world: tuple[float, float]) -> tuple[float, float]:
@@ -467,6 +495,30 @@ def prop_world(part: dict, metrics: dict, hanging: set[str]) -> dict:
 def copy_static_image(src: Path, dest: Path) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(src, dest)
+
+
+def load_curves_lut() -> list[int] | None:
+    if not CURVES_JSON.is_file():
+        return None
+    data = json.loads(CURVES_JSON.read_text(encoding="utf-8"))
+    lut = data.get("lut")
+    if not isinstance(lut, list) or len(lut) != 256:
+        return None
+    return [int(min(255, max(0, v))) for v in lut]
+
+
+def apply_curves_png(path: Path, lut: list[int]) -> None:
+    image = Image.open(path)
+    mode = image.mode
+    arr = np.array(image.convert("RGBA") if mode == "RGBA" else image.convert("RGB"))
+    table = np.asarray(lut, dtype=np.uint8)
+    arr[:, :, 0] = table[arr[:, :, 0]]
+    arr[:, :, 1] = table[arr[:, :, 1]]
+    arr[:, :, 2] = table[arr[:, :, 2]]
+    if mode == "RGB":
+        Image.fromarray(arr[:, :, :3], "RGB").save(path)
+    else:
+        Image.fromarray(arr, "RGBA").save(path)
 
 
 def flicker_samples(index: int) -> list[tuple[float, float]]:
@@ -778,7 +830,10 @@ def verify_scene(skeleton: dict, report_extra: dict) -> dict:
                 errors.append(f"{light_name} blend is not additive")
 
     slot_names = [s["name"] for s in skeleton["slots"]]
-    bg_first = bool(slot_names) and is_background({"name": slot_names[0]})
+    first_part = next((p for p in (report_extra.get("parts") or []) if p.get("name") == slot_names[0]), None) if slot_names else None
+    bg_first = bool(slot_names) and (
+        is_background(first_part or {"name": slot_names[0]}) or is_background({"name": slot_names[0]})
+    )
     checks.append({"id": "background_behind", "ok": bg_first, "first": slot_names[0] if slot_names else None})
     if not bg_first:
         errors.append(f"background must be the first slot (behind); first={slot_names[0] if slot_names else None}")
@@ -893,6 +948,27 @@ def write_placement(payload: dict, parts: list[dict], classified: dict) -> None:
     PLACEMENT_PATH.write_text(json.dumps(out, indent=2), encoding="utf-8")
 
 
+def paste_safe(canvas: Image.Image, tile: Image.Image, x0: int, y0: int) -> None:
+    tw, th = tile.size
+    src_l = max(0, -x0)
+    src_t = max(0, -y0)
+    dst_l = max(0, x0)
+    dst_t = max(0, y0)
+    width = min(tw - src_l, canvas.width - dst_l)
+    height = min(th - src_t, canvas.height - dst_t)
+    if width <= 0 or height <= 0:
+        return
+    piece = tile.crop((src_l, src_t, src_l + width, src_t + height))
+    canvas.paste(piece, (dst_l, dst_t), piece)
+
+
+def bg_attach_on_bg_bone(part: dict) -> tuple[float, float]:
+    cx = float(part["x"]) + float(part["w"]) / 2.0
+    cy = float(part["y"]) + float(part["h"]) / 2.0
+    sx, sy = canvas_to_spine(cx, cy)
+    return sx - (CANVAS_W / 2.0), sy - (CANVAS_H / 2.0)
+
+
 def composite_check(parts: list[dict], dest: Path) -> None:
     canvas = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 255))
     ordered = sorted(parts, key=lambda p: int(p.get("stack_index") or 0), reverse=True)
@@ -901,11 +977,11 @@ def composite_check(parts: list[dict], dest: Path) -> None:
         if not src.is_file():
             continue
         im = Image.open(src).convert("RGBA")
-        if is_background(part):
+        if is_background(part) and im.size == (CANVAS_W, CANVAS_H) and int(part["x"]) == 0 and int(part["y"]) == 0:
             canvas = Image.alpha_composite(canvas, im)
             continue
         tile = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 0))
-        tile.paste(im, (int(part["x"]), int(part["y"])), im)
+        paste_safe(tile, im, int(part["x"]), int(part["y"]))
         canvas = Image.alpha_composite(canvas, tile)
     dest.parent.mkdir(parents=True, exist_ok=True)
     canvas.convert("RGB").save(dest)
@@ -931,6 +1007,7 @@ def build() -> dict:
     metrics: dict[str, dict] = {}
     worlds: dict[str, dict] = {}
     glow_info: dict[str, dict] = {}
+    curves_lut = load_curves_lut()
 
     for part in parts:
         name = part["name"]
@@ -954,6 +1031,8 @@ def build() -> dict:
             )
         else:
             copy_static_image(src, dest)
+        if curves_lut:
+            apply_curves_png(dest, curves_lut)
 
     hang_parents = refine_hang_origins(parts, metrics, worlds, hanging)
     moved = diff_moved_layers(PREV_JSON, payload.get("layers") or [])
@@ -1085,9 +1164,21 @@ def build() -> dict:
         default_skin.setdefault(slot_name, {})[att_name] = att
         attachments_meta[slot_name] = att
 
+    parts_by_name = {p["name"]: p for p in parts}
     for slot_name in draw_names:
-        if is_background({"name": slot_name}) or slot_name == "background":
-            add_slot(slot_name, "bg", slot_name, (0.0, 0.0), (CANVAS_W, CANVAS_H))
+        part = parts_by_name.get(slot_name)
+        if slot_name == "background" or (part and is_background(part)) or is_background({"name": slot_name}):
+            full = (
+                part is not None
+                and int(part["native_w"]) == CANVAS_W
+                and int(part["native_h"]) == CANVAS_H
+                and int(part["x"]) == 0
+                and int(part["y"]) == 0
+            )
+            if full:
+                add_slot(slot_name, "bg", slot_name, (0.0, 0.0), (CANVAS_W, CANVAS_H))
+            else:
+                add_slot(slot_name, "bg", slot_name, bg_attach_on_bg_bone(part), tuple(worlds[slot_name]["native"]))
             continue
         if slot_name.endswith("_light") and slot_name in classified["extracted_lights"]:
             lamp = slot_name[: -len("_light")]
@@ -1139,7 +1230,7 @@ def build() -> dict:
         sitting=classified["sitting"],
     )
     sign_info = default_sign_state()
-    lamp_info = default_lamp_state(classified["sitting"])
+    lamp_info = merge_lamp_state(classified["sitting"])
     SIGN_STATE_PATH.write_text(json.dumps(sign_info, indent=2), encoding="utf-8")
     LAMP_STATE_PATH.write_text(json.dumps(lamp_info, indent=2), encoding="utf-8")
     (OUT_DIR / "sign_state.json").write_text(json.dumps(sign_info, indent=2), encoding="utf-8")
@@ -1190,10 +1281,23 @@ def build() -> dict:
         "pivots": {n: worlds[n] for n in worlds},
         "layer_count_psd": int(payload.get("layer_count") or 0),
         "prop_count": len(parts),
+        "parts": [
+            {
+                "name": p["name"],
+                "psd_name": p.get("psd_name"),
+                "parent_group": p.get("parent_group"),
+            }
+            for p in parts
+        ],
         "serve": "python -m http.server 8780 --bind 127.0.0.1",
         "serve_dir": str(OUT_DIR),
         "viewer_url": "http://127.0.0.1:8780/viewer.html",
         "sign": sign_info,
+        "curves": {
+            "source": "curves_1.json",
+            "baked": bool(curves_lut),
+            "skip": [f"{name}_light" for name in classified["lit"]],
+        },
     }
     report = verify_scene(skeleton, extra)
     (OUT_DIR / "skeleton.json").write_text(json.dumps(skeleton, indent=2), encoding="utf-8")
@@ -1210,7 +1314,11 @@ def build() -> dict:
     (OUT_DIR / "scene_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
     if VIEWER_SRC.is_file():
         shutil.copy2(VIEWER_SRC, OUT_DIR / "viewer.html")
+    if CURVES_JSON.is_file():
+        shutil.copy2(CURVES_JSON, OUT_DIR / "curves_1.json")
     composite_check(parts, OUT_DIR / "psd2_composite.png")
+    if curves_lut:
+        apply_curves_png(OUT_DIR / "psd2_composite.png", curves_lut)
     if not report["ok"]:
         raise SystemExit("verify_scene FAILED:\n  - " + "\n  - ".join(report["errors"]))
     return report

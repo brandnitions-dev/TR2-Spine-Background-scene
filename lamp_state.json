@@ -4,11 +4,13 @@
       "id": "lantern_dim",
       "slot": "lantern_dim_light",
       "label": "Barrel lamp",
-      "on": true
+      "on": true,
+      "lumen": 1.0
     }
   ],
   "smoke": true,
   "fire": true,
   "smokeDensity": 48,
-  "smokeSpeed": 1
+  "smokeSpeed": 1,
+  "curves": true
 }
